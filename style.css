@@ -69,10 +69,68 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Responsive Overrides */
-@media (max-width: 768px) {
-  .text-3d {
-    -webkit-text-stroke: 1px var(--primary);
-    text-shadow: 1px 1px 0 var(--secondary), 2px 2px 0 var(--secondary), 4px 4px 10px rgba(0, 0, 0, 0.1);
-  }
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Global Widgets Styling */
+.whatsapp-widget {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 150;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.whatsapp-widget:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.go-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 150;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.go-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+
+/* Glassmorphism Overrides */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }

@@ -32,92 +32,45 @@
         rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-background font-sans text-gray-900 scroll-smooth flex flex-col min-h-screen">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm py-5">
-        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8">
-            <!-- Logo -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm py-5 px-6 lg:px-8" id="main-nav">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
             <a href="index.html" class="flex-shrink-0">
-                <img src="Logo (2).png" alt="Unidemy Global" class="h-10 w-auto mix-blend-multiply">
+                <img src="Logo (2).png" alt="Unidemy Global" class="h-10 w-auto mix-blend-multiply transition-transform hover:scale-105">
             </a>
-
-            <!-- Desktop Menu -->
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
-                <a href="#" class="hover:text-primary transition-colors">About</a>
-                <a href="#" class="hover:text-primary transition-colors">Unidemy Juniors</a>
-                <a href="#" class="hover:text-primary transition-colors">Unidemy Seniors</a>
-                <a href="#" class="hover:text-primary transition-colors">Study Abroad</a>
-                <a href="#" class="hover:text-primary transition-colors">Skill Up</a>
+                <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
+                <a href="global-launchpad.html" class="hover:text-primary transition-colors">Global Launchpad</a>
+                <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
+                <a href="packages.html" class="hover:text-primary transition-colors">Our Packages</a>
                 <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
             </div>
-
-            <!-- Desktop Buttons -->
             <div class="hidden lg:flex items-center gap-4">
-                <a href="#" class="font-medium text-gray-700 hover:text-primary transition-colors pr-2">Contact</a>
-                <a href="https://unidemyglobal.com/login.php"
-                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">
-                    Log In
-                </a>
-                <a href="https://unidemyglobal.com/register.php"
-                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">
-                    Sign Up
-                </a>
+                <a href="#" class="font-medium text-gray-700 hover:text-primary transition-colors">Contact</a>
+                <a href="https://unidemyglobal.com/login.php" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">Log In</a>
+                <a href="https://unidemyglobal.com/register.php" class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">Sign Up</a>
             </div>
-
-            <!-- Mobile menu button -->
-            <div class="lg:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary transition-colors p-2">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
-            </div>
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-700 p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
         </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu"
-            class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl">
-            <div class="px-6 py-6 flex flex-col gap-4">
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">About</a>
-                <div class="h-px w-full bg-gray-100"></div>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Juniors</a>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Seniors</a>
-                <div class="h-px w-full bg-gray-100"></div>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Study Abroad</a>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Skill Up</a>
-                <a href="blog.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Blog</a>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Contact</a>
-
-                <div class="flex flex-col gap-2 mt-4">
-                    <a href="https://unidemyglobal.com/login.php"
-                        class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
-                        Log In
-                    </a>
-                    <a href="https://unidemyglobal.com/register.php"
-                        class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
-                        Sign Up
-                    </a>
+        <!-- Mobile Menu Slider -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl overflow-hidden mt-4 rounded-2xl">
+            <div class="p-6 flex flex-col gap-4">
+                <a href="index.html" class="font-medium hover:text-primary">Home</a>
+                <a href="about.html" class="font-medium hover:text-primary">About Us</a>
+                <a href="global-launchpad.html" class="font-medium hover:text-primary">Global Launchpad</a>
+                <a href="study-abroad.html" class="font-medium hover:text-primary">Study Abroad</a>
+                <a href="packages.html" class="font-medium hover:text-primary">Our Packages</a>
+                <a href="blog.html" class="font-medium hover:text-primary">Blog</a>
+                <div class="h-px bg-gray-100 my-2"></div>
+                <div class="flex flex-col gap-3">
+                    <a href="https://unidemyglobal.com/login.php" class="text-center font-bold text-secondary border-2 border-secondary py-3 rounded-full">Log In</a>
+                    <a href="https://unidemyglobal.com/register.php" class="text-center font-bold text-white bg-secondary py-3 rounded-full shadow-lg">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -890,39 +843,82 @@
             }
         });
     </script>
-    <!-- Footer -->
-    <footer class="bg-[#0B1121] pt-20 pb-10 mt-20">
+            <!-- Footer -->
+    <footer class="bg-[#0B1121] pt-20 pb-10 mt-auto border-t border-white/5">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-                <div class="col-span-1 md:col-span-2">
-                    <a href="index.html" class="flex items-center gap-2 mb-6">
-                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center p-2"><i data-lucide="graduation-cap" class="text-white w-full h-full"></i></div>
-                        <span class="text-2xl font-bold text-white tracking-tight">Unidemy<span class="text-secondary">Global</span></span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 group">
+                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center p-2 group-hover:rotate-12 transition-transform"><i data-lucide="graduation-cap" class="text-white"></i></div>
+                        <span class="text-2xl font-bold text-white">Unidemy<span class="text-secondary">Global</span></span>
                     </a>
-                    <p class="text-slate-400 max-w-sm leading-relaxed mb-8">Empowering ambition worldwide. Your premier destination for world-class test preparation and global university admissions.</p>
+                    <p class="text-slate-400 leading-relaxed mb-8 max-w-sm">Empowering ambition worldwide. Your premier destination for world-class test preparation and global university admissions.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
                 </div>
+
+                <!-- Programs -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Programs</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="packages.html" class="hover:text-secondary transition-colors">All Packages</a></li>
+                        <li><a href="iit-jee.html" class="hover:text-secondary transition-colors">IIT-JEE Advanced</a></li>
+                        <li><a href="medical-abroad.html" class="hover:text-secondary transition-colors">Medical Abroad</a></li>
+                        <li><a href="higher-education.html" class="hover:text-secondary transition-colors">Higher Education</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
                 <div>
                     <h3 class="text-white font-bold mb-6">Quick Links</h3>
                     <ul class="space-y-4 text-slate-400">
-                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
-                        <li><a href="global-launchpad.html" class="text-white transition-colors">Global Launchpad</a></li>
-                        <li><a href="packages.html" class="hover:text-secondary transition-colors">All Packages</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="global-launchpad.html" class="hover:text-secondary transition-colors">Global Launchpad</a></li>
+                        <li><a href="study-abroad.html" class="hover:text-secondary transition-colors">Study Abroad</a></li>
                         <li><a href="blog.html" class="hover:text-secondary transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
                     </ul>
                 </div>
+
+                <!-- Contact -->
                 <div>
-                    <h3 class="text-white font-bold mb-6">Contact</h3>
+                    <h3 class="text-white font-bold mb-6">Contact Us</h3>
                     <ul class="space-y-4 text-slate-400">
-                        <li class="flex gap-3"><i data-lucide="mail" class="w-5 h-5 text-primary"></i> admissions@unidemyglobal.com</li>
-                        <li class="flex gap-3"><i data-lucide="phone" class="w-5 h-5 text-primary"></i> +91 98765 43210</li>
+                        <li class="flex gap-3 items-center"><i data-lucide="mail" class="w-5 h-5 text-primary"></i> <span class="text-sm">admissions@unidemyglobal.com</span></li>
+                        <li class="flex gap-3 items-center"><i data-lucide="phone" class="w-5 h-5 text-primary"></i> <span class="text-sm">+91 98765 43210</span></li>
+                        <li class="flex gap-3 items-center"><i data-lucide="map-pin" class="w-5 h-5 text-primary"></i> <span class="text-sm">Bangalore (HQ), Karnataka</span></li>
                     </ul>
                 </div>
             </div>
-            <div class="pt-8 border-t border-white/5 text-center text-slate-500 text-sm">
-                <p>&copy; 2026 Unidemy Global. All rights reserved.</p>
+            
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+                <p>© 2026 Unidemy Global. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookies Policy</a>
+                </div>
             </div>
         </div>
     </footer>
-</body>
 
+    <!-- Global Widgets -->
+    <a href="https://wa.me/916360456026" target="_blank" class="whatsapp-widget group animate-bounce-slow" title="Chat on WhatsApp">
+        <div class="bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center gap-3">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+            <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 font-bold">Chat with us</span>
+        </div>
+    </a>
+
+    <button id="go-to-top" class="go-to-top bg-primary text-white p-4 rounded-full shadow-2xl hover:bg-blue-700 transition-all">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
 </html>

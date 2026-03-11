@@ -1,23 +1,29 @@
-/**
- * Unidemy Global - Frontend Logic
- */
-
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
     initHero();
     initTestimonials();
-    // initMarquee();
+    initGlobalWidgets();
+    
+    // Initialize Lucide icons
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
 });
 
 /**
  * Testimonials Slider Logic
  */
 function initTestimonials() {
+    const slider = document.getElementById('testimonial-slider');
+    if (!slider) return;
+
     const slides = document.querySelectorAll('.testimonial-slide');
     const dots = document.querySelectorAll('.t-dot');
     const prevBtn = document.getElementById('prev-testimonial');
     const nextBtn = document.getElementById('next-testimonial');
     let currentIndex = 0;
+
+    if (slides.length === 0) return;
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
@@ -60,10 +66,15 @@ function initTestimonials() {
  * Hero Carousel Logic
  */
 function initHero() {
-    const slides = document.querySelectorAll('#carousel-slides .slide');
+    const slidesContainer = document.getElementById('carousel-slides');
+    if (!slidesContainer) return;
+
+    const slides = slidesContainer.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
     let currentIndex = 0;
     let timer;
+
+    if (slides.length === 0) return;
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
@@ -92,7 +103,7 @@ function initHero() {
 
     dots.forEach((dot, i) => {
         dot.addEventListener('click', () => {
-            clearInterval(timer);
+            if (timer) clearInterval(timer);
             showSlide(i);
             startTimer();
         });
@@ -100,22 +111,63 @@ function initHero() {
 
     startTimer();
 }
+
+/**
+ * Enhanced Navbar Logic
+ */
 function initNavbar() {
-    const nav = document.querySelector('nav');
+    const nav = document.getElementById('main-nav');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            nav?.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
-            nav?.classList.remove('bg-transparent', 'py-5');
-        } else {
-            nav?.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-3');
-            nav?.classList.add('bg-transparent', 'py-5');
-        }
-    });
+    if (!nav) return;
 
-    mobileMenuBtn?.addEventListener('click', () => {
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-md', 'py-3');
+            nav.classList.remove('py-5', 'shadow-sm');
+        } else {
+            nav.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-md', 'py-3');
+            nav.classList.add('py-5', 'shadow-sm');
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    mobileMenuBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
         mobileMenu?.classList.toggle('hidden');
     });
+
+    // Close mobile menu on click outside
+    document.addEventListener('click', (e) => {
+        if (mobileMenu && !mobileMenu.contains(e.target) && !mobileMenuBtn?.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+}
+
+/**
+ * Global Widgets: WhatsApp & Go-to-Top
+ */
+function initGlobalWidgets() {
+    const goToTopBtn = document.getElementById('go-to-top');
+    
+    if (goToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                goToTopBtn.classList.add('active');
+            } else {
+                goToTopBtn.classList.remove('active');
+            }
+        });
+
+        goToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 }
