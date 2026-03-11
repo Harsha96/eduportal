@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IIT-JEE Programmes | Unidemy Global</title>
+    <title>Tech Internships | Unidemy Global</title>
     <meta name="description"
-        content="Our premier IIT-JEE programmes offering complete study material, extensive mock tests, and mentorship.">
+        content="Kickstart your tech career with precision-crafted internships in AI/ML, Embedded Systems, and Web & Cloud Applications.">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -38,16 +38,19 @@
             width: 8px;
             height: 8px;
         }
+
         .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f1f1f1; 
+            background: #f1f1f1;
             border-radius: 4px;
         }
+
         .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #cbd5e1; 
+            background: #cbd5e1;
             border-radius: 4px;
         }
+
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8; 
+            background: #94a3b8;
         }
     </style>
 </head>
@@ -135,212 +138,238 @@
                     <li>
                         <div class="flex items-center">
                             <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
-                            <span class="ml-2 text-primary font-medium">IIT-JEE</span>
+                            <span class="ml-2 text-primary font-medium">Internships</span>
                         </div>
                     </li>
                 </ol>
             </nav>
 
             <!-- Title -->
-            <h1 class="text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-900 mb-8 font-sans tracking-tight">IIT-JEE Programmes</h1>
+            <h1 class="text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-900 mb-8 font-sans tracking-tight">Tech
+                Internships</h1>
 
             <!-- Tabs -->
             <div class="border-b border-gray-200 mb-8 overflow-x-auto custom-scrollbar">
                 <nav class="flex gap-6 md:gap-10 min-w-max" aria-label="Tabs">
-                    <button data-target="all" class="tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap">
-                        All Classes
+                    <button data-target="all"
+                        class="tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap">
+                        All Domains
                     </button>
-                    <button data-target="class-11" class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
-                        Class 11
+                    <button data-target="aiml"
+                        class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                        AI / ML
                     </button>
-                    <button data-target="class-12" class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
-                        Class 12
+                    <button data-target="embedded"
+                        class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                        Embedded Systems
                     </button>
-                    <button data-target="repeater" class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
-                        Repeater
+                    <button data-target="webcloud"
+                        class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                        Web & Cloud
                     </button>
                 </nav>
             </div>
 
             <!-- Section Info -->
-            <div class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-3">Classroom Program</h2>
-                <p class="text-gray-500 text-[15px]">Offline classroom learning with structured syllabus coverage, recorded lectures, tests &amp; doubt support.</p>
+            <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3">Industry-Ready Projects</h2>
+                    <p class="text-gray-500 text-[15px] max-w-2xl">Work on cutting-edge technologies, guided by industry experts, and build a world-class portfolio.</p>
+                </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cards-container">
-                <!-- Card 1 -->
-                <div class="course-card bg-[#20252b] rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block" data-category="class-11 class-12">
+                <!-- Card 1: AI / ML -->
+                <div class="course-card bg-[#111827] rounded-3xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block border border-gray-800"
+                    data-category="aiml">
                     <!-- Image Container -->
-                    <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" alt="Vidyapeeth" class="w-full h-full object-cover">
+                    <div class="relative h-[220px] w-full overflow-hidden bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800"
+                            alt="AI Pipeline" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        <!-- Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent"></div>
                         <!-- Badge -->
-                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#FBBF24]"></div> OFFLINE CENTRE
+                        <div
+                            class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-[#38BDF8] text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider border border-[#38BDF8]/40">
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#38BDF8] animate-pulse"></div> REMOTE OR HYBRID
                         </div>
                     </div>
                     <!-- Content Container -->
                     <div class="p-6 flex flex-col flex-grow text-white">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="text-[#FBBF24] font-semibold text-sm">Class 11 + 12 JEE</span>
-                            <span class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">HINGLISH</span>
+                            <span class="text-[#38BDF8] font-bold text-sm tracking-wide">Artificial Intelligence</span>
+                            <span
+                                class="text-[10px] font-bold bg-white/10 text-gray-300 px-2.5 py-1 rounded-full uppercase tracking-wide">6 MONTHS</span>
                         </div>
-                        <h3 class="text-[22px] font-bold mb-5 text-white">Vidyapeeth</h3>
+                        <h3 class="text-[22px] font-bold mb-4 text-white leading-tight">Advanced Data Science & Machine Learning</h3>
                         <ul class="space-y-3 mb-8 flex-grow">
-                            <li class="flex items-start text-[14px] text-gray-300">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                                Experienced Faculty
+                            <li class="flex items-start text-[14px] text-gray-400">
+                                <i data-lucide="code-2"
+                                    class="w-4 h-4 mr-2.5 text-[#38BDF8] shrink-0 mt-0.5"></i>
+                                Python, TensorFlow, PyTorch
                             </li>
-                            <li class="flex items-start text-[14px] text-gray-300">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                                Tech-enabled Offline Classroom Learning
+                            <li class="flex items-start text-[14px] text-gray-400">
+                                <i data-lucide="briefcase"
+                                    class="w-4 h-4 mr-2.5 text-[#38BDF8] shrink-0 mt-0.5"></i>
+                                Real-world Industry Datasets
                             </li>
                         </ul>
-                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
+                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-800">
                             <div class="flex flex-col">
-                                <div class="flex items-baseline gap-2 mb-0.5">
-                                    <span class="text-[22px] font-bold">â‚¹999</span>
-                                    <span class="text-xs text-gray-500 line-through">â‚¹5,000</span>
-                                </div>
-                                <span class="text-[11px] text-gray-400 tracking-wide">For Registration</span>
+                                <span class="text-[12px] text-gray-500 tracking-wide mb-1 uppercase font-semibold">Pre-placement Offer</span>
+                                <span class="text-[16px] font-bold text-white">Performance Based</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <button class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book A Seat</button>
-                                <button class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
-                                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                                </button>
+                                <button
+                                    class="bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-blue-500 transition-colors">Apply
+                                    Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="course-card bg-[#20252b] rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block" data-category="class-11">
+                <!-- Card 2: Embedded -->
+                <div class="course-card bg-[#111827] rounded-3xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block border border-gray-800"
+                    data-category="embedded">
                     <!-- Image Container -->
-                    <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
-                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800" alt="Vidyapeeth Hindi" class="w-full h-full object-cover">
+                    <div class="relative h-[220px] w-full overflow-hidden bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
+                            alt="Microcontroller" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        <!-- Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent"></div>
                         <!-- Badge -->
-                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#FBBF24]"></div> OFFLINE CENTRE
+                        <div
+                            class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-[#10B981] text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider border border-[#10B981]/40">
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#10B981]"></div> ONSITE
                         </div>
                     </div>
                     <!-- Content Container -->
                     <div class="p-6 flex flex-col flex-grow text-white">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="text-[#FBBF24] font-semibold text-sm">Class 11 JEE</span>
-                            <span class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">à¤¹à¤¿à¤¨à¥à¤¦à¥€</span>
+                            <span class="text-[#10B981] font-bold text-sm tracking-wide">Embedded Systems</span>
+                            <span
+                                class="text-[10px] font-bold bg-white/10 text-gray-300 px-2.5 py-1 rounded-full uppercase tracking-wide">3 MONTHS</span>
                         </div>
-                        <h3 class="text-[22px] font-bold mb-5 text-white">Vidyapeeth Hindi</h3>
+                        <h3 class="text-[22px] font-bold mb-4 text-white leading-tight">IoT & Robotics Engineering</h3>
                         <ul class="space-y-3 mb-8 flex-grow">
-                            <li class="flex items-start text-[14px] text-gray-300">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                                Live Interactive Smart Classes
+                            <li class="flex items-start text-[14px] text-gray-400">
+                                <i data-lucide="microchip"
+                                    class="w-4 h-4 mr-2.5 text-[#10B981] shrink-0 mt-0.5"></i>
+                                Embedded C/C++, ARM Cortex, RTOS
                             </li>
-                            <li class="flex items-start text-[14px] text-gray-300">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                                Regular Offline Tests
+                            <li class="flex items-start text-[14px] text-gray-400">
+                                <i data-lucide="cpu"
+                                    class="w-4 h-4 mr-2.5 text-[#10B981] shrink-0 mt-0.5"></i>
+                                Hardware-Software Co-design
                             </li>
                         </ul>
-                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
+                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-800">
                             <div class="flex flex-col">
-                                <div class="flex items-baseline gap-2 mb-0.5">
-                                    <span class="text-[22px] font-bold">â‚¹999</span>
-                                    <span class="text-xs text-gray-500 line-through">â‚¹5,000</span>
-                                </div>
-                                <span class="text-[11px] text-gray-400 tracking-wide">For Registration</span>
+                                <span class="text-[12px] text-gray-500 tracking-wide mb-1 uppercase font-semibold">Stipend</span>
+                                <span class="text-[16px] font-bold text-white">â‚¹15,000 / mo</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <button class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book A Seat</button>
-                                <button class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
-                                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                                </button>
+                                <button
+                                    class="bg-[#10B981] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20">Apply
+                                    Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="course-card bg-[#20252b] rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block" data-category="class-11">
+                <!-- Card 3: Web & Cloud -->
+                <div class="course-card bg-[#111827] rounded-3xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block border border-gray-800"
+                    data-category="webcloud">
                     <!-- Image Container -->
-                    <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800" alt="Vidyapeeth Tamil Nadu" class="w-full h-full object-cover">
+                    <div class="relative h-[220px] w-full overflow-hidden bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                            alt="Code" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        <!-- Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent"></div>
                         <!-- Badge -->
-                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#FBBF24]"></div> OFFLINE CENTRE
+                        <div
+                            class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-[#F43F5E] text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider border border-[#F43F5E]/40">
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#F43F5E] animate-pulse"></div> REMOTE OR HYBRID
                         </div>
                     </div>
                     <!-- Content Container -->
                     <div class="p-6 flex flex-col flex-grow text-white">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="text-[#FBBF24] font-semibold text-sm">Class 11 JEE</span>
-                            <span class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">ENGLISH</span>
+                            <span class="text-[#F43F5E] font-bold text-sm tracking-wide">Web & Cloud</span>
+                            <span
+                                class="text-[10px] font-bold bg-white/10 text-gray-300 px-2.5 py-1 rounded-full uppercase tracking-wide">4 MONTHS</span>
                         </div>
-                        <h3 class="text-[22px] font-bold mb-5 text-white">Vidyapeeth Tamil Nadu</h3>
+                        <h3 class="text-[22px] font-bold mb-4 text-white leading-tight">Full Stack Web Development</h3>
                         <ul class="space-y-3 mb-8 flex-grow">
-                            <li class="flex items-start text-[14px] text-gray-300">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                                Live Interactive Smart Classes
+                            <li class="flex items-start text-[14px] text-gray-400">
+                                <i data-lucide="layers"
+                                    class="w-4 h-4 mr-2.5 text-[#F43F5E] shrink-0 mt-0.5"></i>
+                                React, Next.js, Node.js, PostgreSQL
                             </li>
-                            <li class="flex items-start text-[14px] text-gray-300">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                                Regular Offline Tests
+                            <li class="flex items-start text-[14px] text-gray-400">
+                                <i data-lucide="cloud"
+                                    class="w-4 h-4 mr-2.5 text-[#F43F5E] shrink-0 mt-0.5"></i>
+                                Deployment on AWS / Vercel
                             </li>
                         </ul>
-                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
+                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-800">
                             <div class="flex flex-col">
-                                <div class="flex items-baseline gap-2 mb-0.5">
-                                    <span class="text-[22px] font-bold">â‚¹999</span>
-                                    <span class="text-xs text-gray-500 line-through">â‚¹5,000</span>
-                                </div>
-                                <span class="text-[11px] text-gray-400 tracking-wide">For Registration</span>
+                                <span class="text-[12px] text-gray-500 tracking-wide mb-1 uppercase font-semibold">Pre-placement Offer</span>
+                                <span class="text-[16px] font-bold text-white">Performance Based</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <button class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book A Seat</button>
-                                <button class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
-                                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                                </button>
+                                <button
+                                    class="bg-[#F43F5E] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-rose-400 transition-colors shadow-lg shadow-rose-500/20">Apply
+                                    Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Repeater Example Card (Initially hidden initially if filtering is active) -->
-                <div class="course-card bg-[#20252b] rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block" data-category="repeater">
-                    <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="Vidyapeeth Repeater" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
-                            <div class="w-1.5 h-1.5 rounded-full bg-[#FBBF24]"></div> OFFLINE CENTRE
+                <!-- Card 4: Web & Cloud 2 -->
+                <div class="course-card bg-[#111827] rounded-3xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block border border-gray-800"
+                    data-category="webcloud">
+                    <!-- Image Container -->
+                    <div class="relative h-[220px] w-full overflow-hidden bg-gray-900">
+                        <img src="https://images.unsplash.com/photo-1667372393086-9d4001d4a758?auto=format&fit=crop&q=80&w=800"
+                            alt="Cloud Architecture" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        <!-- Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent"></div>
+                        <!-- Badge -->
+                        <div
+                            class="absolute top-4 left-4 bg-black/50 backdrop-blur-md text-[#F43F5E] text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider border border-[#F43F5E]/40">
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#F43F5E] animate-pulse"></div> REMOTE OR HYBRID
                         </div>
                     </div>
+                    <!-- Content Container -->
                     <div class="p-6 flex flex-col flex-grow text-white">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="text-[#FBBF24] font-semibold text-sm">Repeater JEE</span>
-                            <span class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">ENGLISH</span>
+                            <span class="text-[#F43F5E] font-bold text-sm tracking-wide">Web & Cloud</span>
+                            <span
+                                class="text-[10px] font-bold bg-white/10 text-gray-300 px-2.5 py-1 rounded-full uppercase tracking-wide">6 MONTHS</span>
                         </div>
-                        <h3 class="text-[22px] font-bold mb-5 text-white">Vidyapeeth Ultimate</h3>
+                        <h3 class="text-[22px] font-bold mb-4 text-white leading-tight">Cloud Native DevOps Engineering</h3>
                         <ul class="space-y-3 mb-8 flex-grow">
-                            <li class="flex items-start text-[14px] text-gray-300">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                                Dedicated Doubt Counters
+                            <li class="flex items-start text-[14px] text-gray-400">
+                                <i data-lucide="container"
+                                    class="w-4 h-4 mr-2.5 text-[#F43F5E] shrink-0 mt-0.5"></i>
+                                Docker, Kubernetes, Terraform
                             </li>
-                            <li class="flex items-start text-[14px] text-gray-300">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                                Advanced Material & Mock Tests
+                            <li class="flex items-start text-[14px] text-gray-400">
+                                <i data-lucide="git-merge"
+                                    class="w-4 h-4 mr-2.5 text-[#F43F5E] shrink-0 mt-0.5"></i>
+                                CI/CD Pipeline Automation
                             </li>
                         </ul>
-                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
+                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-800">
                             <div class="flex flex-col">
-                                <div class="flex items-baseline gap-2 mb-0.5">
-                                    <span class="text-[22px] font-bold">â‚¹1,999</span>
-                                    <span class="text-xs text-gray-500 line-through">â‚¹8,000</span>
-                                </div>
-                                <span class="text-[11px] text-gray-400 tracking-wide">For Registration</span>
+                                <span class="text-[12px] text-gray-500 tracking-wide mb-1 uppercase font-semibold">Stipend</span>
+                                <span class="text-[16px] font-bold text-white">â‚¹20,000 / mo</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <button class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book A Seat</button>
-                                <button class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
-                                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                                </button>
+                                <button
+                                    class="bg-[#F43F5E] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-rose-400 transition-colors shadow-lg shadow-rose-500/20">Apply
+                                    Now</button>
                             </div>
                         </div>
                     </div>
@@ -351,7 +380,8 @@
     </main>
 
     <!-- Support Widget -->
-    <a href="tel:9513350005" class="fixed bottom-6 right-6 bg-[#6366F1] text-white rounded-full px-5 py-3 flex items-center gap-3 shadow-[0_8px_30px_rgb(99,102,241,0.4)] hover:bg-[#4F46E5] transition-all hover:-translate-y-1 hover:shadow-[0_12px_40px_rgb(99,102,241,0.5)] z-50">
+    <a href="tel:9513350005"
+        class="fixed bottom-6 right-6 bg-[#6366F1] text-white rounded-full px-5 py-3 flex items-center gap-3 shadow-[0_8px_30px_rgb(99,102,241,0.4)] hover:bg-[#4F46E5] transition-all hover:-translate-y-1 hover:shadow-[0_12px_40px_rgb(99,102,241,0.5)] z-50">
         <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center shrink-0">
             <i data-lucide="phone-call" class="w-4 h-4 text-white"></i>
         </div>
@@ -445,7 +475,7 @@
         lucide.createIcons();
 
         // Mobile menu toggle logic
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
             var menu = document.getElementById('mobile-menu');
             if (menu.classList.contains('hidden')) {
                 menu.classList.remove('hidden');
@@ -455,16 +485,11 @@
         });
 
         // Tab selection logic based on URL parameters
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             let tab = urlParams.get('tab');
             const tabs = document.querySelectorAll('nav[aria-label="Tabs"] button');
             const cards = document.querySelectorAll('.course-card');
-            
-            // Allow mapping 'dropper' from index.html to 'repeater'
-            if (tab === 'dropper') {
-                tab = 'repeater';
-            }
 
             function activateTab(tabId) {
                 // Update active tab styles
@@ -490,12 +515,12 @@
             // Click events for all tabs
             tabs.forEach(t => {
                 t.addEventListener('click', () => {
-                   let target = t.dataset.target;
-                   activateTab(target);
-                   // Update URL parameter without reloading the page
-                   const url = new URL(window.location);
-                   url.searchParams.set('tab', target);
-                   window.history.pushState({}, '', url);
+                    let target = t.dataset.target;
+                    activateTab(target);
+                    // Update URL parameter without reloading the page
+                    const url = new URL(window.location);
+                    url.searchParams.set('tab', target);
+                    window.history.pushState({}, '', url);
                 });
             });
 
