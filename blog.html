@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidemy Global Blog | Insights & Education Strategies</title>
+    <meta name="description"
+        content="Read the latest insights, strategies, and guides on NEET, IIT-JEE, studying abroad, and foundation courses from Unidemy Global experts.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E4F9C',
+                        secondary: '#F97316',
+                        background: '#F8FBFF',
+                        accent: '#E6EFFF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-background font-sans text-gray-900 scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm py-5">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8">
+            <!-- Logo -->
+            <a href="index.html" class="flex-shrink-0">
+                <img src="Logo (2).png" alt="Unidemy Global" class="h-10 w-auto mix-blend-multiply">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
+                <a href="index.html#about" class="hover:text-primary transition-colors">About</a>
+                <a href="index.html#programs" class="hover:text-primary transition-colors">Unidemy Juniors</a>
+                <a href="index.html#programs" class="hover:text-primary transition-colors">Unidemy Seniors</a>
+                <a href="index.html#study-abroad" class="hover:text-primary transition-colors">Study Abroad</a>
+                <a href="index.html#social" class="hover:text-primary transition-colors">Skill Up</a>
+                <a href="blog.html" class="text-primary font-bold">Blog</a>
+            </div>
+
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="#" class="font-medium text-gray-700 hover:text-primary transition-colors pr-2">Contact</a>
+                <a href="https://unidemyglobal.com/login.php"
+                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">
+                    Log In
+                </a>
+                <a href="https://unidemyglobal.com/register.php"
+                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">
+                    Sign Up
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="lg:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary transition-colors p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl">
+            <div class="px-6 py-6 flex flex-col gap-4">
+                <a href="index.html#about"
+                    class="text-gray-700 font-medium hover:text-primary transition-colors">About</a>
+                <div class="h-px w-full bg-gray-100"></div>
+                <a href="index.html#programs"
+                    class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Juniors</a>
+                <a href="index.html#programs"
+                    class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Seniors</a>
+                <div class="h-px w-full bg-gray-100"></div>
+                <a href="index.html#study-abroad"
+                    class="text-gray-700 font-medium hover:text-primary transition-colors">Study Abroad</a>
+                <a href="index.html#social" class="text-gray-700 font-medium hover:text-primary transition-colors">Skill
+                    Up</a>
+                <a href="blog.html" class="text-primary font-bold">Blog</a>
+                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Contact</a>
+
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://unidemyglobal.com/login.php"
+                        class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
+                        Log In
+                    </a>
+                    <a href="https://unidemyglobal.com/register.php"
+                        class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-primary/5"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-background/90 z-0"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 blur-[100px] rounded-full pointer-events-none">
+        </div>
+        <div class="absolute top-20 -left-20 w-72 h-72 bg-secondary/10 blur-[80px] rounded-full pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center">
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-orange-100 text-secondary font-bold text-sm tracking-widest uppercase mb-6 shadow-sm border border-orange-200">
+                Insights & Resources
+            </span>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+                Unidemy <span
+                    class="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">Blog</span>
+            </h1>
+            <p
+                class="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
+                Stay ahead with expert strategies, preparation tips, and global education news. Our experts break down
+                everything you need to know from the foundation level to master's degrees abroad.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Listing Section -->
+    <section class="py-16 bg-background relative z-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+
+                <!-- Blog 1: NEET -->
+                <article
+                    class="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(30,79,156,0.12)] transition-all duration-500 group flex flex-col border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+                            alt="Master NEET"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-60">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-black tracking-wider text-rose-600 shadow-sm border border-rose-100 uppercase">
+                            Medical Sets
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1 relative">
+                        <div class="flex items-center gap-3 text-sm text-gray-400 font-medium mb-4">
+                            <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4"></i> Oct
+                                15, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 5 Min
+                                Read</span>
+                        </div>
+                        <h2
+                            class="text-2xl font-bold text-gray-900 leading-snug mb-4 group-hover:text-primary transition-colors line-clamp-2">
+                            How to Master NEET 2024: A Comprehensive Strategy
+                        </h2>
+                        <p class="text-gray-600 mb-8 line-clamp-3 text-sm md:text-base leading-relaxed flex-grow">
+                            Scoring high in NEET requires more than just hard work—it demands smart planning. Learn how
+                            top rankers allocate their time across Physics, Chemistry, and Biology.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 font-bold text-primary group-hover:text-blue-800 transition-colors mt-auto w-max after:content-[''] after:absolute after:inset-0 rounded-lg">
+                            Read Article <i data-lucide="arrow-right"
+                                class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 2: IIT-JEE -->
+                <article
+                    class="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(30,79,156,0.12)] transition-all duration-500 group flex flex-col border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800"
+                            alt="Cracking IIT-JEE"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-60">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-black tracking-wider text-orange-600 shadow-sm border border-orange-100 uppercase">
+                            Engineering
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1 relative">
+                        <div class="flex items-center gap-3 text-sm text-gray-400 font-medium mb-4">
+                            <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4"></i> Oct
+                                12, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 6 Min
+                                Read</span>
+                        </div>
+                        <h2
+                            class="text-2xl font-bold text-gray-900 leading-snug mb-4 group-hover:text-primary transition-colors line-clamp-2">
+                            Cracking IIT-JEE: Essential Tips and Study Material
+                        </h2>
+                        <p class="text-gray-600 mb-8 line-clamp-3 text-sm md:text-base leading-relaxed flex-grow">
+                            Discover the must-have resources and daily habits that can transform your IIT-JEE
+                            preparation. We break down the most complex mathematical hurdles.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 font-bold text-primary group-hover:text-blue-800 transition-colors mt-auto w-max after:content-[''] after:absolute after:inset-0 rounded-lg">
+                            Read Article <i data-lucide="arrow-right"
+                                class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 3: Study Abroad -->
+                <article
+                    class="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(30,79,156,0.12)] transition-all duration-500 group flex flex-col border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800"
+                            alt="Study Abroad Guide"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-60">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-black tracking-wider text-emerald-600 shadow-sm border border-emerald-100 uppercase">
+                            Global Ed
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1 relative">
+                        <div class="flex items-center gap-3 text-sm text-gray-400 font-medium mb-4">
+                            <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4"></i> Oct
+                                05, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 8 Min
+                                Read</span>
+                        </div>
+                        <h2
+                            class="text-2xl font-bold text-gray-900 leading-snug mb-4 group-hover:text-primary transition-colors line-clamp-2">
+                            The Ultimate Guide to Studying Abroad (USA, UK, Canada)
+                        </h2>
+                        <p class="text-gray-600 mb-8 line-clamp-3 text-sm md:text-base leading-relaxed flex-grow">
+                            Comparing the top study destinations based on visa processes, post-study work rights, and
+                            overall educational quality. Which country suits your career aspirations?
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 font-bold text-primary group-hover:text-blue-800 transition-colors mt-auto w-max after:content-[''] after:absolute after:inset-0 rounded-lg">
+                            Read Article <i data-lucide="arrow-right"
+                                class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 4: Foundation Classes -->
+                <article
+                    class="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(30,79,156,0.12)] transition-all duration-500 group flex flex-col border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800"
+                            alt="Foundation Learning"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-60">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-black tracking-wider text-violet-600 shadow-sm border border-violet-100 uppercase">
+                            Juniors
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1 relative">
+                        <div class="flex items-center gap-3 text-sm text-gray-400 font-medium mb-4">
+                            <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4"></i> Sep
+                                28, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 4 Min
+                                Read</span>
+                        </div>
+                        <h2
+                            class="text-2xl font-bold text-gray-900 leading-snug mb-4 group-hover:text-primary transition-colors line-clamp-2">
+                            Why Foundation Programs (Class 1-12) Matter for Future Success
+                        </h2>
+                        <p class="text-gray-600 mb-8 line-clamp-3 text-sm md:text-base leading-relaxed flex-grow">
+                            Building a solid intellectual foundation early enables students to tackle highly competitive
+                            exams like JEE or NEET with far greater ease during their senior years.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 font-bold text-primary group-hover:text-blue-800 transition-colors mt-auto w-max after:content-[''] after:absolute after:inset-0 rounded-lg">
+                            Read Article <i data-lucide="arrow-right"
+                                class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 5: Global Launchpad -->
+                <article
+                    class="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgba(30,79,156,0.12)] transition-all duration-500 group flex flex-col border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800"
+                            alt="Global Launchpad Exams"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-60">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-black tracking-wider text-amber-600 shadow-sm border border-amber-100 uppercase">
+                            Test Prep
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1 relative">
+                        <div class="flex items-center gap-3 text-sm text-gray-400 font-medium mb-4">
+                            <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4"></i> Sep
+                                20, 2024</span>
+                            <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                            <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> 7 Min
+                                Read</span>
+                        </div>
+                        <h2
+                            class="text-2xl font-bold text-gray-900 leading-snug mb-4 group-hover:text-primary transition-colors line-clamp-2">
+                            Top 5 Global Launchpad Exams: SAT, IELTS, TOEFL, GRE Explained
+                        </h2>
+                        <p class="text-gray-600 mb-8 line-clamp-3 text-sm md:text-base leading-relaxed flex-grow">
+                            Confused between IELTS and TOEFL? Unsure if you need the SAT or GRE? Our comprehensive
+                            breakdown details test structures, validity, and scoring systems.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 font-bold text-primary group-hover:text-blue-800 transition-colors mt-auto w-max after:content-[''] after:absolute after:inset-0 rounded-lg">
+                            Read Article <i data-lucide="arrow-right"
+                                class="w-5 h-5 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-[#0B1121] pt-24 pb-10 overflow-hidden">
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50">
+        </div>
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/20 blur-[120px] rounded-full pointer-events-none -translate-y-1/2">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <!-- Newsletter -->
+            <div
+                class="bg-white/[0.03] border border-white/5 rounded-3xl p-8 md:p-12 mb-16 backdrop-blur-sm flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+                <div
+                    class="absolute right-0 top-0 w-64 h-64 bg-secondary/10 blur-[80px] rounded-full pointer-events-none">
+                </div>
+                <div class="max-w-xl z-10 text-center md:text-left">
+                    <h3 class="text-3xl font-bold text-white mb-4">Ready to start your journey?</h3>
+                    <p class="text-slate-400 text-lg">Join 10,000+ students globally. Get the latest insights,
+                        university updates, and scholarship alerts.</p>
+                </div>
+                <div class="w-full md:w-auto z-10 flex-shrink-0">
+                    <form class="relative w-full sm:w-[400px]">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full bg-[#1A2235] border border-white/10 text-white pl-6 pr-32 py-4 rounded-2xl focus:outline-none focus:border-secondary transition-all">
+                        <button type="submit"
+                            class="absolute right-2 top-2 bottom-2 bg-secondary hover:bg-orange-600 text-white px-6 rounded-xl font-medium transition-all shadow-lg shadow-secondary/30">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+                <!-- Brand Column -->
+                <div class="lg:col-span-4">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 group inline-flex">
+                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center p-2 shadow-lg"><i
+                                data-lucide="graduation-cap" class="text-white w-full h-full"></i></div>
+                        <span class="text-2xl font-bold text-white tracking-tight">Unidemy<span
+                                class="text-secondary">Global</span></span>
+                    </a>
+                    <p class="text-slate-400 mb-8 max-w-sm leading-relaxed">Empowering ambition worldwide. Your premier
+                        destination for world-class test preparation, career counseling, and global university
+                        admissions.</p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i
+                                data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i
+                                data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i
+                                data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <h3 class="text-lg font-semibold text-white mb-6">Programs</h3>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="#" class="hover:text-secondary transition-colors">NEET Preparation</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">IIT-JEE Advanced</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Skill Up Tech</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+                <p>© 2026 Unidemy Global. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+/* Custom Styles for Unidemy Revamp */
+
+:root {
+  --primary: #1E4F9C;
+  --secondary: #F97316;
+}
+
+/* Glassmorphism Classes */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 3D Text Effect for Hero */
+.text-3d {
+  color: var(--primary);
+  -webkit-text-stroke: 1.5px var(--primary);
+  text-shadow: 
+    1px 1px 0 var(--secondary),
+    2px 2px 0 var(--secondary),
+    3px 3px 0 var(--secondary),
+    4px 4px 0 var(--secondary),
+    5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Infinite Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Smooth Transitions */
+.transition-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .text-3d {
+    -webkit-text-stroke: 1px var(--primary);
+    text-shadow: 1px 1px 0 var(--secondary), 2px 2px 0 var(--secondary), 4px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
