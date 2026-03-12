@@ -38,68 +38,60 @@
 <body class="bg-background font-sans text-gray-900 scroll-smooth">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-5">
-        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8">
-            <!-- Logo -->
-            <a href="#" class="flex-shrink-0">
-                <img src="Logo (2).png" alt="Unidemy Global" class="h-10 w-auto mix-blend-multiply">
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-5 px-6 lg:px-8" id="main-nav">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex-shrink-0">
+                <img src="Logo (2).png" alt="Unidemy Global"
+                    class="h-10 w-auto mix-blend-multiply transition-transform hover:scale-105">
             </a>
-
-            <!-- Desktop Menu -->
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
-                <a href="#" class="hover:text-primary transition-colors">About</a>
+                <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
                 <div class="relative group">
                     <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
                         Unidemy Learners
                         <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
                     </button>
-                    <div class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <a href="explorers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy Juniors</a>
-                        <a href="iit-jee.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy Seniors</a>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="explorers.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy
+                            Juniors</a>
+                        <a href="iit-jee.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy
+                            Seniors</a>
                     </div>
                 </div>
-                <a href="#" class="hover:text-primary transition-colors">Study Abroad</a>
-                <a href="#" class="hover:text-primary transition-colors">Skill Up</a>
+                <a href="global-launchpad.html" class="hover:text-primary transition-colors">Global Launchpad</a>
+                <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
                 <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
             </div>
-
-            <!-- Desktop Buttons -->
-
-
             <div class="hidden lg:flex items-center gap-4">
                 <a href="#" class="font-medium text-gray-700 hover:text-primary transition-colors pr-2">Contact</a>
                 <a href="https://unidemyglobal.com/login.php"
-                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">
-                    Log In
-                </a>
+                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">Log
+                    In</a>
                 <a href="https://unidemyglobal.com/register.php"
-                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">
-                    Sign Up
-                </a>
+                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">Sign
+                    Up</a>
             </div>
-
-            <!-- Mobile menu button -->
-            <div class="lg:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary transition-colors p-2">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
-            </div>
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-700 p-2"><i data-lucide="menu"
+                    class="w-6 h-6"></i></button>
         </div>
-
-        <!-- Mobile Menu -->
+        <!-- Mobile Menu Slider -->
         <div id="mobile-menu"
-            class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl">
-            <div class="px-6 py-6 flex flex-col gap-4">
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">About</a>
+            class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl mt-4 rounded-2xl">
+            <div class="p-6 flex flex-col gap-4">
+                <a href="about.html" class="text-gray-700 font-medium hover:text-primary transition-colors">About Us</a>
                 <div class="h-px w-full bg-gray-100"></div>
-                <div class="flex flex-col gap-2 pl-2 border-l-2 border-accent/20">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Unidemy Learners</span>
-                    <a href="explorers.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Juniors</a>
-                    <a href="iit-jee.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Seniors</a>
-                </div>
+                <a href="explorers.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy
+                    Juniors</a>
+                <a href="iit-jee.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy
+                    Seniors</a>
                 <div class="h-px w-full bg-gray-100"></div>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Study Abroad</a>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Skill Up</a>
+                <a href="global-launchpad.html"
+                    class="text-gray-700 font-medium hover:text-primary transition-colors">Global Launchpad</a>
+                <a href="study-abroad.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Study
+                    Abroad</a>
                 <a href="blog.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Blog</a>
                 <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Contact</a>
 
@@ -118,7 +110,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="w-full pt-28 pb-8 lg:pt-36 lg:pb-12 bg-white flex justify-center overflow-hidden">
+    <section id="hero" class="w-full pt-28 pb-16 lg:pt-36 lg:pb-24 bg-white flex justify-center overflow-hidden">
         <div class="w-full max-w-[1440px] px-2 sm:px-4 lg:px-6 relative z-10">
             <div id="hero-carousel"
                 class="relative w-full min-h-[500px] md:min-h-[550px] lg:min-h-[600px] border border-gray-100 shadow-[0_10px_40px_rgba(30,79,156,0.1)] overflow-hidden rounded-xl md:rounded-2xl flex items-center">
@@ -310,7 +302,7 @@
         </div>
     </section>
     <!-- Programs Section -->
-    <section id="programs" class="bg-background py-24 relative overflow-hidden">
+    <section id="programs" class="bg-background py-20 relative overflow-hidden">
         <div
             class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
         </div>
@@ -530,7 +522,7 @@
                 </a>
 
                 <!-- Global Launchpad -->
-                <a href="#"
+                <a href="global-launchpad.html"
                     class="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col h-full overflow-hidden">
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-amber-600/5 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -566,7 +558,7 @@
                 </a>
 
                 <!-- Study Abroad -->
-                <a href="#"
+                <a href="study-abroad.html"
                     class="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col h-full overflow-hidden">
                     <div
                         class="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -652,13 +644,65 @@
                 <!-- Set 1 (10 Schools) -->
                 <div
                     class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png"
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Harvard_University_shield.png/512px-Harvard_University_shield.png"
                         alt="Harvard" class="h-full w-auto object-contain">
                 </div>
                 <div
                     class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/512px-MIT_logo.svg.png"
-                        alt="MIT" class="h-full w-auto object-contain">
+                        alt="MIT" class="h-full w-auto object-contain opacity-80">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/University_of_Oxford_Logotype.svg/512px-University_of_Oxford_Logotype.svg.png"
+                        alt="Oxford" class="h-2/3 md:h-3/4 w-auto object-contain">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Seal_of_Stanford_University.svg/512px-Seal_of_Stanford_University.svg.png"
+                        alt="Stanford" class="h-full w-auto object-contain">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/University_of_Cambridge_logo.svg/512px-University_of_Cambridge_logo.svg.png"
+                        alt="Cambridge" class="h-full w-auto object-contain">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Yale_University_Shield_1.svg/512px-Yale_University_Shield_1.svg.png"
+                        alt="Yale" class="h-full w-auto object-contain">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Princeton_seal.svg/512px-Princeton_seal.svg.png"
+                        alt="Princeton" class="h-full w-auto object-contain">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Columbia_University_shield.svg/512px-Columbia_University_shield.svg.png"
+                        alt="Columbia" class="h-full w-auto object-contain">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Cornell_University_seal.svg/512px-Cornell_University_seal.svg.png"
+                        alt="Cornell" class="h-full w-auto object-contain">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Duke_University_seal.svg/512px-Duke_University_seal.svg.png"
+                        alt="Duke" class="h-full w-auto object-contain">
+                </div>
+
+                <!-- Duplicate Set for Seamless Loop -->
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Harvard_University_shield.png/512px-Harvard_University_shield.png"
+                        alt="Harvard" class="h-full w-auto object-contain">
+                </div>
+                <div
+                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/512px-MIT_logo.svg.png"
+                        alt="MIT" class="h-full w-auto object-contain opacity-80">
                 </div>
                 <div
                     class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
@@ -702,70 +746,18 @@
                 </div>
                 <div
                     class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="campus-1.jpg" alt="Campus Building 1" class="h-full w-auto object-cover rounded-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley_gold.svg/512px-Seal_of_University_of_California%2C_Berkeley_gold.svg.png"
+                        alt="UC Berkeley" class="h-full w-auto object-contain">
                 </div>
                 <div
                     class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="campus-2.jpg" alt="Library" class="h-full w-auto object-cover rounded-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/California_Institute_of_Technology_seal.svg/512px-California_Institute_of_Technology_seal.svg.png"
+                        alt="Caltech" class="h-full w-auto object-contain">
                 </div>
                 <div
                     class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="campus-3.jpg" alt="Student Union" class="h-full w-auto object-cover rounded-md">
-                </div>
-
-                <!-- Duplicate Set for Seamless Loop -->
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Harvard_University_shield.png/1200px-Harvard_University_shield.png"
-                        alt="Harvard" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="mit.png" alt="MIT" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="oxford.png" alt="Oxford" class="h-2/3 md:h-3/4 w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="stanford.png" alt="Stanford" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="images.png" alt="Cambridge" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="mu.png" alt="Yale" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="mel.png" alt="Princeton" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="prince.png" alt="Columbia" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="Columbia.png" alt="Cornell" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="ok.png" alt="Duke" class="h-full w-auto object-contain">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="campus-1.jpg" alt="Campus Building 1" class="h-full w-auto object-cover rounded-md">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="campus-2.jpg" alt="Library" class="h-full w-auto object-cover rounded-md">
-                </div>
-                <div
-                    class="h-16 md:h-20 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                    <img src="campus-3.jpg" alt="Student Union" class="h-full w-auto object-cover rounded-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Imperial_College_London_logo.svg/512px-Imperial_College_London_logo.svg.png"
+                        alt="Imperial College London" class="h-full w-auto object-contain">
                 </div>
             </div>
         </div>
@@ -774,7 +766,7 @@
         <!-- Partnership CTA -->
         <div class="max-w-4xl mx-auto px-6 mt-16 text-center">
             <div
-                class="bg-gray-50 border border-gr ay-100 rounded-3xl p-8 md:p-10 flex flex-col items-center justify-center space-y-6 shadow-sm">
+                class="bg-gray-50 border border-gray-100 rounded-3xl p-8 md:p-10 flex flex-col items-center justify-center space-y-6 shadow-sm">
                 <i data-lucide="handshake" class="w-12 h-12 text-secondary"></i>
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Are you a school or institution?</h3>
                 <p class="text-gray-600 font-medium text-lg">Partner with Unidemy Global and bring world-class
@@ -787,7 +779,7 @@
         </div>
     </section>
     <!-- Study Abroad Section -->
-    <section id="study-abroad" class="py-24 bg-white relative overflow-hidden">
+    <section id="study-abroad" class="py-20 bg-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 px-4">
                 <div class="max-w-2xl">
@@ -1217,7 +1209,8 @@
                         academic concepts and provide deep understanding.</p>
                     <div
                         class="flex items-center text-sm font-bold text-gray-900 group-hover:text-primary transition-colors cursor-pointer">
-                        Explore Now <span class="ml-2 transform group-hover:translate-x-1 transition-transform">â†’</span>
+                        Explore Now <span
+                            class="ml-2 transform group-hover:translate-x-1 transition-transform">-></span>
                     </div>
                 </div>
                 <!-- Resource 2 -->
@@ -1239,7 +1232,8 @@
                         master the curriculum and excel in board exams.</p>
                     <div
                         class="flex items-center text-sm font-bold text-gray-900 group-hover:text-primary transition-colors cursor-pointer">
-                        Explore Now <span class="ml-2 transform group-hover:translate-x-1 transition-transform">â†’</span>
+                        Explore Now <span
+                            class="ml-2 transform group-hover:translate-x-1 transition-transform">-></span>
                     </div>
                 </div>
                 <!-- Resource 3 -->
@@ -1261,7 +1255,8 @@
                         focused on high-yield topics for quick revision.</p>
                     <div
                         class="flex items-center text-sm font-bold text-gray-900 group-hover:text-primary transition-colors cursor-pointer">
-                        Explore Now <span class="ml-2 transform group-hover:translate-x-1 transition-transform">â†’</span>
+                        Explore Now <span
+                            class="ml-2 transform group-hover:translate-x-1 transition-transform">-></span>
                     </div>
                 </div>
                 <!-- Resource 4 -->
@@ -1283,7 +1278,7 @@
                         papers, video lectures, and masterclass recordings.</p>
                     <div
                         class="flex items-center text-sm font-bold text-gray-900 group-hover:text-primary transition-colors cursor-pointer">
-                        Access Now <span class="ml-2 transform group-hover:translate-x-1 transition-transform">â†’</span>
+                        Access Now <span class="ml-2 transform group-hover:translate-x-1 transition-transform">-></span>
                     </div>
                 </div>
             </div>
@@ -1392,7 +1387,7 @@
         </div>
     </section>
     <!-- Centers Section -->
-    <section id="centers" class="py-24 bg-background relative overflow-hidden">
+    <section id="centers" class="py-20 bg-background relative overflow-hidden">
         <div class="absolute inset-0 opacity-[0.02] pointer-events-none"
             style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
         </div>
@@ -1505,50 +1500,192 @@
         </div>
     </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="relative bg-[#0B1121] pt-24 pb-10 overflow-hidden">
-        <div
-            class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50">
-        </div>
-        <div
-            class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/20 blur-[120px] rounded-full pointer-events-none -translate-y-1/2">
+    <section id="counseling" class="py-20 lg:py-28 bg-[#0B1121] relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&amp;w=2071&amp;auto=format&amp;fit=crop"
+                class="w-full h-full object-cover" alt="Support">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/80 via-slate-900/90 to-slate-900"></div>
         </div>
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <!-- Newsletter -->
+        <!-- Animated Blobs -->
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2 pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div
-                class="bg-white/[0.03] border border-white/5 rounded-3xl p-8 md:p-12 mb-16 backdrop-blur-sm flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
-                <div
-                    class="absolute right-0 top-0 w-64 h-64 bg-secondary/10 blur-[80px] rounded-full pointer-events-none">
+                class="bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 lg:p-16 shadow-2xl lg:flex items-center gap-16">
+                <!-- Content Side -->
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <div
+                        class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/20 text-blue-200 border border-white/10 mb-8 backdrop-blur-md">
+                        <span class="relative flex h-3 w-3">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+                        </span>
+                        <span class="text-sm font-bold text-blue-300 uppercase tracking-widest">Free Consultation</span>
+                    </div>
+
+                    <h2 class="text-4xl lg:text-6xl font-black text-white mb-8 leading-[1.1]">
+                        Expert Counseling <br>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-orange-400 italic">for
+                            Your Future</span>
+                    </h2>
+
+                    <p class="text-xl text-slate-300 mb-10 leading-relaxed font-medium">
+                        Still confused about which path to take? Talk to our expert counselors today and get a
+                        personalized learning roadmap tailored to your dreams.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div
+                            class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-white/10 transition-colors">
+                            <div class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center shrink-0">
+                                <i data-lucide="user-check" class="w-5 h-5 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">1-on-1 Sessions</h4>
+                                <p class="text-slate-400 text-sm">Personalized attention</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-white/10 transition-colors">
+                            <div class="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center shrink-0">
+                                <i data-lucide="map" class="w-5 h-5 text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Career Roadmap</h4>
+                                <p class="text-slate-400 text-sm">Clear path to success</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-white/10 transition-colors">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center shrink-0">
+                                <i data-lucide="calendar-check" class="w-5 h-5 text-emerald-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Free Demo</h4>
+                                <p class="text-slate-400 text-sm">Experience our teaching</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-white/10 transition-colors">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center shrink-0">
+                                <i data-lucide="award" class="w-5 h-5 text-amber-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Top Faculty</h4>
+                                <p class="text-slate-400 text-sm">Learn from the best</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="max-w-xl z-10 text-center md:text-left">
-                    <h3 class="text-3xl font-bold text-white mb-4">Ready to start your journey?</h3>
-                    <p class="text-slate-400 text-lg">Join 10,000+ students globally. Get the latest insights,
-                        university updates, and scholarship alerts.</p>
-                </div>
-                <div class="w-full md:w-auto z-10 flex-shrink-0">
-                    <form class="relative w-full sm:w-[400px]">
-                        <input type="email" placeholder="Enter your email"
-                            class="w-full bg-[#1A2235] border border-white/10 text-white pl-6 pr-32 py-4 rounded-2xl focus:outline-none focus:border-secondary transition-all">
-                        <button type="submit"
-                            class="absolute right-2 top-2 bottom-2 bg-secondary hover:bg-orange-600 text-white px-6 rounded-xl font-medium transition-all shadow-lg shadow-secondary/30">Subscribe</button>
-                    </form>
+
+                <!-- Form Side -->
+                <div class="lg:w-1/2 max-w-xl mx-auto w-full">
+                    <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-2xl relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-1/2 translate-x-1/2">
+                        </div>
+
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Book Your Session</h3>
+                            <p class="text-slate-500 mb-8 font-medium">Takes less than 30 seconds</p>
+
+                            <form class="space-y-5">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">Full
+                                        Name</label>
+                                    <div class="relative">
+                                        <i data-lucide="user"
+                                            class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                        <input type="text" placeholder="John Doe"
+                                            class="w-full bg-slate-50 border border-slate-100 rounded-xl px-12 py-4 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all outline-none text-slate-900 font-medium">
+                                    </div>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">Phone
+                                        Number</label>
+                                    <div class="relative">
+                                        <i data-lucide="phone"
+                                            class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                        <input type="tel" placeholder="+91 00000 00000"
+                                            class="w-full bg-slate-50 border border-slate-100 rounded-xl px-12 py-4 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all outline-none text-slate-900 font-medium">
+                                    </div>
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">Interested
+                                        Category</label>
+                                    <div class="relative">
+                                        <i data-lucide="graduation-cap"
+                                            class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"></i>
+                                        <select
+                                            class="w-full bg-slate-50 border border-slate-100 rounded-xl px-12 py-4 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all outline-none text-slate-900 font-medium appearance-none">
+                                            <option>NEET Pre-Exams</option>
+                                            <option>JEE Preparation</option>
+                                            <option>UPSC Civil Services</option>
+                                            <option>SSC / Government</option>
+                                            <option>Study Abroad</option>
+                                        </select>
+                                        <i data-lucide="chevron-down"
+                                            class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"></i>
+                                    </div>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full bg-secondary hover:bg-orange-600 text-white font-bold py-5 rounded-xl text-xl transition-all shadow-lg shadow-secondary/30 active:scale-[0.98] flex items-center justify-center gap-3 group mt-4">
+                                    Schedule Free Call
+                                    <i data-lucide="arrow-right"
+                                        class="w-6 h-6 group-hover:translate-x-1 transition-transform"></i>
+                                </button>
+
+                                <div class="flex items-center justify-center gap-6 pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+                                        <span
+                                            class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Secure
+                                            Data</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="clock" class="w-4 h-4 text-emerald-500"></i>
+                                        <span
+                                            class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Quick
+                                            Respond</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
-                <!-- Brand Column -->
-                <div class="lg:col-span-4">
-                    <a href="#" class="flex items-center gap-2 mb-6 group inline-flex">
-                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center p-2 shadow-lg"><i
-                                data-lucide="graduation-cap" class="text-white w-full h-full"></i></div>
-                        <span class="text-2xl font-bold text-white tracking-tight">Unidemy<span
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-[#0B1121] pt-20 pb-10 mt-auto border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 group">
+                        <div
+                            class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center p-2 group-hover:rotate-12 transition-transform">
+                            <i data-lucide="graduation-cap" class="text-white"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white">Unidemy<span
                                 class="text-secondary">Global</span></span>
                     </a>
-                    <p class="text-slate-400 mb-8 max-w-sm leading-relaxed">Empowering ambition worldwide. Your premier
-                        destination for world-class test preparation, career counseling, and global university
-                        admissions.</p>
+                    <p class="text-slate-400 leading-relaxed mb-8 max-w-sm">Empowering ambition worldwide. Your premier
+                        destination for world-class test preparation and global university admissions.</p>
                     <div class="flex gap-4">
                         <a href="#"
                             class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i
@@ -1562,26 +1699,72 @@
                     </div>
                 </div>
 
-                <div class="lg:col-span-2 lg:col-start-6">
-                    <h3 class="text-lg font-semibold text-white mb-6">Programs</h3>
-                    <ul class="space-y-3 text-slate-400">
-                        <li><a href="#" class="hover:text-secondary transition-colors">NEET Preparation</a></li>
-                        <li><a href="#" class="hover:text-secondary transition-colors">IIT-JEE Advanced</a></li>
-                        <li><a href="#" class="hover:text-secondary transition-colors">Skill Up Tech</a></li>
+                <!-- Programs -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Programs</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="packages.html" class="hover:text-secondary transition-colors">All Packages</a></li>
+                        <li><a href="iit-jee.html" class="hover:text-secondary transition-colors">IIT-JEE Advanced</a>
+                        </li>
+                        <li><a href="medical-abroad.html" class="hover:text-secondary transition-colors">Medical
+                                Abroad</a></li>
+                        <li><a href="higher-education.html" class="hover:text-secondary transition-colors">Higher
+                                Education</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="global-launchpad.html" class="hover:text-secondary transition-colors">Global
+                                Launchpad</a></li>
+                        <li><a href="study-abroad.html" class="hover:text-secondary transition-colors">Study Abroad</a>
+                        </li>
+                        <li><a href="blog.html" class="hover:text-secondary transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex gap-3 items-center"><i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                            <span class="text-sm">admissions@unidemyglobal.com</span>
+                        </li>
+                        <li class="flex gap-3 items-center"><i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                            <span class="text-sm">+91 98765 43210</span>
+                        </li>
+                        <li class="flex gap-3 items-center"><i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                            <span class="text-sm">Bangalore (HQ), Karnataka</span>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <div
-                class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
-                <p>Â© 2026 Unidemy Global. All rights reserved.</p>
+                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+                <p>© 2026 Unidemy Global. All rights reserved.</p>
                 <div class="flex gap-6">
-                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookies Policy</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Global Widgets -->
+    <a href="https://wa.me/916360456026" target="_blank" class="whatsapp-widget group animate-bounce-slow"
+        title="Chat on WhatsApp">
+        <div class="bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center gap-3">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+            <span
+                class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 font-bold">Chat
+                with us</span>
+        </div>
+    </a>
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -1590,62 +1773,18 @@
     <script>
         lucide.createIcons();
     </script>
-<div id="scrollToTopContainer" class="fixed bottom-[110px] right-6 z-50 flex flex-col items-center opacity-0 invisible transition-all duration-500 cursor-pointer group translate-y-4" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-    <div class="bg-primary text-white w-[52px] h-[52px] rounded-full flex items-center justify-center shadow-xl group-hover:bg-blue-800 group-hover:-translate-y-1 transition-all duration-300 mb-2">
-        <i data-lucide="chevron-up" class="w-8 h-8 stroke-[4]"></i>
+    <div id="scrollToTopContainer"
+        class="fixed bottom-[110px] right-6 z-50 flex flex-col items-center opacity-0 invisible transition-all duration-500 cursor-pointer group translate-y-4"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <div
+            class="bg-primary text-white w-[52px] h-[52px] rounded-full flex items-center justify-center shadow-xl group-hover:bg-blue-800 group-hover:-translate-y-1 transition-all duration-300 mb-2">
+            <i data-lucide="chevron-up" class="w-8 h-8 stroke-[4]"></i>
+        </div>
+        <span
+            class="text-[10px] font-black text-primary uppercase tracking-wider group-hover:text-blue-800 transition-colors leading-none text-center">BACK
+            TO TOP</span>
     </div>
-    <span class="text-[10px] font-black text-primary uppercase tracking-wider group-hover:text-blue-800 transition-colors leading-none text-center">BACK TO TOP</span>
-</div>
-<script>
-    (function() {
-        const container = document.getElementById('scrollToTopContainer');
-        let scrollTimeout;
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                // Show button when scrolling down
-                container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
-                container.classList.add('opacity-100', 'visible', 'translate-y-0');
-                
-                // Set hide timer: disappear after 2 seconds of no scrolling
-                clearTimeout(scrollTimeout);
-                scrollTimeout = setTimeout(() => {
-                    if (!container.matches(':hover')) {
-                        container.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                        container.classList.add('opacity-0', 'invisible', 'translate-y-4');
-                    }
-                }, 2000);
-            } else {
-                // Immediate hide when near the top
-                container.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                container.classList.add('opacity-0', 'invisible', 'translate-y-4');
-            }
-        }, { passive: true });
-
-        // Keep visible on hover & show on hover even if faded
-        container.addEventListener('mouseenter', () => {
-            clearTimeout(scrollTimeout);
-            container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
-            container.classList.add('opacity-100', 'visible', 'translate-y-0');
-        });
-
-        container.addEventListener('mouseleave', () => {
-            if (window.scrollY > 400) {
-                scrollTimeout = setTimeout(() => {
-                    container.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                    container.classList.add('opacity-0', 'invisible', 'translate-y-4');
-                }, 2000);
-            }
-        });
-    })();
-</script>
 
 </body>
 
 </html>
-
-
-
-
-
-

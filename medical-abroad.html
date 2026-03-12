@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Abroad | Study MBBS Overseas | Unidemy Global</title>
+    <meta name="description"
+        content="Kickstart your medical career with top-tier MBBS programs in Georgia, Kazakhstan, and Kyrgyzstan. Global recognition and affordable education.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E4F9C',
+                        secondary: '#F97316',
+                        background: '#F8FBFF',
+                        accent: '#E6EFFF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-background font-sans text-gray-900 scroll-smooth flex flex-col min-h-screen">
+
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm py-5 px-6 lg:px-8" id="main-nav">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex-shrink-0">
+                <img src="Logo (2).png" alt="Unidemy Global"
+                    class="h-10 w-auto mix-blend-multiply transition-transform hover:scale-105">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
+                <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        Unidemy Learners
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="explorers.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy
+                            Juniors</a>
+                        <a href="iit-jee.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy
+                            Seniors</a>
+                    </div>
+                </div>
+                <a href="global-launchpad.html" class="hover:text-primary transition-colors">Global Launchpad</a>
+                <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
+                <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
+            </div>
+
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="#" class="font-medium text-gray-700 hover:text-primary transition-colors pr-2">Contact</a>
+                <a href="https://unidemyglobal.com/login.php"
+                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">
+                    Log In
+                </a>
+                <a href="https://unidemyglobal.com/register.php"
+                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">
+                    Sign Up
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="lg:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary transition-colors p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl mt-4 rounded-2xl">
+            <div class="px-6 py-6 flex flex-col gap-4">
+                <a href="about.html" class="text-gray-700 font-medium hover:text-primary transition-colors">About Us</a>
+                <div class="h-px w-full bg-gray-100"></div>
+                <a href="explorers.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Juniors</a>
+                <a href="iit-jee.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Seniors</a>
+                <div class="h-px w-full bg-gray-100"></div>
+                <a href="global-launchpad.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Global Launchpad</a>
+                <a href="study-abroad.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Study Abroad</a>
+                <a href="blog.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Blog</a>
+                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Contact</a>
+
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://unidemyglobal.com/login.php"
+                        class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
+                        Log In
+                    </a>
+                    <a href="https://unidemyglobal.com/register.php"
+                        class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="w-full pt-28 lg:pt-36 pb-20 bg-white flex-grow">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <!-- Breadcrumbs -->
+            <nav class="flex text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center gap-2">
+                    <li class="inline-flex items-center group">
+                        <a href="index.html" class="inline-flex items-center hover:text-primary transition-colors">
+                            <i data-lucide="home" class="w-4 h-4 mr-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                            <a href="study-abroad.html" class="ml-2 hover:text-primary transition-colors">Study
+                                Abroad</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                            <span class="ml-2 text-primary font-medium">Medical Abroad</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- Hero Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Your Medical Career
+                        Starts Here: <span class="text-rose-600 border-b-4 border-secondary/30">MBBS Abroad</span></h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">Join thousands of students who have achieved
+                        their medical dreams through global university programs. Affordable, recognized, and world-class
+                        education.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#counseling"
+                            class="bg-rose-600 text-white px-8 py-3 rounded-full font-bold hover:bg-rose-700 transition-all shadow-lg shadow-rose-200">Apply
+                            Now</a>
+                        <a href="https://wa.me/916360456026"
+                            class="flex items-center gap-2 border-2 border-rose-600 text-rose-600 px-8 py-3 rounded-full font-bold hover:bg-rose-600 hover:text-white transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            Talk to Expert
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-rose-100 rounded-3xl blur-2xl transform rotate-3"></div>
+                    <div class="relative bg-white border border-rose-50 rounded-3xl p-8 shadow-2xl">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-rose-50 rounded-xl flex items-center justify-center">
+                                <i data-lucide="stethoscope" class="text-rose-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">NMC Recognised</h3>
+                                <p class="text-sm text-gray-500">Global standard medical education</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-gray-700">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                Low tuition fees & cost of living
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                Top-ranked Medical Universities
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                Direct Admission Process
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all">
+                    <i data-lucide="map-pin" class="w-10 h-10 text-rose-600 mb-6"></i>
+                    <h3 class="font-bold text-xl mb-4">Top Destinations</h3>
+                    <p class="text-gray-600 text-sm">Georgia, Kazakhstan, Kyrgyzstan, Egypt, and Europe. Choose from a
+                        wide range of global options.</p>
+                </div>
+                <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all">
+                    <i data-lucide="shield-check" class="w-10 h-10 text-rose-600 mb-6"></i>
+                    <h3 class="font-bold text-xl mb-4">Complete Guidance</h3>
+                    <p class="text-gray-600 text-sm">From university selection to visa processing and hostel assistance,
+                        we handle everything.</p>
+                </div>
+                <div class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all">
+                    <i data-lucide="book-open" class="text-rose-600 w-10 h-10 mb-6"></i>
+                    <h3 class="font-bold text-xl mb-4">USMLE/PLAB Coaching</h3>
+                    <p class="text-gray-600 text-sm">Integrated coaching for screening tests to ensure a smooth
+                        transition
+                        to clinical practice.</p>
+                </div>
+            </div>
+
+            <!-- Counseling Section -->
+            <section id="counseling" class="relative bg-primary rounded-[40px] p-8 md:p-16 overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+                    <i data-lucide="globe" class="w-96 h-96 -mr-20 -mt-20"></i>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+                    <div>
+                        <span
+                            class="inline-block bg-white/10 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">Start
+                            Your Journey</span>
+                        <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Book Your <br><span
+                                class="text-secondary tracking-tight">Free Medical Counseling</span></h2>
+                        <p class="text-lg text-blue-100 mb-10 leading-relaxed max-w-lg">Our expert counselors will help
+                            you navigate the international admission process for medical programs.</p>
+                    </div>
+
+                    <div class="bg-white rounded-[32px] p-8 md:p-10 shadow-xl">
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <input type="text" placeholder="Full Name"
+                                    class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary">
+                                <input type="email" placeholder="Email Address"
+                                    class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary">
+                            </div>
+                            <input type="tel" placeholder="Phone Number"
+                                class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary">
+                            <select
+                                class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm text-gray-500 focus:outline-none focus:border-primary">
+                                <option value="">Preferred Medical Destination</option>
+                                <option value="georgia">Georgia</option>
+                                <option value="kazakhstan">Kazakhstan</option>
+                                <option value="kyrgyzstan">Kyrgyzstan</option>
+                                <option value="egypt">Egypt</option>
+                                <option value="europe">Europe</option>
+                            </select>
+                            <button
+                                class="w-full bg-secondary hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-secondary/30 active:scale-95 text-base mt-4 uppercase">
+                                Get Guidance Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B1121] pt-20 pb-10 mt-auto border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 group">
+                        <div
+                            class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center p-2 group-hover:rotate-12 transition-transform">
+                            <i data-lucide="graduation-cap" class="text-white"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-white">Unidemy<span
+                                class="text-secondary">Global</span></span>
+                    </a>
+                    <p class="text-slate-400 leading-relaxed mb-8 max-w-sm">Empowering ambition worldwide. Your premier
+                        destination for world-class test preparation and global university admissions.</p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i
+                                data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i
+                                data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all"><i
+                                data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Programs</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="packages.html" class="hover:text-secondary transition-colors">All Packages</a></li>
+                        <li><a href="iit-jee.html" class="hover:text-secondary transition-colors">IIT-JEE Advanced</a>
+                        </li>
+                        <li><a href="medical-abroad.html" class="hover:text-secondary transition-colors">Medical
+                                Abroad</a></li>
+                        <li><a href="higher-education.html" class="hover:text-secondary transition-colors">Higher
+                                Education</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="global-launchpad.html" class="hover:text-secondary transition-colors">Global
+                                Launchpad</a></li>
+                        <li><a href="study-abroad.html" class="hover:text-secondary transition-colors">Study Abroad</a>
+                        </li>
+                        <li><a href="blog.html" class="hover:text-secondary transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-white font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex gap-3 items-center"><i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                            <span class="text-sm">admissions@unidemyglobal.com</span>
+                        </li>
+                        <li class="flex gap-3 items-center"><i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                            <span class="text-sm">+91 98765 43210</span>
+                        </li>
+                        <li class="flex gap-3 items-center"><i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                            <span class="text-sm">Bangalore (HQ), Karnataka</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+                <p>© 2026 Unidemy Global. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Widgets -->
+    <a href="https://wa.me/916360456026" target="_blank" class="whatsapp-widget group animate-bounce-slow"
+        title="Chat on WhatsApp">
+        <div class="bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center gap-3">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+            <span
+                class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 font-bold">Chat
+                with us</span>
+        </div>
+    </a>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle logic
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+    <div id="scrollToTopContainer"
+        class="fixed bottom-[110px] right-6 z-50 flex flex-col items-center opacity-0 invisible transition-all duration-500 cursor-pointer group translate-y-4"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <div
+            class="bg-primary text-white w-[52px] h-[52px] rounded-full flex items-center justify-center shadow-xl group-hover:bg-blue-800 group-hover:-translate-y-1 transition-all duration-300 mb-2">
+            <i data-lucide="chevron-up" class="w-8 h-8 stroke-[4]"></i>
+        </div>
+        <span
+            class="text-[10px] font-black text-primary uppercase tracking-wider group-hover:text-blue-800 transition-colors leading-none text-center">BACK
+            TO TOP</span>
+    </div>
+    <script>
+        (function () {
+            const container = document.getElementById('scrollToTopContainer');
+            let scrollTimeout;
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    // Show button when scrolling down
+                    container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                    container.classList.add('opacity-100', 'visible', 'translate-y-0');
+
+                    // Set hide timer: disappear after 2 seconds of no scrolling
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        if (!container.matches(':hover')) {
+                            container.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                            container.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                        }
+                    }, 2000);
+                } else {
+                    // Immediate hide when near the top
+                    container.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                    container.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                }
+            }, { passive: true });
+
+            // Keep visible on hover & show on hover even if faded
+            container.addEventListener('mouseenter', () => {
+                clearTimeout(scrollTimeout);
+                container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                container.classList.add('opacity-100', 'visible', 'translate-y-0');
+            });
+
+            container.addEventListener('mouseleave', () => {
+                if (window.scrollY > 400) {
+                    scrollTimeout = setTimeout(() => {
+                        container.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                        container.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                    }, 2000);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
