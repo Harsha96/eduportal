@@ -99,7 +99,27 @@
                 </div>
                 <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
                 <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
-                <a href="#" class="hover:text-primary transition-colors">Technology Services</a>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 text-primary transition-colors py-2 font-bold">
+                        Technology Services
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="technology-services.html?service=cloud"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Cloud
+                            Development</a>
+                        <a href="technology-services.html?service=ai-ml"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">AI
+                            & Machine Learning</a>
+                        <a href="technology-services.html?service=embedded"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Embedded
+                            Software</a>
+                        <a href="technology-services.html?service=digital"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Digital
+                            Engineering</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Desktop Buttons -->
@@ -510,7 +530,8 @@
                         </li>
                         <li><a href="internships.html" class="hover:text-secondary transition-colors">Internships</a>
                         </li>
-                        <li><a href="#" class="hover:text-secondary transition-colors">Technology Services</a></li>
+                        <li><a href="technology-services.html" class="hover:text-secondary transition-colors">Technology
+                                Services</a></li>
                     </ul>
                 </div>
 
