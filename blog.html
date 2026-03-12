@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -48,8 +48,16 @@
             <!-- Desktop Menu -->
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
                 <a href="index.html#about" class="hover:text-primary transition-colors">About</a>
-                <a href="index.html#programs" class="hover:text-primary transition-colors">Unidemy Juniors</a>
-                <a href="index.html#programs" class="hover:text-primary transition-colors">Unidemy Seniors</a>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        Unidemy Learners
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="explorers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy Juniors</a>
+                        <a href="iit-jee.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy Seniors</a>
+                    </div>
+                </div>
                 <a href="index.html#study-abroad" class="hover:text-primary transition-colors">Study Abroad</a>
                 <a href="index.html#social" class="hover:text-primary transition-colors">Skill Up</a>
                 <a href="blog.html" class="text-primary font-bold">Blog</a>
@@ -83,10 +91,11 @@
                 <a href="index.html#about"
                     class="text-gray-700 font-medium hover:text-primary transition-colors">About</a>
                 <div class="h-px w-full bg-gray-100"></div>
-                <a href="index.html#programs"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Juniors</a>
-                <a href="index.html#programs"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Seniors</a>
+                <div class="flex flex-col gap-2 pl-2 border-l-2 border-accent/20">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Unidemy Learners</span>
+                    <a href="explorers.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Juniors</a>
+                    <a href="iit-jee.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Seniors</a>
+                </div>
                 <div class="h-px w-full bg-gray-100"></div>
                 <a href="index.html#study-abroad"
                     class="text-gray-700 font-medium hover:text-primary transition-colors">Study Abroad</a>
