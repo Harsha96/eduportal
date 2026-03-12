@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -66,25 +66,44 @@
 
             <!-- Desktop Menu -->
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
-                <a href="#" class="hover:text-primary transition-colors">About</a>
                 <div class="relative group">
                     <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
-                        Unidemy Learners
+                        School Boards
                         <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
                     </button>
-                    <div class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <a href="explorers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy Juniors</a>
-                        <a href="iit-jee.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Unidemy Seniors</a>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="cbse.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">CBSE
+                            programs</a>
+                        <a href="icse.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">ICSE
+                            Programmes</a>
+                        <a href="karnataka-board.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">karnataka
+                            board</a>
                     </div>
                 </div>
-                <a href="#" class="hover:text-primary transition-colors">Study Abroad</a>
-                <a href="#" class="hover:text-primary transition-colors">Skill Up</a>
-                <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        Competitive exams
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="neet.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">NEET</a>
+                        <a href="iit-jee.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">IIT-JEE</a>
+                    </div>
+                </div>
+                <a href="global-launchpad.html" class="hover:text-primary transition-colors">Study Abroad</a>
+                <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
+                <a href="#" class="hover:text-primary transition-colors">Technology Services</a>
             </div>
 
             <!-- Desktop Buttons -->
             <div class="hidden lg:flex items-center gap-4">
-                <a href="#" class="font-medium text-gray-700 hover:text-primary transition-colors pr-2">Contact</a>
                 <a href="https://unidemyglobal.com/login.php"
                     class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">
                     Log In
@@ -106,32 +125,56 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu"
             class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl">
-            <div class="px-6 py-6 flex flex-col gap-4">
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">About</a>
-                <div class="h-px w-full bg-gray-100"></div>
-                <div class="flex flex-col gap-2 pl-2 border-l-2 border-accent/20">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Unidemy Learners</span>
-                    <a href="explorers.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Juniors</a>
-                    <a href="iit-jee.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Unidemy Seniors</a>
+            <div class="p-6 flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">School Boards</div>
+                    <a href="cbse.html?tab=all"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
+                    <a href="icse.html?tab=all"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
+                    <a href="karnataka-board.html?tab=all"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
                 </div>
-                <div class="h-px w-full bg-gray-100"></div>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Study Abroad</a>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Skill Up</a>
-                <a href="blog.html" class="text-gray-700 font-medium hover:text-primary transition-colors">Blog</a>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Contact</a>
+                <div class="h-px w-full bg-gray-100 my-2"></div>
+                <div class="flex flex-col gap-2">
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">Competitive exams</div>
+                    <a href="neet.html?tab=all"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">NEET</a>
+                    <a href="iit-jee.html"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">IIT-JEE</a>
+                </div>
+                <div class="h-px w-full bg-gray-100 my-2"></div>
+                <a href="global-launchpad.html"
+                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Study Abroad</a>
+                <a href="internships.html"
+                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
+                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology
+                    Services</a>
+                <div class="px-6 py-6 flex flex-col gap-4">
+                    <a href="explorers.html"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors">School Boards</a>
+                    <a href="iit-jee.html"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors">Competitive exams</a>
+                    <div class="h-px w-full bg-gray-100"></div>
+                    <a href="global-launchpad.html"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors">Study Abroad</a>
+                    <a href="internships.html"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors">Internships</a>
+                    <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors">Technology
+                        Services</a>
 
-                <div class="flex flex-col gap-2 mt-4">
-                    <a href="https://unidemyglobal.com/login.php"
-                        class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
-                        Log In
-                    </a>
-                    <a href="https://unidemyglobal.com/register.php"
-                        class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
-                        Sign Up
-                    </a>
+                    <div class="flex flex-col gap-2 mt-4">
+                        <a href="https://unidemyglobal.com/login.php"
+                            class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
+                            Log In
+                        </a>
+                        <a href="https://unidemyglobal.com/register.php"
+                            class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
+                            Sign Up
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
     </nav>
 
     <!-- Main Content -->
@@ -461,6 +504,47 @@
                         destination for world-class test preparation, career counseling, and global university
                         admissions.</p>
                 </div>
+
+                <!-- Programs -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-white font-bold mb-6">Programs</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="cbse.html?tab=all" class="hover:text-secondary transition-colors">School Boards</a>
+                        </li>
+                        <li><a href="iit-jee.html" class="hover:text-secondary transition-colors">Competitive exams</a>
+                        </li>
+                        <li><a href="internships.html" class="hover:text-secondary transition-colors">Internships</a>
+                        </li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Technology Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="lg:col-span-3">
+                    <h3 class="text-white font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="global-launchpad.html" class="hover:text-secondary transition-colors">Study
+                                Abroad</a></li>
+                        <li><a href="higher-education.html" class="hover:text-secondary transition-colors">Higher
+                                Education</a></li>
+                        <li><a href="medical-abroad.html" class="hover:text-secondary transition-colors">Medical
+                                Abroad</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="lg:col-span-3">
+                    <h3 class="text-white font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-primary"></i>
+                            admissions@unidemyglobal.com</li>
+                        <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-primary"></i> +91
+                            95133 50005</li>
+                        <li class="flex items-center gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-primary"></i>
+                            Bangalore, India</li>
+                    </ul>
+                </div>
             </div>
             <div
                 class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
@@ -532,63 +616,61 @@
             }
         });
     </script>
-<div id="scrollToTopContainer" class="fixed bottom-[110px] right-6 z-50 flex flex-col items-center opacity-0 invisible transition-all duration-500 cursor-pointer group translate-y-4" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-    <div class="bg-primary text-white w-[52px] h-[52px] rounded-full flex items-center justify-center shadow-xl group-hover:bg-blue-800 group-hover:-translate-y-1 transition-all duration-300 mb-2">
-        <i data-lucide="chevron-up" class="w-8 h-8 stroke-[4]"></i>
+    <div id="scrollToTopContainer"
+        class="fixed bottom-[110px] right-6 z-50 flex flex-col items-center opacity-0 invisible transition-all duration-500 cursor-pointer group translate-y-4"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <div
+            class="bg-primary text-white w-[52px] h-[52px] rounded-full flex items-center justify-center shadow-xl group-hover:bg-blue-800 group-hover:-translate-y-1 transition-all duration-300 mb-2">
+            <i data-lucide="chevron-up" class="w-8 h-8 stroke-[4]"></i>
+        </div>
+        <span
+            class="text-[10px] font-black text-primary uppercase tracking-wider group-hover:text-blue-800 transition-colors leading-none text-center">BACK
+            TO TOP</span>
     </div>
-    <span class="text-[10px] font-black text-primary uppercase tracking-wider group-hover:text-blue-800 transition-colors leading-none text-center">BACK TO TOP</span>
-</div>
-<script>
-    (function() {
-        const container = document.getElementById('scrollToTopContainer');
-        let scrollTimeout;
+    <script>
+        (function () {
+            const container = document.getElementById('scrollToTopContainer');
+            let scrollTimeout;
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                // Show button when scrolling down
-                container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
-                container.classList.add('opacity-100', 'visible', 'translate-y-0');
-                
-                // Set hide timer: disappear after 2 seconds of no scrolling
-                clearTimeout(scrollTimeout);
-                scrollTimeout = setTimeout(() => {
-                    if (!container.matches(':hover')) {
-                        container.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                        container.classList.add('opacity-0', 'invisible', 'translate-y-4');
-                    }
-                }, 2000);
-            } else {
-                // Immediate hide when near the top
-                container.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                container.classList.add('opacity-0', 'invisible', 'translate-y-4');
-            }
-        }, { passive: true });
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    // Show button when scrolling down
+                    container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                    container.classList.add('opacity-100', 'visible', 'translate-y-0');
 
-        // Keep visible on hover & show on hover even if faded
-        container.addEventListener('mouseenter', () => {
-            clearTimeout(scrollTimeout);
-            container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
-            container.classList.add('opacity-100', 'visible', 'translate-y-0');
-        });
-
-        container.addEventListener('mouseleave', () => {
-            if (window.scrollY > 400) {
-                scrollTimeout = setTimeout(() => {
+                    // Set hide timer: disappear after 2 seconds of no scrolling
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        if (!container.matches(':hover')) {
+                            container.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                            container.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                        }
+                    }, 2000);
+                } else {
+                    // Immediate hide when near the top
                     container.classList.remove('opacity-100', 'visible', 'translate-y-0');
                     container.classList.add('opacity-0', 'invisible', 'translate-y-4');
-                }, 2000);
-            }
-        });
-    })();
-</script>
+                }
+            }, { passive: true });
+
+            // Keep visible on hover & show on hover even if faded
+            container.addEventListener('mouseenter', () => {
+                clearTimeout(scrollTimeout);
+                container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                container.classList.add('opacity-100', 'visible', 'translate-y-0');
+            });
+
+            container.addEventListener('mouseleave', () => {
+                if (window.scrollY > 400) {
+                    scrollTimeout = setTimeout(() => {
+                        container.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                        container.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                    }, 2000);
+                }
+            });
+        })();
+    </script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
