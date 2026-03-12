@@ -100,7 +100,7 @@
                 <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
                 <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
                 <div class="relative group">
-                    <button class="flex items-center gap-1 text-primary transition-colors py-2 font-bold">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
                         Technology Services
                         <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
                     </button>
@@ -489,19 +489,17 @@
             </div>
         </div>
     </main>
-
-    <!-- Support Widget -->
-    <a href="tel:9513350005"
-        class="fixed bottom-6 right-6 bg-[#6366F1] text-white rounded-full px-5 py-3 flex items-center gap-3 shadow-[0_8px_30px_rgb(99,102,241,0.4)] hover:bg-[#4F46E5] transition-all hover:-translate-y-1 hover:shadow-[0_12px_40px_rgb(99,102,241,0.5)] z-50">
-        <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center shrink-0">
-            <i data-lucide="phone-call" class="w-4 h-4 text-white"></i>
-        </div>
-        <div class="flex flex-col text-left">
-            <span class="text-[11px] font-medium opacity-90 leading-tight">Talk to an expert!</span>
-            <span class="text-[15px] font-bold tracking-wider leading-tight pt-0.5">9513350005</span>
+    
+    <!-- Global Widgets -->
+    <a href="https://wa.me/916360456026" target="_blank" class="whatsapp-widget group animate-bounce-slow"
+        title="Chat on WhatsApp">
+        <div class="bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center gap-3">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+            <span
+                class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 font-bold">Chat
+                with us</span>
         </div>
     </a>
-
 
     <!-- Footer -->
     <footer class="relative bg-[#0B1121] pt-24 pb-10 overflow-hidden mt-auto">
@@ -571,6 +569,7 @@
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
     <script>
         lucide.createIcons();
 
