@@ -525,6 +525,8 @@
         document.addEventListener('DOMContentLoaded', function () {
             const tabs = document.querySelectorAll('.tab-btn');
             const cards = document.querySelectorAll('.course-card');
+            const urlParams = new URLSearchParams(window.location.search);
+            const tab = urlParams.get('tab');
 
             function activateTab(tabId) {
                 tabs.forEach(t => {
@@ -546,8 +548,20 @@
             }
 
             tabs.forEach(t => {
-                t.addEventListener('click', () => activateTab(t.dataset.target));
+                t.addEventListener('click', () => {
+                    let target = t.dataset.target;
+                    activateTab(target);
+                    const url = new URL(window.location);
+                    url.searchParams.set('tab', target);
+                    window.history.pushState({}, '', url);
+                });
             });
+
+            if (tab) {
+                activateTab(tab);
+            } else {
+                activateTab('all');
+            }
         });
     </script>
 </body>
