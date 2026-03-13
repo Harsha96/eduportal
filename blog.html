@@ -108,311 +108,336 @@
         </div>
     </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-36 overflow-hidden bg-[#F8FBFF]">
-        <!-- Background Elements -->
-        <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 pointer-events-none"></div>
-        <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[100px] translate-y-1/2 pointer-events-none"></div>
-        
+    <!-- Blog Hero Section (Search & Post Box) -->
+    <section class="relative pt-32 pb-12 lg:pt-40 lg:pb-16 overflow-hidden bg-[#F8FBFF] border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-4xl mx-auto">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-secondary border border-orange-200 mb-8 animate-fade-in">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
-                    </span>
-                    <span class="text-xs font-black uppercase tracking-widest">Insights & Resources</span>
+            <div class="flex flex-col lg:flex-row items-end justify-between gap-8 mb-12">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-4">
+                        Unidemy <span class="text-primary italic">Community</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 font-medium leading-relaxed">
+                        Where students, teachers, and experts connect to build the future of education.
+                    </p>
                 </div>
-                
-                <h1 class="text-5xl md:text-7xl font-black text-slate-900 tracking-tight leading-[1.1] mb-8">
-                    Knowledge Hub for <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-600 to-primary italic">Global Success</span>
-                </h1>
-                
-                <p class="text-xl text-slate-600 mb-12 leading-relaxed font-medium">
-                    Stay ahead with expert strategies, preparation tips, and global education news. Our experts break down everything you need to know to achieve your dreams.
-                </p>
+                <div class="flex items-center gap-4">
+                    <button class="bg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+                        <i data-lucide="plus-circle" class="w-5 h-5"></i>
+                        Ask a Question
+                    </button>
+                </div>
+            </div>
 
-                <!-- Search Bar -->
-                <div class="relative max-w-2xl mx-auto group">
-                    <div class="absolute inset-0 bg-primary/20 rounded-2xl blur-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500"></div>
-                    <div class="relative flex items-center bg-white rounded-2xl shadow-xl border border-gray-100 p-2 overflow-hidden">
-                        <div class="pl-4 pr-2 text-slate-400">
-                            <i data-lucide="search" class="w-6 h-6"></i>
-                        </div>
-                        <input type="text" placeholder="Search for topics, guides, or exams..." 
-                            class="w-full bg-transparent py-4 text-slate-900 placeholder:text-slate-400 font-medium outline-none text-lg">
-                        <button class="bg-primary hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg active:scale-95 hidden sm:block">
-                            Search
-                        </button>
+            <!-- SNS Search / Post Box -->
+            <div class="max-w-3xl mx-auto bg-white rounded-3xl p-6 shadow-xl shadow-slate-200/50 border border-gray-100 mb-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-primary shrink-0">
+                        <i data-lucide="user" class="w-6 h-6"></i>
+                    </div>
+                    <div class="flex-1 bg-slate-50 border border-slate-100 rounded-2xl px-6 py-3 cursor-text hover:bg-slate-100 transition-all text-slate-400 font-medium">
+                        What's on your mind? Share your thoughts or ask a question...
                     </div>
                 </div>
-
-                <!-- Trending Topics -->
-                <div class="flex flex-wrap justify-center gap-3 mt-8">
-                    <span class="text-sm font-bold text-slate-400 uppercase tracking-widest mr-2 py-2">Trending:</span>
-                    <a href="#" class="px-4 py-2 rounded-full bg-white border border-gray-100 text-sm font-bold text-slate-600 hover:border-primary hover:text-primary transition-all shadow-sm">#NEETStrategy</a>
-                    <a href="#" class="px-4 py-2 rounded-full bg-white border border-gray-100 text-sm font-bold text-slate-600 hover:border-primary hover:text-primary transition-all shadow-sm">#StudyAbroad</a>
-                    <a href="#" class="px-4 py-2 rounded-full bg-white border border-gray-100 text-sm font-bold text-slate-600 hover:border-primary hover:text-primary transition-all shadow-sm">#SATPrep</a>
+                <div class="flex items-center justify-end gap-4">
+                    <div class="flex items-center gap-6 mr-auto">
+                        <button class="flex items-center gap-2 text-slate-500 hover:text-primary transition-colors text-sm font-bold">
+                            <i data-lucide="image" class="w-4 h-4 text-blue-400"></i>
+                            Image
+                        </button>
+                        <button class="flex items-center gap-2 text-slate-500 hover:text-secondary transition-colors text-sm font-bold">
+                            <i data-lucide="video" class="w-4 h-4 text-orange-400"></i>
+                            Video
+                        </button>
+                        <button class="flex items-center gap-2 text-slate-500 hover:text-green-500 transition-colors text-sm font-bold">
+                            <i data-lucide="poll" class="w-4 h-4 text-green-400"></i>
+                            Poll
+                        </button>
+                    </div>
+                    <button class="bg-slate-100 text-slate-400 px-6 py-2 rounded-xl font-bold text-sm cursor-not-allowed">Post</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Listing Section -->
-    <section class="py-20 bg-[#F8FBFF] relative z-20">
+    <!-- Blog Main Content Section (SNS Layout) -->
+    <section class="py-12 bg-[#F8FBFF]">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <!-- Category Filter -->
-            <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
-                <button class="px-6 py-2.5 rounded-full bg-primary text-white font-bold shadow-lg shadow-primary/20 transition-all">All Posts</button>
-                <button class="px-6 py-2.5 rounded-full bg-white border border-gray-100 text-slate-600 font-bold hover:border-primary hover:text-primary transition-all shadow-sm">Medical</button>
-                <button class="px-6 py-2.5 rounded-full bg-white border border-gray-100 text-slate-600 font-bold hover:border-primary hover:text-primary transition-all shadow-sm">Engineering</button>
-                <button class="px-6 py-2.5 rounded-full bg-white border border-gray-100 text-slate-600 font-bold hover:border-primary hover:text-primary transition-all shadow-sm">Study Abroad</button>
-                <button class="px-6 py-2.5 rounded-full bg-white border border-gray-100 text-slate-600 font-bold hover:border-primary hover:text-primary transition-all shadow-sm">Foundation</button>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Blog 1: NEET -->
-                <article class="group bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(30,79,156,0.15)] flex flex-col">
-                    <div class="relative h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
-                            alt="Master NEET"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div class="absolute top-6 right-6 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md shadow-lg border border-white/20">
-                            <span class="text-[10px] font-black uppercase tracking-widest text-rose-600">Medical Sets</span>
-                        </div>
-                    </div>
-                    
-                    <div class="p-8 lg:p-10 flex flex-col flex-1">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="calendar" class="w-4 h-4 text-primary"></i>
-                                Oct 15, 2024
-                            </div>
-                            <div class="w-1 h-1 rounded-full bg-slate-200"></div>
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="clock" class="w-4 h-4 text-primary"></i>
-                                5 Min Read
-                            </div>
-                        </div>
-                        
-                        <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 group-hover:text-primary transition-colors">
-                            Mastering NEET 2024: The Elite Strategy Guide
-                        </h2>
-                        
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8 line-clamp-3">
-                            Scoring high in NEET requires more than just hard work—it demands precision planning. Learn how top rankers allocate their study time effectively.
-                        </p>
-                        
-                        <div class="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
-                            <a href="blog-neet-strategy.html" class="inline-flex items-center gap-2 text-primary font-bold group/link">
-                                Read Full Story
-                                <i data-lucide="chevron-right" class="w-5 h-5 group-hover/link:translate-x-1 transition-transform"></i>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Left Sidebar: Channels (Hidden on mobile) -->
+                <aside class="hidden lg:block lg:col-span-3 sticky top-32 h-fit">
+                    <div class="bg-white rounded-[2rem] p-6 shadow-sm border border-gray-100">
+                        <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-6 px-2">Discover Channels</div>
+                        <nav class="flex flex-col gap-2">
+                            <a href="#" class="flex items-center gap-4 px-4 py-3 bg-primary/5 text-primary rounded-2xl font-bold transition-all">
+                                <i data-lucide="compass" class="w-5 h-5"></i> All Posts
                             </a>
-                            <button class="w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all">
-                                <i data-lucide="bookmark" class="w-4 h-4"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog 2: IIT-JEE -->
-                <article class="group bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(30,79,156,0.15)] flex flex-col">
-                    <div class="relative h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800"
-                            alt="Cracking IIT-JEE"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div class="absolute top-6 right-6 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md shadow-lg border border-white/20">
-                            <span class="text-[10px] font-black uppercase tracking-widest text-orange-600">Engineering</span>
-                        </div>
-                    </div>
-                    
-                    <div class="p-8 lg:p-10 flex flex-col flex-1">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="calendar" class="w-4 h-4 text-primary"></i>
-                                Oct 12, 2024
-                            </div>
-                            <div class="w-1 h-1 rounded-full bg-slate-200"></div>
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="clock" class="w-4 h-4 text-primary"></i>
-                                6 Min Read
-                            </div>
-                        </div>
-                        
-                        <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 group-hover:text-primary transition-colors">
-                            The IIT-JEE Roadmap: Essential Tips and Resources
-                        </h2>
-                        
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8 line-clamp-3">
-                            Discover the must-have resources and daily habits that can transform your IIT-JEE preparation from daunting to doable.
-                        </p>
-                        
-                        <div class="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
-                            <a href="blog-iit-jee-roadmap.html" class="inline-flex items-center gap-2 text-primary font-bold group/link">
-                                Read Full Story
-                                <i data-lucide="chevron-right" class="w-5 h-5 group-hover/link:translate-x-1 transition-transform"></i>
+                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                                <i data-lucide="stethoscope" class="w-5 h-5 text-rose-500"></i> Medical Support
                             </a>
-                            <button class="w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all">
-                                <i data-lucide="bookmark" class="w-4 h-4"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog 3: Study Abroad -->
-                <article class="group bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(30,79,156,0.15)] flex flex-col">
-                    <div class="relative h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800"
-                            alt="Study Abroad Guide"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div class="absolute top-6 right-6 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md shadow-lg border border-white/20">
-                            <span class="text-[10px] font-black uppercase tracking-widest text-emerald-600">Global Ed</span>
-                        </div>
-                    </div>
-                    
-                    <div class="p-8 lg:p-10 flex flex-col flex-1">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="calendar" class="w-4 h-4 text-primary"></i>
-                                Oct 05, 2024
-                            </div>
-                            <div class="w-1 h-1 rounded-full bg-slate-200"></div>
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="clock" class="w-4 h-4 text-primary"></i>
-                                8 Min Read
-                            </div>
-                        </div>
-                        
-                        <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 group-hover:text-primary transition-colors">
-                            The Ultimate Global Guide: Studying in US, UK & Canada
-                        </h2>
-                        
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8 line-clamp-3">
-                            A comparative study of the world's top destinations based on visa processes, work rights, and overall educational quality.
-                        </p>
-                        
-                        <div class="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
-                            <a href="blog-study-abroad-guide.html" class="inline-flex items-center gap-2 text-primary font-bold group/link">
-                                Read Full Story
-                                <i data-lucide="chevron-right" class="w-5 h-5 group-hover/link:translate-x-1 transition-transform"></i>
+                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                                <i data-lucide="calculator" class="w-5 h-5 text-blue-500"></i> Engineering Prep
                             </a>
-                            <button class="w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all">
-                                <i data-lucide="bookmark" class="w-4 h-4"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog 4: Foundation Classes -->
-                <article class="group bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(30,79,156,0.15)] flex flex-col">
-                    <div class="relative h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800"
-                            alt="Foundation Learning"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div class="absolute top-6 right-6 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md shadow-lg border border-white/20">
-                            <span class="text-[10px] font-black uppercase tracking-widest text-violet-600">Juniors</span>
-                        </div>
-                    </div>
-                    
-                    <div class="p-8 lg:p-10 flex flex-col flex-1">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="calendar" class="w-4 h-4 text-primary"></i>
-                                Sep 28, 2024
-                            </div>
-                            <div class="w-1 h-1 rounded-full bg-slate-200"></div>
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="clock" class="w-4 h-4 text-primary"></i>
-                                4 Min Read
-                            </div>
-                        </div>
-                        
-                        <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 group-hover:text-primary transition-colors">
-                            Why Strong Foundations Today Lead to Success Tomorrow
-                        </h2>
-                        
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8 line-clamp-3">
-                            Building a solid intellectual foundation early enables students to tackle highly competitive exams like JEE or NEET with ease.
-                        </p>
-                        
-                        <div class="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
-                            <a href="blog-foundation-learning.html" class="inline-flex items-center gap-2 text-primary font-bold group/link">
-                                Read Full Story
-                                <i data-lucide="chevron-right" class="w-5 h-5 group-hover/link:translate-x-1 transition-transform"></i>
+                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                                <i data-lucide="globe" class="w-5 h-5 text-emerald-500"></i> Study Abroad
                             </a>
-                            <button class="w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all">
-                                <i data-lucide="bookmark" class="w-4 h-4"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Blog 5: Global Launchpad -->
-                <article class="group bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(30,79,156,0.15)] flex flex-col">
-                    <div class="relative h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800"
-                            alt="Global Launchpad Exams"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <div class="absolute top-6 right-6 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md shadow-lg border border-white/20">
-                            <span class="text-[10px] font-black uppercase tracking-widest text-amber-600">Test Prep</span>
-                        </div>
-                    </div>
-                    
-                    <div class="p-8 lg:p-10 flex flex-col flex-1">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="calendar" class="w-4 h-4 text-primary"></i>
-                                Sep 20, 2024
-                            </div>
-                            <div class="w-1 h-1 rounded-full bg-slate-200"></div>
-                            <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest">
-                                <i data-lucide="clock" class="w-4 h-4 text-primary"></i>
-                                7 Min Read
-                            </div>
-                        </div>
-                        
-                        <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 group-hover:text-primary transition-colors">
-                            IELTS, TOEFL, or SAT? Which Exams Do You Really Need?
-                        </h2>
-                        
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8 line-clamp-3">
-                            Confused between language proficiency and standardized tests? Our breakdown details every essential exam for study abroad.
-                        </p>
-                        
-                        <div class="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
-                            <a href="blog-global-exams.html" class="inline-flex items-center gap-2 text-primary font-bold group/link">
-                                Read Full Story
-                                <i data-lucide="chevron-right" class="w-5 h-5 group-hover/link:translate-x-1 transition-transform"></i>
+                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                                <i data-lucide="baby" class="w-5 h-5 text-violet-500"></i> Junior School
                             </a>
-                            <button class="w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all">
-                                <i data-lucide="bookmark" class="w-4 h-4"></i>
-                            </button>
+                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                                <i data-lucide="mic" class="w-5 h-5 text-amber-500"></i> Expert Podcasts
+                            </a>
+                        </nav>
+                        
+                        <div class="mt-10 mb-2 px-2">
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">My Communities</h4>
+                            <div class="flex flex-col gap-4">
+                                <a href="#" class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-indigo-500 flex items-center justify-center text-white text-[10px] font-bold">NE</div>
+                                    <span class="text-sm font-bold text-slate-700">NEET Aspirants</span>
+                                </a>
+                                <a href="#" class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white text-[10px] font-bold">JE</div>
+                                    <span class="text-sm font-bold text-slate-700">JEE Warriors</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </article>
+                </aside>
 
-            </div>
+                <!-- Middle Column: Main Feed -->
+                <main class="lg:col-span-6 flex flex-col gap-6">
+                    
+                    <!-- Post 1: SNS Styled -->
+                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50">
+                        <div class="flex items-start justify-between mb-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/10">
+                                    <img src="https://i.pravatar.cc/150?u=expert1" alt="Expert" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <h3 class="font-black text-slate-900 leading-none">Dr. Sarah Johnson</h3>
+                                        <i data-lucide="check-circle" class="w-4 h-4 text-primary fill-primary/10"></i>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest mt-1">
+                                        <span>Senior Medical Expert</span>
+                                        <span class="w-1 h-1 bg-slate-200 rounded-full"></span>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="text-slate-300 hover:text-slate-600 p-2"><i data-lucide="more-horizontal" class="w-6 h-6"></i></button>
+                        </div>
 
-            <!-- Pagination -->
-            <div class="flex justify-center items-center gap-4 mt-20">
-                <button class="w-12 h-12 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:border-primary hover:text-primary transition-all">
-                    <i data-lucide="chevron-left" class="w-6 h-6"></i>
-                </button>
-                <button class="w-12 h-12 rounded-xl bg-primary text-white font-bold">1</button>
-                <button class="w-12 h-12 rounded-xl border border-slate-200 text-slate-600 font-bold hover:border-primary hover:text-primary transition-all">2</button>
-                <button class="w-12 h-12 rounded-xl border border-slate-200 text-slate-600 font-bold hover:border-primary hover:text-primary transition-all">3</button>
-                <button class="w-12 h-12 rounded-xl border border-slate-200 flex items-center justify-center text-slate-400 hover:border-primary hover:text-primary transition-all">
-                    <i data-lucide="chevron-right" class="w-6 h-6"></i>
-                </button>
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 hover:text-primary transition-colors">
+                                Mastering NEET 2024: The Elite Strategy Guide
+                            </h2>
+                            <p class="text-slate-600 font-medium leading-relaxed line-clamp-3">
+                                Scoring high in NEET requires more than just hard work—it demands precision planning. Learn how top rankers allocate their study time effectively. I've broken down the 24-hour cycle of three AIR 1 holders...
+                            </p>
+                        </div>
+
+                        <div class="relative h-64 md:h-80 rounded-[2rem] overflow-hidden mb-8 group cursor-pointer">
+                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800" 
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="NEET Strategy">
+                            <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                                <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-lg text-white text-[10px] font-black uppercase tracking-widest border border-white/20">
+                                    Medical Guide
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-50 gap-4">
+                            <div class="flex items-center gap-2 bg-slate-50 rounded-full p-1 border border-slate-100">
+                                <button class="flex items-center gap-2 px-4 py-2 hover:bg-blue-50 text-slate-600 hover:text-primary rounded-full font-bold transition-all">
+                                    <i data-lucide="arrow-big-up" class="w-5 h-5"></i>
+                                    1.2k
+                                </button>
+                                <div class="w-px h-4 bg-slate-200"></div>
+                                <button class="p-2 hover:bg-rose-50 text-slate-400 hover:text-rose-500 rounded-full transition-all">
+                                    <i data-lucide="arrow-big-down" class="w-5 h-5"></i>
+                                </button>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <button class="flex items-center gap-2 px-4 py-2 hover:bg-slate-50 text-slate-600 rounded-full font-bold transition-all">
+                                    <i data-lucide="message-square" class="w-5 h-5"></i>
+                                    248
+                                </button>
+                                <button class="flex items-center gap-2 px-4 py-2 hover:bg-slate-50 text-slate-600 rounded-full font-bold transition-all">
+                                    <i data-lucide="share-2" class="w-5 h-5"></i>
+                                    Share
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 2: Question Type -->
+                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 shrink-0">
+                                <i data-lucide="user" class="w-5 h-5"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2">
+                                    <h3 class="font-bold text-slate-700 leading-none">Aman Verma</h3>
+                                    <span class="text-[10px] bg-slate-100 text-slate-500 font-black px-2 py-0.5 rounded uppercase tracking-tighter">Student</span>
+                                </div>
+                                <p class="text-xs text-slate-400 font-bold mt-1 uppercase tracking-widest">Posted 5 hours ago in Engineering Prep</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h2 class="text-xl font-bold text-slate-900 leading-snug mb-3">
+                                How can I improve my speed in solving Physics problems for IIT-JEE? Current average is 4 mins per question...
+                            </h2>
+                            <p class="text-slate-600 font-medium leading-relaxed">
+                                I'm consistently getting the logic right but the calculations are taking too long. Does anyone have specific mental math tricks or a structured way to look at circuit problems faster?
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
+                            <div class="flex items-center gap-2">
+                                <button class="flex items-center gap-2 px-5 py-2.5 bg-primary text-white rounded-full font-bold text-sm shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+                                    Answer Question
+                                </button>
+                                <span class="text-slate-400 font-bold text-xs ml-4">12 Answers</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button class="p-2.5 hover:bg-slate-100 rounded-full text-slate-400 transition-all">
+                                    <i data-lucide="bookmark" class="w-5 h-5"></i>
+                                </button>
+                                <button class="p-2.5 hover:bg-slate-100 rounded-full text-slate-400 transition-all">
+                                    <i data-lucide="flag" class="w-5 h-5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100">
+                        <div class="flex items-start justify-between mb-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-emerald-500/10">
+                                    <img src="https://i.pravatar.cc/150?u=expert2" alt="Expert" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <h3 class="font-black text-slate-900 leading-none">Prof. Michael Chen</h3>
+                                        <i data-lucide="award" class="w-4 h-4 text-emerald-500"></i>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest mt-1">
+                                        <span>Admissions Dean</span>
+                                        <span class="w-1 h-1 bg-slate-200 rounded-full"></span>
+                                        <span>yesterday</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4">
+                                The Ultimate Global Guide: Studying in US, UK & Canada
+                            </h2>
+                            <p class="text-slate-600 font-medium leading-relaxed line-clamp-2">
+                                A comparative study of the world's top destinations based on visa processes, work rights, and overall educational quality.
+                            </p>
+                        </div>
+
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
+                            <div class="flex items-center gap-2 bg-slate-50 rounded-full p-1">
+                                <button class="flex items-center gap-2 px-4 py-2 text-slate-600 font-bold rounded-full transition-all">
+                                    <i data-lucide="arrow-big-up" class="w-5 h-5"></i>
+                                    842
+                                </button>
+                            </div>
+                            <a href="#" class="text-primary font-bold text-sm flex items-center gap-1">Read Story <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Pagination / Load More -->
+                    <button class="w-full py-5 bg-white border border-slate-100 rounded-3xl text-primary font-black uppercase tracking-widest text-sm hover:bg-slate-50 transition-all shadow-sm">
+                        Load More Discussions
+                    </button>
+                </main>
+
+                <!-- Right Sidebar: Community & Trending -->
+                <aside class="hidden lg:col-span-3 flex flex-col gap-8 sticky top-32 h-fit">
+                    
+                    <!-- Trending Section -->
+                    <div class="bg-white rounded-[2rem] p-6 shadow-sm border border-gray-100">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest">Trending Now</h3>
+                            <i data-lucide="trending-up" class="w-4 h-4 text-primary"></i>
+                        </div>
+                        <div class="flex flex-col gap-6">
+                            <a href="#" class="group">
+                                <span class="text-[10px] font-black text-primary uppercase tracking-tighter mb-1 block">Study Abroad</span>
+                                <p class="text-sm font-bold text-slate-800 group-hover:text-primary transition-colors leading-snug">Visa updates for Canada students in 2026</p>
+                                <span class="text-[10px] text-slate-400 font-bold uppercase mt-2 block">1.5k interactions</span>
+                            </a>
+                            <a href="#" class="group">
+                                <span class="text-[10px] font-black text-rose-500 uppercase tracking-tighter mb-1 block">Medical</span>
+                                <p class="text-sm font-bold text-slate-800 group-hover:text-primary transition-colors leading-snug">Biology high-weightage topics list</p>
+                                <span class="text-[10px] text-slate-400 font-bold uppercase mt-2 block">948 interactions</span>
+                            </a>
+                            <a href="#" class="group">
+                                <span class="text-[10px] font-black text-blue-500 uppercase tracking-tighter mb-1 block">Engineering</span>
+                                <p class="text-sm font-bold text-slate-800 group-hover:text-primary transition-colors leading-snug">JEE Advanced mock results discussion</p>
+                                <span class="text-[10px] text-slate-400 font-bold uppercase mt-2 block">2.1k interactions</span>
+                            </a>
+                        </div>
+                        <button class="w-full mt-6 py-3 text-xs font-black text-primary uppercase border border-primary/10 rounded-xl hover:bg-primary/5 transition-all">View Leaderboard</button>
+                    </div>
+
+                    <!-- Recommended Experts -->
+                    <div class="bg-white rounded-[2rem] p-6 shadow-sm border border-gray-100">
+                        <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-6 px-2">Top Experts</h3>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-orange-100 overflow-hidden">
+                                        <img src="https://i.pravatar.cc/100?u=e1" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-black text-slate-900 leading-none">Prof. Gupta</p>
+                                        <p class="text-[10px] text-slate-400 font-bold mt-1">Physics Specialist</p>
+                                    </div>
+                                </div>
+                                <button class="text-primary hover:bg-primary/10 p-2 rounded-lg transition-all"><i data-lucide="user-plus" class="w-4 h-4"></i></button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-blue-100 overflow-hidden">
+                                        <img src="https://i.pravatar.cc/100?u=e2" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-black text-slate-900 leading-none">Jane Archer</p>
+                                        <p class="text-[10px] text-slate-400 font-bold mt-1">IELTS Mentor</p>
+                                    </div>
+                                </div>
+                                <button class="text-primary hover:bg-primary/10 p-2 rounded-lg transition-all"><i data-lucide="user-plus" class="w-4 h-4"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Discord Banner -->
+                    <div class="bg-gradient-to-br from-[#5865F2] to-[#4752C4] rounded-[2rem] p-6 text-white shadow-xl shadow-indigo-200">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                            <span class="font-black uppercase tracking-widest text-[10px]">Community Chat</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">Join our Discord Community</h4>
+                        <p class="text-white/80 text-xs font-medium mb-6">Real-time doubt clearing and resource sharing with 10k+ members.</p>
+                        <a href="#" class="inline-block w-full text-center bg-white text-[#5865F2] py-3 rounded-xl font-bold hover:bg-slate-50 transition-all">Join Now</a>
+                    </div>
+                </aside>
+
             </div>
         </div>
-    </section>tion>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-[#0B1121] pt-20 pb-10 mt-auto border-t border-white/5">
