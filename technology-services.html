@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 !DOCTYPE html>
+=======
+<!DOCTYPE html>
+>>>>>>> kishan
 <html lang="en">
 
 <head>
@@ -6,13 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology Services | Unidemy Global</title>
     <meta name="description"
+<<<<<<< HEAD
         content="Professional technology services including Cloud Development, AI & Machine Learning, Embedded Systems, and Digital Engineering.">
     <!-- Tailwind CSS CDN -->
+=======
+        content="Enterprise AI, Embedded Systems, Cloud, Cybersecurity, Software Dev and IT Infrastructure by Unidemy Global.">
+>>>>>>> kishan
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+<<<<<<< HEAD
                     colors: {
                         primary: '#1E4F9C',
                         secondary: '#F97316',
@@ -24,21 +33,314 @@
                         sans: ['Inter', 'sans-serif'],
                         serif: ['Playfair Display', 'serif'],
                     },
+=======
+                    colors: { primary: '#1E4F9C', secondary: '#F97316', background: '#F8FBFF', accent: '#E6EFFF' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float2': 'float 6s ease-in-out infinite 2s',
+                        'float3': 'float 6s ease-in-out infinite 4s',
+                    },
+                    keyframes: {
+                        float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-12px)' } }
+                    }
+>>>>>>> kishan
                 }
             }
         }
     </script>
+<<<<<<< HEAD
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap"
         rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+=======
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sora {
+            font-family: 'Sora', sans-serif;
+        }
+
+        .ts-hero {
+            background: linear-gradient(135deg, #0B1121 0%, #0F1E3D 45%, #0B1121 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ts-dots {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+
+        .ts-blob1 {
+            position: absolute;
+            top: -160px;
+            right: -100px;
+            width: 580px;
+            height: 580px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(30, 79, 156, 0.38) 0%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+        }
+
+        .ts-blob2 {
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(249, 115, 22, 0.18) 0%, transparent 70%);
+            filter: blur(60px);
+            pointer-events: none;
+        }
+
+        .shimmer {
+            background: linear-gradient(120deg, #F97316 0%, #FBBF24 50%, #F97316 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .float-card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
+        }
+
+        /* SVC CARDS */
+        .svc {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        .svc::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+            border-radius: 24px 24px 0 0;
+        }
+
+        .svc:hover {
+            transform: translateY(-10px);
+        }
+
+        .svc:hover::before {
+            transform: scaleX(1);
+        }
+
+        .svc:hover .svc-ico {
+            transform: scale(1.12) rotate(-6deg);
+        }
+
+        .svc-ico {
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .svc.ai::before {
+            background: linear-gradient(90deg, #5A4BDA, #818CF8);
+        }
+
+        .svc.ai:hover {
+            box-shadow: 0 24px 56px rgba(90, 75, 218, 0.18);
+            border-color: transparent !important;
+        }
+
+        .svc.emb::before {
+            background: linear-gradient(90deg, #059669, #34D399);
+        }
+
+        .svc.emb:hover {
+            box-shadow: 0 24px 56px rgba(5, 150, 105, 0.18);
+            border-color: transparent !important;
+        }
+
+        .svc.cld::before {
+            background: linear-gradient(90deg, #2563EB, #60A5FA);
+        }
+
+        .svc.cld:hover {
+            box-shadow: 0 24px 56px rgba(37, 99, 235, 0.18);
+            border-color: transparent !important;
+        }
+
+        .svc.sec::before {
+            background: linear-gradient(90deg, #DC2626, #F87171);
+        }
+
+        .svc.sec:hover {
+            box-shadow: 0 24px 56px rgba(220, 38, 38, 0.15);
+            border-color: transparent !important;
+        }
+
+        .svc.dev::before {
+            background: linear-gradient(90deg, #D97706, #FBBF24);
+        }
+
+        .svc.dev:hover {
+            box-shadow: 0 24px 56px rgba(217, 119, 6, 0.18);
+            border-color: transparent !important;
+        }
+
+        .svc.inf::before {
+            background: linear-gradient(90deg, #0D9488, #2DD4BF);
+        }
+
+        .svc.inf:hover {
+            box-shadow: 0 24px 56px rgba(13, 148, 136, 0.18);
+            border-color: transparent !important;
+        }
+
+        /* IND CARDS */
+        .ind-card {
+            transition: all 0.3s ease;
+            border: 1.5px solid #F3F4F6;
+        }
+
+        .ind-card:hover {
+            border-color: #1E4F9C;
+            box-shadow: 0 8px 28px rgba(30, 79, 156, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .ind-card:hover .ind-ico {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .ind-ico {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        /* WHY */
+        .why-dark {
+            background: linear-gradient(135deg, #0B1121 0%, #0F1E3D 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-glow {
+            position: absolute;
+            top: -60px;
+            left: -60px;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(30, 79, 156, 0.35) 0%, transparent 70%);
+            filter: blur(40px);
+            pointer-events: none;
+        }
+
+        /* T-CARD */
+        .tc {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .tc::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #1E4F9C, #F97316);
+            border-radius: 24px 24px 0 0;
+        }
+
+        /* STAT FEATURED */
+        .stat-feat {
+            background: linear-gradient(135deg, #1E4F9C, #2563EB);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 48px rgba(30, 79, 156, 0.3);
+        }
+
+        /* PROCESS LINE */
+        .pline-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #1E4F9C, #F97316);
+            width: 0%;
+            transition: width 1.8s ease-out;
+        }
+
+        /* FORM */
+        .finput {
+            width: 100%;
+            padding: 14px 14px 14px 46px;
+            border: 1.5px solid #E5E7EB;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            background: #F9FAFB;
+            color: #111827;
+            transition: all 0.25s ease;
+            outline: none;
+        }
+
+        .finput:focus {
+            border-color: #1E4F9C;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(30, 79, 156, 0.08);
+        }
+
+        .ficon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9CA3AF;
+            font-size: 14px;
+            pointer-events: none;
+        }
+
+        /* REVEAL */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+>>>>>>> kishan
 </head>
 
 <body class="bg-background font-sans text-gray-900 scroll-smooth">
 
     <!-- Navbar -->
+<<<<<<< HEAD
     <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm py-5">
         <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8">
             <!-- Logo -->
@@ -47,6 +349,14 @@
             </a>
 
             <!-- Desktop Menu -->
+=======
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-5 px-6 lg:px-8" id="main-nav">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex-shrink-0">
+                <img src="Logo (2).png" alt="Unidemy Global"
+                    class="h-10 w-auto mix-blend-multiply transition-transform hover:scale-105">
+            </a>
+>>>>>>> kishan
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
                 <div class="relative group">
                     <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
@@ -79,6 +389,7 @@
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">IIT-JEE</a>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <a href="global-launchpad.html" class="hover:text-primary transition-colors">Study Abroad</a>
                 <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
                 <div class="relative group">
@@ -126,6 +437,26 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl mt-4 rounded-2xl">
+=======
+                <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
+                <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
+                <a href="#" class="hover:text-primary transition-colors">Technology Services</a>
+            </div>
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="https://unidemyglobal.com/login.php"
+                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">Log
+                    In</a>
+                <a href="https://unidemyglobal.com/register.php"
+                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">Sign
+                    Up</a>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-700 p-2"><i data-lucide="menu"
+                    class="w-6 h-6"></i></button>
+        </div>
+        <!-- Mobile Menu Slider -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl mt-4 rounded-2xl">
+>>>>>>> kishan
             <div class="p-6 flex flex-col gap-4">
                 <div class="flex flex-col gap-2">
                     <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">School Boards</div>
@@ -135,6 +466,15 @@
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
                     <a href="karnataka-board.html?tab=all"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
+<<<<<<< HEAD
+=======
+                    <a href="cbse.html?tab=all"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
+                    <a href="icse.html?tab=all"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
+                    <a href="karnataka-board.html?tab=all"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
+>>>>>>> kishan
                 </div>
                 <div class="h-px w-full bg-gray-100 my-2"></div>
                 <div class="flex flex-col gap-2">
@@ -149,6 +489,7 @@
                     class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Study Abroad</a>
                 <a href="internships.html"
                     class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
+<<<<<<< HEAD
                 <div class="flex flex-col gap-2">
                     <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">Technology Services</div>
                     <a href="technology-services.html?service=cloud"
@@ -164,6 +505,14 @@
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Digital
                         Engineering</a>
                 </div>
+=======
+                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology
+                    Services</a>
+                <a href="internships.html"
+                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
+                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology
+                    Services</a>
+>>>>>>> kishan
 
                 <div class="flex flex-col gap-2 mt-4">
                     <a href="https://unidemyglobal.com/login.php"
@@ -179,6 +528,7 @@
         </div>
     </nav>
 
+<<<<<<< HEAD
     <!-- Main Content -->
     <main class="w-full pt-28 lg:pt-36 bg-white min-h-screen">
         <!-- Hero Section -->
@@ -367,10 +717,104 @@
                                 Learn More <i data-lucide="arrow-right"
                                     class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
                             </button>
+=======
+    <!-- ══════════ 1. HERO ══════════ -->
+    <section class="ts-hero pt-32 pb-0">
+        <div class="ts-dots"></div>
+        <div class="ts-blob1"></div>
+        <div class="ts-blob2"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-end">
+                <div class="pb-20">
+                    <div class="flex items-center gap-2 text-xs text-white/30 mb-8">
+                        <a href="index.html" class="hover:text-white/60 transition-colors">Home</a>
+                        <i class="fa-solid fa-chevron-right text-[8px]"></i>
+                        <span class="text-white/50">Technology Services</span>
+                    </div>
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 border border-primary/40 text-blue-200 text-xs font-bold tracking-wide mb-6">
+                        <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Powering Digital
+                        Transformation
+                    </div>
+                    <h1 class="sora text-5xl lg:text-6xl font-black text-white leading-[1.06] mb-2">
+                        Enterprise<br>Technology</h1>
+                    <h1 class="sora text-5xl lg:text-6xl font-black leading-[1.06] mb-5 shimmer">Solutions That Scale
+                    </h1>
+                    <p class="text-sm font-semibold text-white/30 tracking-widest uppercase mb-6">Unidemy Global · Tech
+                        Division</p>
+                    <p class="text-lg text-white/65 leading-relaxed mb-10 max-w-xl">From AI & Machine Learning to
+                        Embedded Systems and Cloud Infrastructure — we build, deploy and manage technology that moves
+                        businesses forward.</p>
+                    <div class="flex flex-wrap gap-2 mb-10">
+                        <span
+                            class="px-3 py-1.5 rounded-lg text-xs font-bold border bg-purple-500/15 border-purple-500/35 text-purple-300"><i
+                                class="fa-solid fa-robot mr-1.5"></i>AI & ML</span>
+                        <span
+                            class="px-3 py-1.5 rounded-lg text-xs font-bold border bg-emerald-500/15 border-emerald-500/35 text-emerald-300"><i
+                                class="fa-solid fa-microchip mr-1.5"></i>Embedded</span>
+                        <span
+                            class="px-3 py-1.5 rounded-lg text-xs font-bold border bg-blue-500/15 border-blue-500/35 text-blue-300"><i
+                                class="fa-solid fa-cloud mr-1.5"></i>Cloud</span>
+                        <span
+                            class="px-3 py-1.5 rounded-lg text-xs font-bold border bg-red-500/15 border-red-500/35 text-red-300"><i
+                                class="fa-solid fa-shield-halved mr-1.5"></i>Cybersecurity</span>
+                        <span
+                            class="px-3 py-1.5 rounded-lg text-xs font-bold border bg-amber-500/15 border-amber-500/35 text-amber-300"><i
+                                class="fa-solid fa-code mr-1.5"></i>Dev</span>
+                        <span
+                            class="px-3 py-1.5 rounded-lg text-xs font-bold border bg-teal-500/15 border-teal-500/35 text-teal-300"><i
+                                class="fa-solid fa-server mr-1.5"></i>IT Infra</span>
+                    </div>
+                    <div class="flex gap-4 flex-wrap">
+                        <a href="#services"
+                            class="bg-secondary hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-secondary/30 transition-all active:scale-95 flex items-center gap-2"><i
+                                class="fa-solid fa-rocket"></i> Explore Services</a>
+                        <a href="#contact"
+                            class="border border-white/20 text-white/80 hover:bg-white/10 font-semibold px-7 py-3.5 rounded-full transition-all flex items-center gap-2 backdrop-blur-sm"><i
+                                class="fa-solid fa-calendar-check"></i> Schedule a Demo</a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex flex-col gap-4 pb-0 items-start">
+                    <div class="float-card p-6 flex items-center gap-5 w-72 animate-float">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-primary/30 flex items-center justify-center text-3xl flex-shrink-0">
+                            🏢</div>
+                        <div>
+                            <div class="sora text-white text-3xl font-black">200+</div>
+                            <div class="text-white/50 text-sm">Enterprise Clients</div>
+                        </div>
+                    </div>
+                    <div class="float-card p-6 flex items-center gap-5 w-72 ml-8 animate-float2">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-secondary/25 flex items-center justify-center text-3xl flex-shrink-0">
+                            ⚡</div>
+                        <div>
+                            <div class="sora text-white text-3xl font-black">50+</div>
+                            <div class="text-white/50 text-sm">Tech Specialists</div>
+                        </div>
+                    </div>
+                    <div class="float-card p-6 flex items-center gap-5 w-72 ml-4 animate-float3">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center text-3xl flex-shrink-0">
+                            ✅</div>
+                        <div>
+                            <div class="sora text-white text-3xl font-black">98%</div>
+                            <div class="text-white/50 text-sm">Project Success Rate</div>
+                        </div>
+                    </div>
+                    <div class="float-card p-6 flex items-center gap-5 w-72 ml-12 animate-float">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center text-3xl flex-shrink-0">
+                            🏆</div>
+                        <div>
+                            <div class="sora text-white text-3xl font-black">12+</div>
+                            <div class="text-white/50 text-sm">Years Experience</div>
+>>>>>>> kishan
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
         </section>
 
         <!-- Dynamic Visualization / Graphic -->
@@ -448,6 +892,599 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
+=======
+        </div>
+        <svg viewBox="0 0 1440 70" preserveAspectRatio="none" class="w-full block -mb-1 relative z-10">
+            <path d="M0,70 L1440,70 L1440,35 Q1080,70 720,35 Q360,0 0,35 Z" fill="#F8FBFF" />
+        </svg>
+    </section>
+
+    <!-- ══════════ 2. PARTNER BAR ══════════ -->
+    <section class="bg-primary py-4">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+            <p class="text-white/45 text-xs font-bold tracking-widest uppercase">Our trusted tech stack</p>
+            <div class="flex flex-wrap justify-center gap-2">
+                <span
+                    class="bg-white/10 border border-white/15 text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-white/20 transition-colors cursor-default"><i
+                        class="fa-brands fa-aws mr-1"></i>AWS Partner</span>
+                <span
+                    class="bg-white/10 border border-white/15 text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-white/20 transition-colors cursor-default"><i
+                        class="fa-brands fa-microsoft mr-1"></i>Microsoft</span>
+                <span
+                    class="bg-white/10 border border-white/15 text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-white/20 transition-colors cursor-default"><i
+                        class="fa-brands fa-google mr-1"></i>Google Cloud</span>
+                <span
+                    class="bg-white/10 border border-white/15 text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-white/20 transition-colors cursor-default">NVIDIA</span>
+                <span
+                    class="bg-white/10 border border-white/15 text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-white/20 transition-colors cursor-default"><i
+                        class="fa-brands fa-redhat mr-1"></i>Red Hat</span>
+                <span
+                    class="bg-white/10 border border-white/15 text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-white/20 transition-colors cursor-default">VMware</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ 3. SERVICES ══════════ -->
+    <section class="py-24 bg-background relative overflow-hidden" id="services">
+        <div
+            class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <div
+                    class="inline-flex items-center px-4 py-2 rounded-full bg-accent text-primary font-bold text-xs tracking-widest uppercase mb-5 border border-accent shadow-sm">
+                    <i class="fa-solid fa-gear mr-2"></i>Our Services
+                </div>
+                <h2 class="sora text-4xl md:text-5xl font-black text-gray-900 mb-5 leading-tight">End-to-End <span
+                        class="text-primary">Technology</span> Services</h2>
+                <p class="text-lg text-gray-500 leading-relaxed">Six specialized practice areas covering the full
+                    technology lifecycle — from concept to production.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 mb-10">
+                <!-- AI -->
+                <div class="svc ai bg-white rounded-3xl p-8 border border-gray-100 flex flex-col reveal">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-purple-50 flex items-center justify-center text-3xl mb-6 svc-ico">
+                        🤖</div>
+                    <h3 class="sora text-xl font-black text-gray-900 mb-3">AI & Machine Learning</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">Custom AI models, GenAI
+                        integrations, Computer Vision, NLP and intelligent automation solutions for enterprise use
+                        cases.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-lg">Custom
+                            AI Models</span>
+                        <span
+                            class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-lg">Generative
+                            AI</span>
+                        <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-lg">Computer
+                            Vision</span>
+                        <span
+                            class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-lg">NLP</span>
+                        <span
+                            class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-lg">MLOps</span>
+                    </div>
+                    <a href="#contact"
+                        class="mt-auto flex items-center gap-2 text-[#5A4BDA] font-bold text-sm hover:gap-3 transition-all">Explore
+                        AI Services <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Embedded -->
+                <div class="svc emb bg-white rounded-3xl p-8 border border-gray-100 flex flex-col reveal"
+                    style="transition-delay:0.08s">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center text-3xl mb-6 svc-ico">
+                        🔌</div>
+                    <h3 class="sora text-xl font-black text-gray-900 mb-3">Embedded Systems</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">Firmware development, RTOS, IoT
+                        device engineering, hardware-software co-design and board bring-up for smart products.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-lg">Firmware
+                            Dev</span>
+                        <span
+                            class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-lg">RTOS</span>
+                        <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-lg">IoT
+                            Devices</span>
+                        <span
+                            class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-lg">Hardware
+                            Design</span>
+                        <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-lg">Board
+                            Bring-Up</span>
+                    </div>
+                    <a href="#contact"
+                        class="mt-auto flex items-center gap-2 text-emerald-600 font-bold text-sm hover:gap-3 transition-all">Explore
+                        Embedded <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Cloud -->
+                <div class="svc cld bg-white rounded-3xl p-8 border border-gray-100 flex flex-col reveal"
+                    style="transition-delay:0.16s">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-3xl mb-6 svc-ico">
+                        ☁️</div>
+                    <h3 class="sora text-xl font-black text-gray-900 mb-3">Cloud Technologies</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">Multi-cloud strategy, AWS/Azure/GCP
+                        deployments, cloud migration, DevOps pipelines and cost optimization at scale.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg">AWS</span>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg">Azure</span>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg">GCP</span>
+                        <span
+                            class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg">DevOps</span>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-lg">Cloud
+                            Migration</span>
+                    </div>
+                    <a href="#contact"
+                        class="mt-auto flex items-center gap-2 text-blue-600 font-bold text-sm hover:gap-3 transition-all">Explore
+                        Cloud <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Cyber -->
+                <div class="svc sec bg-white rounded-3xl p-8 border border-gray-100 flex flex-col reveal"
+                    style="transition-delay:0.04s">
+                    <div class="w-14 h-14 rounded-2xl bg-red-50 flex items-center justify-center text-3xl mb-6 svc-ico">
+                        🔐</div>
+                    <h3 class="sora text-xl font-black text-gray-900 mb-3">Cybersecurity</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">VAPT, SOC/NOC operations, ISO 27001
+                        compliance, cloud security architecture and incident response planning.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-lg">VAPT</span>
+                        <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-lg">SOC/NOC</span>
+                        <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-lg">ISO
+                            27001</span>
+                        <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-lg">Zero
+                            Trust</span>
+                        <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-lg">Incident
+                            Response</span>
+                    </div>
+                    <a href="#contact"
+                        class="mt-auto flex items-center gap-2 text-red-600 font-bold text-sm hover:gap-3 transition-all">Explore
+                        Security <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Software Dev -->
+                <div class="svc dev bg-white rounded-3xl p-8 border border-gray-100 flex flex-col reveal"
+                    style="transition-delay:0.12s">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center text-3xl mb-6 svc-ico">
+                        💻</div>
+                    <h3 class="sora text-xl font-black text-gray-900 mb-3">Software Development</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">Full-stack web, mobile and
+                        enterprise app development with modern frameworks and agile delivery methodology.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded-lg">Web
+                            Apps</span>
+                        <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded-lg">Mobile
+                            Apps</span>
+                        <span
+                            class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded-lg">APIs</span>
+                        <span class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded-lg">React /
+                            Node</span>
+                        <span
+                            class="px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded-lg">Microservices</span>
+                    </div>
+                    <a href="#contact"
+                        class="mt-auto flex items-center gap-2 text-amber-600 font-bold text-sm hover:gap-3 transition-all">Explore
+                        Dev <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- IT Infra -->
+                <div class="svc inf bg-white rounded-3xl p-8 border border-gray-100 flex flex-col reveal"
+                    style="transition-delay:0.2s">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center text-3xl mb-6 svc-ico">
+                        🖥️</div>
+                    <h3 class="sora text-xl font-black text-gray-900 mb-3">IT Infrastructure</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">Data center design, virtualization,
+                        HCI, backup, disaster recovery and end-to-end managed IT services.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-semibold rounded-lg">Data
+                            Center</span>
+                        <span
+                            class="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-semibold rounded-lg">Virtualization</span>
+                        <span class="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-semibold rounded-lg">HCI</span>
+                        <span class="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-semibold rounded-lg">Disaster
+                            Recovery</span>
+                        <span class="px-2.5 py-1 bg-teal-50 text-teal-700 text-xs font-semibold rounded-lg">Managed
+                            Services</span>
+                    </div>
+                    <a href="#contact"
+                        class="mt-auto flex items-center gap-2 text-teal-600 font-bold text-sm hover:gap-3 transition-all">Explore
+                        Infra <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- CTA bar -->
+            <div
+                class="reveal bg-gradient-to-r from-[#0B1121] to-[#0F1E3D] rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="sora text-white text-xl font-bold mb-1">Not sure which service fits your need?</h3>
+                    <p class="text-white/45 text-sm">Our experts will assess your requirements and recommend the right
+                        solution.</p>
+                </div>
+                <a href="#contact"
+                    class="bg-secondary hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-secondary/30 transition-all whitespace-nowrap flex items-center gap-2 active:scale-95"><i
+                        class="fa-solid fa-phone"></i>Talk to Our Experts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ 4. STATS ══════════ -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-72 h-72 bg-primary/8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="bg-background border border-gray-100 rounded-3xl p-8 text-center reveal hover:-translate-y-1 transition-transform">
+                    <i class="fa-regular fa-building text-3xl text-primary mb-4 block"></i>
+                    <div class="sora text-5xl font-black text-gray-900 mb-2 cnum" data-target="200">0</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Enterprise Clients</div>
+                </div>
+                <div class="stat-feat rounded-3xl p-8 text-center reveal" style="transition-delay:0.1s">
+                    <i class="fa-solid fa-users text-3xl text-white/80 mb-4 block"></i>
+                    <div class="sora text-5xl font-black text-white mb-2 cnum" data-target="50">0</div>
+                    <div class="text-xs font-bold text-white/65 uppercase tracking-widest">Tech Specialists</div>
+                </div>
+                <div class="bg-background border border-gray-100 rounded-3xl p-8 text-center reveal hover:-translate-y-1 transition-transform"
+                    style="transition-delay:0.2s">
+                    <i class="fa-regular fa-calendar-check text-3xl text-primary mb-4 block"></i>
+                    <div class="sora text-5xl font-black text-gray-900 mb-2 cnum" data-target="12">0</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Years Experience</div>
+                </div>
+                <div class="bg-background border border-gray-100 rounded-3xl p-8 text-center reveal hover:-translate-y-1 transition-transform"
+                    style="transition-delay:0.3s">
+                    <i class="fa-regular fa-circle-check text-3xl text-primary mb-4 block"></i>
+                    <div class="sora text-5xl font-black text-gray-900 mb-2 cnum" data-target="98">0</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Success Rate %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ 5. INDUSTRIES ══════════ -->
+    <section class="py-24 bg-background" id="industries">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <div
+                    class="inline-flex items-center px-4 py-2 rounded-full bg-accent text-primary font-bold text-xs tracking-widest uppercase mb-5 border border-accent">
+                    <i class="fa-solid fa-industry mr-2"></i>Industries
+                </div>
+                <h2 class="sora text-4xl md:text-5xl font-black text-gray-900 mb-4">Industries We Serve</h2>
+                <p class="text-gray-500 text-lg">Specialized domain expertise across the most demanding sectors in India
+                    and globally.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                <div class="ind-card bg-white rounded-2xl p-6 text-center reveal">
+                    <div class="ind-ico text-4xl mb-3">🏦</div>
+                    <h4 class="sora font-black text-gray-900 text-sm mb-1.5">Banking & Finance</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Secure tech for fintechs and legacy modernization.
+                    </p>
+                </div>
+                <div class="ind-card bg-white rounded-2xl p-6 text-center reveal" style="transition-delay:0.06s">
+                    <div class="ind-ico text-4xl mb-3">🏥</div>
+                    <h4 class="sora font-black text-gray-900 text-sm mb-1.5">Healthcare</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Compliant systems, telehealth and AI diagnostics.
+                    </p>
+                </div>
+                <div class="ind-card bg-white rounded-2xl p-6 text-center reveal" style="transition-delay:0.12s">
+                    <div class="ind-ico text-4xl mb-3">🏭</div>
+                    <h4 class="sora font-black text-gray-900 text-sm mb-1.5">Manufacturing</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">IoT connected factories and supply chain
+                        automation.</p>
+                </div>
+                <div class="ind-card bg-white rounded-2xl p-6 text-center reveal" style="transition-delay:0.18s">
+                    <div class="ind-ico text-4xl mb-3">🎓</div>
+                    <h4 class="sora font-black text-gray-900 text-sm mb-1.5">Education</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">EdTech platforms, LMS and campus infrastructure.
+                    </p>
+                </div>
+                <div class="ind-card bg-white rounded-2xl p-6 text-center reveal">
+                    <div class="ind-ico text-4xl mb-3">🏛️</div>
+                    <h4 class="sora font-black text-gray-900 text-sm mb-1.5">Government & PSU</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Citizen portals and secure data centers.</p>
+                </div>
+                <div class="ind-card bg-white rounded-2xl p-6 text-center reveal" style="transition-delay:0.06s">
+                    <div class="ind-ico text-4xl mb-3">🛒</div>
+                    <h4 class="sora font-black text-gray-900 text-sm mb-1.5">Retail & E-Commerce</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Omnichannel platforms and predictive analytics.</p>
+                </div>
+                <div class="ind-card bg-white rounded-2xl p-6 text-center reveal" style="transition-delay:0.12s">
+                    <div class="ind-ico text-4xl mb-3">📡</div>
+                    <h4 class="sora font-black text-gray-900 text-sm mb-1.5">Telecom</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Network automation, OSS/BSS and edge computing.</p>
+                </div>
+                <div class="ind-card bg-white rounded-2xl p-6 text-center reveal" style="transition-delay:0.18s">
+                    <div class="ind-ico text-4xl mb-3">🛢️</div>
+                    <h4 class="sora font-black text-gray-900 text-sm mb-1.5">Oil & Energy</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Asset monitoring, predictive maintenance, smart
+                        grids.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ 6. WHY US ══════════ -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+            <div class="why-dark rounded-3xl p-12 text-white reveal shadow-2xl">
+                <div class="why-glow"></div>
+                <div class="relative z-10">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/25 text-blue-300 text-xs font-bold tracking-widest uppercase mb-8 border border-white/10">
+                        <i class="fa-solid fa-handshake"></i>Why Unidemy Tech
+                    </div>
+                    <h2 class="sora text-3xl lg:text-4xl font-black mb-5 leading-tight">Technology Partners,<br>Not Just
+                        Vendors</h2>
+                    <p class="text-white/55 mb-8 leading-relaxed">We align our technical expertise with your core
+                        business objectives to deliver measurable ROI at every stage.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-sm"><i
+                                class="fa-solid fa-circle-check text-emerald-400 text-lg flex-shrink-0"></i>Dedicated
+                            project managers and technical leads</li>
+                        <li class="flex items-center gap-3 text-sm"><i
+                                class="fa-solid fa-circle-check text-emerald-400 text-lg flex-shrink-0"></i>Agile
+                            delivery with weekly sprint reviews</li>
+                        <li class="flex items-center gap-3 text-sm"><i
+                                class="fa-solid fa-circle-check text-emerald-400 text-lg flex-shrink-0"></i>24/7 support
+                            and proactive monitoring</li>
+                        <li class="flex items-center gap-3 text-sm"><i
+                                class="fa-solid fa-circle-check text-emerald-400 text-lg flex-shrink-0"></i>Fixed-price
+                            and T&M engagement models</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-5 reveal" style="transition-delay:0.1s">
+                <div
+                    class="bg-background border border-gray-100 rounded-2xl p-7 hover:border-primary hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center mb-5"><i
+                            class="fa-solid fa-shield-halved text-primary text-xl"></i></div>
+                    <h4 class="sora font-black text-gray-900 mb-2">Enterprise Grade</h4>
+                    <p class="text-gray-400 text-sm">Security and scalability built-in from day one.</p>
+                </div>
+                <div
+                    class="bg-background border border-gray-100 rounded-2xl p-7 hover:border-secondary hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center mb-5"><i
+                            class="fa-solid fa-bolt text-secondary text-xl"></i></div>
+                    <h4 class="sora font-black text-gray-900 mb-2">Rapid Delivery</h4>
+                    <p class="text-gray-400 text-sm">Optimized frameworks for fast go-to-market.</p>
+                </div>
+                <div
+                    class="bg-background border border-gray-100 rounded-2xl p-7 hover:border-purple-400 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center mb-5"><i
+                            class="fa-solid fa-brain text-purple-600 text-xl"></i></div>
+                    <h4 class="sora font-black text-gray-900 mb-2">Top Talent</h4>
+                    <p class="text-gray-400 text-sm">Pre-vetted experts from top-tier institutes.</p>
+                </div>
+                <div
+                    class="bg-background border border-gray-100 rounded-2xl p-7 hover:border-emerald-400 hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-5"><i
+                            class="fa-solid fa-handshake text-emerald-600 text-xl"></i></div>
+                    <h4 class="sora font-black text-gray-900 mb-2">True Partner</h4>
+                    <p class="text-gray-400 text-sm">We win when your business succeeds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ 7. PROCESS ══════════ -->
+    <section class="py-24 bg-background">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <div
+                    class="inline-flex items-center px-4 py-2 rounded-full bg-accent text-primary font-bold text-xs tracking-widest uppercase mb-5 border border-accent">
+                    <i class="fa-solid fa-route mr-2"></i>How We Deliver
+                </div>
+                <h2 class="sora text-4xl md:text-5xl font-black text-gray-900 mb-4">Transparent &amp; Proven Methodology
+                </h2>
+            </div>
+            <div class="relative">
+                <div class="absolute top-10 left-[12%] right-[12%] h-0.5 bg-gray-200 hidden lg:block">
+                    <div class="pline-fill" id="p-line"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+                    <div class="text-center reveal group">
+                        <div
+                            class="w-20 h-20 rounded-full bg-white border-2 border-gray-200 mx-auto mb-6 flex items-center justify-center text-3xl relative transition-all group-hover:border-primary group-hover:shadow-xl group-hover:scale-110">
+                            🔍<span
+                                class="absolute -top-1 -right-1 w-7 h-7 bg-primary text-white text-xs font-black rounded-full flex items-center justify-center border-2 border-white">1</span>
+                        </div>
+                        <h4 class="sora font-black text-gray-900 mb-2">Discovery &amp; Assessment</h4>
+                        <p class="text-gray-400 text-sm">Auditing current state and defining requirements.</p>
+                    </div>
+                    <div class="text-center reveal group" style="transition-delay:0.1s">
+                        <div
+                            class="w-20 h-20 rounded-full bg-white border-2 border-gray-200 mx-auto mb-6 flex items-center justify-center text-3xl relative transition-all group-hover:border-primary group-hover:shadow-xl group-hover:scale-110">
+                            🗺️<span
+                                class="absolute -top-1 -right-1 w-7 h-7 bg-primary text-white text-xs font-black rounded-full flex items-center justify-center border-2 border-white">2</span>
+                        </div>
+                        <h4 class="sora font-black text-gray-900 mb-2">Strategy &amp; Planning</h4>
+                        <p class="text-gray-400 text-sm">Architecting the solution and sprint planning.</p>
+                    </div>
+                    <div class="text-center reveal group" style="transition-delay:0.2s">
+                        <div
+                            class="w-20 h-20 rounded-full bg-white border-2 border-gray-200 mx-auto mb-6 flex items-center justify-center text-3xl relative transition-all group-hover:border-primary group-hover:shadow-xl group-hover:scale-110">
+                            ⚙️<span
+                                class="absolute -top-1 -right-1 w-7 h-7 bg-primary text-white text-xs font-black rounded-full flex items-center justify-center border-2 border-white">3</span>
+                        </div>
+                        <h4 class="sora font-black text-gray-900 mb-2">Build &amp; Deploy</h4>
+                        <p class="text-gray-400 text-sm">Agile development, testing and CI/CD rollout.</p>
+                    </div>
+                    <div class="text-center reveal group" style="transition-delay:0.3s">
+                        <div
+                            class="w-20 h-20 rounded-full bg-white border-2 border-gray-200 mx-auto mb-6 flex items-center justify-center text-3xl relative transition-all group-hover:border-primary group-hover:shadow-xl group-hover:scale-110">
+                            📈<span
+                                class="absolute -top-1 -right-1 w-7 h-7 bg-secondary text-white text-xs font-black rounded-full flex items-center justify-center border-2 border-white">4</span>
+                        </div>
+                        <h4 class="sora font-black text-gray-900 mb-2">Monitor &amp; Optimize</h4>
+                        <p class="text-gray-400 text-sm">Ongoing support, updates and performance tuning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ 8. TESTIMONIALS ══════════ -->
+    <section class="py-24 bg-[#0B1121] relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-14 reveal">
+                <span class="text-secondary font-bold text-xs tracking-widest uppercase">Client Stories</span>
+                <h2 class="sora text-4xl md:text-5xl font-black text-white mt-3">Results That Speak</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-7">
+                <div class="tc rounded-3xl p-8 reveal">
+                    <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+                    <p class="text-white/75 text-sm leading-relaxed italic mb-8">"Unidemy Tech revamped our entire
+                        legacy ERP into a cloud application. The transition was seamless and ROI was visible within
+                        months."</p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-11 h-11 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-black text-sm flex-shrink-0">
+                            RM</div>
+                        <div>
+                            <div class="text-white font-bold text-sm">Rajesh Menon</div>
+                            <div class="text-white/40 text-xs">CTO, FinEdge India</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tc rounded-3xl p-8 reveal" style="transition-delay:0.1s">
+                    <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+                    <p class="text-white/75 text-sm leading-relaxed italic mb-8">"Their IoT and embedded systems team
+                        helped us bring smart-grid meters to market 4 months ahead of schedule. Exceptional engineering
+                        quality."</p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-11 h-11 rounded-full bg-gradient-to-br from-emerald-600 to-teal-500 flex items-center justify-center text-white font-black text-sm flex-shrink-0">
+                            SK</div>
+                        <div>
+                            <div class="text-white font-bold text-sm">Sneha Kapoor</div>
+                            <div class="text-white/40 text-xs">VP Product, EnerTech</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tc rounded-3xl p-8 reveal" style="transition-delay:0.2s">
+                    <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+                    <p class="text-white/75 text-sm leading-relaxed italic mb-8">"We outsourced our entire SOC and cloud
+                        infrastructure to Unidemy. We haven't had a single hour of unplanned downtime since."</p>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-11 h-11 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white font-black text-sm flex-shrink-0">
+                            AM</div>
+                        <div>
+                            <div class="text-white font-bold text-sm">Amit Mishra</div>
+                            <div class="text-white/40 text-xs">Director IT, RetailKart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ 9. CONTACT ══════════ -->
+    <section class="py-24 bg-background" id="contact">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div
+                class="bg-white rounded-[2rem] overflow-hidden shadow-2xl shadow-gray-200/80 grid lg:grid-cols-2 reveal">
+                <div
+                    class="bg-gradient-to-br from-[#0B1121] to-[#0F1E3D] p-12 lg:p-16 text-white flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 text-orange-300 text-xs font-bold tracking-widest uppercase mb-8 border border-secondary/30">
+                            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>Free Consultation
+                        </div>
+                        <h2 class="sora text-3xl lg:text-4xl font-black mb-6 leading-tight">Ready to Transform Your
+                            Business?</h2>
+                        <p class="text-white/50 mb-10 leading-relaxed">Tell us about your project and our experts will
+                            get back to you within 24 hours with a tailored proposal.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-secondary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-bold text-sm">Call Us</div>
+                                    <div class="text-white/50 text-sm">+91 63604 56026</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-envelope text-secondary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-bold text-sm">Email Us</div>
+                                    <div class="text-white/50 text-sm">tech@unidemyglobal.com</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-secondary"></i>
+                                </div>
+                                <div>
+                                    <div class="text-white font-bold text-sm">Headquarters</div>
+                                    <div class="text-white/50 text-sm">HSR Layout, Bangalore, Karnataka</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 pt-10">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/8 border border-white/10 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/8 border border-white/10 flex items-center justify-center text-white/50 hover:bg-sky-500 hover:text-white transition-all"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/8 border border-white/10 flex items-center justify-center text-white/50 hover:bg-gray-700 hover:text-white transition-all"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="p-12 lg:p-16">
+                    <h3 class="sora text-2xl font-black text-gray-900 mb-2">Send Us a Message</h3>
+                    <p class="text-gray-400 text-sm mb-8">We'll respond within one business day.</p>
+                    <form id="contact-form" onsubmit="submitForm(event)">
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="relative col-span-2 sm:col-span-1"><i
+                                    class="fa-regular fa-user ficon"></i><input type="text" class="finput"
+                                    placeholder="Full Name" required></div>
+                            <div class="relative col-span-2 sm:col-span-1"><i
+                                    class="fa-regular fa-envelope ficon"></i><input type="email" class="finput"
+                                    placeholder="Work Email" required></div>
+                        </div>
+                        <div class="relative mb-4"><i class="fa-regular fa-building ficon"></i><input type="text"
+                                class="finput" placeholder="Company Name"></div>
+                        <div class="relative mb-4"><i class="fa-solid fa-list-check ficon"></i>
+                            <select class="finput appearance-none cursor-pointer" required>
+                                <option value="" disabled selected>Service Interested In</option>
+                                <option>AI &amp; Machine Learning</option>
+                                <option>Embedded Systems</option>
+                                <option>Cloud Technologies</option>
+                                <option>Cybersecurity</option>
+                                <option>Software Development</option>
+                                <option>IT Infrastructure</option>
+                            </select>
+                        </div>
+                        <div class="relative mb-6"><i class="fa-regular fa-comment ficon"
+                                style="top:18px;transform:none;"></i><textarea class="finput" rows="4"
+                                placeholder="Tell us about your project..."></textarea></div>
+                        <button type="submit"
+                            class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-4 rounded-xl text-base transition-all shadow-lg shadow-primary/25 active:scale-[0.98] flex items-center justify-center gap-3 group">
+                            Send Message <i
+                                class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <p class="text-center text-xs text-gray-400 mt-4">By submitting, you agree to our <a href="#"
+                                class="underline hover:text-primary">Privacy Policy</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ EXACT FOOTER FROM INDEX.HTML ══════════ -->
+    <footer class="bg-[#0B1121] pt-20 pb-10 mt-auto border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+>>>>>>> kishan
                 <div class="col-span-1 md:col-span-2 lg:col-span-1">
                     <a href="index.html" class="flex items-center gap-2 mb-6 group">
                         <div
@@ -471,18 +1508,25 @@
                                 data-lucide="linkedin" class="w-5 h-5"></i></a>
                     </div>
                 </div>
+<<<<<<< HEAD
 
                 <!-- Programs -->
                 <div>
                     <h3 class="text-white font-bold mb-6">Programs</h3>
                     <ul class="space-y-4 text-slate-400">
                         <li><a href="packages.html" class="hover:text-secondary transition-colors">Packages</a></li>
+=======
+                <div>
+                    <h3 class="text-white font-bold mb-6">Programs</h3>
+                    <ul class="space-y-4 text-slate-400">
+>>>>>>> kishan
                         <li><a href="cbse.html?tab=all" class="hover:text-secondary transition-colors">School Boards</a>
                         </li>
                         <li><a href="iit-jee.html" class="hover:text-secondary transition-colors">Competitive exams</a>
                         </li>
                         <li><a href="internships.html" class="hover:text-secondary transition-colors">Internships</a>
                         </li>
+<<<<<<< HEAD
                         <li><a href="technology-services.html" class="hover:text-secondary transition-colors">Technology
                                 Services</a></li>
                     </ul>
@@ -494,11 +1538,21 @@
                     <ul class="space-y-4 text-slate-400">
                                                 <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
 <li><a href="global-launchpad.html" class="hover:text-secondary transition-colors">Study
+=======
+                        <li><a href="technology-services.html" class="text-secondary">Technology Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="global-launchpad.html" class="hover:text-secondary transition-colors">Study
+>>>>>>> kishan
                                 Abroad</a></li>
                         <li><a href="higher-education.html" class="hover:text-secondary transition-colors">Higher
                                 Education</a></li>
                         <li><a href="medical-abroad.html" class="hover:text-secondary transition-colors">Medical
                                 Abroad</a></li>
+<<<<<<< HEAD
                         <li><a href="blog.html" class="hover:text-secondary transition-colors">Blog</a></li>
                         <li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
                     </ul>
@@ -521,6 +1575,26 @@
                 </div>
             </div>
 
+=======
+                        <li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex gap-3 items-center"><i data-lucide="mail"
+                                class="w-5 h-5 text-primary flex-shrink-0"></i><span
+                                class="text-sm">admissions@unidemyglobal.com</span></li>
+                        <li class="flex gap-3 items-center"><i data-lucide="phone"
+                                class="w-5 h-5 text-primary flex-shrink-0"></i><span class="text-sm">+91 63604
+                                56026</span></li>
+                        <li class="flex gap-3 items-center"><i data-lucide="map-pin"
+                                class="w-5 h-5 text-primary flex-shrink-0"></i><span class="text-sm">Bangalore (HQ),
+                                Karnataka</span></li>
+                    </ul>
+                </div>
+            </div>
+>>>>>>> kishan
             <div
                 class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
                 <p>© 2026 Unidemy Global. All rights reserved.</p>
@@ -532,6 +1606,20 @@
         </div>
     </footer>
 
+<<<<<<< HEAD
+=======
+    <!-- WhatsApp -->
+    <a href="https://wa.me/916360456026" target="_blank"
+        class="whatsapp-widget group animate-bounce-slow fixed bottom-6 right-6 z-50" title="Chat on WhatsApp">
+        <div class="bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center gap-3">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+            <span
+                class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 font-bold">Chat
+                with us</span>
+        </div>
+    </a>
+    <!-- Scroll to Top -->
+>>>>>>> kishan
     <div id="scrollToTopContainer"
         class="fixed bottom-[110px] right-6 z-50 flex flex-col items-center opacity-0 invisible transition-all duration-500 cursor-pointer group translate-y-4"
         onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
@@ -544,12 +1632,16 @@
             TO TOP</span>
     </div>
 
+<<<<<<< HEAD
     <!-- Lucide Icons -->
+=======
+>>>>>>> kishan
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="script.js"></script>
     <script>
         lucide.createIcons();
 
+<<<<<<< HEAD
         // Mobile menu toggle logic
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
             var menu = document.getElementById('mobile-menu');
@@ -582,6 +1674,64 @@
                 }
             }
         });
+=======
+        // Mobile menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Nav scroll
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-xl', 'shadow-lg', 'py-3');
+                nav.classList.remove('bg-transparent', 'py-5');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-xl', 'shadow-lg', 'py-3');
+                nav.classList.add('bg-transparent', 'py-5');
+            }
+        });
+
+        // Scroll to top
+        const scrollBtn = document.getElementById('scrollToTopContainer');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) { scrollBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4'); scrollBtn.classList.add('opacity-100', 'visible', 'translate-y-0'); }
+            else { scrollBtn.classList.add('opacity-0', 'invisible', 'translate-y-4'); scrollBtn.classList.remove('opacity-100', 'visible', 'translate-y-0'); }
+        });
+
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Counter animation
+        const cObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (!e.isIntersecting) return;
+                const el = e.target, target = +el.dataset.target;
+                const suffix = target === 98 ? '%' : '+';
+                let n = 0; const step = Math.ceil(target / 55);
+                const t = setInterval(() => { n = Math.min(n + step, target); el.textContent = n + suffix; if (n >= target) clearInterval(t); }, 28);
+                cObserver.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.cnum').forEach(c => cObserver.observe(c));
+
+        // Process line
+        const pLine = document.getElementById('p-line');
+        if (pLine) {
+            new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) pLine.style.width = '100%'; });
+            }, { threshold: 0.3 }).observe(pLine.parentElement);
+        }
+
+        // Form submit
+        function submitForm(e) {
+            e.preventDefault();
+            document.getElementById('contact-form').innerHTML = '<div class="text-center py-12"><div class="text-6xl mb-5">✅</div><h3 class="text-2xl font-black text-gray-900 mb-3" style="font-family:Sora,sans-serif">Message Sent!</h3><p class="text-gray-500">Our team will be in touch within 24 hours.</p></div>';
+        }
+>>>>>>> kishan
     </script>
 </body>
 
