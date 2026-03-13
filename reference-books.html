@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference Books Store | Unidemy Global</title>
+    <meta name="description" content="Browse and download reference books for various disciplines at Unidemy Global.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E4F9C',
+                        secondary: '#F97316',
+                        background: '#F8FBFF',
+                        accent: '#E6EFFF',
+                        success: '#10B981',
+                        warning: '#F59E0B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .bg-grid-pattern {
+            background-image: radial-gradient(#1E4F9C 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+        .book-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .book-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .tab-active {
+            background-color: #1E4F9C;
+            color: #ffffff;
+            font-weight: 600;
+            box-shadow: 0 4px 14px 0 rgba(30, 79, 156, 0.39);
+        }
+    </style>
+</head>
+
+<body class="bg-background font-sans text-gray-900 scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-sm py-5 px-6 lg:px-8"
+        id="main-nav">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex-shrink-0">
+                <img src="assets/images/Logo (2).png" alt="Unidemy Global"
+                    class="h-8 md:h-10 w-auto mix-blend-multiply transition-transform hover:scale-105">
+            </a>
+            <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        School Boards
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="cbse.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">CBSE programs</a>
+                        <a href="icse.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">ICSE Programmes</a>
+                        <a href="karnataka-board.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Karnataka board</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        Competitive exams
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="neet.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">NEET</a>
+                        <a href="iit-jee.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">IIT-JEE</a>
+                    </div>
+                </div>
+                <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
+                <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        Technology Services
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="technology-services.html?service=cloud"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Cloud Development</a>
+                        <a href="technology-services.html?service=ai-ml"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">AI & Machine Learning</a>
+                        <a href="technology-services.html?service=embedded"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Embedded Software</a>
+                        <a href="technology-services.html?service=digital"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Digital Engineering</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="https://unidemyglobal.com/login.php"
+                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">Log In</a>
+                <a href="https://unidemyglobal.com/register.php"
+                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">Sign Up</a>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-700 p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+        <!-- Mobile Overlay -->
+        <div id="mobile-overlay" class="fixed inset-0 bg-slate-900/50 z-[45] hidden"></div>
+        <!-- Mobile Menu Slider -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white border-t border-gray-100 overflow-hidden shadow-xl mt-4 rounded-2xl relative z-50">
+            <div class="p-6 flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">School Boards</div>
+                    <a href="cbse.html?tab=all" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
+                    <a href="icse.html?tab=all" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
+                    <a href="karnataka-board.html?tab=all" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Karnataka board</a>
+                </div>
+                <div class="h-px w-full bg-gray-100 my-2"></div>
+                <div class="flex flex-col gap-2">
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">Competitive exams</div>
+                    <a href="neet.html?tab=all" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">NEET</a>
+                    <a href="iit-jee.html" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">IIT-JEE</a>
+                </div>
+                <div class="h-px w-full bg-gray-100 my-2"></div>
+                <a href="global-launchpad.html" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Study Abroad</a>
+                <a href="internships.html" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
+                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology Services</a>
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://unidemyglobal.com/login.php"
+                        class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
+                        Log In
+                    </a>
+                    <a href="https://unidemyglobal.com/register.php"
+                        class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 bg-[#0B1121] overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-blue-300 text-sm font-bold mb-4 border border-primary/30">
+                Digital Library
+            </span>
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+                Reference Books Store
+            </h1>
+            <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
+                Explore our curated collection of essential reference books, textbooks, and guides across all major disciplines to support your academic journey.
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto relative group">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                    <i data-lucide="search" class="w-5 h-5 text-gray-400 group-focus-within:text-primary transition-colors"></i>
+                </div>
+                <input type="text" id="book-search"
+                    class="block w-full p-4 pl-12 text-sm text-gray-900 bg-white border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all shadow-sm"
+                    placeholder="Search for books, authors, or subjects...">
+                <button type="button"
+                    class="text-white absolute right-2.5 bottom-2.5 bg-primary hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2 transition-colors">
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Section -->
+    <section class="py-16 bg-background relative" id="store">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <!-- Categories / Filters -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-12" id="category-tabs">
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium transition-all tab-active" data-cat="all">All Books</button>
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all" data-cat="science">Science</button>
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all" data-cat="math">Mathematics</button>
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all" data-cat="humanities">Humanities</button>
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all" data-cat="commerce">Commerce</button>
+            </div>
+
+            <!-- Books Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="books-grid">
+                
+                <!-- Book Card 1 -->
+                <div class="book-card bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col group" data-category="science">
+                    <div class="relative pt-[130%] bg-slate-100 overflow-hidden">
+                        <!-- Placeholder cover -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-blue-500 to-indigo-700">
+                            <i data-lucide="microscope" class="w-16 h-16 text-white/50 mb-4"></i>
+                            <h3 class="text-white font-serif font-bold text-xl leading-tight">Advanced Physics Concepts</h3>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-primary">Science</div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h4 class="font-bold text-gray-900 text-lg mb-1 leading-tight group-hover:text-primary transition-colors">Advanced Physics Concepts</h4>
+                        <p class="text-sm text-gray-500 mb-3 block">Dr. Robert Oppenheimer</p>
+                        <div class="flex items-center gap-1 mb-4">
+                            <div class="flex text-warning">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star-half" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <span class="text-xs text-gray-400 ml-1">(128)</span>
+                        </div>
+                        <div class="mt-auto flex items-center justify-between">
+                            <span class="font-bold text-lg text-slate-900">Free</span>
+                            <button class="flex items-center gap-1 text-sm font-semibold text-primary bg-primary/10 hover:bg-primary/20 px-4 py-2 rounded-lg transition-colors">
+                                <i data-lucide="download" class="w-4 h-4"></i> Get PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="book-card bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col group" data-category="math">
+                    <div class="relative pt-[130%] bg-slate-100 overflow-hidden">
+                        <!-- Placeholder cover -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-rose-500 to-red-700">
+                            <i data-lucide="calculator" class="w-16 h-16 text-white/50 mb-4"></i>
+                            <h3 class="text-white font-serif font-bold text-xl leading-tight">Calculus Unraveled</h3>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-rose-600">Mathematics</div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h4 class="font-bold text-gray-900 text-lg mb-1 leading-tight group-hover:text-primary transition-colors">Calculus Unraveled</h4>
+                        <p class="text-sm text-gray-500 mb-3 block">Prof. Alan Turing</p>
+                        <div class="flex items-center gap-1 mb-4">
+                            <div class="flex text-warning">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <span class="text-xs text-gray-400 ml-1">(342)</span>
+                        </div>
+                        <div class="mt-auto flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="text-xs text-gray-400 line-through">₹499</span>
+                                <span class="font-bold text-lg text-secondary">₹299</span>
+                            </div>
+                            <button class="flex items-center gap-1 text-sm font-semibold text-white bg-secondary hover:bg-orange-600 px-4 py-2 rounded-lg transition-colors shadow-sm shadow-secondary/30">
+                                <i data-lucide="shopping-cart" class="w-4 h-4"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="book-card bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col group" data-category="humanities">
+                    <div class="relative pt-[130%] bg-slate-100 overflow-hidden">
+                        <!-- Placeholder cover -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-emerald-500 to-teal-700">
+                            <i data-lucide="globe" class="w-16 h-16 text-white/50 mb-4"></i>
+                            <h3 class="text-white font-serif font-bold text-xl leading-tight">World History: A Modern Perspective</h3>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-emerald-600">Humanities</div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h4 class="font-bold text-gray-900 text-lg mb-1 leading-tight group-hover:text-primary transition-colors">World History: A Modern Perspective</h4>
+                        <p class="text-sm text-gray-500 mb-3 block">Sarah Jenkins</p>
+                        <div class="flex items-center gap-1 mb-4">
+                            <div class="flex text-warning">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-gray-300"></i>
+                            </div>
+                            <span class="text-xs text-gray-400 ml-1">(89)</span>
+                        </div>
+                        <div class="mt-auto flex items-center justify-between">
+                            <span class="font-bold text-lg text-slate-900">Free</span>
+                            <button class="flex items-center gap-1 text-sm font-semibold text-primary bg-primary/10 hover:bg-primary/20 px-4 py-2 rounded-lg transition-colors">
+                                <i data-lucide="download" class="w-4 h-4"></i> Get PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                <div class="book-card bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col group" data-category="commerce">
+                    <div class="relative pt-[130%] bg-slate-100 overflow-hidden">
+                        <!-- Placeholder cover -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-amber-500 to-orange-700">
+                            <i data-lucide="pie-chart" class="w-16 h-16 text-white/50 mb-4"></i>
+                            <h3 class="text-white font-serif font-bold text-xl leading-tight">Principles of Macroeconomics</h3>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-amber-600">Commerce</div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h4 class="font-bold text-gray-900 text-lg mb-1 leading-tight group-hover:text-primary transition-colors">Principles of Macroeconomics</h4>
+                        <p class="text-sm text-gray-500 mb-3 block">Dr. John Keynes</p>
+                        <div class="flex items-center gap-1 mb-4">
+                            <div class="flex text-warning">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star-half" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <span class="text-xs text-gray-400 ml-1">(215)</span>
+                        </div>
+                        <div class="mt-auto flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-lg text-secondary">₹150</span>
+                            </div>
+                            <button class="flex items-center gap-1 text-sm font-semibold text-white bg-secondary hover:bg-orange-600 px-4 py-2 rounded-lg transition-colors shadow-sm shadow-secondary/30">
+                                <i data-lucide="shopping-cart" class="w-4 h-4"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 5 -->
+                <div class="book-card bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col group" data-category="science">
+                    <div class="relative pt-[130%] bg-slate-100 overflow-hidden">
+                        <!-- Placeholder cover -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-violet-500 to-purple-700">
+                            <i data-lucide="flask-conical" class="w-16 h-16 text-white/50 mb-4"></i>
+                            <h3 class="text-white font-serif font-bold text-xl leading-tight">Organic Chemistry Demystified</h3>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-violet-600">Science</div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h4 class="font-bold text-gray-900 text-lg mb-1 leading-tight group-hover:text-primary transition-colors">Organic Chemistry Demystified</h4>
+                        <p class="text-sm text-gray-500 mb-3 block">Marie Curie</p>
+                        <div class="flex items-center gap-1 mb-4">
+                            <div class="flex text-warning">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <span class="text-xs text-gray-400 ml-1">(402)</span>
+                        </div>
+                        <div class="mt-auto flex items-center justify-between">
+                            <span class="font-bold text-lg text-slate-900">Free</span>
+                            <button class="flex items-center gap-1 text-sm font-semibold text-primary bg-primary/10 hover:bg-primary/20 px-4 py-2 rounded-lg transition-colors">
+                                <i data-lucide="download" class="w-4 h-4"></i> Get PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 6 -->
+                <div class="book-card bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col group" data-category="math">
+                    <div class="relative pt-[130%] bg-slate-100 overflow-hidden">
+                        <!-- Placeholder cover -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-700 to-black">
+                            <i data-lucide="hexagon" class="w-16 h-16 text-white/50 mb-4"></i>
+                            <h3 class="text-white font-serif font-bold text-xl leading-tight">Linear Algebra Foundations</h3>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-slate-800">Mathematics</div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h4 class="font-bold text-gray-900 text-lg mb-1 leading-tight group-hover:text-primary transition-colors">Linear Algebra Foundations</h4>
+                        <p class="text-sm text-gray-500 mb-3 block">David Hilbert</p>
+                        <div class="flex items-center gap-1 mb-4">
+                            <div class="flex text-warning">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star-half" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <span class="text-xs text-gray-400 ml-1">(156)</span>
+                        </div>
+                        <div class="mt-auto flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <span class="font-bold text-lg text-secondary">₹199</span>
+                            </div>
+                            <button class="flex items-center gap-1 text-sm font-semibold text-white bg-secondary hover:bg-orange-600 px-4 py-2 rounded-lg transition-colors shadow-sm shadow-secondary/30">
+                                <i data-lucide="shopping-cart" class="w-4 h-4"></i> Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Pagination -->
+            <div class="mt-16 flex justify-center">
+                <nav class="flex items-center gap-2">
+                    <button class="w-10 h-10 flex items-center justify-center rounded-xl bg-white border border-gray-200 text-gray-500 hover:bg-gray-50 hover:text-primary transition-colors disabled:opacity-50">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary text-white font-bold shadow-md shadow-primary/30">1</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-xl bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium transition-colors">2</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-xl bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium transition-colors">3</button>
+                    <span class="px-2 text-gray-400">...</span>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-xl bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium transition-colors">12</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-xl bg-white border border-gray-200 text-gray-500 hover:bg-gray-50 hover:text-primary transition-colors">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </nav>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B1121] pt-16 pb-8 border-t border-white/5 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+                <div class="lg:col-span-4">
+                    <a href="index.html" class="flex items-center gap-2 mb-6 group">
+                        <img src="assets/images/Logo (2).png" alt="Unidemy Global" class="h-[40px] w-auto transition-transform hover:scale-105">
+                    </a>
+                    <p class="text-slate-400 text-sm mb-8 leading-relaxed max-w-sm">Empowering ambition worldwide. Your premier destination for world-class test preparation, career counseling, and global university admissions.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        <a href="https://www.instagram.com/unidemy.global/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all transform hover:-translate-y-1"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                        <a href="https://www.linkedin.com/company/unidemy-global" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all transform hover:-translate-y-1"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="text-white font-bold mb-6 flex items-center gap-2"><i data-lucide="book-open" class="w-4 h-4 text-primary"></i> Programs</h4>
+                    <ul class="space-y-3">
+                        <li><a href="packages.html" class="text-slate-400 text-sm hover:text-primary transition-colors">Packages</a></li>
+                        <li><a href="cbse.html?tab=all" class="text-slate-400 text-sm hover:text-primary transition-colors">School Boards</a></li>
+                        <li><a href="iit-jee.html" class="text-slate-400 text-sm hover:text-primary transition-colors">Competitive Exams</a></li>
+                        <li><a href="internships.html" class="text-slate-400 text-sm hover:text-primary transition-colors">Internships</a></li>
+                        <li><a href="technology-services.html" class="text-slate-400 text-sm hover:text-primary transition-colors">Technology Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="text-white font-bold mb-6 flex items-center gap-2"><i data-lucide="link" class="w-4 h-4 text-secondary"></i> Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-slate-400 text-sm hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="global-launchpad.html" class="text-slate-400 text-sm hover:text-secondary transition-colors">Study Abroad</a></li>
+                        <li><a href="higher-education.html" class="text-slate-400 text-sm hover:text-secondary transition-colors">Higher Education</a></li>
+                        <li><a href="medical-abroad.html" class="text-slate-400 text-sm hover:text-secondary transition-colors">Medical Abroad</a></li>
+                        <li><a href="free-resources.html" class="text-slate-400 text-sm hover:text-secondary transition-colors">Free Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="text-white font-bold mb-6 flex items-center gap-2"><i data-lucide="info" class="w-4 h-4 text-gray-400"></i> Corporate</h4>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-slate-400 text-sm hover:text-white transition-colors">Learning Blog</a></li>
+                        <li><a href="contact.html" class="text-slate-400 text-sm hover:text-white transition-colors">Contact Support</a></li>
+                        <li><a href="franchise.html" class="text-slate-400 text-sm hover:text-white transition-colors">Franchise</a></li>
+                        <li><a href="privacy.html" class="text-slate-400 text-sm hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-slate-400 text-sm hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="text-white font-bold mb-6 flex items-center gap-2"><i data-lucide="phone-call" class="w-4 h-4 text-success"></i> Contact Us</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex gap-3 items-start"><i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i><span class="text-sm">admissions@unidemyglobal.com</span></li>
+                        <li class="flex gap-3 items-start"><i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i><span class="text-sm">+91 98765 43210</span></li>
+                        <li class="flex gap-3 items-start"><i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0"></i><span class="text-sm">Bangalore (HQ), Karnataka</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-500 text-xs text-center md:text-left">
+                <div class="flex items-center gap-2 flex-wrap justify-center">
+                    <i data-lucide="shield-check" class="w-4 h-4 shrink-0"></i>
+                    © 2026 Unidemy Global. All rights reserved.
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('mobile-overlay');
+        
+        if(btn && menu && overlay) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                overlay.classList.toggle('hidden');
+            });
+            overlay.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                overlay.classList.add('hidden');
+            });
+        }
+        
+        // Category filtering logic
+        const tabs = document.querySelectorAll('#category-tabs button');
+        const books = document.querySelectorAll('.book-card');
+        const searchInput = document.getElementById('book-search');
+
+        function filterBooks() {
+            const activeTab = document.querySelector('#category-tabs button.tab-active');
+            const category = activeTab ? activeTab.getAttribute('data-cat') : 'all';
+            const searchTerm = searchInput.value.toLowerCase();
+
+            books.forEach(book => {
+                const bookCategory = book.getAttribute('data-category');
+                const title = book.querySelector('h4').textContent.toLowerCase();
+                const author = book.querySelector('p').textContent.toLowerCase();
+                
+                const matchesCategory = category === 'all' || bookCategory === category;
+                const matchesSearch = title.includes(searchTerm) || author.includes(searchTerm);
+
+                if (matchesCategory && matchesSearch) {
+                    book.style.display = 'flex';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => {
+                    t.classList.remove('tab-active');
+                    t.classList.add('text-slate-600', 'bg-white', 'border-slate-200');
+                });
+                tab.classList.add('tab-active');
+                tab.classList.remove('text-slate-600', 'bg-white', 'border-slate-200');
+                filterBooks();
+            });
+        });
+
+        if (searchInput) {
+            searchInput.addEventListener('input', filterBooks);
+        }
+    </script>
+</body>
+</html>
