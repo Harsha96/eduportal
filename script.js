@@ -140,6 +140,13 @@ function initNavbar() {
         mobileMenu?.classList.toggle('hidden');
     });
 
+    // Close mobile menu on link click
+    mobileMenu?.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
     // Close mobile menu on click outside
     document.addEventListener('click', (e) => {
         if (mobileMenu && !mobileMenu.contains(e.target) && !mobileMenuBtn?.contains(e.target)) {
