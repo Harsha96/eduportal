@@ -311,7 +311,7 @@
     <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-5 px-6 lg:px-8" id="main-nav">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <a href="index.html" class="flex-shrink-0">
-                <img src="Logo (2).png" alt="Unidemy Global"
+                <img src="assets/images/Logo (2).png" alt="Unidemy Global"
                     class="h-10 w-auto mix-blend-multiply transition-transform hover:scale-105">
             </a>
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
@@ -348,7 +348,27 @@
                 </div>
                 <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
                 <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
-                <a href="#" class="hover:text-primary transition-colors">Technology Services</a>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        Technology Services
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="technology-services.html?service=cloud"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Cloud
+                            Development</a>
+                        <a href="technology-services.html?service=ai-ml"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">AI
+                            & Machine Learning</a>
+                        <a href="technology-services.html?service=embedded"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Embedded
+                            Software</a>
+                        <a href="technology-services.html?service=digital"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Digital
+                            Engineering</a>
+                    </div>
+                </div>
             </div>
             <div class="hidden lg:flex items-center gap-4">
                 <a href="https://unidemyglobal.com/login.php"
@@ -373,12 +393,6 @@
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
                     <a href="karnataka-board.html?tab=all"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
-                    <a href="cbse.html?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
-                    <a href="icse.html?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
-                    <a href="karnataka-board.html?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
                 </div>
                 <div class="h-px w-full bg-gray-100 my-2"></div>
                 <div class="flex flex-col gap-2">
@@ -391,10 +405,6 @@
                 <div class="h-px w-full bg-gray-100 my-2"></div>
                 <a href="global-launchpad.html"
                     class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Study Abroad</a>
-                <a href="internships.html"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology
-                    Services</a>
                 <a href="internships.html"
                     class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
                 <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology
@@ -1086,20 +1096,11 @@
                         <button type="submit"
                             class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-4 rounded-xl text-base transition-all shadow-lg shadow-primary/25 active:scale-[0.98] flex items-center justify-center gap-3 group">
                             Send Message <i
-                                class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                        </button>
-                        <p class="text-center text-xs text-gray-400 mt-4">By submitting, you agree to our <a href="#"
-                                class="underline hover:text-primary">Privacy Policy</a>.</p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ══════════ EXACT FOOTER FROM INDEX.HTML ══════════ -->
+                                class="fa-solid fa-arrow-right group    <!-- Footer -->
     <footer class="bg-[#0B1121] pt-20 pb-10 mt-auto border-t border-white/5">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
                 <div class="col-span-1 md:col-span-2 lg:col-span-1">
                     <a href="index.html" class="flex items-center gap-2 mb-6 group">
                         <div
@@ -1123,45 +1124,46 @@
                                 data-lucide="linkedin" class="w-5 h-5"></i></a>
                     </div>
                 </div>
+
+                <!-- Programs -->
                 <div>
                     <h3 class="text-white font-bold mb-6">Programs</h3>
                     <ul class="space-y-4 text-slate-400">
+                        <li><a href="packages.html" class="hover:text-secondary transition-colors">Packages</a></li>
                         <li><a href="cbse.html?tab=all" class="hover:text-secondary transition-colors">School Boards</a>
                         </li>
                         <li><a href="iit-jee.html" class="hover:text-secondary transition-colors">Competitive exams</a>
                         </li>
                         <li><a href="internships.html" class="hover:text-secondary transition-colors">Internships</a>
                         </li>
-                        <li><a href="technology-services.html" class="text-secondary">Technology Services</a></li>
+                        <li><a href="technology-services.html" class="hover:text-secondary transition-colors">Technology
+                                Services</a></li>
                     </ul>
                 </div>
+
+                <!-- Quick Links -->
                 <div>
                     <h3 class="text-white font-bold mb-6">Quick Links</h3>
                     <ul class="space-y-4 text-slate-400">
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
                         <li><a href="global-launchpad.html" class="hover:text-secondary transition-colors">Study
                                 Abroad</a></li>
                         <li><a href="higher-education.html" class="hover:text-secondary transition-colors">Higher
                                 Education</a></li>
                         <li><a href="medical-abroad.html" class="hover:text-secondary transition-colors">Medical
                                 Abroad</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary transition-colors">Blog</a></li>
                         <li><a href="#" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-white font-bold mb-6">Contact Us</h3>
-                    <ul class="space-y-4 text-slate-400">
-                        <li class="flex gap-3 items-center"><i data-lucide="mail"
-                                class="w-5 h-5 text-primary flex-shrink-0"></i><span
-                                class="text-sm">admissions@unidemyglobal.com</span></li>
-                        <li class="flex gap-3 items-center"><i data-lucide="phone"
-                                class="w-5 h-5 text-primary flex-shrink-0"></i><span class="text-sm">+91 63604
-                                56026</span></li>
-                        <li class="flex gap-3 items-center"><i data-lucide="map-pin"
-                                class="w-5 h-5 text-primary flex-shrink-0"></i><span class="text-sm">Bangalore (HQ),
-                                Karnataka</span></li>
+                                  <li class="flex gap-3 items-center"><i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                            <span class="text-sm">+91 63604 56026</span>
+                        </li>
+                        <li class="flex gap-3 items-center"><i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                            <span class="text-sm">Bangalore (HQ), Karnataka</span>
+                        </li>
                     </ul>
                 </div>
             </div>
+
             <div
                 class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
                 <p>© 2026 Unidemy Global. All rights reserved.</p>
@@ -1173,9 +1175,9 @@
         </div>
     </footer>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/916360456026" target="_blank"
-        class="whatsapp-widget group animate-bounce-slow fixed bottom-6 right-6 z-50" title="Chat on WhatsApp">
+    <!-- Global Widgets -->
+    <a href="https://wa.me/916360456026" target="_blank" class="whatsapp-widget group animate-bounce-slow"
+        title="Chat on WhatsApp">
         <div class="bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center gap-3">
             <i data-lucide="message-circle" class="w-6 h-6"></i>
             <span
@@ -1183,7 +1185,14 @@
                 with us</span>
         </div>
     </a>
-    <!-- Scroll to Top -->
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
     <div id="scrollToTopContainer"
         class="fixed bottom-[110px] right-6 z-50 flex flex-col items-center opacity-0 invisible transition-all duration-500 cursor-pointer group translate-y-4"
         onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
@@ -1196,16 +1205,7 @@
             TO TOP</span>
     </div>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="script.js"></script>
     <script>
-        lucide.createIcons();
-
-        // Mobile menu
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
         // Nav scroll
         const nav = document.getElementById('main-nav');
         window.addEventListener('scroll', () => {
@@ -1218,16 +1218,31 @@
             }
         });
 
+        // Mobile menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
         // Scroll to top
         const scrollBtn = document.getElementById('scrollToTopContainer');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) { scrollBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4'); scrollBtn.classList.add('opacity-100', 'visible', 'translate-y-0'); }
-            else { scrollBtn.classList.add('opacity-0', 'invisible', 'translate-y-4'); scrollBtn.classList.remove('opacity-100', 'visible', 'translate-y-0'); }
+            if (window.scrollY > 400) {
+                scrollBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                scrollBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+            } else {
+                scrollBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                scrollBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+            }
         });
 
         // Reveal on scroll
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
@@ -1238,7 +1253,11 @@
                 const el = e.target, target = +el.dataset.target;
                 const suffix = target === 98 ? '%' : '+';
                 let n = 0; const step = Math.ceil(target / 55);
-                const t = setInterval(() => { n = Math.min(n + step, target); el.textContent = n + suffix; if (n >= target) clearInterval(t); }, 28);
+                const t = setInterval(() => {
+                    n = Math.min(n + step, target);
+                    el.textContent = n + suffix;
+                    if (n >= target) clearInterval(t);
+                }, 28);
                 cObserver.unobserve(el);
             });
         }, { threshold: 0.5 });
@@ -1250,6 +1269,19 @@
             new IntersectionObserver((entries) => {
                 entries.forEach(e => { if (e.isIntersecting) pLine.style.width = '100%'; });
             }, { threshold: 0.3 }).observe(pLine.parentElement);
+        }
+
+        // Form submit
+        function submitForm(e) {
+            e.preventDefault();
+            document.getElementById('contact-form').innerHTML = '<div class="text-center py-12"><div class="text-6xl mb-5">✅</div><h3 class="text-2xl font-black text-gray-900 mb-3" style="font-family:Sora,sans-serif">Message Sent!</h3><p class="text-gray-500">Our team will be in touch within 24 hours.</p></div>';
+        }
+    </script>
+</body>
+
+</html>
+
+ent);
         }
 
         // Form submit
