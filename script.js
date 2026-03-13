@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initHero();
     initTestimonials();
     initGlobalWidgets();
+    initProgramsSlider();
     
     // Initialize Lucide icons
     if (typeof lucide !== 'undefined') {
@@ -119,6 +120,7 @@ function initNavbar() {
     const nav = document.getElementById('main-nav');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
 
     if (!nav) return;
 
@@ -132,25 +134,46 @@ function initNavbar() {
         }
     };
 
+    const toggleMenu = (show) => {
+        if (show === undefined) show = mobileMenu?.classList.contains('hidden');
+        const whatsappWidget = document.querySelector('.whatsapp-widget');
+        
+        if (show) {
+            mobileMenu?.classList.remove('hidden');
+            overlay?.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            // Hide WhatsApp widget when menu is open
+            if (whatsappWidget) whatsappWidget.style.display = 'none';
+        } else {
+            mobileMenu?.classList.add('hidden');
+            overlay?.classList.add('hidden');
+            document.body.style.overflow = '';
+            // Restore WhatsApp widget
+            if (whatsappWidget) whatsappWidget.style.display = '';
+        }
+    };
+
     window.addEventListener('scroll', handleScroll);
     handleScroll();
 
     mobileMenuBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
-        mobileMenu?.classList.toggle('hidden');
+        toggleMenu();
     });
+
+    overlay?.addEventListener('click', () => toggleMenu(false));
 
     // Close mobile menu on link click
     mobileMenu?.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
+            toggleMenu(false);
         });
     });
 
     // Close mobile menu on click outside
     document.addEventListener('click', (e) => {
         if (mobileMenu && !mobileMenu.contains(e.target) && !mobileMenuBtn?.contains(e.target)) {
-            mobileMenu.classList.add('hidden');
+            toggleMenu(false);
         }
     });
 }
@@ -211,5 +234,46 @@ function initGlobalWidgets() {
             top: 0,
             behavior: 'smooth'
         });
+    });
+}
+
+/**
+ * Programs Mobile Slider (3 groups of 3 cards)
+ */
+function initProgramsSlider() {
+    const slides = document.querySelectorAll('.prog-slide');
+    const dots = document.querySelectorAll('.prog-dot');
+    const prevBtn = document.getElementById('prog-prev');
+    const nextBtn = document.getElementById('prog-next');
+    if (!slides.length) return;
+
+    let current = 0;
+
+    function showProgSlide(index) {
+        slides.forEach((s, i) => {
+            s.classList.toggle('hidden', i !== index);
+        });
+        dots.forEach((d, i) => {
+            if (i === index) {
+                d.classList.add('w-7', 'bg-primary');
+                d.classList.remove('w-2', 'bg-gray-300');
+            } else {
+                d.classList.remove('w-7', 'bg-primary');
+                d.classList.add('w-2', 'bg-gray-300');
+            }
+        });
+        current = index;
+        // Re-init Lucide icons for newly visible slide content
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    }
+
+    prevBtn?.addEventListener('click', () => {
+        showProgSlide((current - 1 + slides.length) % slides.length);
+    });
+    nextBtn?.addEventListener('click', () => {
+        showProgSlide((current + 1) % slides.length);
+    });
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => showProgSlide(i));
     });
 }

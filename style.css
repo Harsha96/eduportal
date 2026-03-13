@@ -5,6 +5,15 @@
   --secondary: #F97316;
 }
 
+/* Hide scrollbar for snap-scroll sliders */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome/Safari */
+}
+
 /* Glassmorphism Classes */
 .glass-nav {
   background: rgba(255, 255, 255, 0.8);
