@@ -7,11 +7,15 @@
 
 /* Hide scrollbar for snap-scroll sliders */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE/Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;             /* Chrome/Safari */
+  display: none;
+  /* Chrome/Safari */
 }
 
 /* Glassmorphism Classes */
@@ -133,7 +137,7 @@
   transform: translateY(0);
 }
 
-@keyframes bounce-slow {
+/* @keyframes bounce-slow {
 
   0%,
   100% {
@@ -142,6 +146,42 @@
 
   50% {
     transform: translateY(-8px);
+  }
+} */
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  padding-right: 50px; /* Essential for seamless translateX(-50%) loop */
+  animation: scroll 25s linear infinite;
+}
+
+.logo {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo svg {
+  width: 120px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }
 
