@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation 2 (Class 9-10) | Unidemy Global</title>
+    <meta name="description"
+        content="Master your board exams and get a head start on IIT-JEE and NEET with our Foundation 2 programmes for Class 9-10.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E4F9C',
+                        secondary: '#F97316',
+                        background: '#F8FBFF',
+                        accent: '#E6EFFF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+
+<body class="bg-background font-sans text-gray-900 scroll-smooth flex flex-col min-h-screen">
+
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm py-5">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8">
+            <a href="index.html" class="flex-shrink-0">
+                <img src="assets/images/Logo (2).png" alt="Unidemy Global" class="h-10 w-auto mix-blend-multiply">
+            </a>
+
+            <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        School Boards
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="cbse.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">CBSE
+                            programs</a>
+                        <a href="icse.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">ICSE
+                            Programmes</a>
+                        <a href="karnataka-board.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">karnataka
+                            board</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        Competitive exams
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="neet.html?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">NEET</a>
+                        <a href="iit-jee.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">IIT-JEE</a>
+                    </div>
+                </div>
+                <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
+                <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
+                <div class="relative group">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                        Technology Services
+                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="technology-services.html?service=cloud"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Cloud
+                            Development</a>
+                        <a href="technology-services.html?service=ai-ml"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">AI
+                            & Machine Learning</a>
+                        <a href="technology-services.html?service=embedded"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Embedded
+                            Software</a>
+                        <a href="technology-services.html?service=digital"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Digital
+                            Engineering</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="https://unidemyglobal.com/login.php"
+                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">
+                    Log In
+                </a>
+                <a href="https://unidemyglobal.com/register.php"
+                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">
+                    Sign Up
+                </a>
+            </div>
+
+            <div class="lg:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary transition-colors p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 overflow-hidden shadow-xl mt-4 rounded-2xl">
+            <div class="p-6 flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">School Boards</div>
+                    <a href="cbse.html?tab=all" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
+                    <a href="icse.html?tab=all" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
+                    <a href="karnataka-board.html?tab=all" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
+                </div>
+                <div class="h-px w-full bg-gray-100 my-2"></div>
+                <div class="flex flex-col gap-2">
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">Competitive exams</div>
+                    <a href="neet.html?tab=all" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">NEET</a>
+                    <a href="iit-jee.html" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">IIT-JEE</a>
+                </div>
+                <div class="h-px w-full bg-gray-100 my-2"></div>
+                <a href="global-launchpad.html" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Study Abroad</a>
+                <a href="internships.html" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
+                <a href="technology-services.html" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology Services</a>
+
+                <div class="flex flex-col gap-2 mt-4">
+                    <a href="https://unidemyglobal.com/login.php"
+                        class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
+                        Log In
+                    </a>
+                    <a href="https://unidemyglobal.com/register.php"
+                        class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="w-full pt-28 lg:pt-36 pb-20 bg-white flex-grow">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <nav class="flex text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center gap-2">
+                    <li class="inline-flex items-center group">
+                        <a href="index.html" class="inline-flex items-center hover:text-primary transition-colors">
+                            <i data-lucide="home" class="w-4 h-4 mr-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                            <span class="ml-2 text-primary font-medium uppercase tracking-wider text-xs">Foundation 2</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-16 h-16 rounded-2xl bg-violet-50 flex items-center justify-center shrink-0 border border-violet-100">
+                    <i data-lucide="sword" class="w-8 h-8 text-violet-600"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-900 font-sans tracking-tight uppercase">
+                        Foundation 2 <span class="text-primary">Programmes</span></h1>
+                    <p class="text-gray-500 mt-1">Rigorous Board mastery & early IIT-JEE/NEET foundation for Class 9-10.</p>
+                </div>
+            </div>
+
+            <div class="border-b border-gray-200 mb-8 overflow-x-auto custom-scrollbar">
+                <nav class="flex gap-6 md:gap-10 min-w-max" aria-label="Tabs">
+                    <button data-target="all" class="tab-btn border-b-[3px] border-[#1E4F9C] text-[#1E4F9C] py-4 px-1 text-[15px] font-bold whitespace-nowrap">
+                        All Classes
+                    </button>
+                    <button data-target="class-9" class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                        Class 9
+                    </button>
+                    <button data-target="class-10" class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                        Class 10
+                    </button>
+                </nav>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cards-container">
+                <!-- Exam Warriors Card -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block" data-category="class-9 class-10">
+                    <div class="relative h-[200px] w-full overflow-hidden bg-violet-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#8b5cf6 1px, transparent 1px); background-size: 20px 20px;"></div>
+                        <i data-lucide="sword" class="w-20 h-20 text-violet-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-violet-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-violet-100">
+                            CLASS 9 TO 10
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-violet-600 font-bold text-sm tracking-wide bg-violet-50 px-3 py-1 rounded-full">Foundation 2</span>
+                        </div>
+                        <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
+                            Exam Warriors</h3>
+                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Complete board exam readiness with an emphasis on core concepts and mental ability training.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Comprehensive Board mocks
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                NTSE level mental ability
+                            </li>
+                        </ul>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Explore Schedule</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JEE/NEET Starter Card -->
+                <div class="course-card bg-white border border-gray-100 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block" data-category="class-9 class-10">
+                    <div class="relative h-[200px] w-full overflow-hidden bg-teal-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#14b8a6 1px, transparent 1px); background-size: 20px 20px;"></div>
+                        <i data-lucide="test-tubes" class="w-20 h-20 text-teal-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-teal-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-teal-100">
+                            ELITE PREP
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-teal-600 font-bold text-sm tracking-wide bg-teal-50 px-3 py-1 rounded-full">Foundation 2</span>
+                        </div>
+                        <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
+                            IIT-JEE / NEET Starter</h3>
+                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Bridge the gap between Board level and Competitive level. Advanced physics, chemistry, and higher maths.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Integrated syllabus mapping
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Early exposure to MCQ patterns
+                            </li>
+                        </ul>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Get a Free Trial</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#0B1121] pt-24 pb-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <a href="index.html" class="flex items-center gap-2 mb-6 group">
+                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center p-2 shadow-lg"><i data-lucide="graduation-cap" class="text-white w-full h-full"></i></div>
+                        <span class="text-2xl font-bold text-white tracking-tight">Unidemy<span class="text-secondary">Global</span></span>
+                    </a>
+                    <p class="text-slate-400 leading-relaxed">Empowering young minds with world-class foundational training and competitive exam excellence.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-6">Programs</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="packages.html" class="hover:text-secondary transition-colors">Packages</a></li>
+                        <li><a href="cbse.html" class="hover:text-secondary transition-colors">School Boards</a></li>
+                        <li><a href="iit-jee.html" class="hover:text-secondary transition-colors">IIT-JEE / NEET</a></li>
+                    </ul>
+                </div>
+                <div>
+                   <h3 class="text-white font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-white font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-primary"></i> admissions@unidemyglobal.com</li>
+                        <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-primary"></i> +91 95133 50005</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-slate-500 text-sm">
+                <p>&copy; 2026 Unidemy Global. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+             document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-btn');
+            const cards = document.querySelectorAll('.course-card');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const target = tab.dataset.target;
+                    tabs.forEach(t => {
+                        t.classList.remove('border-[#1E4F9C]', 'text-[#1E4F9C]', 'font-bold');
+                        t.classList.add('border-transparent', 'text-gray-500', 'font-medium');
+                    });
+                    tab.classList.add('border-[#1E4F9C]', 'text-[#1E4F9C]', 'font-bold');
+                    tab.classList.remove('border-transparent', 'text-gray-500', 'font-medium');
+
+                    cards.forEach(card => {
+                        if (target === 'all' || card.dataset.category.includes(target)) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
