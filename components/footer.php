@@ -40,6 +40,9 @@
                         <li><a href="cbse.php?tab=all"
                                 class="text-slate-400 text-sm hover:text-primary transition-colors">School Boards</a>
                         </li>
+                        <li><a href="global-launchpad.php"
+                                class="text-slate-400 text-sm hover:text-primary transition-colors">Global Launchpad</a>
+                        </li>
                         <li><a href="iit-jee.php"
                                 class="text-slate-400 text-sm hover:text-primary transition-colors">Competitive
                                 Exams</a></li>
@@ -58,7 +61,7 @@
                     <ul class="space-y-3">
                         <li><a href="about.php"
                                 class="text-slate-400 text-sm hover:text-secondary transition-colors">About Us</a></li>
-                        <li><a href="global-launchpad.php"
+                        <li><a href="study-abroad.php"
                                 class="text-slate-400 text-sm hover:text-secondary transition-colors">Study Abroad</a>
                         </li>
                         <li><a href="higher-education.php"

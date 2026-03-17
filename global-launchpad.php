@@ -108,11 +108,9 @@ include 'components/header.php';
                                 2000+ Practice Questions
                             </li>
                         </ul>
-                        <div class="mt-auto pt-5 border-t border-gray-100 flex gap-3">
-                            <a href="sat.php"
-                                class="flex-grow inline-block text-center bg-blue-50 text-blue-600 font-bold px-4 py-3 rounded-xl text-sm hover:bg-blue-100 transition-all">Explore</a>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openPackageModal('sat')"
-                                class="bg-blue-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-blue-700 transition-all">View
+                                class="w-full bg-blue-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-blue-700 transition-all">View
                                 Packages</button>
                         </div>
                     </div>
@@ -156,11 +154,9 @@ include 'components/header.php';
                                 Rapid Response Techniques
                             </li>
                         </ul>
-                        <div class="mt-auto pt-5 border-t border-gray-100 flex gap-3">
-                            <a href="act.php"
-                                class="flex-grow inline-block text-center bg-indigo-50 text-indigo-600 font-bold px-4 py-3 rounded-xl text-sm hover:bg-indigo-100 transition-all">Explore</a>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openPackageModal('act')"
-                                class="bg-indigo-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-indigo-700 transition-all">View
+                                class="w-full bg-indigo-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-indigo-700 transition-all">View
                                 Packages</button>
                         </div>
                     </div>
@@ -204,11 +200,9 @@ include 'components/header.php';
                                 Expert Writing Reviews
                             </li>
                         </ul>
-                        <div class="mt-auto pt-5 border-t border-gray-100 flex gap-3">
-                            <a href="ielts.php"
-                                class="flex-grow inline-block text-center bg-rose-50 text-rose-600 font-bold px-4 py-3 rounded-xl text-sm hover:bg-rose-100 transition-all">Explore</a>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openPackageModal('ielts')"
-                                class="bg-rose-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-rose-700 transition-all">View
+                                class="w-full bg-rose-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-rose-700 transition-all">View
                                 Packages</button>
                         </div>
                     </div>
@@ -252,11 +246,9 @@ include 'components/header.php';
                                 Smart Analytics Dashboard
                             </li>
                         </ul>
-                        <div class="mt-auto pt-5 border-t border-gray-100 flex gap-3">
-                            <a href="toefl.php"
-                                class="flex-grow inline-block text-center bg-violet-50 text-violet-600 font-bold px-4 py-3 rounded-xl text-sm hover:bg-violet-100 transition-all">Explore</a>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openPackageModal('toefl')"
-                                class="bg-violet-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-violet-700 transition-all">View
+                                class="w-full bg-violet-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-violet-700 transition-all">View
                                 Packages</button>
                         </div>
                     </div>
@@ -300,11 +292,9 @@ include 'components/header.php';
                                 Rapid Scoring Feedback
                             </li>
                         </ul>
-                        <div class="mt-auto pt-5 border-t border-gray-100 flex gap-3">
-                            <a href="duolingo.php"
-                                class="flex-grow inline-block text-center bg-emerald-50 text-emerald-600 font-bold px-4 py-3 rounded-xl text-sm hover:bg-emerald-100 transition-all">Explore</a>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openPackageModal('duolingo')"
-                                class="bg-emerald-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-emerald-700 transition-all">View
+                                class="w-full bg-emerald-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-emerald-700 transition-all">View
                                 Packages</button>
                         </div>
                     </div>
@@ -348,11 +338,9 @@ include 'components/header.php';
                                 Vocab Booster Modules
                             </li>
                         </ul>
-                        <div class="mt-auto pt-5 border-t border-gray-100 flex gap-3">
-                            <a href="gre.php"
-                                class="flex-grow inline-block text-center bg-orange-50 text-orange-600 font-bold px-4 py-3 rounded-xl text-sm hover:bg-orange-100 transition-all">Explore</a>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openPackageModal('gre')"
-                                class="bg-orange-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-orange-700 transition-all">View
+                                class="w-full bg-orange-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-orange-700 transition-all">View
                                 Packages</button>
                         </div>
                     </div>
@@ -396,11 +384,9 @@ include 'components/header.php';
                                 Test Format & Strategy
                             </li>
                         </ul>
-                        <div class="mt-auto pt-5 border-t border-gray-100 flex gap-3">
-                            <a href="topik.php"
-                                class="flex-grow inline-block text-center bg-rose-50 text-rose-600 font-bold px-4 py-3 rounded-xl text-sm hover:bg-rose-100 transition-all">Explore</a>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openPackageModal('topik')"
-                                class="bg-rose-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-rose-700 transition-all">View
+                                class="w-full bg-rose-600 text-white font-bold px-4 py-3 rounded-xl text-sm hover:bg-rose-700 transition-all">View
                                 Packages</button>
                         </div>
                     </div>
@@ -468,7 +454,7 @@ include 'components/header.php';
                     },
                     {
                         name: 'Band 7.5+ Booster',
-                        subType: 'COMPREHENSIVE TRAINING',
+                        subType: 'COMPRE_TRAINING',
                         highlight: 'MOST POPULAR',
                         icon: 'crown',
                         iconColor: 'orange-600',
@@ -686,7 +672,7 @@ include 'components/header.php';
                         `).join('')}
                     </ul>
 
-                    <a href="${pkg.cta}" class="w-full bg-primary hover:bg-blue-700 text-white font-black py-3 rounded-xl transition-all shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 text-center text-sm">Enroll Now</a>
+                    <button onclick="enrollFromPackage('${pkg.name}')" class="w-full bg-primary hover:bg-blue-700 text-white font-black py-3 rounded-xl transition-all shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 text-center text-sm">Make Request Enrollment</button>
                 </div>
             `).join('');
 
@@ -699,6 +685,13 @@ include 'components/header.php';
             } else {
                 body.className = "grid grid-cols-1 md:grid-cols-3 gap-8";
             }
+        }
+
+        function enrollFromPackage(packageName) {
+            closePackageModal();
+            setTimeout(() => {
+                openEnrollmentModal(packageName);
+            }, 350); // Small delay to allow selection modal to close smoothly
         }
 
         function closePackageModal() {
@@ -764,4 +757,5 @@ include 'components/header.php';
             }
         });
     </script>
+<?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>

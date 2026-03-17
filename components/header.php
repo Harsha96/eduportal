@@ -80,30 +80,7 @@
                 </div>
                 <a href="study-abroad.php" class="hover:text-primary transition-colors">Study Abroad</a>
                 <a href="internships.php" class="hover:text-primary transition-colors">Internships</a>
-                <div class="relative group">
-                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
-                        Technology Services
-                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
-                    </button>
-                    <div
-                        class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <a href="technology-services.php"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-bold border-b border-gray-50">Tech
-                            Services Overview</a>
-                        <a href="cloud-development.php"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-medium">Cloud
-                            Development</a>
-                        <a href="ai-machine-learning.php"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-medium">AI
-                            & Machine Learning</a>
-                        <a href="embedded-software.php"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-medium">Embedded
-                            Software</a>
-                        <a href="digital-engineering.php"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-medium">Digital
-                            Engineering</a>
-                    </div>
-                </div>
+                <a href="technology-services.php" class="hover:text-primary transition-colors py-2">Technology Services</a>
             </div>
             <div class="hidden lg:flex items-center gap-4">
                 <a href="login.php"

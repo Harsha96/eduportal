@@ -210,7 +210,7 @@ include 'components/header.php';
                                 class="text-gray-600 text-sm italic mb-6 leading-relaxed bg-accent/30 p-4 rounded-xl border-l-2 border-primary">
                                 "Education is the key essence of modern society. Our programs develop skills needed to
                                 succeed in today’s modern global economy."</p>
-                            <p class="text-xs text-gray-500 leading-relaxed">Dr. Ken manages the TNERs Program,
+                            <p class="text-xs text-gray-400 leading-relaxed">Dr. Ken manages the TNERs Program,
                                 providing pathways for students from underserved areas. He coordinates academic
                                 curriculums with American degree program partners.</p>
                         </div>
@@ -270,9 +270,118 @@ include 'components/header.php';
                     </div>
                 </div>
             </div>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-20 lg:py-28 scroll-mt-24 border-t border-gray-100">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <!-- Contact Information -->
+                    <div class="space-y-10">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-[10px] font-bold uppercase mb-6">
+                                <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Get In Touch
+                            </div>
+                            <h2 class="text-4xl font-extrabold text-gray-900 mb-6 leading-tight">Ready to start your <span class="text-primary underline decoration-secondary/30">global journey?</span></h2>
+                            <p class="text-gray-600 text-lg leading-relaxed">Whether you're looking for enterprise technology solutions or pursuing international education, our experts are here to guide you every step of the way.</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-5 p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all group">
+                                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-inner">
+                                    <i data-lucide="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">Email Us</h3>
+                                    <p class="text-sm text-gray-500">info@unidemyglobal.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all group">
+                                <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-300 shadow-inner">
+                                    <i data-lucide="phone-call" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">Call Support</h3>
+                                    <p class="text-sm text-gray-500">+1 (555) 000-0000</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 p-6 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all group">
+                                <div class="w-12 h-12 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-inner">
+                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">Our Location</h3>
+                                    <p class="text-sm text-gray-500">Global Headquarters, Digital Plaza</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consultation Form -->
+                    <div class="bg-white p-10 lg:p-12 rounded-[2.5rem] border border-gray-100 shadow-2xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl group-hover:bg-primary/10 transition-colors"></div>
+                        
+                        <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                            <i data-lucide="sparkles" class="w-6 h-6 text-secondary"></i>
+                            Free Consultation
+                        </h3>
+
+                        <form id="consultationForm" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Full Name</label>
+                                    <input type="text" placeholder="John Doe" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Phone Number</label>
+                                    <input type="tel" placeholder="+1 (555) 000-0000" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Service Interest</label>
+                                    <div class="relative">
+                                        <select class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all text-gray-600 cursor-pointer appearance-none">
+                                            <option value="">Select a service</option>
+                                            <option value="web">Web Applications</option>
+                                            <option value="cloud">Cloud Solutions</option>
+                                            <option value="ai">AI Development</option>
+                                            <option value="security">Security Solutions</option>
+                                            <option value="education">International Education</option>
+                                        </select>
+                                        <div class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                                            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Brief Inquiry</label>
+                                <textarea rows="4" placeholder="How can we help you achieve your goals?" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400 resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-primary text-white font-bold py-5 rounded-2xl shadow-xl shadow-primary/20 hover:bg-blue-700 hover:-translate-y-1 transition-all flex items-center justify-center gap-3 active:scale-95">
+                                Send Request
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                            </button>
+                            
+                            <p class="text-[10px] text-gray-400 text-center px-6 leading-relaxed">By submitting this form, you agree to our 
+                                <a href="privacy.php" class="text-primary hover:underline font-bold">Privacy Policy</a> and 
+                                <a href="terms.php" class="text-primary hover:underline font-bold">Terms of Service</a>.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
-
 
 <script>
         function switchTab(tab) {
