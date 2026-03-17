@@ -107,20 +107,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             Explorers Foundation</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Integrated conceptual development focused on building a strong ICSE academic foundation through interactive learning.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Subject-wise conceptual clarity
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Regular assessment & mental math
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated conceptual development focused on building a strong ICSE academic foundation through interactive learning.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Subject-wise conceptual clarity
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Regular assessment & mental math
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-blue-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('ICSE - Explorers Foundation (Class 1-5)')" class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Enroll Request</button>
@@ -151,20 +155,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
                             Academic Builders</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Transition into advanced analytical thinking and deep conceptual mastery tailored for ICSE students.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Core science & math foundation
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Pre-foundation for Grade 9 & 10
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Transition into advanced analytical thinking and deep conceptual mastery tailored for ICSE students.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Core science & math foundation
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Pre-foundation for Grade 9 & 10
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-indigo-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('ICSE - Academic Builders (Class 6-8)')" class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Enroll Request</button>
@@ -195,20 +203,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
                             Future Achievers</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Integrated foundation coaching focusing on Olympiads & competitive mindset starting early.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Advanced Scientific Aptitude
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Olympiad exam preparation
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated foundation coaching focusing on Olympiads & competitive mindset starting early.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Advanced Scientific Aptitude
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Olympiad exam preparation
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('ICSE - Future Achievers Foundation L1 (Class 6-8)')" class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll Request</button>
@@ -239,20 +251,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
                             Academic Achievers</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Rigorous ICSE board preparation paired with thorough performance tracking and board strategies.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                ICSE board exam mocks
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Precise time-management skills
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Rigorous ICSE board preparation paired with thorough performance tracking and board strategies.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    ICSE board exam mocks
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Precise time-management skills
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-violet-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('ICSE - Academic Achievers (Class 9-10)')" class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Enroll Request</button>
@@ -283,20 +299,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
                             IIT-JEE / NEET Starter</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Integrated JEE/NEET starter program for Class 9 & 10 focusing on advanced problem solving.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Entrance-level difficulty problems
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated board & entrance coaching
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated JEE/NEET starter program for Class 9 & 10 focusing on advanced problem solving.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Entrance-level difficulty problems
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Integrated board & entrance coaching
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-teal-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('ICSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')" class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll Request</button>
@@ -357,6 +377,22 @@ include 'components/header.php';
                 activateTab('all');
             }
         });
+
+        function toggleContent(btn) {
+            const wrapper = btn.previousElementSibling;
+            const isExpanded = wrapper.classList.contains('expanded');
+            
+            if (isExpanded) {
+                wrapper.classList.remove('expanded');
+                wrapper.classList.add('collapsed');
+                btn.innerHTML = 'Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>';
+            } else {
+                wrapper.classList.remove('collapsed');
+                wrapper.classList.add('expanded');
+                btn.innerHTML = 'Read Less <i data-lucide="chevron-up" class="w-4 h-4"></i>';
+            }
+            lucide.createIcons();
+        }
     </script>
 <?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>

@@ -180,20 +180,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             Young Learners/ Little Angles</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Nurturing curiosity and building a joyful foundation for lifelong learning through play and discovery.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Play-based learning environment
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Holistic social & emotional development
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Nurturing curiosity and building a joyful foundation for lifelong learning through play and discovery.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Play-based learning environment
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Holistic social & emotional development
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-amber-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Young Learners/ Little Angles (Kindergarten)')" class="w-full bg-amber-50 text-amber-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-amber-600 hover:text-white transition-all">Enroll Request</button>
@@ -224,20 +228,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             Smart Readers</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">A structured phonics program designed to help young learners develop strong reading, pronunciation, and spelling skills.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Sounds recognition & word-building
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Reading fluency & comprehension
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A structured phonics program designed to help young learners develop strong reading, pronunciation, and spelling skills.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Sounds recognition & word-building
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Reading fluency & comprehension
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-orange-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Smart Readers Phonics (K-G2)')" class="w-full bg-orange-50 text-orange-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 hover:text-white transition-all">Enroll Request</button>
@@ -268,20 +276,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             Young Explorers</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Strong academic support with concept-based learning, regular practice, and personalized guidance in core subjects.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Concept-based learning
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Regular Worksheet solving
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Strong academic support with concept-based learning, regular practice, and personalized guidance in core subjects.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Concept-based learning
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Regular Worksheet solving
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-blue-600 font-bold text-[13px] mt-2 mb-4 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <!-- Packages Info Section -->
                         <div class="mt-4 pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
@@ -333,20 +345,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             Abacus Mastery Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Enhance mental calculation speed, focus, and memory through our specialized abacus training.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Accelerated mental math skills
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Improved concentration & visualization
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Enhance mental calculation speed, focus, and memory through our specialized abacus training.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Accelerated mental math skills
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Improved concentration & visualization
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-emerald-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Abacus Mastery Program (Class 1-5)')" class="w-full bg-emerald-50 text-emerald-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-emerald-600 hover:text-white transition-all">Enroll Request</button>
@@ -377,20 +393,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             AI & Robotics Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Introduction to coding, logic building, and hands-on robotics to prepare students for a tech-driven future.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Hands-on robotics kits
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Foundational coding concepts
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Introduction to coding, logic building, and hands-on robotics to prepare students for a tech-driven future.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Hands-on robotics kits
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Foundational coding concepts
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-cyan-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - AI & Robotics Program (Class 1-5)')" class="w-full bg-cyan-50 text-cyan-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-cyan-600 hover:text-white transition-all">Enroll Request</button>
@@ -421,20 +441,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             STEM Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Encouraging critical thinking through Science, Technology, Engineering, and Mathematics experiments.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Real-world problem solving
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Interactive STEM experiments
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Encouraging critical thinking through Science, Technology, Engineering, and Mathematics experiments.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Real-world problem solving
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Interactive STEM experiments
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - STEM Program (Class 1-5)')" class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll Request</button>
@@ -465,20 +489,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             Chess Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Master the art of strategy, patience, and critical thinking with our professional chess coaching.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Learn opening & endgame tactics
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Weekly tournaments & analysis
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Master the art of strategy, patience, and critical thinking with our professional chess coaching.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Learn opening & endgame tactics
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Weekly tournaments & analysis
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-slate-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Chess Program (Class 1-5)')" class="w-full bg-slate-50 text-slate-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-slate-600 hover:text-white transition-all">Enroll Request</button>
@@ -509,20 +537,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
                             Academic Builders Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Foundation for school board excellence with core concepts in Math & Science, building logical and analytical skills.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Core concept mastery (STEM focus)
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Pre-foundation for Grade 9 & 10
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Foundation for school board excellence with core concepts in Math & Science, building logical and analytical skills.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Core concept mastery (STEM focus)
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Pre-foundation for Grade 9 & 10
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-indigo-600 font-bold text-[13px] mt-2 mb-4 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <!-- Subjects Info Section -->
                         <div class="mt-4 pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
@@ -563,20 +595,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
                             Future Achievers Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Integrated pre-foundation coaching for Olympiads & competitive exams with deep conceptual clarity.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Olympiad & Talent Search prep
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Advanced problem-solving techniques
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated pre-foundation coaching for Olympiads & competitive exams with deep conceptual clarity.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Olympiad & Talent Search prep
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Advanced problem-solving techniques
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Future Achievers Foundation L1 (Class 6-8)')" class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll Request</button>
@@ -607,20 +643,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
                             Academic Achievers</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Board exam excellence combined with competitive readiness (NTSE/KVPY) and performance analysis.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Extensive board exam mocks
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Speed & accuracy development
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Board exam excellence combined with competitive readiness (NTSE/KVPY) and performance analysis.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Extensive board exam mocks
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Speed & accuracy development
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-violet-600 font-bold text-[13px] mt-2 mb-4 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <!-- Subjects Info Section -->
                         <div class="mt-4 pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
@@ -660,20 +700,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
                             IIT-JEE / NEET Starter</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Integrated JEE/NEET foundation focusing on advanced problem-solving techniques and entrance-level mastery.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Weekly entrance mock test series
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Personalized entrance mentoring
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated JEE/NEET foundation focusing on advanced problem-solving techniques and entrance-level mastery.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Weekly entrance mock test series
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Personalized entrance mentoring
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-teal-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')" class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll Request</button>
@@ -704,20 +748,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             IIT-JEE Excellence</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Rigorous preparation for JEE Main & Advanced alongside CBSE board exams with expert faculty and advanced study material.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated board & entrance prep
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Advanced numeric & logical mastery
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Rigorous preparation for JEE Main & Advanced alongside CBSE board exams with expert faculty and advanced study material.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Integrated board & entrance prep
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Advanced numeric & logical mastery
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-primary font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100 text-center">
                             <a href="iit-jee.php" class="inline-block w-full bg-primary text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-primary/90 transition-all">View Batch Details</a>
                         </div>
@@ -747,20 +795,24 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             NEET Success Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Comprehensive medical entrance preparation with deep focus on Biology, Physics, and Chemistry for top ranks.</p>
-
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Expert Medical faculty
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Extensive mock test series
-                            </li>
-                        </ul>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Comprehensive medical entrance preparation with deep focus on Biology, Physics, and Chemistry for top ranks.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Expert Medical faculty
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Extensive mock test series
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
                         <div class="mt-auto pt-5 border-t border-gray-100 text-center">
                             <a href="neet.php" class="inline-block w-full bg-primary text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-primary/90 transition-all">View Batch Details</a>
                         </div>
@@ -819,6 +871,22 @@ include 'components/header.php';
                 activateTab('all');
             }
         });
+
+        function toggleContent(btn) {
+            const wrapper = btn.previousElementSibling;
+            const isExpanded = wrapper.classList.contains('expanded');
+            
+            if (isExpanded) {
+                wrapper.classList.remove('expanded');
+                wrapper.classList.add('collapsed');
+                btn.innerHTML = 'Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>';
+            } else {
+                wrapper.classList.remove('collapsed');
+                wrapper.classList.add('expanded');
+                btn.innerHTML = 'Read Less <i data-lucide="chevron-up" class="w-4 h-4"></i>';
+            }
+            lucide.createIcons();
+        }
     </script>
 <?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>
