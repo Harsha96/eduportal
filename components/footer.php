@@ -99,7 +99,7 @@
                 </h4>
                 <ul class="space-y-4 text-slate-400">
                     <li class="flex gap-3 items-start"><i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
-                        <span class="text-sm">admissions@unidemyglobal.com</span>
+                        <span class="text-sm"> info@unidemyglobal.com</span>
                     </li>
                     <li class="flex gap-3 items-start"><i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i>
                         <span class="text-sm">+91 98765 43210</span>
