@@ -125,8 +125,7 @@ include 'components/header.php';
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
-                                class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Explore
-                                Curriculum</button>
+                                onclick="openEnrollmentModal('ICSE - Explorers Foundation (Class 1-5)')" class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -172,8 +171,7 @@ include 'components/header.php';
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
-                                class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Explore
-                                Curriculum</button>
+                                onclick="openEnrollmentModal('ICSE - Skill Builders Program (Class 6-8)')" class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -219,8 +217,7 @@ include 'components/header.php';
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
-                                class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Explore
-                                Curriculum</button>
+                                onclick="openEnrollmentModal('ICSE - Olympiad Prep (Class 6-8)')" class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -266,8 +263,7 @@ include 'components/header.php';
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
-                                class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Explore
-                                Curriculum</button>
+                                onclick="openEnrollmentModal('ICSE - Exam Warriors (Class 9-10)')" class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -313,8 +309,7 @@ include 'components/header.php';
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
-                                class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Explore
-                                Curriculum</button>
+                                class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -373,4 +368,6 @@ include 'components/header.php';
             }
         });
     </script>
+<?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>
+

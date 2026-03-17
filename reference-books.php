@@ -1,9 +1,15 @@
 <?php
+include_once 'components/whitelist.php';
+if (!defined('ENABLE_REFERENCE_BOOKS') || !ENABLE_REFERENCE_BOOKS) {
+    header('Location: index.php');
+    exit;
+}
+?>
+<?php
 $pageTitle = 'Reference Books Store | Unidemy Global';
 $pageDescription = 'Browse and download reference books for various disciplines at Unidemy Global.';
 include 'components/header.php';
 ?>
-    <!-- Hero Section -->
     <section class="relative pt-32 pb-16 bg-[#0B1121] overflow-hidden">
         <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10 text-center">

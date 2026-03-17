@@ -119,8 +119,7 @@ include 'components/header.php';
                             </div>
                             <div class="flex items-center gap-2">
                                 <button
-                                    class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book
-                                    A Seat</button>
+                                    onclick="openEnrollmentModal('IIT-JEE - Class 11 + 12')" class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
                                 <button
                                     class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
                                     <i data-lucide="chevron-right" class="w-5 h-5"></i>
@@ -173,8 +172,7 @@ include 'components/header.php';
                             </div>
                             <div class="flex items-center gap-2">
                                 <button
-                                    class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book
-                                    A Seat</button>
+                                    class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
                                 <button
                                     class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
                                     <i data-lucide="chevron-right" class="w-5 h-5"></i>
@@ -227,8 +225,7 @@ include 'components/header.php';
                             </div>
                             <div class="flex items-center gap-2">
                                 <button
-                                    class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book
-                                    A Seat</button>
+                                    onclick="openEnrollmentModal('IIT-JEE - Class 11 English')" class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
                                 <button
                                     class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
                                     <i data-lucide="chevron-right" class="w-5 h-5"></i>
@@ -276,8 +273,7 @@ include 'components/header.php';
                             </div>
                             <div class="flex items-center gap-2">
                                 <button
-                                    class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book
-                                    A Seat</button>
+                                    onclick="openEnrollmentModal('IIT-JEE - Repeater Program')" class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
                                 <button
                                     class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
                                     <i data-lucide="chevron-right" class="w-5 h-5"></i>
@@ -358,4 +354,6 @@ include 'components/header.php';
             }
         });
     </script>
+<?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>
+
