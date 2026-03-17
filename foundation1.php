@@ -20,6 +20,7 @@ $additionalHead = <<<'HEADCONTENT'
 
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
+            border-radius: 4px;
         }
     </style>
 HEADCONTENT;
@@ -99,7 +100,7 @@ include 'components/header.php';
                             </li>
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
-                            <button class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Enroll Now</button>
+                            <button onclick="openEnrollmentModal('Foundation 1 - Skill Builders Pro')" class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -131,7 +132,7 @@ include 'components/header.php';
                             </li>
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
-                            <button class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Learn More</button>
+                            <button onclick="openEnrollmentModal('Foundation 1 - Olympiad Excellence')" class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -171,4 +172,5 @@ include 'components/header.php';
             });
         });
     </script>
+<?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>

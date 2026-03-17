@@ -1324,7 +1324,7 @@ include 'components/header.php';
 
         <div class="flex flex-wrap justify-center gap-6 md:gap-8">
             <!-- Resource 1 -->
-            <?php if (defined('ENABLE_REFERENCE_BOOKS') && ENABLE_REFERENCE_BOOKS): ?>
+            <?php if (ENABLE_REFERENCE_BOOKS): ?>
                 <a href="reference-books.php"
                     class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
                     <div
@@ -1333,7 +1333,7 @@ include 'components/header.php';
                     <div
                         class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-blue-50 relative">
                         <i data-lucide="book-open"
-                            class="w-6 h-6 md:w-10 md:h-10 text-blue-600 group-hover:scale-110 transition-transform"></i>
+                            class="w-6 h-6 md:w-10 md:h-10 text-primary group-hover:scale-110 transition-transform"></i>
                     </div>
                     <h3
                         class="text-base md:text-2xl font-bold text-slate-900 mb-2 md:mb-4 group-hover:text-primary transition-colors">
@@ -1346,73 +1346,155 @@ include 'components/header.php';
                             class="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
                     </div>
                 </a>
+            <?php else: ?>
+                <div
+                    class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm transition-all grayscale-[30%] opacity-90 cursor-not-allowed">
+                    <div
+                        class="absolute top-4 right-4 bg-gray-100/80 backdrop-blur-sm text-gray-600 text-[10px] font-black px-2.5 py-1 rounded-full flex items-center gap-1 uppercase tracking-wider border border-gray-200">
+                        <i data-lucide="lock" class="w-2.5 h-2.5"></i> Coming Soon
+                    </div>
+                    <div
+                        class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-blue-50/50 relative">
+                        <i data-lucide="book-open" class="w-6 h-6 md:w-10 md:h-10 text-slate-400"></i>
+                    </div>
+                    <h3 class="text-base md:text-2xl font-bold text-slate-500 mb-2 md:mb-4">
+                        Reference Books</h3>
+                    <p class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                        Simplified books for complex academic concepts.</p>
+                    <div class="flex items-center text-xs md:text-sm font-bold text-slate-400">
+                        Locked <i data-lucide="lock" class="w-3 h-3 ml-1"></i>
+                    </div>
+                </div>
             <?php endif; ?>
             <!-- Resource 2 -->
-            <a href="ncert-solutions.php"
-                class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+            <?php if (ENABLE_NCERT_SOLUTIONS): ?>
+                <a href="ncert-solutions.php"
+                    class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-emerald-50 relative">
+                        <i data-lucide="file-text"
+                            class="w-6 h-6 md:w-10 md:h-10 text-emerald-600 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3
+                        class="text-base md:text-2xl font-bold text-slate-900 mb-2 md:mb-4 group-hover:text-primary transition-colors">
+                        NCERT Solutions</h3>
+                    <p
+                        class="text-gray-500 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                        Step-by-step solutions for board exams.</p>
+                    <div class="flex items-center text-xs md:text-sm font-bold text-primary cursor-pointer">
+                        Explore <i data-lucide="arrow-right"
+                            class="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+            <?php else: ?>
                 <div
-                    class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm transition-all grayscale-[30%] opacity-90 cursor-not-allowed">
+                    <div
+                        class="absolute top-4 right-4 bg-gray-100/80 backdrop-blur-sm text-gray-600 text-[10px] font-black px-2.5 py-1 rounded-full flex items-center gap-1 uppercase tracking-wider border border-gray-200">
+                        <i data-lucide="lock" class="w-2.5 h-2.5"></i> Coming Soon
+                    </div>
+                    <div
+                        class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-emerald-50/50 relative">
+                        <i data-lucide="file-text" class="w-6 h-6 md:w-10 md:h-10 text-slate-400"></i>
+                    </div>
+                    <h3 class="text-base md:text-2xl font-bold text-slate-500 mb-2 md:mb-4">
+                        NCERT Solutions</h3>
+                    <p class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                        Step-by-step solutions for board exams.</p>
+                    <div class="flex items-center text-xs md:text-sm font-bold text-slate-400">
+                        Locked <i data-lucide="lock" class="w-3 h-3 ml-1"></i>
+                    </div>
                 </div>
-                <div
-                    class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-emerald-50 relative">
-                    <i data-lucide="file-text"
-                        class="w-6 h-6 md:w-10 md:h-10 text-emerald-600 group-hover:scale-110 transition-transform"></i>
-                </div>
-                <h3
-                    class="text-base md:text-2xl font-bold text-slate-900 mb-2 md:mb-4 group-hover:text-primary transition-colors">
-                    NCERT Solutions</h3>
-                <p
-                    class="text-gray-500 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
-                    Step-by-step solutions for board exams.</p>
-                <div class="flex items-center text-xs md:text-sm font-bold text-primary cursor-pointer">
-                    Explore <i data-lucide="arrow-right"
-                        class="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
-                </div>
-            </a>
+            <?php endif; ?>
             <!-- Resource 3 -->
-            <a href="detailed-notes.php"
-                class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+            <?php if (ENABLE_DETAILED_NOTES): ?>
+                <a href="detailed-notes.php"
+                    class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-orange-50 relative">
+                        <i data-lucide="pen-tool"
+                            class="w-6 h-6 md:w-10 md:h-10 text-orange-600 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3
+                        class="text-base md:text-2xl font-bold text-slate-900 mb-2 md:mb-4 group-hover:text-primary transition-colors">
+                        Detailed Notes</h3>
+                    <p
+                        class="text-gray-500 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                        Comprehensive notes for quick revision.</p>
+                    <div class="flex items-center text-xs md:text-sm font-bold text-primary cursor-pointer">
+                        Explore <i data-lucide="arrow-right"
+                            class="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+            <?php else: ?>
                 <div
-                    class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm transition-all grayscale-[30%] opacity-90 cursor-not-allowed">
+                    <div
+                        class="absolute top-4 right-4 bg-gray-100/80 backdrop-blur-sm text-gray-600 text-[10px] font-black px-2.5 py-1 rounded-full flex items-center gap-1 uppercase tracking-wider border border-gray-200">
+                        <i data-lucide="lock" class="w-2.5 h-2.5"></i> Coming Soon
+                    </div>
+                    <div
+                        class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-orange-50/50 relative">
+                        <i data-lucide="pen-tool" class="w-6 h-6 md:w-10 md:h-10 text-slate-400"></i>
+                    </div>
+                    <h3 class="text-base md:text-2xl font-bold text-slate-500 mb-2 md:mb-4">
+                        Detailed Notes</h3>
+                    <p class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                        Comprehensive notes for quick revision.</p>
+                    <div class="flex items-center text-xs md:text-sm font-bold text-slate-400">
+                        Locked <i data-lucide="lock" class="w-3 h-3 ml-1"></i>
+                    </div>
                 </div>
-                <div
-                    class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-orange-50 relative">
-                    <i data-lucide="pen-tool"
-                        class="w-6 h-6 md:w-10 md:h-10 text-orange-600 group-hover:scale-110 transition-transform"></i>
-                </div>
-                <h3
-                    class="text-base md:text-2xl font-bold text-slate-900 mb-2 md:mb-4 group-hover:text-primary transition-colors">
-                    Detailed Notes</h3>
-                <p
-                    class="text-gray-500 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
-                    Comprehensive notes for quick revision.</p>
-                <div class="flex items-center text-xs md:text-sm font-bold text-primary cursor-pointer">
-                    Explore <i data-lucide="arrow-right"
-                        class="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
-                </div>
-            </a>
+            <?php endif; ?>
             <!-- Resource 4 -->
-            <a href="free-resources.php"
-                class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+            <?php if (ENABLE_FREE_RESOURCES): ?>
+                <a href="free-resources.php"
+                    class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+                    <div
+                        class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-amber-50 relative">
+                        <i data-lucide="unlock"
+                            class="w-6 h-6 md:w-10 md:h-10 text-amber-600 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3
+                        class="text-base md:text-2xl font-bold text-slate-900 mb-2 md:mb-4 group-hover:text-primary transition-colors">
+                        Free Resources</h3>
+                    <p
+                        class="text-gray-500 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                        Practice papers and video lectures.</p>
+                    <div class="flex items-center text-xs md:text-sm font-bold text-primary cursor-pointer">
+                        Access <i data-lucide="arrow-right"
+                            class="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </a>
+            <?php else: ?>
                 <div
-                    class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm transition-all grayscale-[30%] opacity-90 cursor-not-allowed">
+                    <div
+                        class="absolute top-4 right-4 bg-gray-100/80 backdrop-blur-sm text-gray-600 text-[10px] font-black px-2.5 py-1 rounded-full flex items-center gap-1 uppercase tracking-wider border border-gray-200">
+                        <i data-lucide="lock" class="w-2.5 h-2.5"></i> Coming Soon
+                    </div>
+                    <div
+                        class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-amber-50/50 relative">
+                        <i data-lucide="unlock" class="w-6 h-6 md:w-10 md:h-10 text-slate-400"></i>
+                    </div>
+                    <h3 class="text-base md:text-2xl font-bold text-slate-500 mb-2 md:mb-4">
+                        Free Resources</h3>
+                    <p class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                        Practice papers and video lectures.</p>
+                    <div class="flex items-center text-xs md:text-sm font-bold text-slate-400">
+                        Locked <i data-lucide="lock" class="w-3 h-3 ml-1"></i>
+                    </div>
                 </div>
-                <div
-                    class="w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center text-3xl mb-4 md:mb-8 bg-amber-50 relative">
-                    <i data-lucide="unlock"
-                        class="w-6 h-6 md:w-10 md:h-10 text-amber-600 group-hover:scale-110 transition-transform"></i>
-                </div>
-                <h3
-                    class="text-base md:text-2xl font-bold text-slate-900 mb-2 md:mb-4 group-hover:text-primary transition-colors">
-                    Free Resources</h3>
-                <p
-                    class="text-gray-500 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
-                    Practice papers and video lectures.</p>
-                <div class="flex items-center text-xs md:text-sm font-bold text-primary cursor-pointer">
-                    Access <i data-lucide="arrow-right"
-                        class="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
-                </div>
-            </a>
+            <?php endif; ?>
         </div>
     </div>
 </section>

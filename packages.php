@@ -282,7 +282,7 @@ include 'components/header.php';
                     <h4 class="text-xl font-black text-[#0F172A] mb-0.5">${pkg.name}</h4>
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-5">${pkg.subType}</p>
                     <ul class="space-y-3 mb-8 text-left w-full">${pkg.features.map(f => `<li class="flex items-start gap-2.5 text-gray-600 font-medium text-sm"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0 mt-0.5"></i><span>${f}</span></li>`).join('')}</ul>
-                    <a href="${pkg.cta}" class="w-full bg-primary hover:bg-blue-700 text-white font-black py-3 rounded-xl transition-all shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 text-center text-sm">Enroll Now</a>
+                    <button onclick="enrollFromPackage('${pkg.name}')" class="w-full bg-primary hover:bg-blue-700 text-white font-black py-3 rounded-xl transition-all shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 text-center text-sm">Enroll Request</button>
                 </div>
             `).join('');
             if (packages.length === 1) { body.className = "flex justify-center"; body.children[0].classList.add('max-w-md', 'w-full'); }
@@ -298,7 +298,15 @@ include 'components/header.php';
             setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); document.body.style.overflow = ''; }, 300);
         }
 
+        function enrollFromPackage(packageName) {
+            closePackageModal();
+            setTimeout(() => {
+                openEnrollmentModal(packageName);
+            }, 350); // Small delay to allow selection modal to close smoothly
+        }
+
         // Initial Render
         renderGrid();
     </script>
+<?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>

@@ -368,19 +368,6 @@ include 'components/header.php';
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated syllabus mapping
-                            </li>
-                        </ul>
-                        <div class="mt-auto pt-5 border-t border-gray-100">
-                            <button
-                                class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll Request</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </main>
 
 

@@ -20,6 +20,7 @@ $additionalHead = <<<'HEADCONTENT'
 
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
+            border-radius: 4px;
         }
     </style>
 HEADCONTENT;
@@ -96,7 +97,7 @@ include 'components/header.php';
                             </li>
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
-                            <button class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Explore Schedule</button>
+                            <button onclick="openEnrollmentModal('Foundation 2 - Exam Warriors')" class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -128,7 +129,7 @@ include 'components/header.php';
                             </li>
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
-                            <button class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Get a Free Trial</button>
+                            <button onclick="openEnrollmentModal('Foundation 2 - IIT-JEE / NEET Starter')" class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -168,4 +169,5 @@ include 'components/header.php';
             });
         });
     </script>
+<?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>
