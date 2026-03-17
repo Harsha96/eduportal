@@ -65,17 +65,21 @@ include 'components/header.php';
                         class="tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap">
                         All Classes
                     </button>
+                    <button data-target="pre-primary"
+                        class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                        Kindergarten
+                    </button>
                     <button data-target="class-1-5"
                         class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
                         Explorers (Class 1-5)
                     </button>
                     <button data-target="class-6-8"
                         class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
-                        Skill Builders (Class 6-8)
+                        Academic Builders (Class 6-8)
                     </button>
                     <button data-target="class-9-10"
                         class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
-                        Exam Warriors (Class 9-10)
+                        Academic Achievers (Class 9-10)
                     </button>
                 </nav>
             </div>
@@ -83,6 +87,126 @@ include 'components/header.php';
 
             <!-- Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cards-container">
+
+                <!-- Young Learners/ Little Angels Card -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="pre-primary">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-orange-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#f97316 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="baby"
+                            class="w-20 h-20 text-orange-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-orange-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-orange-100">
+                            KINDERGARTEN
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-orange-600 font-bold text-sm tracking-wide bg-orange-50 px-3 py-1 rounded-full">Young Learners</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                            Little Angels Program</h3>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">A nurturing environment focusing on sensory development, language acquisition, and social skills through play-based learning and creative expression.</p>
+
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Sensory & Motor skills
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Language & cognitive development
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
+                        <!-- Packages Info Section -->
+                        <div class="mt-auto pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                            </div>
+                            <button
+                                onclick="openEnrollmentModal('Karnataka Board - Little Angels Program')" class="w-full bg-orange-50 text-orange-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 hover:text-white transition-all">Enroll Request</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Readers Card -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="pre-primary">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-pink-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#ec4899 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="book-open-check"
+                            class="w-20 h-20 text-pink-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-pink-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-pink-100">
+                            KINDERGARTEN
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-pink-600 font-bold text-sm tracking-wide bg-pink-50 px-3 py-1 rounded-full">Young Learners</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                            Smart Readers</h3>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Advanced literacy program focusing on phonics, early reading, and comprehensive vocabulary building for pre-primary students.</p>
+
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Phonics-based reading
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Creative writing introduction
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
+                        <!-- Packages Info Section -->
+                        <div class="mt-auto pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                            </div>
+                            <button
+                                onclick="openEnrollmentModal('Karnataka Board - Smart Readers Program')" class="w-full bg-pink-50 text-pink-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-pink-600 hover:text-white transition-all">Enroll Request</button>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Class 1-5 Card -->
                 <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
@@ -108,24 +232,33 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                             Explorers Foundation</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Early stage conceptual
-                            development focused on building a strong academic foundation through interactive learning
-                            methodologies.</p>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Early stage conceptual
+                                development focused on building a strong academic foundation through interactive learning
+                                methodologies.</p>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Interactive visual learning
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Foundational mathematics & science
-                            </li>
-                        </ul>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Interactive visual learning
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Foundational mathematics & science
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
                         <!-- Packages Info Section -->
-                        <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="mt-auto pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                     <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
@@ -171,24 +304,33 @@ include 'components/header.php';
                         </div>
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
-                            Skill Builders Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Transition into advanced logic
-                            building. Focuses on Olympiads readiness and deep conceptual mastery in STEM.</p>
+                            Academic Builders Program</h3>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Transition into advanced logic
+                                building. Focuses on Olympiads readiness and deep conceptual mastery in STEM.</p>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Introduction to analytical reasoning
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Olympiad level problem solving
-                            </li>
-                        </ul>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Introduction to analytical reasoning
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Olympiad level problem solving
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
                         <!-- Packages Info Section -->
-                        <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="mt-auto pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                     <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
@@ -210,7 +352,7 @@ include 'components/header.php';
                         </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
-                                onclick="openEnrollmentModal('Karnataka Board - Skill Builders Program (Class 6-8)')" class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Enroll Request</button>
+                                onclick="openEnrollmentModal('Karnataka Board - Academic Builders Program (Class 6-8)')" class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -239,23 +381,32 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
                             Olympiad Prep</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Dedicated coaching for national
-                            and international Olympiads building competitive temperament.</p>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Dedicated coaching for national
+                                and international Olympiads building competitive temperament.</p>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Expert Olympiad faculty
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Mock tests & detailed analytics
-                            </li>
-                        </ul>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Expert Olympiad faculty
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Mock tests & detailed analytics
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
                         <!-- Packages Info Section -->
-                        <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="mt-auto pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                     <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
@@ -301,24 +452,33 @@ include 'components/header.php';
                         </div>
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
-                            Exam Warriors</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Board exam mastery paired with
-                            rigorous NTSE & early IIT-JEE/NEET foundation training.</p>
+                            Academic Achievers</h3>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Board exam mastery paired with
+                                rigorous NTSE & early IIT-JEE/NEET foundation training.</p>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Board Exam Strategy & Mocks
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Early preparation for competitive exams
-                            </li>
-                        </ul>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Board Exam Strategy & Mocks
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Early preparation for competitive exams
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
                         <!-- Packages Info Section -->
-                        <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="mt-auto pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                     <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
@@ -340,7 +500,7 @@ include 'components/header.php';
                         </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
-                                onclick="openEnrollmentModal('Karnataka Board - Exam Warriors (Class 9-10)')" class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Enroll Request</button>
+                                onclick="openEnrollmentModal('Karnataka Board - Academic Achievers (Class 9-10)')" class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
                     </div>
                 </div>
@@ -369,23 +529,32 @@ include 'components/header.php';
                         <h3
                             class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
                             IIT-JEE / NEET Starter</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Get a head start on competitive
-                            engineering and medical entrance exams with specialized training.</p>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Get a head start on competitive
+                                engineering and medical entrance exams with specialized training.</p>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Core concept clarification
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated syllabus mapping
-                            </li>
-                        </ul>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Core concept clarification
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Integrated syllabus mapping
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
                         <!-- Packages Info Section -->
-                        <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="mt-auto pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                     <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
@@ -418,6 +587,29 @@ include 'components/header.php';
 
 
 <script>
+        lucide.createIcons();
+
+        function toggleContent(btn) {
+            const wrapper = btn.previousElementSibling;
+            const isCollapsed = wrapper.classList.contains('collapsed');
+            const autoHeight = wrapper.scrollHeight + 'px';
+
+            if (isCollapsed) {
+                wrapper.classList.remove('collapsed');
+                wrapper.classList.add('expanded');
+                wrapper.style.maxHeight = autoHeight;
+                btn.querySelector('span').textContent = 'Read Less';
+                btn.querySelector('i').setAttribute('data-lucide', 'arrow-up');
+            } else {
+                wrapper.classList.add('collapsed');
+                wrapper.classList.remove('expanded');
+                wrapper.style.maxHeight = '150px'; // Matching the base height
+                btn.querySelector('span').textContent = 'Read More';
+                btn.querySelector('i').setAttribute('data-lucide', 'arrow-right');
+            }
+            lucide.createIcons();
+        }
+
         // Tab selection logic based on URL parameters
         document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);

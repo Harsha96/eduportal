@@ -99,17 +99,24 @@ include 'components/header.php';
                         <span
                             class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">HINGLISH</span>
                     </div>
-                    <h3 class="text-[22px] font-bold mb-5 text-white">Need a Name</h3>
-                    <ul class="space-y-3 mb-8 flex-grow">
-                        <li class="flex items-start text-[14px] text-gray-300">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                            Experienced Faculty
-                        </li>
-                        <li class="flex items-start text-[14px] text-gray-300">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                            Tech-enabled Offline Classroom Learning
-                        </li>
-                    </ul>
+                    <h3 class="text-[22px] font-bold mb-5 text-white">Pratham JEE</h3>
+                    <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                Experienced Faculty
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                Tech-enabled Offline Classroom Learning
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button onclick="toggleContent(this)" class="flex items-center gap-2 text-[#FBBF24] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                        <span>Read More</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                    </button>
                     <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
                         <div class="flex flex-col">
                             <span class="text-[14px] font-bold text-secondary">Premium Program</span>
@@ -118,6 +125,7 @@ include 'components/header.php';
                         </div>
                         <div class="flex items-center gap-2">
                             <button
+                                onclick="openEnrollmentModal('IIT-JEE - Pratham JEE (Class 11 + 12)')"
                                 class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book
                                 A Seat</button>
                             <button
@@ -147,19 +155,26 @@ include 'components/header.php';
                     <div class="flex items-center justify-between mb-3">
                         <span class="text-[#FBBF24] font-semibold text-sm">Class 11 JEE</span>
                         <span
-                            class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">à¤¹à¤¿à¤¨à¥à¤¦à¥€</span>
+                            class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">à¤¹à¤¿à¤¨à¥ à¤¦à¥€</span>
                     </div>
-                    <h3 class="text-[22px] font-bold mb-5 text-white">Need a Name</h3>
-                    <ul class="space-y-3 mb-8 flex-grow">
-                        <li class="flex items-start text-[14px] text-gray-300">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                            Live Interactive Smart Classes
-                        </li>
-                        <li class="flex items-start text-[14px] text-gray-300">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                            Regular Offline Tests
-                        </li>
-                    </ul>
+                    <h3 class="text-[22px] font-bold mb-5 text-white">Lakshya JEE</h3>
+                    <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                Live Interactive Smart Classes
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                Regular Offline Tests
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button onclick="toggleContent(this)" class="flex items-center gap-2 text-[#FBBF24] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                        <span>Read More</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                    </button>
                     <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
                         <div class="flex flex-col">
                             <div class="flex items-baseline gap-2 mb-0.5">
@@ -170,6 +185,7 @@ include 'components/header.php';
                         </div>
                         <div class="flex items-center gap-2">
                             <button
+                                onclick="openEnrollmentModal('IIT-JEE - Lakshya JEE (Class 11)')"
                                 class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book
                                 A Seat</button>
                             <button
@@ -201,17 +217,24 @@ include 'components/header.php';
                         <span
                             class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">ENGLISH</span>
                     </div>
-                    <h3 class="text-[22px] font-bold mb-5 text-white">Need a Name</h3>
-                    <ul class="space-y-3 mb-8 flex-grow">
-                        <li class="flex items-start text-[14px] text-gray-300">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                            Live Interactive Smart Classes
-                        </li>
-                        <li class="flex items-start text-[14px] text-gray-300">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                            Regular Offline Tests
-                        </li>
-                    </ul>
+                    <h3 class="text-[22px] font-bold mb-5 text-white">Arjuna JEE</h3>
+                    <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                Live Interactive Smart Classes
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                Regular Offline Tests
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button onclick="toggleContent(this)" class="flex items-center gap-2 text-[#FBBF24] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                        <span>Read More</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                    </button>
                     <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
                         <div class="flex flex-col">
                             <div class="flex items-baseline gap-2 mb-0.5">
@@ -222,6 +245,7 @@ include 'components/header.php';
                         </div>
                         <div class="flex items-center gap-2">
                             <button
+                                onclick="openEnrollmentModal('IIT-JEE - Arjuna JEE (Class 11)')"
                                 class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book
                                 A Seat</button>
                             <button
@@ -251,17 +275,24 @@ include 'components/header.php';
                         <span
                             class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">ENGLISH</span>
                     </div>
-                    <h3 class="text-[22px] font-bold mb-5 text-white">Need a Name</h3>
-                    <ul class="space-y-3 mb-8 flex-grow">
-                        <li class="flex items-start text-[14px] text-gray-300">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                            Dedicated Doubt Counters
-                        </li>
-                        <li class="flex items-start text-[14px] text-gray-300">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
-                            Advanced Material & Mock Tests
-                        </li>
-                    </ul>
+                    <h3 class="text-[22px] font-bold mb-5 text-white">Pinnacle JEE</h3>
+                    <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                Dedicated Doubt Counters
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-300">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                Advanced Material & Mock Tests
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button onclick="toggleContent(this)" class="flex items-center gap-2 text-[#FBBF24] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                        <span>Read More</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                    </button>
                     <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
                         <div class="flex flex-col">
                             <span class="text-[14px] font-bold text-secondary">Premium Program</span>
@@ -270,6 +301,7 @@ include 'components/header.php';
                         </div>
                         <div class="flex items-center gap-2">
                             <button
+                                onclick="openEnrollmentModal('IIT-JEE - Pinnacle JEE (Repeater)')"
                                 class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Book
                                 A Seat</button>
                             <button
@@ -288,6 +320,27 @@ include 'components/header.php';
 
 <script>
     lucide.createIcons();
+
+    function toggleContent(btn) {
+        const wrapper = btn.previousElementSibling;
+        const isCollapsed = wrapper.classList.contains('collapsed');
+        const autoHeight = wrapper.scrollHeight + 'px';
+
+        if (isCollapsed) {
+            wrapper.classList.remove('collapsed');
+            wrapper.classList.add('expanded');
+            wrapper.style.maxHeight = autoHeight;
+            btn.querySelector('span').textContent = 'Read Less';
+            btn.querySelector('i').setAttribute('data-lucide', 'arrow-up');
+        } else {
+            wrapper.classList.add('collapsed');
+            wrapper.classList.remove('expanded');
+            wrapper.style.maxHeight = '150px'; // Matching the base height
+            btn.querySelector('span').textContent = 'Read More';
+            btn.querySelector('i').setAttribute('data-lucide', 'arrow-right');
+        }
+        lucide.createIcons();
+    }
 
     // Mobile menu toggle logic
     document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {

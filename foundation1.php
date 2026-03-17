@@ -87,20 +87,29 @@ include 'components/header.php';
                             <span class="text-indigo-600 font-bold text-sm tracking-wide bg-indigo-50 px-3 py-1 rounded-full">Foundation 1</span>
                         </div>
                         <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
-                            Skill Builders Pro</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Advanced academic syllabus coverage with a focus on logical reasoning, analytical skills, and STEM excellence.</p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated competitive prep
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Visual concept mastery
-                            </li>
-                        </ul>
+                            Academic Builders Pro</h3>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Advanced academic syllabus coverage with a focus on logical reasoning, analytical skills, and STEM excellence.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Integrated competitive prep
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Visual concept mastery
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
                         <!-- Packages Info Section -->
-                        <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="mt-auto pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                     <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
@@ -137,19 +146,28 @@ include 'components/header.php';
                         </div>
                         <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
                             Olympiad Excellence</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Dedicated training for SOF, SilverZone, and Unified Council Olympiads. Build a competitive temperament early.</p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Expert Olympiad mentors
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Rank-oriented test series
-                            </li>
-                        </ul>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Dedicated training for SOF, SilverZone, and Unified Council Olympiads. Build a competitive temperament early.</p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Expert Olympiad mentors
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Rank-oriented test series
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+
                         <!-- Packages Info Section -->
-                        <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="mt-auto pt-4 border-t border-gray-100">
                             <div class="flex flex-wrap gap-2">
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                     <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
@@ -177,6 +195,28 @@ include 'components/header.php';
 
 <script>
         lucide.createIcons();
+
+        function toggleContent(btn) {
+            const wrapper = btn.previousElementSibling;
+            const isCollapsed = wrapper.classList.contains('collapsed');
+            const autoHeight = wrapper.scrollHeight + 'px';
+
+            if (isCollapsed) {
+                wrapper.classList.remove('collapsed');
+                wrapper.classList.add('expanded');
+                wrapper.style.maxHeight = autoHeight;
+                btn.querySelector('span').textContent = 'Read Less';
+                btn.querySelector('i').setAttribute('data-lucide', 'arrow-up');
+            } else {
+                wrapper.classList.add('collapsed');
+                wrapper.classList.remove('expanded');
+                wrapper.style.maxHeight = '150px'; // Matching the base height
+                btn.querySelector('span').textContent = 'Read More';
+                btn.querySelector('i').setAttribute('data-lucide', 'arrow-right');
+            }
+            lucide.createIcons();
+        }
+
         document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
              document.getElementById('mobile-menu')?.classList.toggle('hidden');
         });
