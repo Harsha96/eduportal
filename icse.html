@@ -239,6 +239,10 @@
                         class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
                         Exam Warriors (Class 9-10)
                     </button>
+                    <button data-target="class-11-12"
+                        class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                        Senior Secondary (Class 11-12)
+                    </button>
                 </nav>
             </div>
 
@@ -262,35 +266,53 @@
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex items-center justify-between mb-3">
-                            <span
-                                class="text-blue-600 font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">ICSE</span>
+                                                <div class="flex items-center justify-between mb-3">
+                            <span class="text-blue-600 font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">ICSE</span>
                         </div>
-                        <h3
-                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
-                            Explorers Foundation</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Early stage conceptual
-                            development focused on building a strong academic foundation through interactive learning
-                            methodologies.</p>
+                        <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                            Young Explorers
+                        </h3>
+                        <div class="mb-4">
+                            <p class="text-[13px] text-gray-600 leading-relaxed line-clamp-2 transition-all duration-300">Strong academic support for ICSE Grade 1 to 5 students with concept-based learning, regular practice, and personalized guidance in core subjects.</p>
+                            <button onclick="this.previousElementSibling.classList.toggle('line-clamp-2'); this.textContent = this.textContent === 'Read more' ? 'Read less' : 'Read more';" class="text-blue-600 text-[11px] font-bold mt-1 hover:underline text-left tracking-wide">Read more</button>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Subjects Covered</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-blue-50 text-blue-700 text-[11px] font-bold px-2 py-1 rounded-md">Mathematics</span>
+                                <span class="bg-blue-50 text-blue-700 text-[11px] font-bold px-2 py-1 rounded-md">EVS</span>
+                                <span class="bg-blue-50 text-blue-700 text-[11px] font-bold px-2 py-1 rounded-md">Languages</span>
+                                <span class="bg-blue-50 text-blue-700 text-[11px] font-bold px-2 py-1 rounded-md">Computer Science</span>
+                            </div>
+                        </div>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Interactive visual learning
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Foundational mathematics & science
-                            </li>
-                        </ul>
+                        <div class="flex-grow">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Learning Approach</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Concept-based learning
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Regular Worksheet solving
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Repetitive problem solving for mastery
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Builds confidence and strong fundamentals
+                                </li>
+                            </ul>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Explore
                                 Curriculum</button>
-                        </div>
-                    </div>
+                        </div></div>
                 </div>
 
                 <!-- Class 6-8 Card -->
@@ -309,35 +331,47 @@
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex items-center justify-between mb-3">
-                            <span
-                                class="text-indigo-600 font-bold text-sm tracking-wide bg-indigo-50 px-3 py-1 rounded-full">ICSE
-                                + Foundation 1</span>
+                                                <div class="flex items-center justify-between mb-3">
+                            <span class="text-indigo-600 font-bold text-sm tracking-wide bg-indigo-50 px-3 py-1 rounded-full">ICSE + Foundation 1</span>
                         </div>
-                        <h3
-                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
-                            Skill Builders Program</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Transition into advanced logic
-                            building. Focuses on Olympiads readiness and deep conceptual mastery in STEM.</p>
+                        <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
+                            <span class="block text-[18px] text-indigo-600 mb-1">Academic Builders</span>
+                            Skill Builders Program
+                        </h3>
+                        <p class="text-[13px] text-gray-600 mb-4 leading-relaxed line-clamp-2">Develop strong conceptual understanding and analytical thinking through our structured teaching methodology.</p>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Subjects Covered</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-indigo-50 text-indigo-700 text-[11px] font-bold px-2 py-1 rounded-md">Mathematics</span>
+                                <span class="bg-indigo-50 text-indigo-700 text-[11px] font-bold px-2 py-1 rounded-md">Science</span>
+                                <span class="bg-indigo-50 text-indigo-700 text-[11px] font-bold px-2 py-1 rounded-md">Languages</span>
+                                <span class="bg-indigo-50 text-indigo-700 text-[11px] font-bold px-2 py-1 rounded-md">Computer Science</span>
+                            </div>
+                        </div>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Introduction to analytical reasoning
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Olympiad level problem solving
-                            </li>
-                        </ul>
+                        <div class="flex-grow">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Learning Approach</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Concept-based teaching
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Problem-solving exercises
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Periodic assessments
+                                </li>
+                            </ul>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Explore
                                 Curriculum</button>
-                        </div>
-                    </div>
+                        </div></div>
                 </div>
 
                 <!-- Foundation 1 Card (Class 6-8) -->
@@ -356,35 +390,46 @@
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex items-center justify-between mb-3">
-                            <span
-                                class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Foundation
-                                1</span>
+                                                <div class="flex items-center justify-between mb-3">
+                            <span class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Foundation 1</span>
                         </div>
-                        <h3
-                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
-                            Olympiad Prep</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Dedicated coaching for national
-                            and international Olympiads building competitive temperament.</p>
+                        <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
+                            <span class="block text-[18px] text-rose-600 mb-1">Foundation Level 1</span>
+                            Future Achievers
+                        </h3>
+                        <p class="text-[13px] text-gray-600 mb-4 leading-relaxed line-clamp-2">Dedicated coaching for national and international Olympiads building competitive temperament.</p>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Subjects Covered</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-rose-50 text-rose-700 text-[11px] font-bold px-2 py-1 rounded-md">Adv. Mathematics</span>
+                                <span class="bg-rose-50 text-rose-700 text-[11px] font-bold px-2 py-1 rounded-md">Science</span>
+                                <span class="bg-rose-50 text-rose-700 text-[11px] font-bold px-2 py-1 rounded-md">Logical Reasoning</span>
+                            </div>
+                        </div>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Expert Olympiad faculty
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Mock tests & detailed analytics
-                            </li>
-                        </ul>
+                        <div class="flex-grow">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Learning Approach</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Competitive exam prep
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Weekly tests & practice
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Olympiad support
+                                </li>
+                            </ul>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Explore
                                 Curriculum</button>
-                        </div>
-                    </div>
+                        </div></div>
                 </div>
 
                 <!-- Class 9-10 Card -->
@@ -403,35 +448,48 @@
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex items-center justify-between mb-3">
-                            <span
-                                class="text-violet-600 font-bold text-sm tracking-wide bg-violet-50 px-3 py-1 rounded-full">ICSE
-                                + Foundation 2</span>
+                                                <div class="flex items-center justify-between mb-3">
+                            <span class="text-violet-600 font-bold text-sm tracking-wide bg-violet-50 px-3 py-1 rounded-full">ICSE + Foundation 2</span>
                         </div>
-                        <h3
-                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
-                            Exam Warriors</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Board exam mastery paired with
-                            rigorous NTSE & early IIT-JEE/NEET foundation training.</p>
+                        <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
+                            <span class="block text-[18px] text-violet-600 mb-1">Academic Achievers</span>
+                            Exam Warriors
+                        </h3>
+                        <p class="text-[13px] text-gray-600 mb-4 leading-relaxed line-clamp-2">Strong conceptual learning and rigorous board exam preparation with personalized guidance.</p>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Subjects Covered</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-violet-50 text-violet-700 text-[11px] font-bold px-2 py-1 rounded-md">Maths</span>
+                                <span class="bg-violet-50 text-violet-700 text-[11px] font-bold px-2 py-1 rounded-md">Physics</span>
+                                <span class="bg-violet-50 text-violet-700 text-[11px] font-bold px-2 py-1 rounded-md">Chemistry</span>
+                                <span class="bg-violet-50 text-violet-700 text-[11px] font-bold px-2 py-1 rounded-md">Biology</span>
+                                <span class="bg-violet-50 text-violet-700 text-[11px] font-bold px-2 py-1 rounded-md">Languages</span>
+                            </div>
+                        </div>
 
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Board Exam Strategy & Mocks
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Early preparation for competitive exams
-                            </li>
-                        </ul>
+                        <div class="flex-grow">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Learning Approach</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Detailed concept teaching
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Chapter-wise tests & mocks
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Personalized guidance
+                                </li>
+                            </ul>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Explore
                                 Curriculum</button>
-                        </div>
-                    </div>
+                        </div></div>
                 </div>
 
                 <!-- Foundation 2 Card (Class 9-10) -->
@@ -450,32 +508,179 @@
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
+                                                <div class="flex items-center justify-between mb-3">
+                            <span class="text-teal-600 font-bold text-sm tracking-wide bg-teal-50 px-3 py-1 rounded-full">Foundation 2</span>
+                        </div>
+                        <h3 class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
+                            <span class="block text-[18px] text-teal-600 mb-1">Foundation Level 2</span>
+                            IIT-JEE / NEET Starter
+                        </h3>
+                        <p class="text-[13px] text-gray-600 mb-4 leading-relaxed line-clamp-2">Get a head start on competitive engineering and medical entrance exams with specialized training.</p>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Subjects Covered</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-teal-50 text-teal-700 text-[11px] font-bold px-2 py-1 rounded-md">Physics</span>
+                                <span class="bg-teal-50 text-teal-700 text-[11px] font-bold px-2 py-1 rounded-md">Chemistry</span>
+                                <span class="bg-teal-50 text-teal-700 text-[11px] font-bold px-2 py-1 rounded-md">Maths/Bio</span>
+                                <span class="bg-teal-50 text-teal-700 text-[11px] font-bold px-2 py-1 rounded-md">Analytical Thinking</span>
+                            </div>
+                        </div>
+
+                        <div class="flex-grow">
+                            <h4 class="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-2">Learning Approach</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Board + competitive prep
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Weekly tests & worksheets
+                                </li>
+                                <li class="flex items-start text-[13px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2 text-green-500 shrink-0 mt-0.5"></i>
+                                    Mentoring sessions
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Explore
+                                Curriculum</button>
+                        </div></div>
+                </div>
+
+                <!-- Board Excellence Card (Class 11-12) -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-11-12">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-fuchsia-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#d946ef 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="book-open-check"
+                            class="w-20 h-20 text-fuchsia-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-fuchsia-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-fuchsia-100">
+                            CLASS 11 TO 12
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span
-                                class="text-teal-600 font-bold text-sm tracking-wide bg-teal-50 px-3 py-1 rounded-full">Foundation
-                                2</span>
+                                class="text-fuchsia-600 font-bold text-sm tracking-wide bg-fuchsia-50 px-3 py-1 rounded-full">Board Excellence</span>
                         </div>
                         <h3
-                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
-                            IIT-JEE / NEET Starter</h3>
-                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Get a head start on competitive
-                            engineering and medical entrance exams with specialized training.</p>
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-fuchsia-600 transition-colors">
+                            Senior Secondary Board</h3>
+                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Comprehensive NCERT mastery, intensive descriptive writing practice, and chapter-wise mock board exams for high scores.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Core concept clarification
+                                Pattern-based rigorous training
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated syllabus mapping
+                                Previous years' question paper analysis
                             </li>
                         </ul>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
-                                class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Explore
+                                class="w-full bg-fuchsia-50 text-fuchsia-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-fuchsia-600 hover:text-white transition-all">Explore
+                                Curriculum</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Target IIT-JEE Card (Class 11-12) -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-11-12">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-amber-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#f59e0b 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="cpu"
+                            class="w-20 h-20 text-amber-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-amber-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-amber-100">
+                            CLASS 11 TO 12
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-amber-600 font-bold text-sm tracking-wide bg-amber-50 px-3 py-1 rounded-full">Engineering</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-amber-600 transition-colors">
+                            Target IIT-JEE</h3>
+                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Advanced application of concepts with extensive MCQ and numerical practice to crack JEE Main & Advanced.</p>
+
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Unparalleled problem-solving speed
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                All-India test series & analysis
+                            </li>
+                        </ul>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                class="w-full bg-amber-50 text-amber-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-amber-600 hover:text-white transition-all">Explore
+                                Curriculum</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Target NEET Card (Class 11-12) -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-11-12">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-emerald-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#10b981 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="stethoscope"
+                            class="w-20 h-20 text-emerald-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-emerald-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-emerald-100">
+                            CLASS 11 TO 12
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-emerald-600 font-bold text-sm tracking-wide bg-emerald-50 px-3 py-1 rounded-full">Medical</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-emerald-600 transition-colors">
+                            Target NEET</h3>
+                        <p class="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">Precision matching exam requirements with comprehensive biology diagrams, concept maps, and memory retention techniques.</p>
+
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Targeted objective question banks
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Regular full-syllabus mock tests
+                            </li>
+                        </ul>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                class="w-full bg-emerald-50 text-emerald-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-emerald-600 hover:text-white transition-all">Explore
                                 Curriculum</button>
                         </div>
                     </div>
