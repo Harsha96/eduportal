@@ -188,6 +188,23 @@ include 'components/header.php';
                                 Foundational mathematics & science
                             </li>
                         </ul>
+                        <!-- Packages Info Section -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                                    Materials
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                                    Videos
+                                </span>
+                            </div>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Explorers Foundation (Class 1-5)')" class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Enroll Request</button>
@@ -234,6 +251,23 @@ include 'components/header.php';
                                 Olympiad level problem solving
                             </li>
                         </ul>
+                        <!-- Packages Info Section -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                                    Materials
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                                    Videos
+                                </span>
+                            </div>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Skill Builders Program (Class 6-8)')" class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Enroll Request</button>
@@ -280,6 +314,23 @@ include 'components/header.php';
                                 Mock tests & detailed analytics
                             </li>
                         </ul>
+                        <!-- Packages Info Section -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                                    Materials
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                                    Videos
+                                </span>
+                            </div>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Olympiad Prep (Class 6-8)')" class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll Request</button>
@@ -326,6 +377,27 @@ include 'components/header.php';
                                 Early preparation for competitive exams
                             </li>
                         </ul>
+                        <!-- Packages Info Section -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                                    Materials
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                                    Videos
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                                    Test Papers
+                                </span>
+                            </div>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button
                                 onclick="openEnrollmentModal('CBSE - Exam Warriors (Class 9-10)')" class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Enroll Request</button>
@@ -368,6 +440,39 @@ include 'components/header.php';
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Competitive problem sets
+                            </li>
+                        </ul>
+                        <!-- Packages Info Section -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                                    Materials
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                                    Videos
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                                    Test Papers
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                onclick="openEnrollmentModal('IIT-JEE / NEET Starter (Class 9-10)')" class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll Request</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 

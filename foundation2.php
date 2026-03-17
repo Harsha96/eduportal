@@ -96,6 +96,27 @@ include 'components/header.php';
                                 NTSE level mental ability
                             </li>
                         </ul>
+                        <!-- Packages Info Section -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                                    Materials
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                                    Videos
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                                    Test Papers
+                                </span>
+                            </div>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openEnrollmentModal('Foundation 2 - Exam Warriors')" class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Enroll Request</button>
                         </div>
@@ -128,6 +149,27 @@ include 'components/header.php';
                                 Early exposure to MCQ patterns
                             </li>
                         </ul>
+                        <!-- Packages Info Section -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                    Academic Year
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                                    Materials
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                                    Videos
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                    <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                                    Test Papers
+                                </span>
+                            </div>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <button onclick="openEnrollmentModal('Foundation 2 - IIT-JEE / NEET Starter')" class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll Request</button>
                         </div>

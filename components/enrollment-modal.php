@@ -70,6 +70,18 @@
                             class="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 text-slate-500 font-medium outline-none">
                     </div>
 
+                    <!-- CV Upload (Internships Only) -->
+                    <div id="cv-upload-container" class="hidden">
+                        <label for="student-cv" class="block text-sm font-semibold text-slate-700 mb-1.5">Upload CV (PDF preferred)</label>
+                        <div class="relative">
+                            <input type="file" id="student-cv" accept=".pdf,.doc,.docx" 
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 file:mr-4 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-[10px] file:font-bold file:bg-primary/10 file:text-primary hover:file:bg-primary/20">
+                            <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
+                                <i data-lucide="file-up" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="pt-4">
                         <button type="submit" 
                             class="w-full bg-secondary text-white font-bold py-4 rounded-xl shadow-lg shadow-secondary/20 hover:bg-orange-600 transition-all transform hover:-translate-y-0.5 active:scale-[0.98]">
@@ -83,13 +95,20 @@
 </div>
 
 <script>
-function openEnrollmentModal(programName) {
+function openEnrollmentModal(programName, isInternship = false) {
     const modal = document.getElementById('enrollment-modal');
     const overlay = document.getElementById('enrollment-modal-overlay');
     const container = document.getElementById('enrollment-modal-container').firstElementChild;
     const courseInput = document.getElementById('course-name');
+    const cvContainer = document.getElementById('cv-upload-container');
     
     courseInput.value = programName;
+    
+    if (isInternship) {
+        cvContainer.classList.remove('hidden');
+    } else {
+        cvContainer.classList.add('hidden');
+    }
     
     modal.classList.remove('hidden');
     // Force reflow
@@ -102,6 +121,11 @@ function openEnrollmentModal(programName) {
     container.classList.add('scale-100', 'opacity-100');
     
     document.body.style.overflow = 'hidden';
+    
+    // Ensure icons inside modal are rendered
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
 }
 
 function closeEnrollmentModal() {

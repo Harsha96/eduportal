@@ -126,9 +126,7 @@ include 'components/header.php';
                                 <span class="text-[16px] font-bold text-white">Performance Based</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <button
-                                    class="bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-blue-500 transition-colors">Apply
-                                    Now</button>
+                                <button onclick="openEnrollmentModal('Advanced Data Science & Machine Learning', true)" class="bg-blue-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-blue-500 transition-colors">Apply Now</button>
                             </div>
                         </div>
                     </div>
@@ -177,9 +175,7 @@ include 'components/header.php';
                                 <span class="text-[16px] font-bold text-white">Performance Based</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <button
-                                    class="bg-[#10B981] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20">Apply
-                                    Now</button>
+                                <button onclick="openEnrollmentModal('IoT & Robotics Engineering', true)" class="bg-[#10B981] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20">Apply Now</button>
                             </div>
                         </div>
                     </div>
@@ -229,9 +225,7 @@ include 'components/header.php';
                                 <span class="text-[16px] font-bold text-white">Performance Based</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <button
-                                    class="bg-[#F43F5E] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-rose-400 transition-colors shadow-lg shadow-rose-500/20">Apply
-                                    Now</button>
+                                <button onclick="openEnrollmentModal('Full Stack Web Development', true)" class="bg-[#F43F5E] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-rose-400 transition-colors shadow-lg shadow-rose-500/20">Apply Now</button>
                             </div>
                         </div>
                     </div>
@@ -281,9 +275,7 @@ include 'components/header.php';
                                 <span class="text-[16px] font-bold text-white">Performance Based</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <button
-                                    class="bg-[#F43F5E] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-rose-400 transition-colors shadow-lg shadow-rose-500/20">Apply
-                                    Now</button>
+                                <button onclick="openEnrollmentModal('Cloud Native DevOps Engineering', true)" class="bg-[#F43F5E] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-rose-400 transition-colors shadow-lg shadow-rose-500/20">Apply Now</button>
                             </div>
                         </div>
                     </div>
@@ -355,4 +347,5 @@ include 'components/header.php';
             }
         });
     </script>
+<?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>
