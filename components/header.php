@@ -34,7 +34,8 @@
         rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <?php if (isset($additionalHead)) echo $additionalHead; ?>
+    <?php if (isset($additionalHead))
+        echo $additionalHead; ?>
 </head>
 
 <body class="bg-background font-sans text-gray-900 scroll-smooth">
@@ -49,20 +50,23 @@
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
                 <div class="relative group">
                     <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
-                        School Boards
+                        Our Programs
                         <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <div
                         class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="kindergarten.php"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Kindergarten
+                        </a>
                         <a href="cbse.php?tab=all"
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">CBSE
-                            programs</a>
+                            Board</a>
                         <a href="icse.php?tab=all"
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">ICSE
-                            Programmes</a>
+                            Board</a>
                         <a href="karnataka-board.php?tab=all"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">karnataka
-                            board</a>
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Karnataka
+                            Board</a>
                     </div>
                 </div>
                 <div class="relative group">
@@ -80,7 +84,8 @@
                 </div>
                 <a href="study-abroad.php" class="hover:text-primary transition-colors">Study Abroad</a>
                 <a href="internships.php" class="hover:text-primary transition-colors">Internships</a>
-                <a href="technology-services.php" class="hover:text-primary transition-colors py-2">Technology Services</a>
+                <a href="technology-services.php" class="hover:text-primary transition-colors py-2">Technology
+                    Services</a>
             </div>
             <div class="hidden lg:flex items-center gap-4">
                 <a href="login.php"
@@ -102,6 +107,9 @@
             <div class="p-6 flex flex-col gap-4">
                 <div class="flex flex-col gap-2">
                     <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">School Boards</div>
+                    <a href="kindergarten.php"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Kindergarten
+                        Program</a>
                     <a href="cbse.php?tab=all"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
                     <a href="icse.php?tab=all"

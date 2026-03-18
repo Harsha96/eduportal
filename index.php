@@ -227,6 +227,31 @@ include 'components/header.php';
                     </div>
                 </div>
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-3 scrollbar-hide -mx-1 px-1">
+                    <!-- Kindergarten -->
+                    <div
+                        class="group relative bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-amber-50 to-white opacity-0 group-active:opacity-100 transition-opacity">
+                        </div>
+                        <div class="relative z-10 flex flex-col h-full">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center shrink-0">
+                                    <i data-lucide="baby" class="w-5 h-5 text-amber-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 text-base leading-tight">Kindergarten</h3>
+                                    <p class="text-xs text-gray-400">Pre-Primary</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span onclick="window.location.href='kindergarten.php'"
+                                    class="px-2.5 py-1 bg-amber-50 text-xs font-semibold text-amber-700 rounded-lg cursor-pointer hover:bg-amber-100 transition-colors">Foundation</span>
+                            </div>
+                            <div class="mt-auto flex items-center text-primary text-sm font-semibold">View Details
+                                <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Explorers -->
                     <div
                         class="group relative bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden">
@@ -552,6 +577,32 @@ include 'components/header.php';
 
         <!-- Desktop Grid (unchanged) -->
         <div id="programs-grid" class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Kindergarten -->
+            <div
+                class="group relative bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col h-full overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-amber-600/5 opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center shrink-0">
+                            <i data-lucide="baby" class="w-6 h-6 text-amber-500"></i>
+                        </div>
+                        <h3
+                            class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                            Kindergarten</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
+                        <span onclick="event.preventDefault(); window.location.href='kindergarten.php'"
+                            class="px-3 py-1.5 bg-gray-50 text-sm font-medium text-gray-600 rounded-lg border border-gray-100 hover:bg-primary hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Foundation</span>
+                    </div>
+                    <div class="mt-auto flex items-center text-primary font-semibold">
+                        View Details <i data-lucide="chevron-right"
+                            class="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+            </div>
+
             <!-- Discoverers -->
             <div
                 class="group relative bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col h-full overflow-hidden">
@@ -1359,7 +1410,8 @@ include 'components/header.php';
                     </div>
                     <h3 class="text-base md:text-2xl font-bold text-slate-500 mb-2 md:mb-4">
                         Reference Books</h3>
-                    <p class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                    <p
+                        class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
                         Simplified books for complex academic concepts.</p>
                     <div class="flex items-center text-xs md:text-sm font-bold text-slate-400">
                         Locked <i data-lucide="lock" class="w-3 h-3 ml-1"></i>
@@ -1402,7 +1454,8 @@ include 'components/header.php';
                     </div>
                     <h3 class="text-base md:text-2xl font-bold text-slate-500 mb-2 md:mb-4">
                         NCERT Solutions</h3>
-                    <p class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                    <p
+                        class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
                         Step-by-step solutions for board exams.</p>
                     <div class="flex items-center text-xs md:text-sm font-bold text-slate-400">
                         Locked <i data-lucide="lock" class="w-3 h-3 ml-1"></i>
@@ -1445,7 +1498,8 @@ include 'components/header.php';
                     </div>
                     <h3 class="text-base md:text-2xl font-bold text-slate-500 mb-2 md:mb-4">
                         Detailed Notes</h3>
-                    <p class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                    <p
+                        class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
                         Comprehensive notes for quick revision.</p>
                     <div class="flex items-center text-xs md:text-sm font-bold text-slate-400">
                         Locked <i data-lucide="lock" class="w-3 h-3 ml-1"></i>
@@ -1488,7 +1542,8 @@ include 'components/header.php';
                     </div>
                     <h3 class="text-base md:text-2xl font-bold text-slate-500 mb-2 md:mb-4">
                         Free Resources</h3>
-                    <p class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
+                    <p
+                        class="text-slate-400 text-xs md:text-base leading-relaxed mb-4 md:mb-8 line-clamp-2 md:line-clamp-none">
                         Practice papers and video lectures.</p>
                     <div class="flex items-center text-xs md:text-sm font-bold text-slate-400">
                         Locked <i data-lucide="lock" class="w-3 h-3 ml-1"></i>
@@ -1516,71 +1571,75 @@ include 'components/header.php';
                 content, and never miss an important update from Unidemy Global.</p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 max-w-5xl mx-auto">
             <!-- YouTube -->
-            <a href="https://www.youtube.com/@UnidemyGlobal"
-                class="block rounded-2xl p-5 md:p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group bg-red-600">
+            <a href="https://www.youtube.com/@UnidemyGlobal" target="_blank"
+                class="relative group block rounded-2xl p-4 md:p-5 overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-red-500/20 bg-[#FF0000]">
+                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 12px 12px;"></div>
+                <div class="absolute -top-12 -right-12 w-24 h-24 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                 <div class="relative z-10 flex flex-col h-full text-white">
-                    <div
-                        class="mb-4 bg-white/20 w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20 group-hover:scale-105 transition-transform">
-                        <i data-lucide="youtube" class="w-6 h-6 md:w-10 md:h-10 text-white"></i>
+                    <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform">
+                        <i data-lucide="youtube" class="w-5 h-5 md:w-6 md:h-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-2xl font-bold mb-1 tracking-tight">YouTube</h3>
-                    <p class="font-semibold text-white/90 text-[10px] md:text-sm mb-2">1.2M+ Subs</p>
-                    <div
-                        class="mt-auto flex items-center font-bold text-[10px] md:text-sm bg-white/20 w-max px-3 py-1.5 rounded-full backdrop-blur-sm">
-                        Join <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                    <h3 class="text-sm md:text-base font-bold mb-0.5 tracking-tight uppercase">YouTube</h3>
+                    <p class="text-[9px] md:text-[10px] font-semibold text-white/80 mb-4 tracking-widest uppercase">1.2M+ Subs</p>
+                    <div class="mt-auto flex items-center gap-1.5 bg-white text-red-600 w-max px-3 py-1.5 rounded-lg font-bold text-[10px] md:text-[11px] shadow-sm transform group-hover:translate-x-1 transition-all">
+                        Join <i data-lucide="chevron-right" class="w-2.5 h-2.5"></i>
                     </div>
                 </div>
             </a>
+
             <!-- Instagram -->
-            <a href="https://www.instagram.com/unidemy.global/" target="_blank" rel="noopener noreferrer"
-                class="block rounded-2xl p-5 md:p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+            <a href="https://www.instagram.com/unidemy.global/" target="_blank"
+                class="relative group block rounded-2xl p-4 md:p-5 overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-pink-500/20 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]">
+                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 12px 12px;"></div>
+                <div class="absolute -top-12 -right-12 w-24 h-24 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                 <div class="relative z-10 flex flex-col h-full text-white">
-                    <div
-                        class="mb-4 bg-white/20 w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20 group-hover:scale-105 transition-transform">
-                        <i data-lucide="instagram" class="w-6 h-6 md:w-10 md:h-10 text-white"></i>
+                    <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform">
+                        <i data-lucide="instagram" class="w-5 h-5 md:w-6 md:h-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-2xl font-bold mb-1 tracking-tight">Instagram</h3>
-                    <p class="font-semibold text-white/90 text-[10px] md:text-sm mb-2">850K+ Fans</p>
-                    <div
-                        class="mt-auto flex items-center font-bold text-[10px] md:text-sm bg-white/20 w-max px-3 py-1.5 rounded-full backdrop-blur-sm">
-                        Follow <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                    <h3 class="text-sm md:text-base font-bold mb-0.5 tracking-tight uppercase">Instagram</h3>
+                    <p class="text-[9px] md:text-[10px] font-semibold text-white/80 mb-4 tracking-widest uppercase">850K+ Fans</p>
+                    <div class="mt-auto flex items-center gap-1.5 bg-white text-pink-600 w-max px-3 py-1.5 rounded-lg font-bold text-[10px] md:text-[11px] shadow-sm transform group-hover:translate-x-1 transition-all">
+                        Follow <i data-lucide="chevron-right" class="w-2.5 h-2.5"></i>
                     </div>
                 </div>
             </a>
+
             <!-- Facebook -->
-            <a href="https://www.facebook.com/p/Unidemy-Global-61571328594976/"
-                class="block rounded-2xl p-5 md:p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group bg-blue-600">
+            <a href="https://www.facebook.com/p/Unidemy-Global-61571328594976/" target="_blank"
+                class="relative group block rounded-2xl p-4 md:p-5 overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-600/20 bg-[#1877F2]">
+                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 12px 12px;"></div>
+                <div class="absolute -top-12 -right-12 w-24 h-24 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                 <div class="relative z-10 flex flex-col h-full text-white">
-                    <div
-                        class="mb-4 bg-white/20 w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20 group-hover:scale-105 transition-transform">
-                        <i data-lucide="facebook" class="w-6 h-6 md:w-10 md:h-10 text-white"></i>
+                    <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform">
+                        <i data-lucide="facebook" class="w-5 h-5 md:w-6 md:h-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-2xl font-bold mb-1 tracking-tight">Facebook</h3>
-                    <p class="font-semibold text-white/90 text-[10px] md:text-sm mb-2">500K+ Fans</p>
-                    <div
-                        class="mt-auto flex items-center font-bold text-[10px] md:text-sm bg-white/20 w-max px-3 py-1.5 rounded-full backdrop-blur-sm">
-                        Join <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                    <h3 class="text-sm md:text-base font-bold mb-0.5 tracking-tight uppercase">Facebook</h3>
+                    <p class="text-[9px] md:text-[10px] font-semibold text-white/80 mb-4 tracking-widest uppercase">500K+ Fans</p>
+                    <div class="mt-auto flex items-center gap-1.5 bg-white text-blue-600 w-max px-3 py-1.5 rounded-lg font-bold text-[10px] md:text-[11px] shadow-sm transform group-hover:translate-x-1 transition-all">
+                        Join <i data-lucide="chevron-right" class="w-2.5 h-2.5"></i>
                     </div>
                 </div>
             </a>
+
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/company/unidemy-global-inc"
-                class="block rounded-2xl p-5 md:p-8 relative overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group bg-blue-700">
+            <a href="https://www.linkedin.com/company/unidemy-global-inc" target="_blank"
+                class="relative group block rounded-2xl p-4 md:p-5 overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-700/20 bg-[#0077B5]">
+                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 12px 12px;"></div>
+                <div class="absolute -top-12 -right-12 w-24 h-24 bg-white/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                 <div class="relative z-10 flex flex-col h-full text-white">
-                    <div
-                        class="mb-4 bg-white/20 w-12 h-12 md:w-20 md:h-20 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20 group-hover:scale-105 transition-transform">
-                        <i data-lucide="linkedin" class="w-6 h-6 md:w-10 md:h-10 text-white"></i>
+                    <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform">
+                        <i data-lucide="linkedin" class="w-5 h-5 md:w-6 md:h-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-2xl font-bold mb-1 tracking-tight">LinkedIn</h3>
-                    <p class="font-semibold text-white/90 text-[10px] md:text-sm mb-2">1M+ Network</p>
-                    <div
-                        class="mt-auto flex items-center font-bold text-[10px] md:text-sm bg-white/20 w-max px-3 py-1.5 rounded-full backdrop-blur-sm">
-                        Connect <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
+                    <h3 class="text-sm md:text-base font-bold mb-0.5 tracking-tight uppercase">LinkedIn</h3>
+                    <p class="text-[9px] md:text-[10px] font-semibold text-white/80 mb-4 tracking-widest uppercase">1M+ Network</p>
+                    <div class="mt-auto flex items-center gap-1.5 bg-white text-blue-700 w-max px-4 py-2 rounded-lg font-bold text-[10px] md:text-[11px] shadow-sm transform group-hover:translate-x-1 transition-all">
+                        Connect <i data-lucide="chevron-right" class="w-2.5 h-2.5"></i>
                     </div>
                 </div>
             </a>
+        </div>
         </div>
     </div>
 </section>
