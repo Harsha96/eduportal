@@ -463,9 +463,7 @@ include 'components/header.php';
     </main>
 
 
-<script>
-        lucide.createIcons();
-
+    <script>
         function toggleContent(btn) {
             const wrapper = btn.previousElementSibling;
             const isCollapsed = wrapper.classList.contains('collapsed');
@@ -484,57 +482,68 @@ include 'components/header.php';
                 btn.querySelector('span').textContent = 'Read More';
                 btn.querySelector('i').setAttribute('data-lucide', 'arrow-right');
             }
-            lucide.createIcons();
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
         }
 
         // Tab selection logic based on URL parameters
         document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             let tab = urlParams.get('tab');
-            const tabs = document.querySelectorAll('nav[aria-label="Tabs"] button');
+            const tabs = document.querySelectorAll('.tab-btn');
             const cards = document.querySelectorAll('.course-card');
 
             function activateTab(tabId) {
+                if (!tabId) tabId = 'all';
+                
                 // Update active tab styles
                 tabs.forEach(t => {
-                    t.className = "tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors";
-                    if (t.dataset.target === tabId) {
-                        t.className = "tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap";
+                    const target = t.getAttribute('data-target');
+                    if (target === tabId) {
+                        t.className = "tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap transition-colors";
+                    } else {
+                        t.className = "tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors";
                     }
                 });
 
                 // Filter cards
                 cards.forEach(card => {
+                    const category = card.getAttribute('data-category');
                     if (tabId === 'all') {
                         card.style.display = 'flex';
-                    } else if (card.dataset.category.includes(tabId)) {
+                    } else if (category && category.includes(tabId)) {
                         card.style.display = 'flex';
                     } else {
                         card.style.display = 'none';
                     }
                 });
+
+                // Refresh Lucide for visible cards
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
             }
 
             // Click events for all tabs
             tabs.forEach(t => {
-                t.addEventListener('click', () => {
-                    let target = t.dataset.target;
-                    activateTab(target);
-                    // Update URL parameter without reloading the page
-                    const url = new URL(window.location);
-                    url.searchParams.set('tab', target);
-                    window.history.pushState({}, '', url);
+                t.addEventListener('click', function() {
+                    const target = this.getAttribute('data-target');
+                    if (target) {
+                        activateTab(target);
+                        // Update URL parameter without reloading the page
+                        const url = new URL(window.location);
+                        url.searchParams.set('tab', target);
+                        window.history.pushState({}, '', url);
+                    }
                 });
             });
 
             // Activate initial tab from URL or default to 'all'
-            if (tab) {
-                activateTab(tab);
-            } else {
-                activateTab('all');
-            }
+            setTimeout(() => activateTab(tab || 'all'), 0);
         });
     </script>
+
 <?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>
 
