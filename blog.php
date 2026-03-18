@@ -62,6 +62,22 @@ include 'components/header.php';
         .post-fade-in {
             animation: fadeIn 0.4s ease-out forwards;
         }
+
+        .filter-tab.active, .channel-link.active {
+            position: relative;
+        }
+
+        .filter-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            background: currentColor;
+            border-radius: full;
+        }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -139,8 +155,9 @@ include 'components/header.php';
                         <button data-filter="questions" class="filter-tab px-6 py-2.5 bg-white text-slate-600 border border-slate-100 rounded-full font-bold whitespace-nowrap hover:bg-slate-50 transition-all">Q&A</button>
                     </div>
                     
-                    <!-- Post 1: SNS Styled -->
+                    <!-- Post 1: Article -->
                     <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="articles" data-channel="medical">
+
 
                         <div class="flex items-start justify-between mb-6">
                             <a href="profile.php" class="flex items-center gap-4 group">
@@ -180,13 +197,13 @@ include 'components/header.php';
                             <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800" 
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="NEET Strategy">
                             <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-between">
-                                <span data-filter="medical" class="post-badge px-3 py-1 bg-white/20 backdrop-blur-md rounded-lg text-white text-[10px] font-black uppercase tracking-widest border border-white/20 cursor-pointer hover:bg-white/40 transition-all">
+                                <span data-filter="medical" data-filter-type="channel" class="post-badge px-3 py-1 bg-white/20 backdrop-blur-md rounded-lg text-white text-[10px] font-black uppercase tracking-widest border border-white/20 cursor-pointer hover:bg-white/40 transition-all">
                                     Medical Guide
                                 </span>
-
-                                <span class="px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-widest rounded-lg flex items-center gap-1.5 shadow-lg">
+                                <span data-filter="articles" data-filter-type="category" class="post-badge px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-widest rounded-lg flex items-center gap-1.5 shadow-lg cursor-pointer hover:bg-blue-800 transition-all">
                                     <i data-lucide="zap" class="w-3 h-3"></i> Article
                                 </span>
+
                             </div>
                         </a>
 
@@ -215,8 +232,9 @@ include 'components/header.php';
                         </div>
                     </article>
 
-                    <!-- Post 2: Question Type -->
+                    <!-- Post 2: Question -->
                     <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="questions" data-channel="engineering">
+
 
                         <a href="profile.php" class="flex items-start gap-4 mb-6 group">
                             <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 shrink-0 group-hover:bg-primary/10 group-hover:text-primary transition-all">
@@ -230,9 +248,14 @@ include 'components/header.php';
                                 <div class="flex items-center gap-2 mt-1">
                                     <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">Posted 5 hours ago in Engineering Prep</span>
                                     <span class="w-1 h-1 bg-slate-200 rounded-full"></span>
-                                    <span data-filter="engineering" class="post-badge text-[10px] font-black text-secondary flex items-center gap-1 cursor-pointer hover:text-primary transition-colors">
+                                    <span data-filter="engineering" data-filter-type="channel" class="post-badge text-[10px] font-black text-secondary flex items-center gap-1 cursor-pointer hover:text-primary transition-colors">
                                         <i data-lucide="help-circle" class="w-3 h-3"></i> Engineering Prep
                                     </span>
+                                    <span class="w-1 h-1 bg-slate-200 rounded-full"></span>
+                                    <span data-filter="questions" data-filter-type="category" class="post-badge text-[10px] font-black text-rose-500 flex items-center gap-1 cursor-pointer hover:text-primary transition-colors">
+                                        <i data-lucide="help-circle" class="w-3 h-3"></i> Q&A
+                                    </span>
+
 
                                 </div>
                             </div>
@@ -270,8 +293,10 @@ include 'components/header.php';
                         </div>
                     </article>
 
-                    <!-- Post 3 -->
-                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="essays" data-channel="study-abroad">
+                    <!-- Post 3: Blog -->
+                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="blogs" data-channel="study-abroad">
+
+
 
                         <a href="profile.php" class="flex items-start justify-between mb-6 group">
                             <div class="flex items-center gap-4">
@@ -322,7 +347,54 @@ include 'components/header.php';
                         </div>
                     </article>
 
+                    <!-- Post 4: Essay -->
+                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="essays" data-channel="junior">
+                        <a href="profile.php" class="flex items-start gap-4 mb-6 group">
+                            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-violet-500/10 group-hover:border-violet-500 transition-all">
+                                <img src="https://i.pravatar.cc/150?u=expert3" alt="Expert" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h3 class="font-black text-slate-900 leading-none group-hover:text-primary transition-colors">Ms. Elena Rose</h3>
+                                    <span class="text-[10px] bg-violet-50 text-violet-600 font-black px-2 py-0.5 rounded uppercase tracking-tighter">Foundation Specialist</span>
+                                </div>
+                                <div class="flex items-center gap-2 mt-1 text-slate-400 text-xs font-bold uppercase tracking-widest">
+                                    <span>2 days ago</span>
+                                    <span class="w-1 h-1 bg-slate-200 rounded-full ml-1"></span>
+                                    <span data-filter="junior" class="post-badge text-[10px] font-black text-violet-600 flex items-center gap-1 cursor-pointer hover:text-primary transition-colors">
+                                        <i data-lucide="baby" class="w-3 h-3"></i> Junior School
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 hover:text-primary transition-colors">
+                                <a href="blog-post.php">Building a Strong Foundation: The Secret to Early Success</a>
+                            </h2>
+                            <div class="post-content-wrapper relative">
+                                <p class="post-excerpt text-slate-600 font-medium leading-relaxed line-clamp-2">
+                                    Is it too early to start preparing for Olympiads in Class 5? Experts weigh in on the best ways to nurture young minds without burnout.
+                                    <span class="full-text outline-none hidden"> Focusing on logical reasoning and conceptual clarity in primary years is much more beneficial than rote learning. Encourage curiosity and habit-building over test scores.</span>
+                                </p>
+                                <button onclick="togglePostContent(this)" class="read-more-btn text-primary font-bold text-xs mt-2 hover:underline">Read More</button>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
+                            <div class="flex items-center gap-2 bg-slate-50 rounded-full p-1 border border-slate-100">
+                                <button class="flex items-center gap-2 px-4 py-2 hover:bg-violet-50 text-slate-600 hover:text-violet-600 rounded-full font-bold transition-all">
+                                    <i data-lucide="arrow-big-up" class="w-5 h-5"></i>
+                                    512
+                                </button>
+                            </div>
+                            <span data-filter="essays" data-filter-type="category" class="post-badge px-3 py-1 bg-violet-600 text-white text-[10px] font-black uppercase tracking-widest rounded-lg flex items-center gap-1.5 shadow-lg cursor-pointer hover:bg-violet-800 transition-all">
+                                <i data-lucide="book-open" class="w-3 h-3"></i> Essay
+                            </span>
+
+                        </div>
+                    </article>
+
                     <!-- Pagination / Load More -->
+
                     <button id="load-more-btn" class="w-full py-5 bg-white border border-slate-100 rounded-3xl text-primary font-black uppercase tracking-widest text-sm hover:bg-slate-50 transition-all shadow-sm">
                         Load More Discussions
                     </button>
@@ -349,22 +421,23 @@ include 'components/header.php';
                             <i data-lucide="trending-up" class="w-4 h-4 text-primary"></i>
                         </div>
                         <div class="flex flex-col gap-6">
-                            <a href="#" class="group">
+                            <a href="#" data-filter="study-abroad" data-filter-type="channel" class="channel-link group">
                                 <span class="text-[10px] font-black text-primary uppercase tracking-tighter mb-1 block">Study Abroad</span>
                                 <p class="text-sm font-bold text-slate-800 group-hover:text-primary transition-colors leading-snug">Visa updates for Canada students in 2026</p>
                                 <span class="text-[10px] text-slate-400 font-bold uppercase mt-2 block">1.5k interactions</span>
                             </a>
-                            <a href="#" class="group">
+                            <a href="#" data-filter="medical" data-filter-type="channel" class="channel-link group">
                                 <span class="text-[10px] font-black text-rose-500 uppercase tracking-tighter mb-1 block">Medical</span>
                                 <p class="text-sm font-bold text-slate-800 group-hover:text-primary transition-colors leading-snug">Biology high-weightage topics list</p>
                                 <span class="text-[10px] text-slate-400 font-bold uppercase mt-2 block">948 interactions</span>
                             </a>
-                            <a href="#" class="group">
+                            <a href="#" data-filter="engineering" data-filter-type="channel" class="channel-link group">
                                 <span class="text-[10px] font-black text-blue-500 uppercase tracking-tighter mb-1 block">Engineering</span>
                                 <p class="text-sm font-bold text-slate-800 group-hover:text-primary transition-colors leading-snug">JEE Advanced mock results discussion</p>
                                 <span class="text-[10px] text-slate-400 font-bold uppercase mt-2 block">2.1k interactions</span>
                             </a>
                         </div>
+
                         <button class="w-full mt-6 py-3 text-xs font-black text-primary uppercase border border-primary/10 rounded-xl hover:bg-primary/5 transition-all">View Leaderboard</button>
                     </div>
 
@@ -480,6 +553,7 @@ include 'components/header.php';
                 </div>
             </div>
         </div>
+    </div>
 
 <script>
         function openPublishModal(defaultType = 'article') {
@@ -545,35 +619,44 @@ include 'components/header.php';
 
         // Lucide icons
         lucide.createIcons();
-
         // Categorization Filter
         const filterTabs = document.querySelectorAll('.filter-tab');
         const channelLinks = document.querySelectorAll('.channel-link');
-        const postBadges = document.querySelectorAll('.post-badge');
-        const posts = document.querySelectorAll('article');
         const noPostsMsg = document.getElementById('no-posts-msg');
         const loadMoreBtn = document.getElementById('load-more-btn');
+        const postsContainer = document.querySelector('.lg\\:col-span-6'); // Main feed container
         
-        function applyFilter(filter, type = 'category', updateUrl = true) {
-            console.log(`Applying filter: ${filter} (type: ${type})`);
+        // Additive filter state
+        let currentFilters = {
+            category: 'all',
+            channel: 'all'
+        };
+
+        function applyFilter(value, type, updateUrl = true) {
+            console.log(`Applying filter: ${value} to type: ${type}`);
             
+            // Update state
+            currentFilters[type] = value;
+
+            // Re-fetch posts dynamically to ensure new ones are caught
+            const posts = document.querySelectorAll('article');
+            const postBadges = document.querySelectorAll('.post-badge');
+
             // Update URL State
             if (updateUrl) {
                 const url = new URL(window.location);
-                if (filter === 'all') {
-                    url.searchParams.delete('category');
-                    url.searchParams.delete('channel');
-                } else {
-                    url.searchParams.set(type, filter);
-                    // Clear the other type to keep it simple (exclusive filtering)
-                    url.searchParams.delete(type === 'category' ? 'channel' : 'category');
-                }
+                if (currentFilters.category === 'all') url.searchParams.delete('category');
+                else url.searchParams.set('category', currentFilters.category);
+                
+                if (currentFilters.channel === 'all') url.searchParams.delete('channel');
+                else url.searchParams.set('channel', currentFilters.channel);
+                
                 window.history.pushState({}, '', url);
             }
 
-            // Update active states for category tabs
+            // Update Category Tabs Active States
             filterTabs.forEach(t => {
-                const isActive = (type === 'category' && t.dataset.filter === filter) || (filter === 'all' && t.dataset.filter === 'all');
+                const isActive = t.dataset.filter === currentFilters.category;
                 t.classList.toggle('bg-primary', isActive);
                 t.classList.toggle('text-white', isActive);
                 t.classList.toggle('shadow-md', isActive);
@@ -582,39 +665,47 @@ include 'components/header.php';
                 t.classList.toggle('text-slate-600', !isActive);
                 t.classList.toggle('border', !isActive);
                 t.classList.toggle('border-slate-100', !isActive);
+                t.classList.add('transition-all', 'duration-300');
                 t.classList.toggle('active', isActive);
             });
 
-            // Update active states for channel links
+            // Update Channel Links Active States
             channelLinks.forEach(l => {
-                const isActive = (type === 'channel' && l.dataset.filter === filter) || (filter === 'all' && l.dataset.filter === 'all');
+                const isActive = l.dataset.filter === currentFilters.channel;
                 l.classList.toggle('bg-primary/5', isActive);
                 l.classList.toggle('text-primary', isActive);
                 l.classList.toggle('text-slate-600', !isActive);
                 l.classList.toggle('hover:bg-slate-50', !isActive);
+                l.classList.add('transition-all', 'duration-300');
                 l.classList.toggle('active', isActive);
+            });
+
+            // Update All Post Badges across the feed (even new ones)
+            postBadges.forEach(b => {
+                const bType = b.dataset.filterType || 'channel';
+                const isActive = b.dataset.filter === currentFilters[bType];
+                b.classList.toggle('ring-2', isActive);
+                b.classList.toggle('ring-primary/40', isActive);
+                b.classList.toggle('ring-offset-2', isActive);
             });
 
             // Filter posts with animation
             let visibleCount = 0;
             posts.forEach(post => {
-                const postCat = post.dataset.category;
-                const postChan = post.dataset.channel;
+                const postCat = post.getAttribute('data-category');
+                const postChan = post.getAttribute('data-channel');
                 
-                let show = false;
-                if (filter === 'all') {
-                    show = true;
-                } else if (type === 'category') {
-                    show = (postCat === filter);
-                } else if (type === 'channel') {
-                    show = (postChan === filter);
-                }
+                const matchesCat = (currentFilters.category === 'all' || postCat === currentFilters.category);
+                const matchesChan = (currentFilters.channel === 'all' || postChan === currentFilters.channel);
+                const show = matchesCat && matchesChan;
 
                 if (show) {
                     post.classList.remove('hidden');
-                    post.style.display = '';
-                    post.classList.add('post-fade-in');
-                    // Reset animation
+                    post.style.display = 'block';
+                    if (!post.classList.contains('post-fade-in')) {
+                        post.classList.add('post-fade-in');
+                    }
+                    // Reset animation to trigger it again
                     post.style.animation = 'none';
                     post.offsetHeight; // trigger reflow
                     post.style.animation = '';
@@ -629,10 +720,10 @@ include 'components/header.php';
             // Handle empty state
             if (visibleCount === 0) {
                 noPostsMsg.classList.remove('hidden');
-                loadMoreBtn.classList.add('hidden');
+                loadMoreBtn?.classList.add('hidden');
             } else {
                 noPostsMsg.classList.add('hidden');
-                loadMoreBtn.classList.remove('hidden');
+                loadMoreBtn?.classList.remove('hidden');
             }
 
             // Scroll to top of feed on mobile
@@ -641,35 +732,19 @@ include 'components/header.php';
             }
         }
 
-        // Handle initial load from URL
-        window.addEventListener('load', () => {
+        // Initialize from URL
+        function initFiltersFromUrl() {
             const urlParams = new URLSearchParams(window.location.search);
-            const cat = urlParams.get('category');
-            const chan = urlParams.get('channel');
+            const cat = urlParams.get('category') || 'all';
+            const chan = urlParams.get('channel') || 'all';
             
-            if (cat) {
-                applyFilter(cat, 'category', false);
-            } else if (chan) {
-                applyFilter(chan, 'channel', false);
-            } else {
-                applyFilter('all', 'category', false);
-            }
-        });
+            // Apply both in sequence (second one updates both visually)
+            currentFilters.category = cat;
+            applyFilter(chan, 'channel', false);
+        }
 
-        // Handle browser back/forward buttons
-        window.addEventListener('popstate', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const cat = urlParams.get('category');
-            const chan = urlParams.get('channel');
-            
-            if (cat) {
-                applyFilter(cat, 'category', false);
-            } else if (chan) {
-                applyFilter(chan, 'channel', false);
-            } else {
-                applyFilter('all', 'category', false);
-            }
-        });
+        window.addEventListener('DOMContentLoaded', initFiltersFromUrl);
+        window.addEventListener('popstate', initFiltersFromUrl);
 
         filterTabs.forEach(tab => {
             tab.addEventListener('click', () => applyFilter(tab.dataset.filter, 'category'));
@@ -682,13 +757,29 @@ include 'components/header.php';
             });
         });
 
-        postBadges.forEach(badge => {
-            badge.addEventListener('click', (e) => {
+        // Event Delegation for Post Badges (Handles dynamic content)
+        document.addEventListener('click', (e) => {
+            const badge = e.target.closest('.post-badge');
+            if (badge) {
                 e.preventDefault();
                 e.stopPropagation();
-                applyFilter(badge.dataset.filter, 'channel');
-            });
+                const type = badge.dataset.filterType || 'channel';
+                applyFilter(badge.dataset.filter, type);
+            }
         });
+
+        // Simulate Load More (for testing dynamic tracking)
+        loadMoreBtn?.addEventListener('click', () => {
+            const firstPost = document.querySelector('article');
+            if (firstPost) {
+                const newPost = firstPost.cloneNode(true);
+                // Insert before load more button
+                loadMoreBtn.parentNode.insertBefore(newPost, loadMoreBtn);
+                // Re-apply current filter to include the new post
+                applyFilter(currentFilters.channel, 'channel', false);
+            }
+        });
+
 
         function togglePostContent(btn) {
             const wrapper = btn.closest('.post-content-wrapper');
