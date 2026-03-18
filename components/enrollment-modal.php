@@ -7,28 +7,28 @@
     <div id="enrollment-modal-container" class="absolute inset-0 flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-xl rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-300 scale-95 opacity-0 flex flex-col md:flex-row">
             <!-- Decorative Sidebar (Desktop only) -->
-            <div class="hidden md:flex w-1/3 bg-primary p-8 flex-col justify-between text-white relative overflow-hidden">
-                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 bg-secondary/20 rounded-full blur-3xl"></div>
+            <div class="hidden md:flex w-1/3 bg-slate-50 p-8 flex-col justify-between text-slate-900 relative overflow-hidden border-r border-slate-100">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 bg-secondary/10 rounded-full blur-3xl"></div>
                 
                 <div class="relative z-10">
-                    <img src="assets/images/Logo (2).png" alt="Logo" class="h-8 w-auto brightness-0 invert mb-8">
-                    <h2 class="text-2xl font-bold leading-tight">Start Your Journey Today</h2>
-                    <p class="text-white/80 text-sm mt-4">Join thousands of students who are achieving their academic goals with Unidemy.</p>
+                    <img src="assets/images/Logo (2).png" alt="Logo" class="h-8 w-auto mb-8">
+                    <h2 class="text-2xl font-bold leading-tight text-primary">Start Your Journey Today</h2>
+                    <p class="text-slate-600 text-sm mt-4">Join thousands of students who are achieving their academic goals with Unidemy.</p>
                 </div>
                 
                 <div class="relative z-10 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                             <i data-lucide="check" class="w-4 h-4"></i>
                         </div>
-                        <span class="text-sm font-medium">Expert Mentors</span>
+                        <span class="text-sm font-semibold text-slate-700">Expert Mentors</span>
                     </div>
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                        <div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
                             <i data-lucide="check" class="w-4 h-4"></i>
                         </div>
-                        <span class="text-sm font-medium">Global Standards</span>
+                        <span class="text-sm font-semibold text-slate-700">Global Standards</span>
                     </div>
                 </div>
             </div>

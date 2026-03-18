@@ -991,6 +991,7 @@ include 'components/header.php';
         tabs.forEach(t => {
             t.addEventListener('click', () => {
                 currentTab = t.dataset.target;
+                currentSub = 'packages'; // Reset sub-tab when main tab changes
                 applyFilters();
             });
         });
