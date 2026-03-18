@@ -123,12 +123,13 @@ include 'components/header.php';
         </div>
 
         <!-- Tabs -->
-        <div class="border-b border-gray-200 mb-8 overflow-x-auto custom-scrollbar">
+        <div class="border-b border-gray-200 mb-6 overflow-x-auto custom-scrollbar">
             <nav class="flex gap-6 md:gap-10 min-w-max" aria-label="Tabs">
                 <button data-target="all"
                     class="tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap">
                     All Classes
                 </button>
+
                 <button data-target="class-1-5"
                     class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
                     Young Explorers (1-5)
@@ -148,14 +149,88 @@ include 'components/header.php';
             </nav>
         </div>
 
+        <!-- Sub Tabs -->
+        <div class="flex items-center gap-2 mb-8 overflow-x-auto custom-scrollbar pb-2">
+            <button data-sub="packages"
+                class="sub-tab-btn px-6 py-2 rounded-full bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 transition-all">
+                Packages
+            </button>
+            <button data-sub="online-test"
+                class="sub-tab-btn px-6 py-2 rounded-full bg-slate-50 text-slate-600 text-sm font-bold border border-slate-100 hover:bg-slate-100 transition-all">
+                Online Test
+            </button>
+            <button data-sub="quiz"
+                class="sub-tab-btn px-6 py-2 rounded-full bg-slate-50 text-slate-600 text-sm font-bold border border-slate-100 hover:bg-slate-100 transition-all">
+                Quiz
+            </button>
+            <button data-sub="game"
+                class="sub-tab-btn px-6 py-2 rounded-full bg-slate-50 text-slate-600 text-sm font-bold border border-slate-100 hover:bg-slate-100 transition-all">
+                Game
+            </button>
+        </div>
+
+
 
         <!-- Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cards-container">
 
 
+            <!-- Phonics Card (Kindergarten to Grade 2) -->
+            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                data-category="class-1-5" data-type="packages">
+                <div
+                    class="relative h-[200px] w-full overflow-hidden bg-orange-50/50 flex items-center justify-center border-b border-gray-100">
+                    <div class="absolute inset-0 opacity-20"
+                        style="background-image: radial-gradient(#f97316 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+                    <i data-lucide="languages"
+                        class="w-20 h-20 text-orange-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-orange-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-orange-100">
+                        K TO GRADE 2
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <span
+                            class="text-orange-600 font-bold text-sm tracking-wide bg-orange-50 px-3 py-1 rounded-full">Phonics
+                            Program</span>
+                    </div>
+                    <h3
+                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                        Smart Readers</h3>
+                    <div class="collapsible-wrapper collapsed">
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A structured phonics program
+                            designed to help young learners develop strong reading, pronunciation, and spelling skills.
+                        </p>
+                        <ul class="space-y-3 mb-4">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Sounds recognition & word-building
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Reading fluency & comprehension
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleContent(this)"
+                        class="text-orange-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+                    <div class="mt-auto pt-5 border-t border-gray-100">
+                        <button onclick="openEnrollmentModal('CBSE - Smart Readers Phonics (K-G2)')"
+                            class="w-full bg-orange-50 text-orange-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 hover:text-white transition-all">Enroll
+                            Request</button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Young Explorers Card (Class 1-5) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-1-5">
+                data-category="class-1-5" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-blue-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -189,16 +264,6 @@ include 'components/header.php';
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
                                 Regular Worksheet solving
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Repetitive problem solving for mastery​
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Builds confidence and strong fundamentals​
                             </li>
                         </ul>
                     </div>
@@ -239,81 +304,9 @@ include 'components/header.php';
                 </div>
             </div>
 
-
-            <!-- Phonics Card (Kindergarten to Grade 2) -->
-            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-1-5">
-                <div
-                    class="relative h-[200px] w-full overflow-hidden bg-orange-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#f97316 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="languages"
-                        class="w-20 h-20 text-orange-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
-                    <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-orange-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-orange-100">
-                        Class 1 & Class 2 </div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="flex items-center justify-between mb-3">
-                        <span
-                            class="text-orange-600 font-bold text-sm tracking-wide bg-orange-50 px-3 py-1 rounded-full">Phonics
-                            Program</span>
-                    </div>
-                    <h3
-                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
-                        Smart Readers</h3>
-                    <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A structured phonics program
-                            designed to help young learners develop strong reading,pronunciation, and spelling skills.
-                            Through fun activities, sounds recognition, and word-building exercises, students learn to
-                            read confidently and fluently.​
-
-
-                        </p>
-                        <ul class="space-y-3 mb-4">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Interactive phonics activities
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Sound recognition exercises
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Word-building games
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Reading practice sessions
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Fun storytelling and vocabulary activities​
-                            </li>
-                        </ul>
-                    </div>
-                    <button onclick="toggleContent(this)"
-                        class="text-orange-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
-                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                    </button>
-                    <div class="mt-auto pt-5 border-t border-gray-100">
-                        <button onclick="openEnrollmentModal('CBSE - Smart Readers Phonics (K-G2)')"
-                            class="w-full bg-orange-50 text-orange-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 hover:text-white transition-all">Enroll
-                            Request</button>
-                    </div>
-                </div>
-            </div>
-
             <!-- Abacus Card (Class 1-5) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-1-5">
+                data-category="class-1-5" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-emerald-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -336,10 +329,8 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         Abacus Mastery Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Early-age mental mathematics
-                            training designed to enhance calculation speed, concentration, memory, and overall brain
-                            development using proven Abacus techniques. The program helps children visualize numbers and
-                            perform complex calculations mentally with confidence.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Enhance mental calculation
+                            speed, focus, and memory through our specialized abacus training.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -351,7 +342,6 @@ include 'components/header.php';
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
                                 Improved concentration & visualization
                             </li>
-
                         </ul>
                     </div>
                     <button onclick="toggleContent(this)"
@@ -368,7 +358,7 @@ include 'components/header.php';
 
             <!-- AI & Robotics Card (Class 1-5) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-1-5">
+                data-category="class-1-5" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-cyan-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -420,7 +410,7 @@ include 'components/header.php';
 
             <!-- STEM Program Card (Class 1-5) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-1-5">
+                data-category="class-1-5" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -472,7 +462,7 @@ include 'components/header.php';
 
             <!-- Chess Program Card (Class 1-5) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-1-5">
+                data-category="class-1-5" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-slate-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -524,7 +514,7 @@ include 'components/header.php';
 
             <!-- Academic Builders Card (Class 6-8) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-6-8">
+                data-category="class-6-8" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-indigo-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -592,7 +582,7 @@ include 'components/header.php';
 
             <!-- Foundation Level 1 Card (Class 6-8) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-6-8">
+                data-category="class-6-8" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -644,7 +634,7 @@ include 'components/header.php';
 
             <!-- Academic Achievers Card (Class 9-10) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-9-10">
+                data-category="class-9-10" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-violet-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -709,7 +699,7 @@ include 'components/header.php';
 
             <!-- Foundation Level 2 Card (Class 9-10) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-9-10">
+                data-category="class-9-10" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden bg-teal-50/50 flex items-center justify-center border-b border-gray-100">
                     <div class="absolute inset-0 opacity-20"
@@ -747,176 +737,276 @@ include 'components/header.php';
                             </li>
                         </ul>
                     </div>
-                    <button onclick="toggleContent(this)"
-                        class="text-teal-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
-                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                    </button>
-                    <div class="mt-auto pt-5 border-t border-gray-100">
-                        <button
-                            onclick="openEnrollmentModal('CBSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')"
-                            class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll
-                            Request</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Grade 11-12 Card 1: Engineering -->
-            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="grade-11-12">
-                <div
-                    class="relative h-[200px] w-full overflow-hidden bg-primary/5 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#1e4f9c 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="binary"
-                        class="w-20 h-20 text-primary relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
-                    <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-primary text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-blue-100">
-                        GRADE 11 TO 12
-                    </div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="flex items-center justify-between mb-3">
-                        <span
-                            class="text-primary font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">Engineering
-                            Stream</span>
-                    </div>
-                    <h3
-                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
-                        IIT-JEE Excellence</h3>
-                    <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Rigorous preparation for JEE
-                            Main & Advanced alongside CBSE board exams with expert faculty and advanced study material.
-                        </p>
-                        <ul class="space-y-3 mb-4">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated board & entrance prep
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Advanced numeric & logical mastery
-                            </li>
-                        </ul>
-                    </div>
-                    <button onclick="toggleContent(this)"
-                        class="text-primary font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
-                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                    </button>
-                    <div class="mt-auto pt-5 border-t border-gray-100 text-center">
-                        <a href="iit-jee.php"
-                            class="inline-block w-full bg-primary text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-primary/90 transition-all">View
-                            Batch Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Grade 11-12 Card 2: Medical -->
-            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="grade-11-12">
-                <div
-                    class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#ef4444 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="heart-pulse"
-                        class="w-20 h-20 text-rose-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
-                    <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100">
-                        GRADE 11 TO 12
-                    </div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="flex items-center justify-between mb-3">
-                        <span
-                            class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Medical
-                            Stream</span>
-                    </div>
-                    <h3
-                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
-                        NEET Success Program</h3>
-                    <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Comprehensive medical
-                            entrance preparation with deep focus on Biology, Physics, and Chemistry for top ranks.</p>
-                        <ul class="space-y-3 mb-4">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Expert Medical faculty
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Extensive mock test series
-                            </li>
-                        </ul>
-                    </div>
-                    <button onclick="toggleContent(this)"
-                        class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
-                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                    </button>
-                    <div class="mt-auto pt-5 border-t border-gray-100 text-center">
-                        <a href="neet.php"
-                            class="inline-block w-full bg-primary text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-primary/90 transition-all">View
-                            Batch Details</a>
-                    </div>
+                    <button onclick="openEnrollmentModal('CBSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')"
+                        class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll
+                        Request</button>
                 </div>
             </div>
         </div>
+
+        <!-- Atom Builder Game Card (Class 9-10 Game) -->
+        <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hidden"
+            data-category="class-9-10" data-type="game">
+            <div
+                class="relative h-[200px] w-full overflow-hidden bg-indigo-900 flex items-center justify-center border-b border-gray-800">
+                <div class="absolute inset-0 opacity-20"
+                    style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 30px 30px;">
+                </div>
+                <!-- Animated Atom Icon replacement -->
+                <div class="relative w-24 h-24 flex items-center justify-center">
+                    <div
+                        class="absolute inset-0 border-2 border-indigo-400/30 rounded-full animate-[spin_3s_linear_infinite]">
+                    </div>
+                    <div
+                        class="absolute inset-2 border-2 border-indigo-400/40 rounded-full animate-[spin_2s_linear_infinite_reverse]">
+                    </div>
+                    <div class="w-6 h-6 bg-rose-500 rounded-full shadow-[0_0_15px_rgba(244,63,94,0.6)] z-10"></div>
+                    <div
+                        class="absolute w-3 h-3 bg-blue-400 rounded-full -top-1 left-1/2 -translate-x-1/2 shadow-[0_0_10px_rgba(96,165,250,0.6)]">
+                    </div>
+                </div>
+                <div
+                    class="absolute top-4 left-4 bg-indigo-500/20 backdrop-blur text-indigo-200 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-indigo-400/20">
+                    INTERACTIVE GAME
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow bg-indigo-950 text-white">
+                <div class="flex items-center justify-between mb-3">
+                    <span
+                        class="text-indigo-400 font-bold text-sm tracking-wide bg-indigo-900/50 px-3 py-1 rounded-full border border-indigo-500/30">Science
+                        Lab</span>
+                </div>
+                <h3 class="text-[22px] font-bold mb-3 leading-tight group-hover:text-indigo-400 transition-colors">
+                    Build an Atom</h3>
+                <div class="collapsible-wrapper expanded">
+                    <p class="text-sm text-indigo-200/80 mb-4 leading-relaxed line-clamp-3 font-medium">Step into the
+                        virtual lab and build elements from scratch by adding protons, neutrons, and electrons. Master
+                        the atomic structure!</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start text-[14px] text-indigo-100 font-medium">
+                            <i data-lucide="zap" class="w-4 h-4 mr-2.5 text-amber-400 shrink-0 mt-0.5"></i>
+                            Real-time Nucleus Builder
+                        </li>
+                        <li class="flex items-start text-[14px] text-indigo-100 font-medium">
+                            <i data-lucide="shield-check" class="w-4 h-4 mr-2.5 text-emerald-400 shrink-0 mt-0.5"></i>
+                            Stability & Charge Analysis
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <a href="atom-builder.php"
+                        class="inline-flex items-center justify-center w-full bg-white text-indigo-950 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-50 transition-all gap-2 group/btn">
+                        Play Now
+                        <i data-lucide="play"
+                            class="w-4 h-4 fill-current transition-transform group-hover/btn:translate-x-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grade 11-12 Card 1: Engineering -->
+        <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+            data-category="grade-11-12" data-type="packages">
+            <div
+                class="relative h-[200px] w-full overflow-hidden bg-primary/5 flex items-center justify-center border-b border-gray-100">
+                <div class="absolute inset-0 opacity-20"
+                    style="background-image: radial-gradient(#1e4f9c 1px, transparent 1px); background-size: 20px 20px;">
+                </div>
+                <i data-lucide="binary"
+                    class="w-20 h-20 text-primary relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                <div
+                    class="absolute top-4 left-4 bg-white/90 backdrop-blur text-primary text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-blue-100">
+                    GRADE 11 TO 12
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex items-center justify-between mb-3">
+                    <span
+                        class="text-primary font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">Engineering
+                        Stream</span>
+                </div>
+                <h3
+                    class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                    IIT-JEE Excellence</h3>
+                <div class="collapsible-wrapper collapsed">
+                    <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Rigorous preparation for JEE Main
+                        & Advanced alongside CBSE board exams with expert faculty and advanced study material.</p>
+                    <ul class="space-y-3 mb-4">
+                        <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                            Integrated board & entrance prep
+                        </li>
+                        <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                            Advanced numeric & logical mastery
+                        </li>
+                    </ul>
+                </div>
+                <button onclick="toggleContent(this)"
+                    class="text-primary font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                    Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                </button>
+                <div class="mt-auto pt-5 border-t border-gray-100 text-center">
+                    <a href="iit-jee.php"
+                        class="inline-block w-full bg-primary text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-primary/90 transition-all">View
+                        Batch Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grade 11-12 Card 2: Medical -->
+        <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+            data-category="grade-11-12" data-type="packages">
+            <div
+                class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
+                <div class="absolute inset-0 opacity-20"
+                    style="background-image: radial-gradient(#ef4444 1px, transparent 1px); background-size: 20px 20px;">
+                </div>
+                <i data-lucide="heart-pulse"
+                    class="w-20 h-20 text-rose-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                <div
+                    class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100">
+                    GRADE 11 TO 12
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex items-center justify-between mb-3">
+                    <span
+                        class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Medical
+                        Stream</span>
+                </div>
+                <h3
+                    class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                    NEET Success Program</h3>
+                <div class="collapsible-wrapper collapsed">
+                    <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Comprehensive medical entrance
+                        preparation with deep focus on Biology, Physics, and Chemistry for top ranks.</p>
+                    <ul class="space-y-3 mb-4">
+                        <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                            Expert Medical faculty
+                        </li>
+                        <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                            Extensive mock test series
+                        </li>
+                    </ul>
+                </div>
+                <button onclick="toggleContent(this)"
+                    class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                    Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                </button>
+                <div class="mt-auto pt-5 border-t border-gray-100 text-center">
+                    <a href="neet.php"
+                        class="inline-block w-full bg-primary text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-primary/90 transition-all">View
+                        Batch Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty State Placeholder -->
+        <div id="no-content-msg" class="hidden col-span-full py-20 text-center">
+            <div
+                class="w-20 h-20 bg-slate-50 rounded-3xl flex items-center justify-center mx-auto mb-4 border border-slate-100">
+                <i data-lucide="layers" class="w-10 h-10 text-slate-300"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 font-sans">Coming Soon!</h3>
+            <p class="text-slate-500 max-w-sm mx-auto">We are currently curating the best content for this section. Stay
+                tuned for updates!</p>
+        </div>
+
+    </div>
     </div>
 </main>
 
 
 <script>
-    // Tab selection logic based on URL parameters
+    // Tab nested filtering logic
     document.addEventListener('DOMContentLoaded', function () {
         const urlParams = new URLSearchParams(window.location.search);
-        let tab = urlParams.get('tab');
-        const tabs = document.querySelectorAll('nav[aria-label="Tabs"] button');
-        const cards = document.querySelectorAll('.course-card');
+        let currentTab = urlParams.get('tab') || 'all';
+        let currentSub = urlParams.get('subtab') || 'packages';
 
-        function activateTab(tabId) {
-            // Update active tab styles
+        const tabs = document.querySelectorAll('.tab-btn');
+        const subTabs = document.querySelectorAll('.sub-tab-btn');
+        const cards = document.querySelectorAll('.course-card');
+        const noContentMsg = document.getElementById('no-content-msg');
+
+        function applyFilters() {
+            let visibleCount = 0;
+
+            // Update Main Tabs Styles
             tabs.forEach(t => {
-                t.className = "tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors";
-                if (t.dataset.target === tabId) {
+                if (t.dataset.target === currentTab) {
                     t.className = "tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap";
+                } else {
+                    t.className = "tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors";
+                }
+            });
+
+            // Update Sub Tabs Styles
+            subTabs.forEach(s => {
+                if (s.dataset.sub === currentSub) {
+                    s.className = "sub-tab-btn px-6 py-2 rounded-full bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 transition-all";
+                } else {
+                    s.className = "sub-tab-btn px-6 py-2 rounded-full bg-slate-50 text-slate-600 text-sm font-bold border border-slate-100 hover:bg-slate-100 transition-all";
                 }
             });
 
             // Filter cards
             cards.forEach(card => {
-                if (tabId === 'all') {
+                const matchesTab = (currentTab === 'all' || card.dataset.category.includes(currentTab));
+                const matchesSub = (card.dataset.type === currentSub);
+
+                if (matchesTab && matchesSub) {
                     card.style.display = 'flex';
-                } else if (card.dataset.category.includes(tabId)) {
-                    card.style.display = 'flex';
+                    visibleCount++;
                 } else {
                     card.style.display = 'none';
                 }
             });
+
+            // Handle empty state
+            if (visibleCount === 0) {
+                noContentMsg.classList.remove('hidden');
+            } else {
+                noContentMsg.classList.add('hidden');
+            }
+
+            // Update URL
+            const url = new URL(window.location);
+            if (currentTab === 'all') url.searchParams.delete('tab');
+            else url.searchParams.set('tab', currentTab);
+
+            if (currentSub === 'packages') url.searchParams.delete('subtab');
+            else url.searchParams.set('subtab', currentSub);
+
+            window.history.pushState({}, '', url);
+
+            // Refresh Lucide for dynamic elements if any
+            lucide.createIcons();
         }
 
-        // Click events for all tabs
+        // Click events for main tabs
         tabs.forEach(t => {
             t.addEventListener('click', () => {
-                let target = t.dataset.target;
-                activateTab(target);
-                // Update URL parameter without reloading the page
-                const url = new URL(window.location);
-                url.searchParams.set('tab', target);
-                window.history.pushState({}, '', url);
+                currentTab = t.dataset.target;
+                applyFilters();
             });
         });
 
-        // Activate initial tab from URL or default to 'all'
-        if (tab) {
-            activateTab(tab);
-        } else {
-            activateTab('all');
-        }
+        // Click events for sub tabs
+        subTabs.forEach(s => {
+            s.addEventListener('click', () => {
+                currentSub = s.dataset.sub;
+                applyFilters();
+            });
+        });
+
+        // Initial apply
+        applyFilters();
     });
+
 
     function toggleContent(btn) {
         const wrapper = btn.previousElementSibling;
