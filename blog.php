@@ -58,7 +58,23 @@ include 'components/header.php';
         </div>
     </section>
 
+    <style>
+        .post-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .filter-tab.active, .channel-link.active {
+            pointer-events: none;
+        }
+        #no-posts-msg.hidden {
+            display: none !important;
+        }
+    </style>
     <!-- Blog Main Content Section (SNS Layout) -->
+
     <section class="py-12 bg-[#F8FBFF]">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -68,38 +84,46 @@ include 'components/header.php';
                     <div class="bg-white rounded-[2rem] p-6 shadow-sm border border-gray-100">
                         <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-6 px-2">Discover Channels</div>
                         <nav class="flex flex-col gap-2">
-                            <a href="#" class="flex items-center gap-4 px-4 py-3 bg-primary/5 text-primary rounded-2xl font-bold transition-all">
+                            <a href="#" data-filter="all" class="channel-link flex items-center gap-4 px-4 py-3 bg-primary/5 text-primary rounded-2xl font-bold transition-all">
                                 <i data-lucide="compass" class="w-5 h-5"></i> All Posts
                             </a>
-                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                            <a href="#" data-filter="medical" class="channel-link flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
                                 <i data-lucide="stethoscope" class="w-5 h-5 text-rose-500"></i> Medical Support
                             </a>
-                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                            <a href="#" data-filter="engineering" class="channel-link flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
                                 <i data-lucide="calculator" class="w-5 h-5 text-blue-500"></i> Engineering Prep
                             </a>
-                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                            <a href="#" data-filter="study-abroad" class="channel-link flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
                                 <i data-lucide="globe" class="w-5 h-5 text-emerald-500"></i> Study Abroad
                             </a>
-                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                            <a href="#" data-filter="junior" class="channel-link flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
                                 <i data-lucide="baby" class="w-5 h-5 text-violet-500"></i> Junior School
                             </a>
-                            <a href="#" class="flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
+                            <a href="#" data-filter="podcasts" class="channel-link flex items-center gap-4 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-primary rounded-2xl font-bold transition-all">
                                 <i data-lucide="mic" class="w-5 h-5 text-amber-500"></i> Expert Podcasts
                             </a>
+
                         </nav>
                         
                         <div class="mt-10 mb-2 px-2">
                             <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">My Communities</h4>
                             <div class="flex flex-col gap-4">
-                                <a href="#" class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-indigo-500 flex items-center justify-center text-white text-[10px] font-bold">NE</div>
-                                    <span class="text-sm font-bold text-slate-700">NEET Aspirants</span>
-                                </a>
-                                <a href="#" class="flex items-center gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white text-[10px] font-bold">JE</div>
-                                    <span class="text-sm font-bold text-slate-700">JEE Warriors</span>
-                                </a>
+                                <div class="flex items-center justify-between group opacity-70 grayscale">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-indigo-500 flex items-center justify-center text-white text-[10px] font-bold">NE</div>
+                                        <span class="text-sm font-bold text-slate-400">NEET Aspirants</span>
+                                    </div>
+                                    <span class="text-[8px] font-black text-slate-400 uppercase tracking-tighter bg-slate-100 px-1.5 py-0.5 rounded">Coming Soon</span>
+                                </div>
+                                <div class="flex items-center justify-between group opacity-70 grayscale">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white text-[10px] font-bold">JE</div>
+                                        <span class="text-sm font-bold text-slate-400">JEE Warriors</span>
+                                    </div>
+                                    <span class="text-[8px] font-black text-slate-400 uppercase tracking-tighter bg-slate-100 px-1.5 py-0.5 rounded">Coming Soon</span>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </aside>
@@ -116,7 +140,8 @@ include 'components/header.php';
                     </div>
                     
                     <!-- Post 1: SNS Styled -->
-                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="articles">
+                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="articles" data-channel="medical">
+
                         <div class="flex items-start justify-between mb-6">
                             <a href="profile.php" class="flex items-center gap-4 group">
                                 <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/10 group-hover:border-primary transition-all">
@@ -141,18 +166,24 @@ include 'components/header.php';
                             <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 hover:text-primary transition-colors">
                                 <a href="blog-post.php">Mastering NEET 2024: The Elite Strategy Guide</a>
                             </h2>
-                            <p class="text-slate-600 font-medium leading-relaxed line-clamp-3">
-                                Scoring high in NEET requires more than just hard work—it demands precision planning. Learn how top rankers allocate their study time effectively. I've broken down the 24-hour cycle of three AIR 1 holders...
-                            </p>
+                            <div class="post-content-wrapper relative">
+                                <p class="post-excerpt text-slate-600 font-medium leading-relaxed line-clamp-2">
+                                    Scoring high in NEET requires more than just hard work—it demands precision planning. Learn how top rankers allocate their study time effectively. I've broken down the 24-hour cycle of three AIR 1 holders... 
+                                    <span class="full-text outline-none hidden">This elite strategy guide covers everything from early morning revision sessions to the psychological preparation needed for the big day. We'll dive deep into biological mnemonics and physical chemistry problem-solving shortcuts used by the nation's best.</span>
+                                </p>
+                                <button onclick="togglePostContent(this)" class="read-more-btn text-primary font-bold text-xs mt-2 hover:underline">Read More</button>
+                            </div>
                         </div>
+
 
                         <a href="blog-post.php" class="block relative h-64 md:h-80 rounded-[2rem] overflow-hidden mb-8 group cursor-pointer">
                             <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800" 
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="NEET Strategy">
                             <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-between">
-                                <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-lg text-white text-[10px] font-black uppercase tracking-widest border border-white/20">
+                                <span data-filter="medical" class="post-badge px-3 py-1 bg-white/20 backdrop-blur-md rounded-lg text-white text-[10px] font-black uppercase tracking-widest border border-white/20 cursor-pointer hover:bg-white/40 transition-all">
                                     Medical Guide
                                 </span>
+
                                 <span class="px-3 py-1 bg-primary text-white text-[10px] font-black uppercase tracking-widest rounded-lg flex items-center gap-1.5 shadow-lg">
                                     <i data-lucide="zap" class="w-3 h-3"></i> Article
                                 </span>
@@ -185,7 +216,8 @@ include 'components/header.php';
                     </article>
 
                     <!-- Post 2: Question Type -->
-                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="questions">
+                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="questions" data-channel="engineering">
+
                         <a href="profile.php" class="flex items-start gap-4 mb-6 group">
                             <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 shrink-0 group-hover:bg-primary/10 group-hover:text-primary transition-all">
                                 <i data-lucide="user" class="w-5 h-5"></i>
@@ -198,9 +230,10 @@ include 'components/header.php';
                                 <div class="flex items-center gap-2 mt-1">
                                     <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">Posted 5 hours ago in Engineering Prep</span>
                                     <span class="w-1 h-1 bg-slate-200 rounded-full"></span>
-                                    <span class="text-[10px] font-black text-secondary flex items-center gap-1">
-                                        <i data-lucide="help-circle" class="w-3 h-3"></i> QUESTION
+                                    <span data-filter="engineering" class="post-badge text-[10px] font-black text-secondary flex items-center gap-1 cursor-pointer hover:text-primary transition-colors">
+                                        <i data-lucide="help-circle" class="w-3 h-3"></i> Engineering Prep
                                     </span>
+
                                 </div>
                             </div>
                         </a>
@@ -209,10 +242,15 @@ include 'components/header.php';
                             <h2 class="text-xl font-bold text-slate-900 leading-snug mb-3 hover:text-primary transition-colors">
                                 <a href="blog-post.php">How can I improve my speed in solving Physics problems for IIT-JEE? Current average is 4 mins per question...</a>
                             </h2>
-                            <p class="text-slate-600 font-medium leading-relaxed">
-                                I'm consistently getting the logic right but the calculations are taking too long. Does anyone have specific mental math tricks or a structured way to look at circuit problems faster?
-                            </p>
+                            <div class="post-content-wrapper relative">
+                                <p class="post-excerpt text-slate-600 font-medium leading-relaxed line-clamp-2">
+                                    I'm consistently getting the logic right but the calculations are taking too long. Does anyone have specific mental math tricks or a structured way to look at circuit problems faster?
+                                    <span class="full-text outline-none hidden"> Speed in JEE Physics is often about recognizing patterns. For circuit problems, the nodal analysis technique is usually faster than Mesh. Practice 20 problems a day using only mental calculation for the intermediate steps.</span>
+                                </p>
+                                <button onclick="togglePostContent(this)" class="read-more-btn text-primary font-bold text-xs mt-2 hover:underline">Read More</button>
+                            </div>
                         </div>
+
 
                         <div class="flex items-center justify-between pt-6 border-t border-slate-50">
                             <div class="flex items-center gap-2">
@@ -233,7 +271,8 @@ include 'components/header.php';
                     </article>
 
                     <!-- Post 3 -->
-                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100" data-category="essays">
+                    <article class="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-sm border border-slate-100 transition-all hover:shadow-xl hover:shadow-slate-200/50" data-category="essays" data-channel="study-abroad">
+
                         <a href="profile.php" class="flex items-start justify-between mb-6 group">
                             <div class="flex items-center gap-4">
                                 <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-emerald-500/10 group-hover:border-emerald-500 transition-all">
@@ -249,9 +288,10 @@ include 'components/header.php';
                                         <span class="w-1 h-1 bg-slate-200 rounded-full"></span>
                                         <span>yesterday</span>
                                         <span class="w-1 h-1 bg-slate-200 rounded-full ml-1"></span>
-                                        <span class="text-[10px] font-black text-emerald-600 flex items-center gap-1">
-                                            <i data-lucide="book-open" class="w-3 h-3"></i> ESSAY
+                                        <span data-filter="study-abroad" class="post-badge text-[10px] font-black text-emerald-600 flex items-center gap-1 cursor-pointer hover:text-primary transition-colors">
+                                            <i data-lucide="book-open" class="w-3 h-3"></i> Study Abroad
                                         </span>
+
                                     </div>
                                 </div>
                             </div>
@@ -261,10 +301,15 @@ include 'components/header.php';
                             <h2 class="text-2xl font-black text-slate-900 leading-tight mb-4 hover:text-primary transition-colors">
                                 <a href="blog-post.php">The Ultimate Global Guide: Studying in US, UK & Canada</a>
                             </h2>
-                            <p class="text-slate-600 font-medium leading-relaxed line-clamp-2">
-                                A comparative study of the world's top destinations based on visa processes, work rights, and overall educational quality.
-                            </p>
+                            <div class="post-content-wrapper relative">
+                                <p class="post-excerpt text-slate-600 font-medium leading-relaxed line-clamp-2">
+                                    A comparative study of the world's top destinations based on visa processes, work rights, and overall educational quality. 
+                                    <span class="full-text outline-none hidden">While the US offers unparalleled scholarship opportunities, the UK's 2-year post-study work visa and Canada's path to permanent residency remain huge draws for international students heading into the 2024 academic year.</span>
+                                </p>
+                                <button onclick="togglePostContent(this)" class="read-more-btn text-primary font-bold text-xs mt-2 hover:underline">Read More</button>
+                            </div>
                         </div>
+
 
                         <div class="flex items-center justify-between pt-6 border-t border-slate-50">
                             <div class="flex items-center gap-2 bg-slate-50 rounded-full p-1">
@@ -278,9 +323,20 @@ include 'components/header.php';
                     </article>
 
                     <!-- Pagination / Load More -->
-                    <button class="w-full py-5 bg-white border border-slate-100 rounded-3xl text-primary font-black uppercase tracking-widest text-sm hover:bg-slate-50 transition-all shadow-sm">
+                    <button id="load-more-btn" class="w-full py-5 bg-white border border-slate-100 rounded-3xl text-primary font-black uppercase tracking-widest text-sm hover:bg-slate-50 transition-all shadow-sm">
                         Load More Discussions
                     </button>
+
+                    <!-- No Posts Found Message -->
+                    <div id="no-posts-msg" class="hidden flex flex-col items-center justify-center py-20 px-6 bg-white rounded-[2.5rem] border border-dashed border-slate-200 text-center">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-300 mb-4">
+                            <i data-lucide="search-x" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">No posts found</h3>
+                        <p class="text-slate-500 font-medium mb-6">We couldn't find any posts matching this filter. Try another category or check back later!</p>
+                        <button onclick="applyFilter('all')" class="bg-primary text-white px-6 py-2.5 rounded-full font-bold shadow-lg shadow-primary/20 hover:bg-blue-800 transition-all">Clear All Filters</button>
+                    </div>
+
                 </main>
 
                 <!-- Right Sidebar: Community & Trending -->
@@ -491,30 +547,166 @@ include 'components/header.php';
         lucide.createIcons();
 
         // Categorization Filter
-        const tabs = document.querySelectorAll('.filter-tab');
-        const posts = document.querySelectorAll('article[data-category]');
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const channelLinks = document.querySelectorAll('.channel-link');
+        const postBadges = document.querySelectorAll('.post-badge');
+        const posts = document.querySelectorAll('article');
+        const noPostsMsg = document.getElementById('no-posts-msg');
+        const loadMoreBtn = document.getElementById('load-more-btn');
         
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const filter = tab.dataset.filter;
+        function applyFilter(filter, type = 'category', updateUrl = true) {
+            console.log(`Applying filter: ${filter} (type: ${type})`);
+            
+            // Update URL State
+            if (updateUrl) {
+                const url = new URL(window.location);
+                if (filter === 'all') {
+                    url.searchParams.delete('category');
+                    url.searchParams.delete('channel');
+                } else {
+                    url.searchParams.set(type, filter);
+                    // Clear the other type to keep it simple (exclusive filtering)
+                    url.searchParams.delete(type === 'category' ? 'channel' : 'category');
+                }
+                window.history.pushState({}, '', url);
+            }
+
+            // Update active states for category tabs
+            filterTabs.forEach(t => {
+                const isActive = (type === 'category' && t.dataset.filter === filter) || (filter === 'all' && t.dataset.filter === 'all');
+                t.classList.toggle('bg-primary', isActive);
+                t.classList.toggle('text-white', isActive);
+                t.classList.toggle('shadow-md', isActive);
+                t.classList.toggle('shadow-primary/20', isActive);
+                t.classList.toggle('bg-white', !isActive);
+                t.classList.toggle('text-slate-600', !isActive);
+                t.classList.toggle('border', !isActive);
+                t.classList.toggle('border-slate-100', !isActive);
+                t.classList.toggle('active', isActive);
+            });
+
+            // Update active states for channel links
+            channelLinks.forEach(l => {
+                const isActive = (type === 'channel' && l.dataset.filter === filter) || (filter === 'all' && l.dataset.filter === 'all');
+                l.classList.toggle('bg-primary/5', isActive);
+                l.classList.toggle('text-primary', isActive);
+                l.classList.toggle('text-slate-600', !isActive);
+                l.classList.toggle('hover:bg-slate-50', !isActive);
+                l.classList.toggle('active', isActive);
+            });
+
+            // Filter posts with animation
+            let visibleCount = 0;
+            posts.forEach(post => {
+                const postCat = post.dataset.category;
+                const postChan = post.dataset.channel;
                 
-                // Update active tab style
-                tabs.forEach(t => {
-                    t.classList.remove('bg-primary', 'text-white', 'shadow-md', 'shadow-primary/20');
-                    t.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-100');
-                });
-                tab.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-100');
-                tab.classList.add('bg-primary', 'text-white', 'shadow-md', 'shadow-primary/20');
-                
-                // Filter posts
-                posts.forEach(post => {
-                    if (filter === 'all' || post.dataset.category === filter) {
-                        post.classList.remove('hidden');
-                    } else {
-                        post.classList.add('hidden');
-                    }
-                });
+                let show = false;
+                if (filter === 'all') {
+                    show = true;
+                } else if (type === 'category') {
+                    show = (postCat === filter);
+                } else if (type === 'channel') {
+                    show = (postChan === filter);
+                }
+
+                if (show) {
+                    post.classList.remove('hidden');
+                    post.style.display = '';
+                    post.classList.add('post-fade-in');
+                    // Reset animation
+                    post.style.animation = 'none';
+                    post.offsetHeight; // trigger reflow
+                    post.style.animation = '';
+                    visibleCount++;
+                } else {
+                    post.classList.add('hidden');
+                    post.style.display = 'none';
+                    post.classList.remove('post-fade-in');
+                }
+            });
+
+            // Handle empty state
+            if (visibleCount === 0) {
+                noPostsMsg.classList.remove('hidden');
+                loadMoreBtn.classList.add('hidden');
+            } else {
+                noPostsMsg.classList.add('hidden');
+                loadMoreBtn.classList.remove('hidden');
+            }
+
+            // Scroll to top of feed on mobile
+            if (window.innerWidth < 1024 && updateUrl) {
+                document.getElementById('filter-tabs')?.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Handle initial load from URL
+        window.addEventListener('load', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const cat = urlParams.get('category');
+            const chan = urlParams.get('channel');
+            
+            if (cat) {
+                applyFilter(cat, 'category', false);
+            } else if (chan) {
+                applyFilter(chan, 'channel', false);
+            } else {
+                applyFilter('all', 'category', false);
+            }
+        });
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const cat = urlParams.get('category');
+            const chan = urlParams.get('channel');
+            
+            if (cat) {
+                applyFilter(cat, 'category', false);
+            } else if (chan) {
+                applyFilter(chan, 'channel', false);
+            } else {
+                applyFilter('all', 'category', false);
+            }
+        });
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', () => applyFilter(tab.dataset.filter, 'category'));
+        });
+
+        channelLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                applyFilter(link.dataset.filter, 'channel');
             });
         });
+
+        postBadges.forEach(badge => {
+            badge.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                applyFilter(badge.dataset.filter, 'channel');
+            });
+        });
+
+        function togglePostContent(btn) {
+            const wrapper = btn.closest('.post-content-wrapper');
+            const excerpt = wrapper.querySelector('.post-excerpt');
+            const fullText = wrapper.querySelector('.full-text');
+            
+            if (excerpt.classList.contains('line-clamp-2')) {
+                excerpt.classList.remove('line-clamp-2');
+                fullText.classList.remove('hidden');
+                btn.textContent = 'Read Less';
+            } else {
+                excerpt.classList.add('line-clamp-2');
+                fullText.classList.add('hidden');
+                btn.textContent = 'Read More';
+            }
+        }
+
+
+
     </script>
 <?php include 'components/footer.php'; ?>
