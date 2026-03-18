@@ -602,9 +602,10 @@ include 'components/header.php';
                             <li class="flex items-center gap-3"><i data-lucide="x" class="w-5 h-5 text-gray-300"></i>
                                 1-on-1 Mentorship</li>
                         </ul>
-                        <a href="https://unidemyglobal.com/register.php"
+                        <button
+                            onclick="openEnrollmentModal('Career Achievers - Subject Expert')"
                             class="block w-full py-3 rounded-full border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors">Select
-                            Plan</a>
+                            Plan</button>
                     </div>
 
                     <!-- Pro (Featured) -->
@@ -626,9 +627,10 @@ include 'components/header.php';
                             <li class="flex items-center gap-3"><i data-lucide="check"
                                     class="w-5 h-5 text-green-400"></i> Daily Doubt Solving</li>
                         </ul>
-                        <a href="https://unidemyglobal.com/register.php"
+                        <button
+                            onclick="openEnrollmentModal('Career Achievers - All Access Stream')"
                             class="block w-full py-3 rounded-full bg-secondary text-white font-bold hover:bg-orange-500 transition-colors shadow-lg">Enroll
-                            Now</a>
+                            Now</button>
                     </div>
 
                     <!-- Elite -->
@@ -646,9 +648,10 @@ include 'components/header.php';
                             <li class="flex items-center gap-3"><i data-lucide="check"
                                     class="w-5 h-5 text-green-500"></i> Profile Building</li>
                         </ul>
-                        <a href="https://unidemyglobal.com/contact.php"
+                        <button
+                            onclick="openEnrollmentModal('Career Achievers - Global Scholar')"
                             class="block w-full py-3 rounded-full border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors">Contact
-                            Sales</a>
+                            Sales</button>
                     </div>
                 </div>
             </div>
@@ -753,11 +756,9 @@ include 'components/header.php';
 
     </main>
 
-    
+<?php include 'components/footer.php'; ?>
 
 <script>
-        lucide.createIcons();
-
         // Reveal animations on scroll
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
@@ -813,13 +814,11 @@ include 'components/header.php';
         });
 
         // Initialize tabs based on URL
-        document.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            let tab = urlParams.get('tab');
-            if (tab && document.getElementById(tab)) {
-                activateStreamTab(tab);
-            }
-        });
+        const urlParams = new URLSearchParams(window.location.search);
+        let tab = urlParams.get('tab');
+        if (tab && document.getElementById(tab)) {
+            activateStreamTab(tab);
+        }
 
         // FAQ Accordion logic
         const faqItems = document.querySelectorAll('.faq-item');
@@ -838,5 +837,9 @@ include 'components/header.php';
                 }
             });
         });
+
+        // Re-render icons for page-specific content
+        lucide.createIcons();
     </script>
-<?php include 'components/footer.php'; ?>
+
+<?php include 'components/enrollment-modal.php'; ?>
