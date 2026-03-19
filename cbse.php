@@ -742,7 +742,6 @@ include 'components/header.php';
                         Request</button>
                 </div>
             </div>
-        </div>
 
         <!-- Atom Builder Game Card (Class 9-10 Game) -->
         <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hidden"
@@ -842,14 +841,20 @@ include 'components/header.php';
                         </li>
                     </ul>
                 </div>
-                <button onclick="toggleContent(this)"
-                    class="text-primary font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
-                    Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                </button>
-                <div class="mt-auto pt-5 border-t border-gray-100 text-center">
-                    <a href="iit-jee.php"
-                        class="inline-block w-full bg-primary text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-primary/90 transition-all">View
-                        Batch Details</a>
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Math</span>
+                        <span
+                            class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                        <span
+                            class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                    </div>
+                </div>
+                <div class="mt-auto pt-5 border-t border-gray-100 space-y-3">
+                    <button onclick="openEnrollmentModal('CBSE - IIT-JEE Excellence (Grade 11-12)')"
+                        class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Enroll
+                        Request</button>
                 </div>
             </div>
         </div>
@@ -892,14 +897,20 @@ include 'components/header.php';
                         </li>
                     </ul>
                 </div>
-                <button onclick="toggleContent(this)"
-                    class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
-                    Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                </button>
-                <div class="mt-auto pt-5 border-t border-gray-100 text-center">
-                    <a href="neet.php"
-                        class="inline-block w-full bg-primary text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-primary/90 transition-all">View
-                        Batch Details</a>
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Biology</span>
+                        <span
+                            class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                        <span
+                            class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                    </div>
+                </div>
+                <div class="mt-auto pt-5 border-t border-gray-100 space-y-3">
+                    <button onclick="openEnrollmentModal('CBSE - NEET Success Program (Grade 11-12)')"
+                        class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll
+                        Request</button>
                 </div>
             </div>
         </div>

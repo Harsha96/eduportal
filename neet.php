@@ -79,9 +79,9 @@ include 'components/header.php';
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cards-container">
-                <!-- Card 1 -->
+                <!-- Card 1 (Class 11) -->
                 <div class="course-card bg-[#20252b] rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block"
-                    data-category="class-11 class-12">
+                    data-category="class-11">
                     <!-- Image Container -->
                     <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
                         <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
@@ -95,7 +95,7 @@ include 'components/header.php';
                     <!-- Content Container -->
                     <div class="p-6 flex flex-col flex-grow text-white">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="text-[#FBBF24] font-semibold text-sm">Class 11 + 12 NEET</span>
+                            <span class="text-[#FBBF24] font-semibold text-sm">Class 11 NEET</span>
                             <span
                                 class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">HINGLISH</span>
                         </div>
@@ -126,7 +126,64 @@ include 'components/header.php';
                             </div>
                             <div class="flex items-center gap-2">
                                 <button
-                                    onclick="openEnrollmentModal('NEET - Class 11 + 12')" class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
+                                    onclick="openEnrollmentModal('NEET - Pratham NEET (Class 11)')" class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
+                                <button
+                                    class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
+                                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1b (Class 12) -->
+                <div class="course-card bg-[#20252b] rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-12">
+                    <!-- Image Container -->
+                    <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
+                            alt="Vidyapeeth" class="w-full h-full object-cover">
+                        <!-- Badge -->
+                        <div
+                            class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
+                            <div class="w-1.5 h-1.5 rounded-full bg-[#FBBF24]"></div> OFFLINE CENTRE
+                        </div>
+                    </div>
+                    <!-- Content Container -->
+                    <div class="p-6 flex flex-col flex-grow text-white">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-[#FBBF24] font-semibold text-sm">Class 12 NEET</span>
+                            <span
+                                class="text-[10px] font-bold border border-gray-600/60 text-gray-300 px-2.5 py-1 rounded uppercase tracking-wide">HINGLISH</span>
+                        </div>
+                        <h3 class="text-[22px] font-bold mb-5 text-white">Pratham NEET</h3>
+                        
+                        <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-300">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0"></i>
+                                    Experienced Faculty
+                                </li>
+                                <li class=" flex items-start text-[14px] text-gray-300">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-gray-400 shrink-0 mt-0.5"></i>
+                                    Tech-enabled Offline Classroom Learning
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button onclick="toggleContent(this)" class="flex items-center gap-2 text-[#FBBF24] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+                        <div class="mt-auto flex items-end justify-between pt-5 border-t border-gray-700/50">
+                            <div class="flex flex-col">
+                                <span class="text-[14px] font-bold text-secondary">Premium Program</span>
+                                <span class="text-[11px] text-gray-400 tracking-wide uppercase">Inquire for Batch Details</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button
+                                    onclick="openEnrollmentModal('NEET - Pratham NEET (Class 12)')" class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
                                 <button
                                     class="border border-gray-600 bg-transparent text-white w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors">
                                     <i data-lucide="chevron-right" class="w-5 h-5"></i>
@@ -311,28 +368,30 @@ include 'components/header.php';
 
 
 <script>
-        lucide.createIcons();
+    function toggleContent(btn) {
+        const wrapper = btn.previousElementSibling;
+        const isCollapsed = wrapper.classList.contains('collapsed');
+        const autoHeight = wrapper.scrollHeight + 'px';
 
-        function toggleContent(btn) {
-            const wrapper = btn.previousElementSibling;
-            const isCollapsed = wrapper.classList.contains('collapsed');
-            const autoHeight = wrapper.scrollHeight + 'px';
-
-            if (isCollapsed) {
-                wrapper.classList.remove('collapsed');
-                wrapper.classList.add('expanded');
-                wrapper.style.maxHeight = autoHeight;
-                btn.querySelector('span').textContent = 'Read Less';
-                btn.querySelector('i').setAttribute('data-lucide', 'arrow-up');
-            } else {
-                wrapper.classList.add('collapsed');
-                wrapper.classList.remove('expanded');
-                wrapper.style.maxHeight = '150px'; // Matching the base height
-                btn.querySelector('span').textContent = 'Read More';
-                btn.querySelector('i').setAttribute('data-lucide', 'arrow-right');
-            }
-            lucide.createIcons();
+        if (isCollapsed) {
+            wrapper.classList.remove('collapsed');
+            wrapper.classList.add('expanded');
+            wrapper.style.maxHeight = autoHeight;
+            btn.querySelector('span').textContent = 'Read Less';
+            btn.querySelector('i').setAttribute('data-lucide', 'arrow-up');
+        } else {
+            wrapper.classList.add('collapsed');
+            wrapper.classList.remove('expanded');
+            wrapper.style.maxHeight = '150px';
+            btn.querySelector('span').textContent = 'Read More';
+            btn.querySelector('i').setAttribute('data-lucide', 'arrow-right');
         }
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') lucide.createIcons();
 
         // Mobile menu toggle logic
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
@@ -345,58 +404,57 @@ include 'components/header.php';
         });
 
         // Tab selection logic based on URL parameters
-        document.addEventListener('DOMContentLoaded', function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            let tab = urlParams.get('tab');
-            const tabs = document.querySelectorAll('nav[aria-label="Tabs"] button');
-            const cards = document.querySelectorAll('.course-card');
+        const urlParams = new URLSearchParams(window.location.search);
+        let tab = urlParams.get('tab');
+        const tabs = document.querySelectorAll('nav[aria-label="Tabs"] button');
+        const cards = document.querySelectorAll('.course-card');
 
-            // Allow mapping 'dropper' from index.php to 'repeater'
-            if (tab === 'dropper') {
-                tab = 'repeater';
-            }
+        // Allow mapping 'dropper' from index.php to 'repeater'
+        if (tab === 'dropper') {
+            tab = 'repeater';
+        }
 
-            function activateTab(tabId) {
-                // Update active tab styles
-                tabs.forEach(t => {
-                    t.className = "tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors";
-                    if (t.dataset.target === tabId) {
-                        t.className = "tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap";
-                    }
-                });
-
-                // Filter cards
-                cards.forEach(card => {
-                    if (tabId === 'all') {
-                        card.style.display = 'flex';
-                    } else if (card.dataset.category.includes(tabId)) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            }
-
-            // Click events for all tabs
+        function activateTab(tabId) {
+            // Update active tab styles
             tabs.forEach(t => {
-                t.addEventListener('click', () => {
-                    let target = t.dataset.target;
-                    activateTab(target);
-                    // Update URL parameter without reloading the page
-                    const url = new URL(window.location);
-                    url.searchParams.set('tab', target);
-                    window.history.pushState({}, '', url);
-                });
+                t.className = "tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors";
+                if (t.dataset.target === tabId) {
+                    t.className = "tab-btn border-b-[3px] border-[#6366F1] text-[#6366F1] py-4 px-1 text-[15px] font-bold whitespace-nowrap";
+                }
             });
 
-            // Activate initial tab from URL or default to 'all'
-            if (tab) {
-                activateTab(tab);
-            } else {
-                activateTab('all');
-            }
+            // Filter cards
+            cards.forEach(card => {
+                if (tabId === 'all') {
+                    card.style.display = 'flex';
+                } else if (card.dataset.category.includes(tabId)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Click events for all tabs
+        tabs.forEach(t => {
+            t.addEventListener('click', () => {
+                let target = t.dataset.target;
+                activateTab(target);
+                // Update URL parameter without reloading the page
+                const url = new URL(window.location);
+                url.searchParams.set('tab', target);
+                window.history.pushState({}, '', url);
+            });
         });
-    </script>
+
+        // Activate initial tab from URL or default to 'all'
+        if (tab) {
+            activateTab(tab);
+        } else {
+            activateTab('all');
+        }
+    });
+</script>
 <?php include 'components/enrollment-modal.php'; ?>
 <?php include 'components/footer.php'; ?>
 
