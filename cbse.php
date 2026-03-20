@@ -746,12 +746,29 @@ include 'components/header.php';
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Olympiad & Talent Search prep
+                                Concept-based teaching methodology​
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Advanced problem-solving techniques
+                                Competitive exam-oriented problem solving​
+
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Regular practice sheets and assignments​
+
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Weekly tests and performance analysis
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Olympiad and entrance exam preparation support
                             </li>
                         </ul>
                     </div>
@@ -792,18 +809,29 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
                         Academic Achievers</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Board exam excellence
-                            combined with competitive readiness (NTSE/KVPY) and performance analysis.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Focused on helping the
+                            students to build strong subject concepts, improve problem-solving skills, and achieve
+                            excellent performance in board examinations.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Extensive board exam mocks
+                                Concept-based teaching with detailed explanations
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Speed & accuracy development
+                                Regular worksheets and problem-solving sessions​
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Chapter-wise tests and board exam mock papers
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Doubt clearing and personalized guidance
                             </li>
                         </ul>
                     </div>
@@ -857,21 +885,42 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
                         IIT-JEE / NEET Starter</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated JEE/NEET
-                            foundation focusing on advanced problem-solving techniques and entrance-level mastery.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">An advanced foundation
+                            program designed to prepare students
+                            for future competitive exams like IIT-JEE and NEET while
+                            strengthening their Class 9–10 academic concepts.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Weekly entrance mock test series
+                                Concept-based teaching methodology
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Personalized entrance mentoring
+                                Integrated board + competitive exam preparation
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Regular practice worksheets and assignments
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Weekly tests and performance tracking
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Doubt clearing and mentoring sessions
                             </li>
                         </ul>
                     </div>
+                    <button onclick="toggleContent(this)"
+                        class="text-violet-600 font-bold text-[13px] mt-2 mb-4 flex items-center gap-1 hover:underline">
+                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
                     <button onclick="openEnrollmentModal('CBSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')"
                         class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll
                         Request</button>
