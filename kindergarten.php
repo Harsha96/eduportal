@@ -88,30 +88,27 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         School Readiness Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Specially designed to prepare
-                            young learners for a smooth and confident transition into formal schooling through
-                            activity-based learning.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">The Kindergarten School
+                            Readiness Program helps young
+                            children get ready for school through fun, engaging, and
+                            activity-based learning.​</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Letters and Sounds
+                                Letters, Sounds and Numbers
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Counting and numbers
+                                Social and emotional skills
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
                                 Creative expression and exploration
                             </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Phonics development
-                            </li>
+
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
@@ -143,7 +140,7 @@ include 'components/header.php';
                 </div>
             </div>
 
-            <!-- Smart Readers -->
+            <!-- Phonics​ -->
             <div
                 class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block">
                 <div
@@ -161,43 +158,44 @@ include 'components/header.php';
                 <div class="p-6 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-3">
                         <span
-                            class="text-pink-600 font-bold text-sm tracking-wide bg-pink-50 px-3 py-1 rounded-full">Young
-                            Learners</span>
+                            class="text-pink-600 font-bold text-sm tracking-wide bg-pink-50 px-3 py-1 rounded-full">Smart
+                            Readers​</span>
                     </div>
                     <h3
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
-                        Smart Readers</h3>
+                        Phonics​</h3>
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Advanced literacy program
-                            focusing on phonics, early reading, and comprehensive vocabulary building for pre-primary
-                            students.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">A fun phonics program that
+                            helps children build strong
+                            reading, pronunciation and spelling skills with confidence.​</p>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Phonics-based reading
+                                Interactive phonics activities​
+
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Creative writing introduction
+                                Sound recognition exercises
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Vocabulary expansion
+                                Word-building games
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Comprehension skills
+                                Reading practice sessions
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Sight word recognition
+                                Fun storytelling and vocabulary activities
                             </li>
                         </ul>
                     </div>
@@ -211,11 +209,7 @@ include 'components/header.php';
 
                     <div class="mt-auto pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
-                                <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
-                                Academic Year
-                            </span>
+
                         </div>
                         <button onclick="openEnrollmentModal('Kindergarten - Smart Readers Program')"
                             class="w-full bg-pink-50 text-pink-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-pink-600 hover:text-white transition-all">Enroll

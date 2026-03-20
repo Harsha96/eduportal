@@ -175,58 +175,7 @@ include 'components/header.php';
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cards-container">
 
 
-            <!-- Phonics Card (Kindergarten to Grade 2) -->
-            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
-                data-category="class-1-5" data-type="packages">
-                <div
-                    class="relative h-[200px] w-full overflow-hidden bg-orange-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#f97316 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="languages"
-                        class="w-20 h-20 text-orange-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
-                    <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-orange-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-orange-100">
-                        K TO GRADE 2
-                    </div>
-                </div>
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="flex items-center justify-between mb-3">
-                        <span
-                            class="text-orange-600 font-bold text-sm tracking-wide bg-orange-50 px-3 py-1 rounded-full">Phonics
-                            Program</span>
-                    </div>
-                    <h3
-                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
-                        Smart Readers</h3>
-                    <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A structured phonics program
-                            designed to help young learners develop strong reading, pronunciation, and spelling skills.
-                        </p>
-                        <ul class="space-y-3 mb-4">
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Sounds recognition & word-building
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
-                                <i data-lucide="check-circle-2"
-                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Reading fluency & comprehension
-                            </li>
-                        </ul>
-                    </div>
-                    <button onclick="toggleContent(this)"
-                        class="text-orange-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
-                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                    </button>
-                    <div class="mt-auto pt-5 border-t border-gray-100">
-                        <button onclick="openEnrollmentModal('CBSE - Smart Readers Phonics (K-G2)')"
-                            class="w-full bg-orange-50 text-orange-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 hover:text-white transition-all">Enroll
-                            Request</button>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- Young Explorers Card (Class 1-5) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
@@ -265,6 +214,16 @@ include 'components/header.php';
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
                                 Regular Worksheet solving
                             </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Repetitive problem solving for mastery
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Builds confidence and strong fundamentals​
+                            </li>
                         </ul>
                     </div>
                     <button onclick="toggleContent(this)"
@@ -287,13 +246,24 @@ include 'components/header.php';
                             <span
                                 class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
                                 <i data-lucide="languages" class="w-3.5 h-3.5"></i>
-                                Languages
+                                Kannada
                             </span>
                             <span
                                 class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
                                 <i data-lucide="monitor" class="w-3.5 h-3.5"></i>
-                                Computer Sci
+                                Computers
                             </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
+                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
+                                Hindi
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
+
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
@@ -303,7 +273,73 @@ include 'components/header.php';
                     </div>
                 </div>
             </div>
-
+            <!-- Smart Readers -->
+            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                data-category="class-1-5" data-type="packages">
+                <div
+                    class="relative h-[200px] w-full overflow-hidden bg-orange-50/50 flex items-center justify-center border-b border-gray-100">
+                    <div class="absolute inset-0 opacity-20"
+                        style="background-image: radial-gradient(#f97316 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+                    <i data-lucide="languages"
+                        class="w-20 h-20 text-orange-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-orange-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-orange-100">
+                        K1 & K2
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <span
+                            class="text-orange-600 font-bold text-sm tracking-wide bg-orange-50 px-3 py-1 rounded-full">Phonics
+                            Program</span>
+                    </div>
+                    <h3
+                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                        Smart Readers</h3>
+                    <div class="collapsible-wrapper collapsed">
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A fun program that helps
+                            children learn sounds, improve reading, and build strong spelling skills.
+                        </p>
+                        <ul class="space-y-3 mb-4">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Interactive phonics activities
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Sound recognition exercises
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Word-building games
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Reading practice sessions
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun storytelling and vocabulary activities
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleContent(this)"
+                        class="text-orange-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+                    <div class="mt-auto pt-5 border-t border-gray-100">
+                        <button onclick="openEnrollmentModal('CBSE - Smart Readers Phonics (K-G2)')"
+                            class="w-full bg-orange-50 text-orange-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 hover:text-white transition-all">Enroll
+                            Request</button>
+                    </div>
+                </div>
+            </div>
             <!-- Abacus Card (Class 1-5) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5" data-type="packages">
@@ -329,18 +365,33 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         Abacus Mastery Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Enhance mental calculation
-                            speed, focus, and memory through our specialized abacus training.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A fun abacus program that
+                            improves calculation speed, memory, concentration, and mental math skills in children.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Accelerated mental math skills
+                                Learn step by step using abacus
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Improved concentration & visualization
+                                Visualize numbers in the mind
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Practice regularly to improve speed
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Improve memory and focus
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun learning with activities and games
                             </li>
                         </ul>
                     </div>
@@ -381,18 +432,34 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         AI & Robotics Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Introduction to coding, logic
-                            building, and hands-on robotics to prepare students for a tech-driven future.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A hands-on program that
+                            teaches AI, robotics, and coding
+                            through fun projects to build problem-solving skills.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Hands-on robotics kits
+                                Project-based learning
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Foundational coding concepts
+                                Hands-on robot building activities
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Interactive coding exercises
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun AI experiments and challenges
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Team-based problem solving
                             </li>
                         </ul>
                     </div>
@@ -433,25 +500,66 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         STEM Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Encouraging critical thinking
-                            through Science, Technology, Engineering, and Mathematics experiments.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A hands-on STEM program that
+                            teaches science, technology, engineering, and math through fun projects and real-world
+                            activities.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Real-world problem solving
+                                Project-based STEM learning
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Interactive STEM experiments
+                                Hands-on experiments and activities
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Engineering design challenges
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Collaborative problem-solving tasks
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun innovation and creativity workshops​
                             </li>
                         </ul>
                     </div>
                     <button onclick="toggleContent(this)"
-                        class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                        class="text-rose-600 font-bold text-[13px] mt-2 mb-4 flex items-center gap-1 hover:underline">
                         Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
+                    <!-- STEM Subjects Info Section -->
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
+                                <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                                Technology
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                <i data-lucide="wrench" class="w-3.5 h-3.5"></i>
+                                Engineering
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Maths
+                            </span>
+                        </div>
+                    </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
                         <button onclick="openEnrollmentModal('CBSE - STEM Program (Class 1-5)')"
                             class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll
@@ -468,7 +576,7 @@ include 'components/header.php';
                     <div class="absolute inset-0 opacity-20"
                         style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 20px 20px;">
                     </div>
-                    <i data-lucide="shrine"
+                    <i data-lucide="chess"
                         class="w-20 h-20 text-slate-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
                     <div
                         class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-slate-100">
@@ -485,18 +593,33 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         Chess Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Master the art of strategy,
-                            patience, and critical thinking with our professional chess coaching.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A program that helps students
+                            improve thinking, focus, and decision-making through chess practice.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Learn opening & endgame tactics
+                                Step-by-step chess level training
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Weekly tournaments & analysis
+                                Interactive practice games
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Puzzle-solving exercises
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Tournament-style gameplay
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Strategy analysis and guidance
                             </li>
                         </ul>
                     </div>
@@ -537,18 +660,29 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
                         Academic Builders Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Foundation for school board
-                            excellence with core concepts in Math & Science, building logical and analytical skills.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A program that strengthens
+                            basic concepts and improves
+                            problem-solving skills in Maths, science, and reasoning.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Core concept mastery (STEM focus)
+                                Concept-based classroom teaching
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Pre-foundation for Grade 9 & 10
+                                Regular worksheets and practice sessions
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Problem-solving and reasoning exercises
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Periodic assessments and progress tracking
                             </li>
                         </ul>
                     </div>
@@ -605,8 +739,9 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
                         Future Achievers Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated pre-foundation
-                            coaching for Olympiads & competitive exams with deep conceptual clarity.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A program that builds strong
+                            basics in Maths to prepare
+                            students for future competitive exams.​</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
