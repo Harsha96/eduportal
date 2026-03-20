@@ -132,6 +132,343 @@ include 'components/header.php';
                     </div>
                 </div>
 
+                <!-- Smart Readers Card -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-1-5">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-orange-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#f97316 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="languages"
+                            class="w-20 h-20 text-orange-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-orange-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-orange-100">
+                            K1 & K2
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-orange-600 font-bold text-sm tracking-wide bg-orange-50 px-3 py-1 rounded-full">Phonics Program</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                            Smart Readers</h3>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A fun program that helps children learn sounds, improve reading, and build strong spelling skills.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Interactive phonics activities
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Sound recognition exercises
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Word-building games
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Reading practice sessions
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Fun storytelling and vocabulary activities
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-orange-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                onclick="openEnrollmentModal('ICSE - Smart Readers Phonics (K-G2)')" class="w-full bg-orange-50 text-orange-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 hover:text-white transition-all">Enroll Request</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abacus Mastery Program Card -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-1-5">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-emerald-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#10b981 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="calculator"
+                            class="w-20 h-20 text-emerald-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-emerald-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-emerald-100">
+                            CLASS 1 TO 5
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-emerald-600 font-bold text-sm tracking-wide bg-emerald-50 px-3 py-1 rounded-full">Brain Boost</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                            Abacus Mastery Program</h3>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A fun abacus program that improves calculation speed, memory, concentration, and mental math skills in children.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Learn step by step using abacus
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Visualize numbers in the mind
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Practice regularly to improve speed
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Improve memory and focus
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Fun learning with activities and games
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-emerald-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                onclick="openEnrollmentModal('ICSE - Abacus Mastery Program (Class 1-5)')" class="w-full bg-emerald-50 text-emerald-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-emerald-600 hover:text-white transition-all">Enroll Request</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Robotics Program Card -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-1-5">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-cyan-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#06b6d4 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="bot"
+                            class="w-20 h-20 text-cyan-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-cyan-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-cyan-100">
+                            CLASS 1 TO 5
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-cyan-600 font-bold text-sm tracking-wide bg-cyan-50 px-3 py-1 rounded-full">Future Innovators</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                            AI & Robotics Program</h3>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A hands-on program that teaches AI, robotics, and coding through fun projects to build problem-solving skills.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Project-based learning
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Hands-on robot building activities
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Interactive coding exercises
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Fun AI experiments and challenges
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Team-based problem solving
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-cyan-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                onclick="openEnrollmentModal('ICSE - AI & Robotics Program (Class 1-5)')" class="w-full bg-cyan-50 text-cyan-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-cyan-600 hover:text-white transition-all">Enroll Request</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEM Program Card -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-1-5">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#f43f5e 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="atom"
+                            class="w-20 h-20 text-rose-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100">
+                            CLASS 1 TO 5
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Young Innovators</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                            STEM Program</h3>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A hands-on STEM program that teaches science, technology, engineering, and math through fun projects and real-world activities.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Project-based STEM learning
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Hands-on experiments and activities
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Engineering design challenges
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Collaborative problem-solving tasks
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Fun innovation and creativity workshops
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-rose-600 font-bold text-[13px] mt-2 mb-4 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <!-- STEM Subjects Info Section -->
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 text-xs font-semibold">
+                                    <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                    Science
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
+                                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                                    Technology
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                    <i data-lucide="wrench" class="w-3.5 h-3.5"></i>
+                                    Engineering
+                                </span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                    <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                    Maths
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                onclick="openEnrollmentModal('ICSE - STEM Program (Class 1-5)')" class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll Request</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chess Program Card -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                    data-category="class-1-5">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden bg-slate-50/50 flex items-center justify-center border-b border-gray-100">
+                        <div class="absolute inset-0 opacity-20"
+                            style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 20px 20px;">
+                        </div>
+                        <i data-lucide="chess"
+                            class="w-20 h-20 text-slate-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-slate-100">
+                            CLASS 1 TO 5
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <span
+                                class="text-slate-600 font-bold text-sm tracking-wide bg-slate-50 px-3 py-1 rounded-full">Strategic Minds</span>
+                        </div>
+                        <h3
+                            class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                            Chess Program</h3>
+                        <div class="collapsible-wrapper collapsed">
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A program that helps students improve thinking, focus, and decision-making through chess practice.</p>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Step-by-step chess level training
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Interactive practice games
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Puzzle-solving exercises
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Tournament-style gameplay
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                    Strategy analysis and guidance
+                                </li>
+                            </ul>
+                        </div>
+                        <button onclick="toggleContent(this)" class="text-slate-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                            Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <button
+                                onclick="openEnrollmentModal('ICSE - Chess Program (Class 1-5)')" class="w-full bg-slate-50 text-slate-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-slate-600 hover:text-white transition-all">Enroll Request</button>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Academic Builders Card (Class 6-8) -->
                 <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                     data-category="class-6-8">
