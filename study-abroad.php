@@ -212,7 +212,9 @@ include 'components/header.php';
 
 
 <script>
-        lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') lucide.createIcons();
 
         // Mobile menu toggle logic
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
@@ -223,5 +225,51 @@ include 'components/header.php';
                 menu.classList.add('hidden');
             }
         });
-    </script>
+
+        // Tab selection logic
+        const urlParams = new URLSearchParams(window.location.search);
+        let tab = urlParams.get('tab');
+        const tabs = document.querySelectorAll('nav[aria-label="Tabs"] button');
+        const cards = document.querySelectorAll('.course-card');
+
+        function activateTab(tabId) {
+            // Update active tab styles
+            tabs.forEach(t => {
+                t.className = "tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors";
+                if (t.dataset.target === tabId) {
+                    t.className = "tab-btn border-b-[3px] border-[#10B981] text-[#10B981] py-4 px-1 text-[15px] font-bold whitespace-nowrap";
+                }
+            });
+
+            // Filter cards
+            cards.forEach(card => {
+                if (tabId === 'all') {
+                    card.style.display = 'flex';
+                } else if (card.dataset.category.includes(tabId)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Click events for all tabs
+        tabs.forEach(t => {
+            t.addEventListener('click', () => {
+                let target = t.dataset.target;
+                activateTab(target);
+                const url = new URL(window.location);
+                url.searchParams.set('tab', target);
+                window.history.pushState({}, '', url);
+            });
+        });
+
+        // Activate initial tab from URL or default to 'all'
+        if (tab) {
+            activateTab(tab);
+        } else {
+            activateTab('all');
+        }
+    });
+</script>
 <?php include 'components/footer.php'; ?>

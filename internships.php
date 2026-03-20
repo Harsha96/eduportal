@@ -295,20 +295,21 @@ include 'components/header.php';
 
 
 <script>
-    lucide.createIcons();
-
-    // Mobile menu toggle logic
-    document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
-        var menu = document.getElementById('mobile-menu');
-        if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-        } else {
-            menu.classList.add('hidden');
-        }
-    });
-
-    // Tab selection logic based on URL parameters
     document.addEventListener('DOMContentLoaded', function () {
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+
+        // Mobile menu toggle logic
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Tab selection logic based on URL parameters
         const urlParams = new URLSearchParams(window.location.search);
         let tab = urlParams.get('tab');
         const tabs = document.querySelectorAll('nav[aria-label="Tabs"] button');
