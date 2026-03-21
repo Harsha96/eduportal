@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'ICSE Programmes | Unidemy Global';
-$pageDescription = 'Our premier ICSE programmes spanning from Class 1 to 10 with integrated foundation for competitive excellence.';
+$pageDescription = 'Our premier ICSE programmes spanning from Class 1 to 12 with integrated foundation for competitive excellence.';
 $additionalHead = <<<'HEADCONTENT'
 <style>
         .custom-scrollbar::-webkit-scrollbar {
@@ -54,7 +54,7 @@ include 'components/header.php';
             <div>
                 <h1 class="text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-900 font-sans tracking-tight">
                     ICSE Programmes</h1>
-                <p class="text-gray-500 mt-1">Foundation courses for students from Class 1 to 10.</p>
+                <p class="text-gray-500 mt-1">Foundation courses for students from Class 1 to 12.</p>
             </div>
         </div>
 
@@ -76,6 +76,10 @@ include 'components/header.php';
                 <button data-target="class-9-10"
                     class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
                     Academic Achievers (9-10)
+                </button>
+                <button data-target="grade-11-12"
+                    class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                    Senior Leaders (11-12)
                 </button>
             </nav>
         </div>
@@ -703,6 +707,120 @@ include 'components/header.php';
                         <button
                             onclick="openEnrollmentModal('ICSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')"
                             class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll
+                            Request</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IIT-JEE Excellence Card (Class 11) -->
+            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                data-category="grade-11-12">
+                <div
+                    class="relative h-[200px] w-full overflow-hidden bg-blue-50/50 flex items-center justify-center border-b border-gray-100">
+                    <div class="absolute inset-0 opacity-20"
+                        style="background-image: radial-gradient(#3b82f6 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+                    <i data-lucide="book-open"
+                        class="w-20 h-20 text-blue-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-blue-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-blue-100">
+                        CLASS 11
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <span
+                            class="text-blue-600 font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">Engineering Stream</span>
+                    </div>
+                    <h3
+                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                        IIT-JEE Excellence</h3>
+                    <div class="collapsible-wrapper collapsed">
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Rigorous preparation for JEE Main & Advanced alongside ICSE board exams with expert faculty and advanced study material.</p>
+                        <ul class="space-y-3 mb-4">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Integrated board & entrance prep
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Advanced numeric & logical mastery
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleContent(this)"
+                        class="text-blue-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Math</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-5 border-t border-gray-100">
+                        <button onclick="openEnrollmentModal('ICSE - IIT-JEE Excellence (Class 11)')"
+                            class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Enroll
+                            Request</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEET Success Program Card (Class 12) -->
+            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                data-category="grade-11-12">
+                <div
+                    class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
+                    <div class="absolute inset-0 opacity-20"
+                        style="background-image: radial-gradient(#ef4444 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+                    <i data-lucide="heart-pulse"
+                        class="w-20 h-20 text-rose-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100">
+                        CLASS 12
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <span
+                            class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Medical Stream</span>
+                    </div>
+                    <h3
+                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                        NEET Success Program</h3>
+                    <div class="collapsible-wrapper collapsed">
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Comprehensive medical entrance preparation with deep focus on Biology, Physics, and Chemistry for top ranks.</p>
+                        <ul class="space-y-3 mb-4">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Expert Medical faculty
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Extensive mock test series
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleContent(this)"
+                        class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </button>
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Biology</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-5 border-t border-gray-100">
+                        <button onclick="openEnrollmentModal('ICSE - NEET Success Program (Class 12)')"
+                            class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll
                             Request</button>
                     </div>
                 </div>

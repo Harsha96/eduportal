@@ -80,6 +80,8 @@
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">NEET</a>
                         <a href="iit-jee.php"
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">IIT-JEE</a>
+                        <a href="kcet.php?tab=all"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">KCET</a>
                     </div>
                 </div>
                 <a href="study-abroad.php" class="hover:text-primary transition-colors">Study Abroad</a>
@@ -127,6 +129,8 @@
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">NEET</a>
                     <a href="iit-jee.php"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">IIT-JEE</a>
+                    <a href="kcet.php?tab=all"
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">KCET</a>
                 </div>
                 <div class="h-px w-full bg-gray-100 my-2"></div>
                 <a href="global-launchpad.php"

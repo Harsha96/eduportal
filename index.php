@@ -462,6 +462,38 @@ include 'components/header.php';
                             </div>
                         </div>
                     </a>
+                    <!-- KCET -->
+                    <a href="kcet.php"
+                        class="group relative bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-indigo-50 to-white opacity-0 group-active:opacity-100 transition-opacity">
+                        </div>
+                        <div class="relative z-10 flex flex-col h-full">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
+                                    <i data-lucide="graduation-cap" class="w-5 h-5 text-indigo-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 text-base leading-tight">KCET</h3>
+                                    <p class="text-xs text-gray-400">State Engineering Entrance</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span
+                                    class="px-2.5 py-1 bg-indigo-50 text-xs font-semibold text-indigo-700 rounded-lg">Class
+                                    11</span>
+                                <span
+                                    class="px-2.5 py-1 bg-indigo-50 text-xs font-semibold text-indigo-700 rounded-lg">Class
+                                    12</span>
+                                <span
+                                    class="px-2.5 py-1 bg-indigo-50 text-xs font-semibold text-indigo-700 rounded-lg">Repeater</span>
+                            </div>
+                            <div class="mt-auto flex items-center text-primary text-sm font-semibold">View Details
+                                <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -797,6 +829,38 @@ include 'components/header.php';
                             class="px-3 py-1.5 bg-gray-50 text-sm font-medium text-gray-600 rounded-lg border border-gray-100 hover:bg-primary hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             12</span>
                         <span onclick="event.preventDefault(); window.location.href='iit-jee.php?tab=dropper'"
+                            class="px-3 py-1.5 bg-gray-50 text-sm font-medium text-gray-600 rounded-lg border border-gray-100 hover:bg-primary hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Repeater</span>
+                    </div>
+                    <div class="mt-auto flex items-center text-primary font-semibold">
+                        View Details <i data-lucide="chevron-right"
+                            class="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- KCET -->
+            <a href="kcet.php"
+                class="group relative bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col h-full overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-indigo-600/5 opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
+                <div class="relative z-10 flex flex-col h-full">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0">
+                            <i data-lucide="graduation-cap" class="w-6 h-6 text-indigo-500"></i>
+                        </div>
+                        <h3
+                            class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                            KCET</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
+                        <span onclick="event.preventDefault(); window.location.href='kcet.php?tab=class-11'"
+                            class="px-3 py-1.5 bg-gray-50 text-sm font-medium text-gray-600 rounded-lg border border-gray-100 hover:bg-primary hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
+                            11</span>
+                        <span onclick="event.preventDefault(); window.location.href='kcet.php?tab=class-12'"
+                            class="px-3 py-1.5 bg-gray-50 text-sm font-medium text-gray-600 rounded-lg border border-gray-100 hover:bg-primary hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
+                            12</span>
+                        <span onclick="event.preventDefault(); window.location.href='kcet.php?tab=repeater'"
                             class="px-3 py-1.5 bg-gray-50 text-sm font-medium text-gray-600 rounded-lg border border-gray-100 hover:bg-primary hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Repeater</span>
                     </div>
                     <div class="mt-auto flex items-center text-primary font-semibold">

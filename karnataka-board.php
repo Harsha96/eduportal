@@ -54,7 +54,7 @@ include 'components/header.php';
             <div>
                 <h1 class="text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-900 font-sans tracking-tight">
                     Karnataka Board Programmes</h1>
-                <p class="text-gray-500 mt-1">Foundation courses for students from Class 1 to 10.</p>
+                <p class="text-gray-500 mt-1">Foundation courses for students from Class 1 to 12.</p>
             </div>
         </div>
 
@@ -76,6 +76,10 @@ include 'components/header.php';
                 <button data-target="class-9-10"
                     class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
                     Academic Achievers (Class 9-10)
+                </button>
+                <button data-target="grade-11-12"
+                    class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                    Senior Leaders (Grade 11-12)
                 </button>
             </nav>
         </div>
@@ -192,23 +196,33 @@ include 'components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Interactive phonics-based reading program for early learners, building strong pronunciation and vocabulary foundations.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">A fun program that helps children learn sounds, improve reading, and build strong spelling skills.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Phonemic awareness development
+                                Interactive phonics activities
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Vocabulary expansion through stories
+                                Sound recognition exercises
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Interactive reading sessions
+                                Word-building games
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Reading practice sessions
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun storytelling and vocabulary activities
                             </li>
                         </ul>
                     </div>
@@ -265,23 +279,33 @@ include 'components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Mental arithmetic development through Abacus training, enhancing calculation speed, concentration, and mental agility.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">A fun math program where children use an abacus to solve problems quickly, improving their focus and mental math skills.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Speed calculation techniques
+                                Hands-on abacus training
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Concentration & focus improvement
+                                Mental math techniques and tricks
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Mental math visualization
+                                Speed and accuracy drills
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Concentration-building exercises
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun math games and challenges
                             </li>
                         </ul>
                     </div>
@@ -338,23 +362,33 @@ include 'components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Hands-on introduction to coding, logic, and robotics, preparing students for the future of technology.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">A hands-on program where children learn to build and program robots, exploring the exciting world of artificial intelligence and technology.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Basic coding & logic building
+                                Basic robotics and electronics
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Hands-on robotics projects
+                                Programming and coding for robots
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Problem-solving through tech
+                                Artificial Intelligence (AI) concepts
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Problem-solving through tech projects
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Hands-on robot building workshops
                             </li>
                         </ul>
                     </div>
@@ -411,7 +445,7 @@ include 'components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Integrated approach to Science, Technology, Engineering, and Math, fostering curiosity and practical understanding.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">A hands-on STEM program that teaches science, technology, engineering, and math through fun projects and real-world activities.</p>
 
                         <!-- Subject Tags -->
                         <div class="flex flex-wrap gap-2 mb-6">
@@ -425,7 +459,12 @@ include 'components/header.php';
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Scientific experimentation
+                                Project-based STEM learning
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Hands-on experiments and activities
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -435,7 +474,12 @@ include 'components/header.php';
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Real-world math applications
+                                Collaborative problem-solving tasks
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun innovation and creativity workshops
                             </li>
                         </ul>
                     </div>
@@ -492,23 +536,33 @@ include 'components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Strategic thinking and tactical planning sessions through professional chess training for all skill levels.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">A fun program where children learn the rules, strategies, and tactics of chess, helping them improve their thinking and problem-solving skills.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Opening & endgame strategies
+                                Chess rules and basic moves
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Tactical pattern recognition
+                                Strategic thinking and planning
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Tournament preparation
+                                Tactical patterns and combinations
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                End-game techniques and principles
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun chess tournaments and practice
                             </li>
                         </ul>
                     </div>
@@ -565,20 +619,33 @@ include 'components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Transition into advanced
-                            logic
-                            building. Focuses on Olympiads readiness and deep conceptual mastery in STEM.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Designed for young learners to build a strong foundation in core subjects like Math, Science, and English through interactive and engaging methods.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Introduction to analytical reasoning
+                                Fundamental subject concept building
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Olympiad level problem solving
+                                Creative and interactive learning
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Confidence-boosting activities
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Basic logic and reasoning tasks
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun educational games and projects
                             </li>
                         </ul>
                     </div>
@@ -646,24 +713,37 @@ include 'components/header.php';
                     </div>
                     <h3
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
-                        Olympiad Prep</h3>
+                        Future Achievers Program</h3>
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Dedicated coaching for
-                            national
-                            and international Olympiads building competitive temperament.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">A comprehensive program designed to prepare students for various Olympiad exams by strengthening their concepts and problem-solving abilities.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Expert Olympiad faculty
+                                Advanced level subject preparation
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Mock tests & detailed analytics
+                                Olympiad-specific mock tests
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Logical and analytical reasoning drills
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Concept-deepening study sessions
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Subject-wise competitive strategies
                             </li>
                         </ul>
                     </div>
@@ -730,20 +810,28 @@ include 'components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Board exam mastery paired
-                            with
-                            rigorous NTSE & early IIT-JEE/NEET foundation training.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Focused on helping the students to build strong subject concepts, improve problem-solving skills, and achieve excellent performance in board examinations.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Board Exam Strategy & Mocks
+                                Concept-based teaching with detailed explanations
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Early preparation for competitive exams
+                                Regular worksheets and problem-solving sessions​
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Chapter-wise tests and board exam mock papers
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Doubt clearing and personalized guidance
                             </li>
                         </ul>
                     </div>
@@ -815,20 +903,33 @@ include 'components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Get a head start on
-                            competitive
-                            engineering and medical entrance exams with specialized training.</p>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">An advanced foundation program designed to prepare students for future competitive exams like IIT-JEE and NEET while strengthening their Class 9–10 academic concepts.</p>
 
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Core concept clarification
+                                Concept-based teaching methodology
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated syllabus mapping
+                                Integrated board + competitive exam preparation
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Regular practice worksheets and assignments
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Weekly tests and performance tracking
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Doubt clearing and mentoring sessions
                             </li>
                         </ul>
                     </div>
@@ -873,6 +974,136 @@ include 'components/header.php';
                 </div>
             </div>
 
+            <!-- IIT-JEE Excellence Card (Class 11) -->
+            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                data-category="grade-11-12">
+                <div
+                    class="relative h-[200px] w-full overflow-hidden bg-blue-50/50 flex items-center justify-center border-b border-gray-100">
+                    <div class="absolute inset-0 opacity-20"
+                        style="background-image: radial-gradient(#3b82f6 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+                    <i data-lucide="book-open"
+                        class="w-20 h-20 text-blue-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-blue-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-blue-100">
+                        CLASS 11
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <span
+                            class="text-blue-600 font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">Karnataka Board - Engineering Stream</span>
+                    </div>
+                    <h3
+                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                        IIT-JEE Excellence</h3>
+
+                    <div
+                        class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Rigorous preparation for JEE Main & Advanced alongside Karnataka Board exams with expert faculty and advanced study material.</p>
+
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Integrated board & entrance prep
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Advanced numeric & logical mastery
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="toggleContent(this)"
+                        class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                        <span>Read More</span>
+                        <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                    </button>
+
+                    <!-- Packages Info Section -->
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Math</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-5 border-t border-gray-100">
+                        <button onclick="openEnrollmentModal('Karnataka Board - IIT-JEE Excellence (Class 11)')"
+                            class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Enroll
+                            Request</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEET Success Program Card (Class 12) -->
+            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                data-category="grade-11-12">
+                <div
+                    class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
+                    <div class="absolute inset-0 opacity-20"
+                        style="background-image: radial-gradient(#ef4444 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+                    <i data-lucide="heart-pulse"
+                        class="w-20 h-20 text-rose-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    <div
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100">
+                        CLASS 12
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <span
+                            class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Karnataka Board - Medical Stream</span>
+                    </div>
+                    <h3
+                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
+                        NEET Success Program</h3>
+
+                    <div
+                        class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Comprehensive medical entrance preparation with deep focus on Biology, Physics, and Chemistry for top ranks.</p>
+
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Expert Medical faculty
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Extensive mock test series
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="toggleContent(this)"
+                        class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                        <span>Read More</span>
+                        <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                    </button>
+
+                    <!-- Packages Info Section -->
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Biology</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-5 border-t border-gray-100">
+                        <button onclick="openEnrollmentModal('Karnataka Board - NEET Success Program (Class 12)')"
+                            class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll
+                            Request</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </main>
@@ -887,7 +1118,11 @@ include 'components/header.php';
         if (isCollapsed) {
             wrapper.classList.remove('collapsed');
             wrapper.classList.add('expanded');
+            
+            // Calculate height AFTER removing 'collapsed' to account for previously hidden content
+            const autoHeight = wrapper.scrollHeight + 'px';
             wrapper.style.maxHeight = autoHeight;
+            
             btn.querySelector('span').textContent = 'Read Less';
             btn.querySelector('i').setAttribute('data-lucide', 'arrow-up');
         } else {
