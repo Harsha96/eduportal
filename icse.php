@@ -113,19 +113,32 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         Explorers Foundation</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated conceptual
-                            development focused on building a strong ICSE academic foundation through interactive
-                            learning.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A program that helps students understand concepts, improve problem-solving, and score well in board exams</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Subject-wise conceptual clarity
+                                Concept-based ICSE syllabus teaching
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Regular assessment & mental math
+                                Reading, writing, and comprehension practice
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Structured worksheets and activity-based learning
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Regular assessments and feedback
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Logical and analytical problem solving
                             </li>
                         </ul>
                     </div>
@@ -528,18 +541,32 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
                         Academic Builders</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Transition into advanced
-                            analytical thinking and deep conceptual mastery tailored for ICSE students.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Designed for young learners to build a strong foundation in core subjects like Math, Science, and English through interactive and engaging methods.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Core science & math foundation
+                                Fundamental subject concept building
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Pre-foundation for Grade 9 & 10
+                                Creative and interactive learning
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Confidence-boosting activities
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Basic logic and reasoning tasks
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Fun educational games and projects
                             </li>
                         </ul>
                     </div>
@@ -580,18 +607,32 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
                         Future Achievers</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated foundation
-                            coaching focusing on Olympiads & competitive mindset starting early.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A comprehensive program designed to prepare students for various Olympiad exams by strengthening their concepts and problem-solving abilities.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Advanced Scientific Aptitude
+                                Advanced level subject preparation
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Olympiad exam preparation
+                                Olympiad-specific mock tests
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Logical and analytical reasoning drills
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Concept-deepening study sessions
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Subject-wise competitive strategies
                             </li>
                         </ul>
                     </div>
@@ -632,18 +673,27 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
                         Academic Achievers</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Rigorous ICSE board
-                            preparation paired with thorough performance tracking and board strategies.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Focused on helping the students to build strong subject concepts, improve problem-solving skills, and achieve excellent performance in board examinations.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                ICSE board exam mocks
+                                Concept-based teaching with detailed explanations
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Precise time-management skills
+                                Regular worksheets and problem-solving sessions
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Chapter-wise tests and board exam mock papers
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Doubt clearing and personalized guidance
                             </li>
                         </ul>
                     </div>
@@ -684,18 +734,32 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
                         IIT-JEE / NEET Starter</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Integrated JEE/NEET starter
-                            program for Class 9 & 10 focusing on advanced problem solving.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">An advanced foundation program designed to prepare students for future competitive exams like IIT-JEE and NEET while strengthening their Class 9–10 academic concepts.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Entrance-level difficulty problems
+                                Concept-based teaching methodology
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
                                     class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
-                                Integrated board & entrance coaching
+                                Integrated board + competitive exam preparation
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Regular practice worksheets and assignments
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Weekly tests and performance tracking
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Doubt clearing and mentoring sessions
                             </li>
                         </ul>
                     </div>
@@ -730,13 +794,16 @@ include 'components/header.php';
                 <div class="p-6 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-3">
                         <span
-                            class="text-blue-600 font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">Engineering Stream</span>
+                            class="text-blue-600 font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">Engineering
+                            Stream</span>
                     </div>
                     <h3
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         IIT-JEE Excellence</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Rigorous preparation for JEE Main & Advanced alongside ICSE board exams with expert faculty and advanced study material.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Rigorous preparation for JEE
+                            Main & Advanced alongside ICSE board exams with expert faculty and advanced study material.
+                        </p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -756,9 +823,12 @@ include 'components/header.php';
                     </button>
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Math</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                            <span
+                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Math</span>
+                            <span
+                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                            <span
+                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
@@ -787,13 +857,15 @@ include 'components/header.php';
                 <div class="p-6 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-3">
                         <span
-                            class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Medical Stream</span>
+                            class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Medical
+                            Stream</span>
                     </div>
                     <h3
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         NEET Success Program</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Comprehensive medical entrance preparation with deep focus on Biology, Physics, and Chemistry for top ranks.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Comprehensive medical
+                            entrance preparation with deep focus on Biology, Physics, and Chemistry for top ranks.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -813,9 +885,12 @@ include 'components/header.php';
                     </button>
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Biology</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                            <span
+                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Biology</span>
+                            <span
+                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                            <span
+                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
@@ -882,18 +957,52 @@ include 'components/header.php';
 
     function toggleContent(btn) {
         const wrapper = btn.previousElementSibling;
-        const isExpanded = wrapper.classList.contains('expanded');
+        const isCollapsed = wrapper.classList.contains('collapsed');
 
-        if (isExpanded) {
-            wrapper.classList.remove('expanded');
-            wrapper.classList.add('collapsed');
-            btn.innerHTML = 'Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>';
-        } else {
+        if (isCollapsed) {
             wrapper.classList.remove('collapsed');
             wrapper.classList.add('expanded');
-            btn.innerHTML = 'Read Less <i data-lucide="chevron-up" class="w-4 h-4"></i>';
+
+            // Adjust maxHeight for smooth transition
+            wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+
+            // Handle different button structures
+            if (btn.querySelector('span')) {
+                btn.querySelector('span').textContent = 'Read Less';
+            } else {
+                btn.innerHTML = 'Read Less <i data-lucide="chevron-up" class="w-4 h-4"></i>';
+            }
+
+            if (btn.querySelector('i')) {
+                const icon = btn.querySelector('i');
+                if (icon.hasAttribute('data-lucide')) {
+                    icon.setAttribute('data-lucide', 'chevron-up');
+                }
+            }
+        } else {
+            wrapper.classList.remove('expanded');
+            wrapper.classList.add('collapsed');
+
+            // Reset maxHeight
+            wrapper.style.maxHeight = "200px";
+
+            if (btn.querySelector('span')) {
+                btn.querySelector('span').textContent = 'Read More';
+            } else {
+                btn.innerHTML = 'Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>';
+            }
+
+            if (btn.querySelector('i')) {
+                const icon = btn.querySelector('i');
+                if (icon.hasAttribute('data-lucide')) {
+                    icon.setAttribute('data-lucide', 'chevron-down');
+                }
+            }
         }
-        lucide.createIcons();
+
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
     }
 </script>
 <?php include 'components/enrollment-modal.php'; ?>

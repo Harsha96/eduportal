@@ -1206,18 +1206,52 @@ include 'components/header.php';
 
     function toggleContent(btn) {
         const wrapper = btn.previousElementSibling;
-        const isExpanded = wrapper.classList.contains('expanded');
+        const isCollapsed = wrapper.classList.contains('collapsed');
 
-        if (isExpanded) {
-            wrapper.classList.remove('expanded');
-            wrapper.classList.add('collapsed');
-            btn.innerHTML = 'Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>';
-        } else {
+        if (isCollapsed) {
             wrapper.classList.remove('collapsed');
             wrapper.classList.add('expanded');
-            btn.innerHTML = 'Read Less <i data-lucide="chevron-up" class="w-4 h-4"></i>';
+            
+            // Adjust maxHeight for smooth transition
+            wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+            
+            // Handle different button structures
+            if (btn.querySelector('span')) {
+                btn.querySelector('span').textContent = 'Read Less';
+            } else {
+                btn.innerHTML = 'Read Less <i data-lucide="chevron-up" class="w-4 h-4"></i>';
+            }
+            
+            if (btn.querySelector('i')) {
+                const icon = btn.querySelector('i');
+                if (icon.hasAttribute('data-lucide')) {
+                    icon.setAttribute('data-lucide', 'chevron-up');
+                }
+            }
+        } else {
+            wrapper.classList.remove('expanded');
+            wrapper.classList.add('collapsed');
+            
+            // Reset maxHeight
+            wrapper.style.maxHeight = "200px";
+            
+            if (btn.querySelector('span')) {
+                btn.querySelector('span').textContent = 'Read More';
+            } else {
+                btn.innerHTML = 'Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>';
+            }
+            
+            if (btn.querySelector('i')) {
+                const icon = btn.querySelector('i');
+                if (icon.hasAttribute('data-lucide')) {
+                    icon.setAttribute('data-lucide', 'chevron-down');
+                }
+            }
         }
-        lucide.createIcons();
+        
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
     }
 </script>
 <?php include 'components/enrollment-modal.php'; ?>

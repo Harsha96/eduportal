@@ -198,15 +198,32 @@
 }
 
 
+/* Collapsible Wrapper Improvements */
+.collapsible-wrapper {
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.collapsible-wrapper.collapsed {
+  max-height: 200px; /* Base height to show description and 2 points */
+}
+
+.collapsible-wrapper.expanded {
+  max-height: 1000px; /* Large enough to show all content */
+}
 
 /* Ensure all list items are available for scrollHeight calculation */
 .collapsible-wrapper.collapsed ul li {
   display: flex;
 }
 
-.collapsible-wrapper.expanded p {
-  -webkit-line-clamp: unset !important;
-  line-clamp: unset !important;
+/* Specific rule to hide points beyond 2nd in collapsed state */
+.collapsible-wrapper.collapsed ul li:nth-child(n+3) {
+  display: none !important;
+}
+
+.collapsible-wrapper.expanded ul li {
+  display: flex !important;
 }
 
 /* Fix text justification issue (based on your UI) */

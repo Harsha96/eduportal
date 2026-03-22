@@ -1113,25 +1113,57 @@ include 'components/header.php';
     function toggleContent(btn) {
         const wrapper = btn.previousElementSibling;
         const isCollapsed = wrapper.classList.contains('collapsed');
-        const autoHeight = wrapper.scrollHeight + 'px';
 
         if (isCollapsed) {
             wrapper.classList.remove('collapsed');
             wrapper.classList.add('expanded');
             
-            // Calculate height AFTER removing 'collapsed' to account for previously hidden content
-            const autoHeight = wrapper.scrollHeight + 'px';
-            wrapper.style.maxHeight = autoHeight;
+            // Adjust maxHeight for smooth transition
+            wrapper.style.maxHeight = wrapper.scrollHeight + "px";
             
-            btn.querySelector('span').textContent = 'Read Less';
-            btn.querySelector('i').setAttribute('data-lucide', 'arrow-up');
+            // Handle different button structures
+            if (btn.querySelector('span')) {
+                btn.querySelector('span').textContent = 'Read Less';
+            } else {
+                btn.innerHTML = 'Read Less <i data-lucide="chevron-up" class="w-4 h-4"></i>';
+            }
+            
+            if (btn.querySelector('i')) {
+                const icon = btn.querySelector('i');
+                if (icon.hasAttribute('data-lucide')) {
+                    // Check if it was an arrow-right (special case for Karnataka board)
+                    if (icon.getAttribute('data-lucide') === 'arrow-right') {
+                        icon.setAttribute('data-lucide', 'arrow-up');
+                    } else {
+                        icon.setAttribute('data-lucide', 'chevron-up');
+                    }
+                }
+            }
         } else {
-            wrapper.classList.add('collapsed');
             wrapper.classList.remove('expanded');
-            wrapper.style.maxHeight = '150px'; // Matching the base height
-            btn.querySelector('span').textContent = 'Read More';
-            btn.querySelector('i').setAttribute('data-lucide', 'arrow-right');
+            wrapper.classList.add('collapsed');
+            
+            // Reset maxHeight
+            wrapper.style.maxHeight = "200px";
+            
+            if (btn.querySelector('span')) {
+                btn.querySelector('span').textContent = 'Read More';
+            } else {
+                btn.innerHTML = 'Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>';
+            }
+            
+            if (btn.querySelector('i')) {
+                const icon = btn.querySelector('i');
+                if (icon.hasAttribute('data-lucide')) {
+                    if (icon.getAttribute('data-lucide') === 'arrow-up') {
+                        icon.setAttribute('data-lucide', 'arrow-right');
+                    } else {
+                        icon.setAttribute('data-lucide', 'chevron-down');
+                    }
+                }
+            }
         }
+        
         if (typeof lucide !== 'undefined') {
             lucide.createIcons();
         }
