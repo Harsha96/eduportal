@@ -234,6 +234,11 @@ include 'components/header.php';
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
                             <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
+                                Kannada / Hindi / English
+                            </span>
+                            <span
                                 class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                 <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
                                 Mathematics
@@ -243,20 +248,11 @@ include 'components/header.php';
                                 <i data-lucide="leaf" class="w-3.5 h-3.5"></i>
                                 EVS
                             </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
-                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
-                                Kannada
-                            </span>
+
                             <span
                                 class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
                                 <i data-lucide="monitor" class="w-3.5 h-3.5"></i>
                                 Computers
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
-                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
-                                Hindi
                             </span>
                             <span
                                 class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 text-xs font-semibold">
@@ -694,36 +690,20 @@ include 'components/header.php';
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
                             <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
+                                Kannada / Hindi / English
+                            </span>
+                            <span
                                 class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
                                 <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
                                 Mathematics
                             </span>
                             <span
                                 class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
-                                <i data-lucide="leaf" class="w-3.5 h-3.5"></i>
-                                EVS
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
-                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
-                                Kannada
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
-                                <i data-lucide="monitor" class="w-3.5 h-3.5"></i>
-                                Computers
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
-                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
-                                Hindi
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 text-xs font-semibold">
                                 <i data-lucide="atom" class="w-3.5 h-3.5"></i>
                                 Science
                             </span>
-
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
@@ -806,30 +786,9 @@ include 'components/header.php';
                             </span>
                             <span
                                 class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
-                                <i data-lucide="leaf" class="w-3.5 h-3.5"></i>
-                                EVS
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
-                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
-                                Kannada
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
-                                <i data-lucide="monitor" class="w-3.5 h-3.5"></i>
-                                Computers
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
-                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
-                                Hindi
-                            </span>
-                            <span
-                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 text-xs font-semibold">
                                 <i data-lucide="atom" class="w-3.5 h-3.5"></i>
                                 Science
                             </span>
-
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
@@ -899,13 +858,20 @@ include 'components/header.php';
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Math</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
+                                Kannada / Hindi
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Mathematics
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
-                            <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Biology</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
@@ -977,9 +943,27 @@ include 'components/header.php';
                         class="text-violet-600 font-bold text-[13px] mt-2 mb-4 flex items-center gap-1 hover:underline">
                         Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
-                    <button onclick="openEnrollmentModal('CBSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')"
-                        class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll
-                        Request</button>
+                    <!-- Subjects Info Section -->
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Mathematics
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-5 border-t border-gray-100">
+                        <button
+                            onclick="openEnrollmentModal('CBSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')"
+                            class="w-full bg-teal-50 text-teal-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-teal-600 hover:text-white transition-all">Enroll
+                            Request</button>
+                    </div>
                 </div>
             </div>
 
@@ -1087,17 +1071,27 @@ include 'components/header.php';
                             </li>
                         </ul>
                     </div>
+                    <!-- Subjects Info Section -->
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Math</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Physics
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                <i data-lucide="funnel" class="w-3.5 h-3.5"></i>
+                                Chemistry
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Mathematics
+                            </span>
                         </div>
                     </div>
-                    <div class="mt-auto pt-5 border-t border-gray-100 space-y-3">
+                    <div class="mt-auto pt-5 border-t border-gray-100">
                         <button onclick="openEnrollmentModal('CBSE - IIT-JEE Excellence (Grade 11-12)')"
                             class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Enroll
                             Request</button>
@@ -1146,17 +1140,27 @@ include 'components/header.php';
                             </li>
                         </ul>
                     </div>
+                    <!-- Subjects Info Section -->
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Biology</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Physics
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                <i data-lucide="funnel" class="w-3.5 h-3.5"></i>
+                                Chemistry
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                <i data-lucide="heart-pulse" class="w-3.5 h-3.5"></i>
+                                Biology
+                            </span>
                         </div>
                     </div>
-                    <div class="mt-auto pt-5 border-t border-gray-100 space-y-3">
+                    <div class="mt-auto pt-5 border-t border-gray-100">
                         <button onclick="openEnrollmentModal('CBSE - NEET Success Program (Grade 11-12)')"
                             class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll
                             Request</button>

@@ -113,7 +113,8 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-primary transition-colors">
                         Explorers Foundation</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A program that helps students understand concepts, improve problem-solving, and score well in board exams</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A program that helps students
+                            understand concepts, improve problem-solving, and score well in board exams</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -143,9 +144,40 @@ include 'components/header.php';
                         </ul>
                     </div>
                     <button onclick="toggleContent(this)"
-                        class="text-blue-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
+                        class="text-blue-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-0.5 hover:underline">
                         Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
+                    <!-- STEM Subjects Info Section -->
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 text-xs font-semibold">
+                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
+                                Kannada / Hindi / English
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Maths
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-xs font-semibold">
+                                <i data-lucide="leaf" class="w-3.5 h-3.5"></i>
+                                EVS
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
+                                <i data-lucide="computer" class="w-3.5 h-3.5"></i>
+                                Computers
+                            </span>
+
+                        </div>
+                    </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
                         <button onclick="openEnrollmentModal('ICSE - Explorers Foundation (Class 1-5)')"
                             class="w-full bg-blue-50 text-blue-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-blue-600 hover:text-white transition-all">Enroll
@@ -153,6 +185,7 @@ include 'components/header.php';
                     </div>
                 </div>
             </div>
+
 
             <!-- Smart Readers Card -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
@@ -166,7 +199,7 @@ include 'components/header.php';
                         class="w-20 h-20 text-orange-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
                     <div
                         class="absolute top-4 left-4 bg-white/90 backdrop-blur text-orange-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-orange-100">
-                        K1 & K2
+                        Class 1 & 2
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
@@ -541,7 +574,9 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors">
                         Academic Builders</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Designed for young learners to build a strong foundation in core subjects like Math, Science, and English through interactive and engaging methods.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Designed for young learners
+                            to build a strong foundation in core subjects like Math, Science, and English through
+                            interactive and engaging methods.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -574,6 +609,26 @@ include 'components/header.php';
                         class="text-indigo-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
                         Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
+                    <!-- STEM Subjects Info Section -->
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 text-xs font-semibold">
+                                <i data-lucide="languages" class="w-3.5 h-3.5"></i>
+                                Kannada / Hindi / English
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Maths
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
+                        </div>
+                    </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
                         <button onclick="openEnrollmentModal('ICSE - Academic Builders (Class 6-8)')"
                             class="w-full bg-indigo-50 text-indigo-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-indigo-600 hover:text-white transition-all">Enroll
@@ -607,7 +662,9 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-rose-600 transition-colors">
                         Future Achievers</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A comprehensive program designed to prepare students for various Olympiad exams by strengthening their concepts and problem-solving abilities.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">A comprehensive program
+                            designed to prepare students for various Olympiad exams by strengthening their concepts and
+                            problem-solving abilities.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -640,6 +697,21 @@ include 'components/header.php';
                         class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
                         Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
+                    <!-- STEM Subjects Info Section -->
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Maths
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
+                        </div>
+                    </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
                         <button onclick="openEnrollmentModal('ICSE - Future Achievers Foundation L1 (Class 6-8)')"
                             class="w-full bg-rose-50 text-rose-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-rose-600 hover:text-white transition-all">Enroll
@@ -673,7 +745,9 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-violet-600 transition-colors">
                         Academic Achievers</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Focused on helping the students to build strong subject concepts, improve problem-solving skills, and achieve excellent performance in board examinations.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">Focused on helping the
+                            students to build strong subject concepts, improve problem-solving skills, and achieve
+                            excellent performance in board examinations.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -701,6 +775,26 @@ include 'components/header.php';
                         class="text-violet-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
                         Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
+                    <!-- STEM Subjects Info Section -->
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="Languages" class="w-3.5 h-3.5"></i>
+                                Kannada / Hindi /English
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Maths
+                            </span>
+                        </div>
+                    </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
                         <button onclick="openEnrollmentModal('ICSE - Academic Achievers (Class 9-10)')"
                             class="w-full bg-violet-50 text-violet-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-violet-600 hover:text-white transition-all">Enroll
@@ -734,7 +828,9 @@ include 'components/header.php';
                         class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-teal-600 transition-colors">
                         IIT-JEE / NEET Starter</h3>
                     <div class="collapsible-wrapper collapsed">
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">An advanced foundation program designed to prepare students for future competitive exams like IIT-JEE and NEET while strengthening their Class 9–10 academic concepts.</p>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-3">An advanced foundation
+                            program designed to prepare students for future competitive exams like IIT-JEE and NEET
+                            while strengthening their Class 9–10 academic concepts.</p>
                         <ul class="space-y-3 mb-4">
                             <li class="flex items-start text-[14px] text-gray-600 font-medium">
                                 <i data-lucide="check-circle-2"
@@ -767,6 +863,21 @@ include 'components/header.php';
                         class="text-teal-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
                         Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
+                    <!-- STEM Subjects Info Section -->
+                    <div class="mt-4 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-orange-50 text-orange-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Science
+                            </span>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Maths
+                            </span>
+                        </div>
+                    </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
                         <button
                             onclick="openEnrollmentModal('ICSE - IIT-JEE / NEET Starter Foundation L2 (Class 9-10)')"
@@ -821,14 +932,24 @@ include 'components/header.php';
                         class="text-blue-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
                         Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </button>
+                    <!-- Subjects Info Section -->
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Math</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Physics
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                <i data-lucide="funnel" class="w-3.5 h-3.5"></i>
+                                Chemistry
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-red-50 text-red-700 text-xs font-semibold">
+                                <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                                Mathematics
+                            </span>
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
@@ -879,18 +1000,24 @@ include 'components/header.php';
                             </li>
                         </ul>
                     </div>
-                    <button onclick="toggleContent(this)"
-                        class="text-rose-600 font-bold text-[13px] mt-2 mb-6 flex items-center gap-1 hover:underline">
-                        Read More <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                    </button>
+                    <!-- Subjects Info Section -->
                     <div class="mt-4 pt-4 border-t border-gray-100">
                         <div class="flex flex-wrap gap-2">
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Biology</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                                <i data-lucide="atom" class="w-3.5 h-3.5"></i>
+                                Physics
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Physics</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold">
+                                <i data-lucide="funnel" class="w-3.5 h-3.5"></i>
+                                Chemistry
+                            </span>
                             <span
-                                class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Chemistry</span>
+                                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-pink-50 text-pink-700 text-xs font-semibold">
+                                <i data-lucide="heart-pulse" class="w-3.5 h-3.5"></i>
+                                Biology
+                            </span>
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
@@ -900,9 +1027,6 @@ include 'components/header.php';
                     </div>
                 </div>
             </div>
-
-        </div>
-    </div>
 </main>
 
 
