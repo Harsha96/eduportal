@@ -1,165 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidemy Global | Empowering Ambition Worldwide</title>
-    <meta name="description"
-        content="Your premier destination for world-class test preparation, career counseling, and global university admissions.">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1E4F9C',
-                        secondary: '#F97316',
-                        background: '#F8FBFF',
-                        accent: '#E6EFFF',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body class="bg-[#F8FBFF] font-sans text-gray-900 scroll-smooth">
-<nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-5 px-6 lg:px-8" id="main-nav">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="index.html" class="flex-shrink-0">
-                <img src="assets/images/Logo (2).png" alt="Unidemy Global"
-                    class="h-8 md:h-10 w-auto mix-blend-multiply transition-transform hover:scale-105">
-            </a>
-            <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
-                <div class="relative group">
-                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
-                        School Boards
-                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
-                    </button>
-                    <div
-                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <a href="cbse.html?tab=all"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">CBSE
-                            programs</a>
-                        <a href="icse.html?tab=all"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">ICSE
-                            Programmes</a>
-                        <a href="karnataka-board.html?tab=all"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">karnataka
-                            board</a>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
-                        Competitive exams
-                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
-                    </button>
-                    <div
-                        class="absolute top-full left-0 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <a href="neet.html?tab=all"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">NEET</a>
-                        <a href="iit-jee.html"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">IIT-JEE</a>
-                    </div>
-                </div>
-                <a href="study-abroad.html" class="hover:text-primary transition-colors">Study Abroad</a>
-                <a href="internships.html" class="hover:text-primary transition-colors">Internships</a>
-                <div class="relative group">
-                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
-                        Technology Services
-                        <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
-                    </button>
-                    <div
-                        class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <a href="technology-services.html?service=cloud"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Cloud
-                            Development</a>
-                        <a href="technology-services.html?service=ai-ml"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">AI
-                            & Machine Learning</a>
-                        <a href="technology-services.html?service=embedded"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Embedded
-                            Software</a>
-                        <a href="technology-services.html?service=digital"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Digital
-                            Engineering</a>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden lg:flex items-center gap-4">
-                <a href="https://unidemyglobal.com/login.php"
-                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">Log
-                    In</a>
-                <a href="https://unidemyglobal.com/register.php"
-                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">Sign
-                    Up</a>
-            </div>
-            <button id="mobile-menu-btn" class="lg:hidden text-gray-700 p-2"><i data-lucide="menu"
-                    class="w-6 h-6"></i></button>
-        </div>
-        <!-- Mobile Overlay -->
-        <div id="mobile-overlay" class="fixed inset-0 bg-slate-900/50 z-[45] hidden"></div>
+import re
 
-        <!-- Mobile Menu Slider -->
-        <div id="mobile-menu"
-            class="hidden lg:hidden bg-white border-t border-gray-100 overflow-hidden shadow-xl mt-4 rounded-2xl relative z-50">
-            <div class="p-6 flex flex-col gap-4">
-                <div class="flex flex-col gap-2">
-                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">School Boards</div>
-                    <a href="cbse.html?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
-                    <a href="icse.html?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
-                    <a href="karnataka-board.html?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
+print("Reading index.html...")
+with open("index.html", "r", encoding="utf-8") as f:
+    html = f.read()
 
+# Extract head contents
+head_match = re.search(r'(<head>.*?</head>)', html, re.DOTALL)
+head = head_match.group(1) if head_match else ""
 
+# Modify the head to include Sora font and FontAwesome
+head = head.replace(
+    'family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900',
+    'family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;600;700;800'
+)
 
-                </div>
-                <div class="h-px w-full bg-gray-100 my-2"></div>
-                <div class="flex flex-col gap-2">
-                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">Competitive exams</div>
-                    <a href="neet.html?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">NEET</a>
-                    <a href="iit-jee.html"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">IIT-JEE</a>
-                </div>
-                <div class="h-px w-full bg-gray-100 my-2"></div>
-                <a href="global-launchpad.html"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Study Abroad</a>
-                <a href="internships.html"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
-                <a href="#" class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology
-                    Services</a>
+# Add FontAwesome CDN before </head>
+fa_cdn = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">\n'
+head = head.replace('</head>', f'    {fa_cdn}</head>')
 
+# Extract nav
+nav_match = re.search(r'(<nav.*?</nav>)', html, re.DOTALL)
+nav = nav_match.group(1) if nav_match else ""
 
+# Extract footer
+footer_idx = html.find('<footer')
+if footer_idx != -1:
+    footer_part = html[footer_idx:]
+else:
+    footer_part = ""
 
-                <div class="flex flex-col gap-2 mt-4">
-                    <a href="https://unidemyglobal.com/login.php"
-                        class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
-                        Log In
-                    </a>
-                    <a href="https://unidemyglobal.com/register.php"
-                        class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
-                        Sign Up
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-<main>
-
+MAIN_CONTENT = """
     <!-- Hero Section -->
     <section id="hero" class="relative w-full pt-32 pb-24 lg:pt-40 lg:pb-32 bg-[#0B1121] flex justify-center overflow-hidden">
         <div class="absolute inset-0 opacity-[0.03] mix-blend-screen pointer-events-none"
@@ -782,163 +652,12 @@
             </form>
         </div>
     </section>
+"""
 
-</main>
-<footer class="bg-[#0B1121] pt-16 pb-8 border-t border-white/5 relative overflow-hidden">
-        <div
-            class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-20">
-        </div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
-                <div class="lg:col-span-4">
-                    <a href="index.html" class="flex items-center gap-2 mb-6 group">
-                        <img src="assets/images/Logo (2).png" alt="Unidemy Global"
-                            class="h-[40px] w-auto transition-transform hover:scale-105">
-                    </a>
-                    <p class="text-slate-400 text-sm mb-8 leading-relaxed max-w-sm">Empowering ambition worldwide. Your
-                        premier
-                        destination for world-class test preparation, career counseling, and global university
-                        admissions.</p>
-                    <div class="flex gap-4">
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1"><i
-                                data-lucide="facebook" class="w-4 h-4"></i></a>
-                        <a href="#"
-                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-sky-500 hover:text-white transition-all transform hover:-translate-y-1"><i
-                                data-lucide="twitter" class="w-4 h-4"></i></a>
-                        <a href="https://www.instagram.com/unidemy.global/" target="_blank" rel="noopener noreferrer"
-                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all transform hover:-translate-y-1"><i
-                                data-lucide="instagram" class="w-4 h-4"></i></a>
-                        <a href="https://www.linkedin.com/company/unidemy-global"
-                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all transform hover:-translate-y-1"><i
-                                data-lucide="linkedin" class="w-4 h-4"></i></a>
-                    </div>
-                </div>
+# Process nav to set active link
+nav = nav.replace('href="#" class="text-slate-400 text-sm hover:text-primary transition-colors">Technology Services</a>', 'href="technology-services.html" class="text-primary font-bold text-sm">Technology Services</a>')
 
-                <div class="lg:col-span-2">
-                    <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                        <i data-lucide="book-open" class="w-4 h-4 text-primary"></i> Programs
-                    </h4>
-                    <ul class="space-y-3">
-                        <li><a href="packages.html"
-                                class="text-slate-400 text-sm hover:text-primary transition-colors">Packages</a></li>
-                        <li><a href="cbse.html?tab=all"
-                                class="text-slate-400 text-sm hover:text-primary transition-colors">School Boards</a>
-                        </li>
-                        <li><a href="iit-jee.html"
-                                class="text-slate-400 text-sm hover:text-primary transition-colors">Competitive
-                                Exams</a></li>
-                        <li><a href="internships.html"
-                                class="text-slate-400 text-sm hover:text-primary transition-colors">Internships</a></li>
-                        <li><a href="technology-services.html"
-                                class="text-slate-400 text-sm hover:text-primary transition-colors">Technology
-                                Services</a></li>
-                    </ul>
-                </div>
-
-                <div class="lg:col-span-2">
-                    <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                        <i data-lucide="link" class="w-4 h-4 text-secondary"></i> Quick Links
-                    </h4>
-                    <ul class="space-y-3">
-                        <li><a href="about.html"
-                                class="text-slate-400 text-sm hover:text-secondary transition-colors">About Us</a></li>
-                        <li><a href="global-launchpad.html"
-                                class="text-slate-400 text-sm hover:text-secondary transition-colors">Study Abroad</a>
-                        </li>
-                        <li><a href="higher-education.html"
-                                class="text-slate-400 text-sm hover:text-secondary transition-colors">Higher
-                                Education</a></li>
-                        <li><a href="medical-abroad.html"
-                                class="text-slate-400 text-sm hover:text-secondary transition-colors">Medical Abroad</a>
-                        </li>
-                        <li><a href="free-resources.html"
-                                class="text-slate-400 text-sm hover:text-secondary transition-colors">Free Resources</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="lg:col-span-2">
-                    <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                        <i data-lucide="info" class="w-4 h-4 text-gray-400"></i> Corporate
-                    </h4>
-                    <ul class="space-y-3">
-                        <li><a href="blog.html"
-                                class="text-slate-400 text-sm hover:text-white transition-colors">Learning Blog</a></li>
-                        <li><a href="privacy.html"
-                                class="text-slate-400 text-sm hover:text-white transition-colors">Privacy Policy</a>
-                        </li>
-                        <li><a href="terms.html" class="text-slate-400 text-sm hover:text-white transition-colors">Terms
-                                of Service</a></li>
-                    </ul>
-                </div>
-
-                <div class="lg:col-span-2">
-                    <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                        <i data-lucide="phone-call" class="w-4 h-4 text-success"></i> Contact Us
-                    </h4>
-                    <ul class="space-y-4 text-slate-400">
-                        <li class="flex gap-3 items-start"><i data-lucide="mail"
-                                class="w-5 h-5 text-primary shrink-0"></i>
-                            <span class="text-sm">admissions@unidemyglobal.com</span>
-                        </li>
-                        <li class="flex gap-3 items-start"><i data-lucide="phone"
-                                class="w-5 h-5 text-primary shrink-0"></i>
-                            <span class="text-sm">+91 98765 43210</span>
-                        </li>
-                        <li class="flex gap-3 items-start"><i data-lucide="map-pin"
-                                class="w-5 h-5 text-primary shrink-0"></i>
-                            <span class="text-sm">Bangalore (HQ), Karnataka</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div
-                class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-500 text-xs text-center md:text-left">
-                <div class="flex items-center gap-2 flex-wrap justify-center">
-                    <i data-lucide="shield-check" class="w-4 h-4 shrink-0"></i>
-                    © 2026 Unidemy Global. All rights reserved.
-                </div>
-                <div class="flex items-center gap-6">
-                    <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Global Widgets -->
-    <a href="https://wa.me/916360456026" target="_blank" class="whatsapp-widget group animate-bounce-slow"
-        title="Chat on WhatsApp">
-        <div class="bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center gap-3">
-            <i data-lucide="message-circle" class="w-6 h-6"></i>
-            <span
-                class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 font-bold">Chat
-                with us</span>
-        </div>
-    </a>
-
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Custom Script -->
-    <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-    <div id="scrollToTopContainer"
-        class="fixed bottom-[110px] right-6 md:right-8 z-50 flex flex-col items-center opacity-0 invisible transition-all duration-500 cursor-pointer group translate-y-4"
-        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        <div
-            class="bg-primary text-white w-[52px] h-[52px] rounded-full flex items-center justify-center shadow-xl group-hover:bg-blue-800 group-hover:-translate-y-1 transition-all duration-300 mb-2">
-            <i data-lucide="chevron-up" class="w-8 h-8 stroke-[4]"></i>
-        </div>
-        <span
-            class="text-[10px] font-black text-primary uppercase tracking-wider group-hover:text-blue-800 transition-colors leading-none text-center">BACK
-            TO TOP</span>
-    </div>
-
-
+SCRIPT_JS = """
 <style>
 @keyframes marquee {
   0% { transform: translateX(0%); }
@@ -1054,7 +773,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 </script>
+"""
 
-</body>
+# Reassemble
+final_html = f"<!DOCTYPE html>\n<html lang=\"en\">\n{head}\n<body class=\"bg-[#F8FBFF] font-sans text-gray-900 scroll-smooth\">\n"
+final_html += f"{nav}\n<main>\n{MAIN_CONTENT}\n</main>\n{footer_part}"
 
-</html>
+# Insert scripts before </body>
+final_html = final_html.replace('</body>', f'{SCRIPT_JS}\n</body>')
+
+with open("technology-services.html", "w", encoding="utf-8") as out:
+    out.write(final_html)
+print("Done writing technology-services.html")
