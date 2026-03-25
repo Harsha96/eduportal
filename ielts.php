@@ -1,0 +1,268 @@
+<?php
+$pageTitle = 'IELTS Preparation | Unidemy Global';
+$pageDescription = 'Achieve your target IELTS band score with Unidemy Global';
+include 'components/header.php';
+?>
+    <!-- Main Content -->
+    <main class="w-full pt-28 lg:pt-36 pb-20 bg-white flex-grow">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <!-- Breadcrumbs -->
+            <nav class="flex text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center gap-2">
+                    <li class="inline-flex items-center group">
+                        <a href="index.php" class="inline-flex items-center hover:text-primary transition-colors">
+                            <i data-lucide="home" class="w-4 h-4 mr-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                            <a href="global-launchpad.php" class="ml-2 hover:text-primary transition-colors">Global
+                                Launchpad</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                            <span class="ml-2 text-primary font-medium">IELTS Preparation</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- Hero Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Master the IELTS with
+                        <span class="text-primary border-b-4 border-secondary/30">Expert-Led</span> Training
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">Achieve your dream score of 7.5+ bands with
+                        our comprehensive IELTS preparation. Whether for academic study or global migration, we provide
+                        the tools you need to succeed.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#Packages"
+                            class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-blue-800 transition-all shadow-lg shadow-primary/20">View
+                            Packages</a>
+                        <a href="https://wa.me/916360456026"
+                            class="flex items-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            Talk to Expert
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl transform rotate-3"></div>
+                    <div class="relative bg-white border border-gray-100 rounded-3xl p-8 shadow-2xl overflow-hidden">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                                <i data-lucide="check-circle" class="text-green-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Success Guaranteed</h3>
+                                <p class="text-sm text-gray-500">Proven methodologies for top bands</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-gray-700">
+                                <i data-lucide="star" class="w-5 h-5 text-secondary fill-secondary"></i>
+                                Expert IELTS-certified trainers
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700">
+                                <i data-lucide="play-circle" class="w-5 h-5 text-primary"></i>
+                                32+ Hours of Live Training
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700">
+                                <i data-lucide="clipboard-list" class="w-5 h-5 text-primary"></i>
+                                10 Full-length Mock Tests
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Why Choose Our IELTS Program?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                            <i data-lucide="monitor"
+                                class="text-primary w-7 h-7 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-4 text-gray-900">Easy Access</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Learn anywhere, anytime with our online portal
+                            and mobile apps (Android & iOS). Access recorded lessons and practice material on the go.
+                        </p>
+                    </div>
+                    <div
+                        class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors">
+                            <i data-lucide="trending-up"
+                                class="text-green-600 w-7 h-7 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-4 text-gray-900">Efficient</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Smart analytics to track your progress.
+                            High-quality study materials updated regularly based on thousands of student insights.</p>
+                    </div>
+                    <div
+                        class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors">
+                            <i data-lucide="book-open"
+                                class="text-purple-600 w-7 h-7 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-4 text-gray-900">Comprehensive</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Official guides and Unidemy exclusive content.
+                            Includes one-on-one reviews and doubt clearing sessions.</p>
+                    </div>
+                    <div
+                        class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-secondary transition-colors">
+                            <i data-lucide="smile"
+                                class="text-secondary w-7 h-7 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-4 text-gray-900">Affordable</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Maximum services at minimal cost. Free trial
+                            demo class available before you commit to a package.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Packages Section -->
+            <!-- Packages Section -->
+            <div id="Packages" class="mb-20 scroll-mt-32">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">IELTS Band Booster Package</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto italic">A complete preparation solution aiming for 7.5+
+                        bands in Academic or General exams.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Live Online -->
+                    <div
+                        class="bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-primary transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="flex items-center justify-between mb-8">
+                            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center">
+                                <i data-lucide="video" class="text-primary w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Live Module Training</h3>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-start gap-3 text-gray-600 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                Live interactive classes with certified experts
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-600 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                HD recordings for all sessions
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-600 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                Module-wise strategies for test-day success
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-600 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                Grammar & vocabulary workshops
+                            </li>
+                        </ul>
+                        <a href="https://unidemyglobal.com/login.php?url=IELTS"
+                            class="w-full text-center bg-primary text-white py-4 rounded-2xl font-bold hover:bg-blue-800 transition-all">Enroll
+                            Now</a>
+                    </div>
+
+                    <!-- Complete Package -->
+                    <div
+                        class="bg-primary rounded-3xl p-8 text-white relative overflow-hidden flex flex-col shadow-xl shadow-primary/30 scale-105 z-10">
+                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                        <div class="flex items-center justify-between mb-8 relative z-10">
+                            <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                                <i data-lucide="award" class="text-white w-6 h-6"></i>
+                            </div>
+                            <span
+                                class="bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Best
+                                Value</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 relative z-10">Band Booster Pro</h3>
+                        <ul class="space-y-4 mb-10 flex-grow relative z-10">
+                            <li class="flex items-start gap-3 text-white/90 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-secondary shrink-0"></i>
+                                10+ Full-length mock tests (Both formats)
+                            </li>
+                            <li class="flex items-start gap-3 text-white/90 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-secondary shrink-0"></i>
+                                Weekly speaking mock interviews with experts
+                            </li>
+                            <li class="flex items-start gap-3 text-white/90 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-secondary shrink-0"></i>
+                                30+ writing tasks with expert reviews
+                            </li>
+                            <li class="flex items-start gap-3 text-white/90 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-secondary shrink-0"></i>
+                                One-on-one mentoring and customized plan
+                            </li>
+                        </ul>
+                        <a href="https://unidemyglobal.com/login.php?url=IELTS"
+                            class="w-full text-center bg-white text-primary py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all relative z-10">Join
+                            Pro</a>
+                    </div>
+
+                    <!-- Mock Series -->
+                    <div
+                        class="bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-primary transition-all duration-300 flex flex-col shadow-sm">
+                        <div class="flex items-center justify-between mb-8">
+                            <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center">
+                                <i data-lucide="clipboard-check" class="text-green-600 w-6 h-6"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Practice Elite</h3>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-start gap-3 text-gray-600 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                Section-wise improvement suggestions
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-600 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                Track progress baseline to target score
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-600 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                Daily reading and listening drills
+                            </li>
+                            <li class="flex items-start gap-3 text-gray-600 text-sm">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                24x7 chat/email doubt resolution
+                            </li>
+                        </ul>
+                        <a href="https://unidemyglobal.com/login.php?url=IELTS"
+                            class="w-full text-center bg-gray-900 text-white py-4 rounded-2xl font-bold hover:bg-black transition-all">Enroll
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+                        <button
+                            class="w-full px-6 py-5 text-left font-bold text-gray-900 flex items-center justify-between group focus:outline-none">
+                            <span>How many times can I take the mock tests?</span>
+                            <i data-lucide="chevron-down"
+                                class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors"></i>
+                        </button>
+                        <div class="px-6 py-4 text-gray-600 text-sm border-t border-gray-50 bg-gray-50/50">
+                            Our mock tests are designed to simulate the real exam environment. Depending on your
+                            package, you get access to 5 or 10 full-length tests as part of your core curriculum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<?php include 'components/footer.php'; ?>

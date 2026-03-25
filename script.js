@@ -183,51 +183,35 @@ function initNavbar() {
  */
 function initGlobalWidgets() {
     const container = document.getElementById('scrollToTopContainer');
-    if (!container) return;
+    const circle = document.getElementById('scrollProgressCircle');
+    if (!container || !circle) return;
 
-    let scrollTimeout;
+    // Outer circumference is 2 * PI * r (r=24) => ~150.8
+    const circumference = 150.8;
 
-    const handleScroll = () => {
-        if (window.scrollY > 400) {
-            // Show button when scrolling down
-            container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+    const updateScroll = () => {
+        const scrollTop = window.scrollY;
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        
+        // Handle visibility
+        if (scrollTop > 400) {
+            container.classList.remove('opacity-0', 'invisible', 'translate-y-8');
             container.classList.add('opacity-100', 'visible', 'translate-y-0');
-
-            // Set hide timer: disappear after 2 seconds of no scrolling
-            clearTimeout(scrollTimeout);
-            scrollTimeout = setTimeout(() => {
-                if (!container.matches(':hover')) {
-                    container.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                    container.classList.add('opacity-0', 'invisible', 'translate-y-4');
-                }
-            }, 2000);
         } else {
-            // Immediate hide when near the top
             container.classList.remove('opacity-100', 'visible', 'translate-y-0');
-            container.classList.add('opacity-0', 'invisible', 'translate-y-4');
+            container.classList.add('opacity-0', 'invisible', 'translate-y-8');
         }
+
+        // Handle progress ring
+        const progress = Math.min(scrollTop / scrollHeight, 1);
+        const offset = circumference - (progress * circumference);
+        circle.style.strokeDashoffset = offset;
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('scroll', updateScroll, { passive: true });
     
     // Initial check
-    handleScroll();
-
-    // Keep visible on hover & show on hover even if faded
-    container.addEventListener('mouseenter', () => {
-        clearTimeout(scrollTimeout);
-        container.classList.remove('opacity-0', 'invisible', 'translate-y-4');
-        container.classList.add('opacity-100', 'visible', 'translate-y-0');
-    });
-
-    container.addEventListener('mouseleave', () => {
-        if (window.scrollY > 400) {
-            scrollTimeout = setTimeout(() => {
-                container.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                container.classList.add('opacity-0', 'invisible', 'translate-y-4');
-            }, 2000);
-        }
-    });
+    updateScroll();
 
     container.addEventListener('click', () => {
         window.scrollTo({
