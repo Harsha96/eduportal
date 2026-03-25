@@ -67,14 +67,14 @@ include 'components/header.php';
             <div
                 class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block">
                 <div
-                    class="relative h-[200px] w-full overflow-hidden bg-amber-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#f59e0b 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="baby"
-                        class="w-20 h-20 text-amber-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
+                    style="background-image: url('assets/images/background/smartreaders.png'); background-size: cover; background-position: center;">
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-amber-900/60 transition-all duration-500"></div>
+                    <!-- Amber shimmer on hover -->
+                    <div class="absolute inset-0 bg-amber-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-amber-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-amber-100">
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-amber-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-amber-100 z-10">
                         KINDERGARTEN
                     </div>
                 </div>
@@ -144,14 +144,14 @@ include 'components/header.php';
             <div
                 class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block">
                 <div
-                    class="relative h-[200px] w-full overflow-hidden bg-pink-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#ec4899 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="book-open-check"
-                        class="w-20 h-20 text-pink-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
+                    style="background-image: url('assets/images/background/phonics.png'); background-size: cover; background-position: center;">
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-pink-900/60 transition-all duration-500"></div>
+                    <!-- Pink shimmer on hover -->
+                    <div class="absolute inset-0 bg-pink-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-pink-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-pink-100">
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-pink-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-pink-100 z-10">
                         KINDERGARTEN
                     </div>
                 </div>

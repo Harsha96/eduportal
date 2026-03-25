@@ -256,14 +256,14 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
                 <div
-                    class="relative h-[200px] w-full overflow-hidden bg-emerald-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#10b981 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="calculator"
-                        class="w-20 h-20 text-emerald-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
+                    style="background-image: url('assets/images/background/abacus.png'); background-size: cover; background-position: center;">
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-emerald-900/60 transition-all duration-500"></div>
+                    <!-- Emerald shimmer on hover -->
+                    <div class="absolute inset-0 bg-emerald-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-emerald-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-emerald-100">
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-emerald-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-emerald-100 z-10">
                         BRAIN BOOST
                     </div>
                 </div>
@@ -339,14 +339,14 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
                 <div
-                    class="relative h-[200px] w-full overflow-hidden bg-cyan-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#06b6d4 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="cpu"
-                        class="w-20 h-20 text-cyan-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
+                    style="background-image: url('assets/images/background/robotics.png'); background-size: cover; background-position: center;">
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-cyan-900/60 transition-all duration-500"></div>
+                    <!-- Cyan shimmer on hover -->
+                    <div class="absolute inset-0 bg-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-cyan-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-cyan-100">
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-cyan-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-cyan-100 z-10">
                         FUTURE INNOVATORS
                     </div>
                 </div>
@@ -422,14 +422,14 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
                 <div
-                    class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#f43f5e 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="microscope"
-                        class="w-20 h-20 text-rose-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
+                    style="background-image: url('assets/images/background/stem.png'); background-size: cover; background-position: center;">
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-rose-900/60 transition-all duration-500"></div>
+                    <!-- Rose shimmer on hover -->
+                    <div class="absolute inset-0 bg-rose-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100">
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100 z-10">
                         YOUNG INNOVATORS
                     </div>
                 </div>
@@ -513,15 +513,15 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
                 <div
-                    class="relative h-[200px] w-full overflow-hidden bg-slate-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="layout"
-                        class="w-20 h-20 text-slate-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
+                    style="background-image: url('assets/images/background/chess.png'); background-size: cover; background-position: center;">
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-slate-900/60 transition-all duration-500"></div>
+                    <!-- Slate shimmer on hover -->
+                    <div class="absolute inset-0 bg-slate-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-slate-100">
-                        STRATEGIC MINDS
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-slate-100 z-10">
+                        CLASS 1 TO 5
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
@@ -787,14 +787,14 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-9-10">
                 <div
-                    class="relative h-[200px] w-full overflow-hidden bg-violet-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#8b5cf6 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="sword"
-                        class="w-20 h-20 text-violet-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
+                    style="background-image: url('assets/images/background/Academic Achievers.png'); background-size: cover; background-position: center;">
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-violet-900/60 transition-all duration-500"></div>
+                    <!-- Violet shimmer on hover -->
+                    <div class="absolute inset-0 bg-violet-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-violet-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-violet-100">
+                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-violet-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-violet-100 z-10">
                         CLASS 9 TO 10
                     </div>
                 </div>
