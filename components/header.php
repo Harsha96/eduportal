@@ -34,8 +34,10 @@
         rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.min.js"></script>
     <?php if (isset($additionalHead))
-        echo $additionalHead; ?>
+    echo $additionalHead; ?>
 </head>
 
 <body class="bg-background font-sans text-gray-900 scroll-smooth">
@@ -155,4 +157,4 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav>
