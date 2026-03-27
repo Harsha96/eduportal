@@ -127,7 +127,7 @@
 </footer>
 
 <!-- Global Widgets -->
-<?php include 'live-chat.php'; ?>
+<?php include __DIR__ . '/live-chat.php'; ?>
 
 <!-- Custom Script -->
 <script src="script.js"></script>

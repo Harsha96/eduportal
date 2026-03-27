@@ -643,12 +643,12 @@ p {
 
 .logo-slider::before {
     left: 0;
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .logo-slider::after {
     right: 0;
-    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .logo-track {
@@ -673,7 +673,7 @@ p {
 .logo svg {
     max-height: 50px;
     width: auto;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     transition: transform 0.3s ease;
 }
 
@@ -685,6 +685,7 @@ p {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
