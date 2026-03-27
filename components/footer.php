@@ -129,8 +129,6 @@
 <!-- Global Widgets -->
 <?php include 'live-chat.php'; ?>
 
-<!-- Lucide Icons -->
-<script src="https://unpkg.com/lucide@latest"></script>
 <!-- Custom Script -->
 <script src="script.js"></script>
 <script>
