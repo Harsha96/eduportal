@@ -75,11 +75,11 @@ include 'components/header.php';
                 </button>
                 <button data-target="class-9-10"
                     class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
-                    Academic Achievers (Class 9-10)
+                    Academic Achievers (Class 9 & 10)
                 </button>
                 <button data-target="grade-11-12"
                     class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
-                    Senior Leaders (Grade 11-12)
+                    Senior Leaders (Class 11 & 12)
                 </button>
             </nav>
         </div>
@@ -92,15 +92,10 @@ include 'components/header.php';
             <!-- Class 1-5 Card -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
-                <div
-                    class="relative h-[200px] w-full overflow-hidden bg-blue-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#3b82f6 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="compass"
-                        class="w-20 h-20 text-blue-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
-                    <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-blue-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-blue-100">
+                <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                    <img src="assets/images/services/KB_EXP.png" alt="Explorers Foundation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-blue-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-blue-100 z-20">
                         CLASS 1 TO 5
                     </div>
                 </div>
@@ -173,10 +168,10 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
                 <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
-                    <img src="assets/images/services/k1_k2.png" alt="Smart Readers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/images/KB_SMR.png" alt="Smart Readers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-orange-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-orange-100 z-20">
-                        K1 & K2
+                        class 1 & 2
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
@@ -240,7 +235,7 @@ include 'components/header.php';
                         </div>
                     </div>
                     <div class="mt-auto pt-5 border-t border-gray-100">
-                        <button onclick="openEnrollmentModal('Karnataka Board - Smart Readers (K1-K2)')"
+                        <button onclick="openEnrollmentModal('Karnataka Board - Smart Readers (G1-G2)')"
                             class="w-full bg-orange-50 text-orange-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 hover:text-white transition-all">Enroll
                             Request</button>
                     </div>
@@ -251,7 +246,7 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
                 <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
-                    <img src="assets/images/services/1_5.png" alt="Abacus Mastery Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/images/services/KB_AB.png" alt="Abacus Mastery Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-emerald-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-emerald-100 z-20">
                         BRAIN BOOST
@@ -329,7 +324,7 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
                 <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
-                    <img src="assets/images/services/AI_RP.png" alt="AI & Robotics Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/images/services/KB_AI.png" alt="AI & Robotics Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-cyan-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-cyan-100 z-20">
                         FUTURE INNOVATORS
@@ -429,10 +424,10 @@ include 'components/header.php';
 
                         <!-- Subject Tags -->
                         <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-2 py-1 rounded-md bg-orange-50 text-orange-600 text-[10px] font-bold border border-orange-100">S-PHYSICS</span>
-                            <span class="px-2 py-1 rounded-md bg-blue-50 text-blue-600 text-[10px] font-bold border border-blue-100">T-ROBOTICS</span>
-                            <span class="px-2 py-1 rounded-md bg-green-50 text-green-600 text-[10px] font-bold border border-green-100">E-DESIGN</span>
-                            <span class="px-2 py-1 rounded-md bg-purple-50 text-purple-600 text-[10px] font-bold border border-purple-100">M-ALGEBRA</span>
+                            <span class="px-2 py-1 rounded-md bg-orange-50 text-orange-600 text-[10px] font-bold border border-orange-100">Science</span>
+                            <span class="px-2 py-1 rounded-md bg-blue-50 text-blue-600 text-[10px] font-bold border border-blue-100">Technology</span>
+                            <span class="px-2 py-1 rounded-md bg-green-50 text-green-600 text-[10px] font-bold border border-green-100">Engineering</span>
+                            <span class="px-2 py-1 rounded-md bg-purple-50 text-purple-600 text-[10px] font-bold border border-purple-100">Maths</span>
                         </div>
 
                         <ul class="space-y-3 mb-8">
@@ -492,15 +487,10 @@ include 'components/header.php';
             <!-- Chess Program -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-1-5">
-                <div
-                    class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
-                    style="background-image: url('assets/images/background/chess.png'); background-size: cover; background-position: center;">
-                    <!-- Gradient overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-slate-900/60 transition-all duration-500"></div>
-                    <!-- Slate shimmer on hover -->
-                    <div class="absolute inset-0 bg-slate-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-slate-100 z-10">
+                <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                    <img src="assets/images/services/KB_CH.png" alt="Chess Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-slate-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-slate-100 z-20">
                         CLASS 1 TO 5
                     </div>
                 </div>
@@ -575,15 +565,10 @@ include 'components/header.php';
             <!-- Class 6-8 Card -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-6-8">
-                <div
-                    class="relative h-[200px] w-full overflow-hidden bg-indigo-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#6366f1 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="layout-template"
-                        class="w-20 h-20 text-indigo-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
-                    <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-indigo-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-indigo-100">
+                <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                    <img src="assets/images/services/KB_6_8.png" alt="Academic Builders Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-indigo-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-indigo-100 z-20">
                         CLASS 6 TO 8
                     </div>
                 </div>
@@ -763,7 +748,7 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-9-10">
                 <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
-                    <img src="assets/images/9_to_10.png" alt="Academic Achievers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/images/services/KB_ACH.png" alt="Academic Achievers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-violet-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-violet-100 z-20">
                         CLASS 9 TO 10
@@ -850,15 +835,10 @@ include 'components/header.php';
             <!-- Foundation 2 Card (Class 9-10) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="class-9-10">
-                <div
-                    class="relative h-[200px] w-full overflow-hidden bg-teal-50/50 flex items-center justify-center border-b border-gray-100">
-                    <div class="absolute inset-0 opacity-20"
-                        style="background-image: radial-gradient(#14b8a6 1px, transparent 1px); background-size: 20px 20px;">
-                    </div>
-                    <i data-lucide="test-tubes"
-                        class="w-20 h-20 text-teal-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
-                    <div
-                        class="absolute top-4 left-4 bg-white/90 backdrop-blur text-teal-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-teal-100">
+                <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                    <img src="assets/images/services/KB_9-10.png" alt="IIT-JEE / NEET Starter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-teal-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-teal-100 z-20">
                         CLASS 9 TO 10
                     </div>
                 </div>
@@ -945,11 +925,64 @@ include 'components/header.php';
                 </div>
             </div>
 
-            <!-- IIT-JEE Excellence Card (Class 11) -->
+            <!-- Career Achievers Card (Class 11-12) -->
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="grade-11-12">
                 <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
-                    <img src="assets/images/services/grade11_12.png" alt="Engineering Stream" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/images/services/KB_new.png" alt="Science, Commerce & Arts Stream" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
+                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-fuchsia-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-fuchsia-100 z-20">
+                        GRADE 11 TO 12
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex items-center justify-between mb-3">
+                        <span
+                            class="text-fuchsia-600 font-bold text-sm tracking-wide bg-fuchsia-50 px-3 py-1 rounded-full">Karnataka Board - Science, Commerce & Arts</span>
+                    </div>
+                    <h3
+                        class="text-[22px] font-bold mb-3 text-gray-900 leading-tight group-hover:text-fuchsia-600 transition-colors">
+                        Career Achievers</h3>
+                    <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed line-clamp-3">Specialized coaching for Commerce and Arts students focusing on core subjects and career-oriented competitive exams like CA Foundation, CS, and CUET.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Prepares for professional courses
+                            </li>
+                            <li class="flex items-start text-[14px] text-gray-600 font-medium">
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-green-500 shrink-0 mt-0.5"></i>
+                                Expert coaching in Accountancy & Economics
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleContent(this)"
+                        class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                        <span>Read More</span>
+                        <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                    </button>
+                    <!-- Packages Info Section -->
+                    <div class="mt-auto pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Accountancy</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Economics</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-50 text-slate-600 text-[11px] font-bold border border-slate-100">Business</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto pt-5 border-t border-gray-100">
+                        <button onclick="openEnrollmentModal('Karnataka Board - Career Achievers (Grade 11-12)')"
+                            class="w-full bg-fuchsia-50 text-fuchsia-600 font-bold px-5 py-3 rounded-xl text-sm hover:bg-fuchsia-600 hover:text-white transition-all">Enroll
+                            Request</button>
+                    </div>
+                </div>
+            </div><!-- IIT-JEE Excellence Card (Class 11) -->
+            <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
+                data-category="grade-11-12">
+                <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                    <img src="assets/images/services/KB_SR_IIT.png" alt="Engineering Stream" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-blue-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-blue-100 z-20">
                         CLASS 11
@@ -1009,7 +1042,7 @@ include 'components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block"
                 data-category="grade-11-12">
                 <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
-                    <img src="assets/images/neet11_12.png" alt="Medical Stream" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/images/services/KB_SR_NEET.png" alt="Medical Stream" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
                     <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100 z-20">
                         CLASS 12
@@ -1064,10 +1097,11 @@ include 'components/header.php';
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-</main>
+
+
+            </main>
 
 
 <script>
