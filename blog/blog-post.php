@@ -1,0 +1,314 @@
+<?php
+$pageTitle = 'Mastering NEET 2024: The Elite Strategy Guide | Unidemy Global';
+$pageDescription = 'Read clinical strategies and planning guides for NEET 2024 from Unidemy Global experts.';
+$additionalHead = <<<'HEADCONTENT'
+<style>
+        .prose h2 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 800;
+            font-size: 2rem;
+            color: #0f172a;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .prose p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: #475569;
+            margin-bottom: 1.75rem;
+        }
+
+        .prose blockquote {
+            border-left: 4px solid #1E4F9C;
+            padding-left: 1.5rem;
+            font-style: italic;
+            color: #1E4F9C;
+            margin: 2.5rem 0;
+            font-size: 1.25rem;
+        }
+    </style>
+HEADCONTENT;
+$base_url = '../';
+include '../components/header.php';
+?>
+    <!-- Reading Progress Bar -->
+    <div class="fixed top-[72px] left-0 w-full h-1 z-[60]">
+        <div id="progress-bar" class="h-full bg-primary w-0 transition-all duration-100"></div>
+    </div>
+
+    <!-- Article Header -->
+    <header class="pt-32 pb-16 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <div class="flex justify-center gap-3 mb-6">
+                <span class="px-4 py-1.5 bg-blue-50 text-primary rounded-full text-[10px] font-black uppercase tracking-widest border border-primary/10">Academic Excellence</span>
+                <span class="px-4 py-1.5 bg-orange-50 text-secondary rounded-full text-[10px] font-black uppercase tracking-widest border border-secondary/10">NEET 2024</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-8" style="font-family: 'Sora', sans-serif;">
+                Mastering NEET 2024: The <span class="text-primary italic">Elite Strategy</span> Guide
+            </h1>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <a href="../auth/profile.php" class="flex-1 flex items-center gap-4 group">
+                        <img src="https://i.pravatar.cc/150?u=expert1" alt="Dr. Sarah Johnson" class="w-14 h-14 rounded-2xl object-cover border-2 border-primary/10 group-hover:border-primary transition-all">
+                        <div>
+                            <div class="flex items-center gap-1.5">
+                                <h4 class="font-black text-gray-900 group-hover:text-primary transition-colors">Dr. Sarah Johnson</h4>
+                                <i data-lucide="check-circle" class="w-4 h-4 text-primary fill-primary/10"></i>
+                            </div>
+                            <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">Medical Admission Specialist</p>
+                        </div>
+                    </a>
+                <div class="hidden md:block w-px h-8 bg-slate-100"></div>
+                <div class="flex items-center gap-4 text-slate-400 text-sm font-bold uppercase tracking-widest">
+                    <span class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i> March 13, 2024</span>
+                    <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4"></i> 12 Min Read</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Sidebar: Engagement -->
+                <aside class="hidden lg:block lg:col-span-1">
+                    <div class="sticky top-40 flex flex-col gap-8 items-center">
+                        <button class="flex flex-col items-center gap-2 group">
+                            <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-blue-50 group-hover:text-primary transition-all duration-300 border border-transparent group-hover:border-primary/20">
+                                <i data-lucide="zap" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs font-black text-slate-400 group-hover:text-primary">1.2k</span>
+                        </button>
+                        <button class="flex flex-col items-center gap-2 group">
+                            <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-orange-50 group-hover:text-secondary transition-all duration-300 border border-transparent group-hover:border-secondary/20">
+                                <i data-lucide="message-square" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs font-black text-slate-400 group-hover:text-secondary">248</span>
+                        </button>
+                        <button class="flex flex-col items-center gap-2 group">
+                            <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
+                                <i data-lucide="share-2" class="w-5 h-5"></i>
+                            </div>
+                        </button>
+                        <button class="flex flex-col items-center gap-2 group">
+                            <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
+                                <i data-lucide="bookmark" class="w-5 h-5"></i>
+                            </div>
+                        </button>
+                    </div>
+                </aside>
+
+                <!-- Center: Article Body -->
+                <div class="lg:col-span-8 bg-white rounded-[3rem] p-8 md:p-12 shadow-sm border border-slate-100">
+                    <div class="rounded-[2.5rem] overflow-hidden mb-12 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200" alt="NEET Exam Preparation" class="w-full h-auto">
+                    </div>
+
+                    <article class="prose max-w-none">
+                        <p class="text-xl font-medium text-slate-900 leading-relaxed mb-12">
+                            Scoring high in NEET requires more than just hard work—it demands precision planning. Learn how top rankers allocate their study time effectively. I've broken down the 24-hour cycle of three AIR 1 holders...
+                        </p>
+
+                        <h2>The 24-Hour Mastery Cycle</h2>
+                        <p>
+                            Preparation for NEET is often seen as a marathon, but the most successful candidates treat it as a series of high-intensity interval sprints. The key is not more hours, but better hours.
+                        </p>
+                        <blockquote>
+                            "Consistency is better than intensity. A person who studies 6 hours every day for 2 years will always beat the person who studies 16 hours for 3 months."
+                        </blockquote>
+                        <p>
+                            Most aspirants make the mistake of focusing on their favorite subjects first. Physics often takes a back seat, but it's the subject that separates the pioneers from the crowd. Our analysis of the previous year's toppers reveals a striking pattern: they dedicate their most alert morning hours to complex problem-solving.
+                        </p>
+
+                        <h2>Weightage Analysis for 2024</h2>
+                        <p>
+                            Biology remains your scoring engine, but the density of questions in Genetics and Ecology is expected to rise this year. In Chemistry, Organic reactions should be on your fingertips—treat them like a language rather than formulas to memorize.
+                        </p>
+
+                        <div class="my-12 p-8 bg-blue-50 rounded-3xl border border-primary/10">
+                            <h4 class="text-xl font-black text-primary mb-4 flex items-center gap-2">
+                                <i data-lucide="info" class="w-6 h-6"></i> Pro Tip for NEET Aspirants
+                            </h4>
+                            <p class="text-slate-700 font-medium leading-relaxed m-0">
+                                Use active recall techniques like blurred retrieval. After reading a chapter, close the book and write everything you remember on a blank sheet. Contrast this with the book and fill the gaps. This creates stronger neural pathways than passive re-reading.
+                            </p>
+                        </div>
+
+                        <h2>Mental Resilience</h2>
+                        <p>
+                            Exam stress is real, but it can be managed through structured relaxation. 15 minutes of mindfulness before starting your first session can increase focus and memory retention by up to 30%.
+                        </p>
+                    </article>
+
+                    <!-- Engagement Footer -->
+                    <div class="mt-16 pt-8 border-t border-slate-100 flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <button class="px-8 py-3 bg-slate-900 text-white rounded-full font-bold shadow-xl shadow-slate-900/20 active:scale-95 transition-all flex items-center gap-2">
+                                <i data-lucide="thumbs-up" class="w-5 h-5"></i>
+                                Appreciate Story
+                            </button>
+                            <span class="text-slate-400 font-bold text-sm">1.2k Claps</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="flex -space-x-3">
+                                <img src="https://i.pravatar.cc/100?u=u1" class="w-10 h-10 rounded-full border-2 border-white shadow-sm">
+                                <img src="https://i.pravatar.cc/100?u=u2" class="w-10 h-10 rounded-full border-2 border-white shadow-sm">
+                                <img src="https://i.pravatar.cc/100?u=u3" class="w-10 h-10 rounded-full border-2 border-white shadow-sm">
+                            </div>
+                            <span class="text-slate-400 text-xs font-bold self-center ml-2">+42 more liked</span>
+                        </div>
+                    </div>
+
+                    <!-- Reddit-style Comments -->
+                    <section class="mt-20">
+                        <h3 class="text-2xl font-black text-slate-900 mb-8" style="font-family: Sora, sans-serif;">Discussions (24)</h3>
+                        
+                        <div class="bg-slate-50 rounded-3xl p-6 mb-12 flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary shrink-0">
+                                <i data-lucide="user" class="w-5 h-5"></i>
+                            </div>
+                            <div class="flex-1">
+                                <textarea rows="3" placeholder="What are your thoughts?" class="w-full bg-white border border-slate-200 rounded-2xl px-6 py-4 font-medium text-slate-600 focus:outline-none focus:border-primary transition-all resize-none mb-4"></textarea>
+                                <div class="flex justify-end">
+                                    <button class="px-6 py-2.5 bg-primary text-white rounded-xl font-bold text-sm shadow-lg shadow-primary/20">Post Comment</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-8">
+                            <!-- Comment 1 -->
+                            <div class="flex gap-4">
+                                <img src="https://i.pravatar.cc/100?u=c1" class="w-10 h-10 rounded-full shrink-0">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <h4 class="font-bold text-slate-900 text-sm italic">Aditi Sharma</h4>
+                                        <span class="text-[10px] text-slate-400 font-bold">2 hours ago</span>
+                                    </div>
+                                    <p class="text-slate-600 font-medium text-sm leading-relaxed mb-3">
+                                        The tip about blurred retrieval is a game changer! I've been struggling with Genetics but this method really exposed what I didn't know.
+                                    </p>
+                                    <div class="flex items-center gap-4">
+                                        <button class="flex items-center gap-1 text-slate-400 hover:text-primary transition-colors text-xs font-bold"><i data-lucide="arrow-big-up" class="w-4 h-4"></i> 42</button>
+                                        <button class="text-slate-400 hover:text-primary transition-colors text-xs font-bold">Reply</button>
+                                    </div>
+                                    
+                                    <!-- Reply -->
+                                    <div class="mt-6 pl-6 border-l-2 border-slate-100 space-y-6">
+                                        <div class="flex gap-4">
+                                            <img src="https://i.pravatar.cc/100?u=expert1" class="w-8 h-8 rounded-full shrink-0">
+                                            <div class="flex-1">
+                                                <div class="flex items-center gap-2 mb-1">
+                                                    <h4 class="font-bold text-primary text-xs italic">Dr. Sarah Johnson <span class="text-[10px] bg-primary/10 px-2 rounded ml-1 uppercase">Author</span></h4>
+                                                </div>
+                                                <p class="text-slate-600 font-medium text-xs leading-relaxed mb-3">
+                                                    Glad it helped, Aditi! Try to do it once every evening before ending your day.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comment 2 -->
+                            <div class="flex gap-4">
+                                <img src="https://i.pravatar.cc/100?u=c2" class="w-10 h-10 rounded-full shrink-0">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <h4 class="font-bold text-slate-900 text-sm italic">Rahul K.</h4>
+                                        <span class="text-[10px] text-slate-400 font-bold">5 hours ago</span>
+                                    </div>
+                                    <p class="text-slate-600 font-medium text-sm leading-relaxed mb-3">
+                                        Any specific suggestions for Inorganic Chemistry? Memorizing those reactions feels impossible.
+                                    </p>
+                                    <div class="flex items-center gap-4">
+                                        <button class="flex items-center gap-1 text-slate-400 hover:text-primary transition-colors text-xs font-bold"><i data-lucide="arrow-big-up" class="w-4 h-4"></i> 12</button>
+                                        <button class="text-slate-400 hover:text-primary transition-colors text-xs font-bold">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Sidebar -->
+                <aside class="lg:col-span-3 flex flex-col gap-8">
+                    <!-- About Author -->
+                    <div class="bg-white rounded-[2rem] p-6 shadow-sm border border-slate-100">
+                        <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">About Author</h3>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-24 h-24 rounded-3xl overflow-hidden mb-4 border-2 border-primary/10 p-1">
+                                <img src="https://i.pravatar.cc/150?u=expert1" class="w-full h-full object-cover rounded-2xl">
+                            </div>
+                            <h4 class="text-xl font-black text-slate-900 mb-1">Dr. Sarah Johnson</h4>
+                            <p class="text-xs text-slate-400 font-bold uppercase tracking-widest mb-4">Senior Medical Expert</p>
+                            <p class="text-sm text-slate-600 font-medium leading-relaxed mb-6 italic px-2">
+                                Dedicated to helping students navigate the complexities of medical entrance exams with clinical precision.
+                            </p>
+                            <div class="flex gap-3">
+                                <button class="px-6 py-2 bg-primary text-white rounded-full font-bold text-sm shadow-md shadow-primary/20">Follow</button>
+                                <button class="w-10 h-10 bg-slate-50 flex items-center justify-center rounded-full text-slate-400 hover:text-primary transition-colors border border-slate-100"><i data-lucide="mail" class="w-5 h-5"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Must Read -->
+                    <div class="bg-white rounded-[2rem] p-6 shadow-sm border border-slate-100">
+                        <h3 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-6">Must Read</h3>
+                        <div class="flex flex-col gap-6">
+                            <a href="#" class="group">
+                                <p class="text-sm font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">The 7 Biggest Mistakes NEET Toppers Never Make</p>
+                                <div class="flex items-center gap-3 mt-3">
+                                    <span class="text-[10px] text-slate-400 font-bold uppercase">5 Min Read</span>
+                                </div>
+                            </a>
+                            <div class="h-px bg-slate-50"></div>
+                            <a href="#" class="group">
+                                <p class="text-sm font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">How to Handle Physics Numericals with Speed</p>
+                                <div class="flex items-center gap-3 mt-3">
+                                    <span class="text-[10px] text-slate-400 font-bold uppercase">8 Min Read</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Community Ad -->
+                    <div class="bg-gradient-to-br from-[#1E4F9C] to-[#0B1121] rounded-[2rem] p-8 text-white relative overflow-hidden group">
+                        <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-all"></div>
+                        <h4 class="text-lg font-bold mb-4">Join our community of over 50,000 NEET aspirants</h4>
+                        <p class="text-white/70 text-sm mb-6 font-medium">Get daily practice questions and expert doubt clearing.</p>
+                        <button class="w-full bg-secondary text-white py-3.5 rounded-2xl font-bold shadow-xl shadow-secondary/30 hover:scale-105 active:scale-95 transition-all">Join Free Community</button>
+                    </div>
+                </aside>
+                
+            </div>
+        </div>
+    </main>
+
+
+<script>
+        lucide.createIcons();
+
+        // Navbar scroll behavior
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-xl', 'shadow-lg', 'py-3');
+                nav.classList.remove('bg-transparent', 'py-4');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-xl', 'shadow-lg', 'py-3');
+                nav.classList.add('bg-white/90', 'backdrop-blur-xl', 'py-4');
+            }
+        });
+
+        // Reading Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        });
+    </script>
+<?php include '../components/footer.php'; ?>

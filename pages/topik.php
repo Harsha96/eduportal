@@ -1,0 +1,144 @@
+<?php
+$pageTitle = 'TOPIK Preparation | Unidemy Global';
+$pageDescription = 'Master the TOPIK Test (Test of Proficiency in Korean) with Unidemy Global';
+$base_url = '../';
+include '../components/header.php';
+?>
+    <!-- Main Content -->
+    <main class="w-full pt-28 lg:pt-36 pb-20 bg-white flex-grow">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <!-- Breadcrumbs -->
+            <nav class="flex text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center gap-2">
+                    <li class="inline-flex items-center group">
+                        <a href="../index.php" class="inline-flex items-center hover:text-primary transition-colors">
+                            <i data-lucide="home" class="w-4 h-4 mr-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                            <a href="../pages/global-launchpad.php" class="ml-2 hover:text-primary transition-colors">Global
+                                Launchpad</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                            <span class="ml-2 text-primary font-medium">TOPIK Preparation</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- Hero Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Master the <span
+                            class="text-rose-600 border-b-4 border-secondary/30">TOPIK</span> Test</h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">Unlock your Korean future with our complete
+                        TOPIK guide and preparation courses. From Beginner to Advanced levels.</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-rose-100 rounded-3xl blur-2xl transform rotate-3"></div>
+                    <div class="relative bg-white border border-rose-50 rounded-3xl p-8 shadow-2xl">
+                        <h3 class="font-bold text-gray-900 mb-6">Proficiency Levels</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="w-12 h-12 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center font-bold">I</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Beginner & Elementary</h4>
+                                    <p class="text-xs text-gray-500">Levels 1-2: Basic survival skills</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="w-12 h-12 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold">II</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Intermediate to Advanced</h4>
+                                    <p class="text-xs text-gray-500">Levels 3-6: Academic & Professional use</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TOPIK Packages -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Comprehensive TOPIK Courses</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- TOPIK I Mastery -->
+                    <div
+                        class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all flex flex-col">
+                        <div
+                            class="w-12 h-12 bg-rose-50 rounded-xl flex items-center justify-center mb-6 text-rose-600 font-bold">
+                            I</div>
+                        <h3 class="text-xl font-bold mb-4">TOPIK I Mastery</h3>
+                        <p class="text-sm text-gray-600 mb-6 flex-grow">Complete preparation for Levels 1-2 with a
+                            structured learning path and core grammar patterns.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center gap-2 font-medium bg-rose-50/50 p-2 rounded-lg"><i
+                                    data-lucide="check" class="w-4 h-4 text-rose-600"></i> Vocabulary Building</li>
+                            <li class="flex items-center gap-2 font-medium bg-rose-50/50 p-2 rounded-lg"><i
+                                    data-lucide="check" class="w-4 h-4 text-rose-600"></i> Native Speaker Audio</li>
+                            <li class="flex items-center gap-2 font-medium bg-rose-50/50 p-2 rounded-lg"><i
+                                    data-lucide="check" class="w-4 h-4 text-rose-600"></i> Practice Mock Tests</li>
+                        </ul>
+                        <a href="https://unidemyglobal.com/login.php?url=TOPIK"
+                            class="w-full text-center bg-rose-600 text-white py-3 rounded-xl font-bold hover:bg-rose-700 transition-all">Start
+                            Mastery</a>
+                    </div>
+
+                    <!-- TOPIK II Excellence -->
+                    <div
+                        class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all flex flex-col">
+                        <div
+                            class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center mb-6 text-rose-600 font-bold">
+                            II</div>
+                        <h3 class="text-xl font-bold mb-4">TOPIK II Excellence</h3>
+                        <p class="text-sm text-gray-600 mb-6 flex-grow">Advanced prep for Levels 3-6 with
+                            university-level content, news articles, and literature.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center gap-2 font-medium bg-rose-50/50 p-2 rounded-lg"><i
+                                    data-lucide="check" class="w-4 h-4 text-rose-600"></i> Structured Writing</li>
+                            <li class="flex items-center gap-2 font-medium bg-rose-50/50 p-2 rounded-lg"><i
+                                    data-lucide="check" class="w-4 h-4 text-rose-600"></i> scoring Analysis</li>
+                            <li class="flex items-center gap-2 font-medium bg-rose-50/50 p-2 rounded-lg"><i
+                                    data-lucide="check" class="w-4 h-4 text-rose-600"></i> Certified Instructors</li>
+                        </ul>
+                        <a href="https://unidemyglobal.com/login.php?url=TOPIK"
+                            class="w-full text-center bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-black transition-all">Start
+                            Excellence</a>
+                    </div>
+
+                    <!-- Complete Package -->
+                    <div
+                        class="bg-primary rounded-3xl p-8 shadow-xl shadow-primary/20 text-white flex flex-col ring-4 ring-rose-600/20">
+                        <div class="flex items-center justify-between mb-6">
+                            <div
+                                class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-white font-bold">
+                                I+II</div>
+                            <span
+                                class="bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Lifetime
+                                Access</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">TOPIK Complete</h3>
+                        <p class="text-sm text-white/80 mb-6 flex-grow">Everything you need from beginner to advanced -
+                            TOPIK I + II in one bundle.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-white/90">
+                            <li class="flex items-center gap-2 font-medium"><i data-lucide="check"
+                                    class="w-4 h-4 text-secondary"></i> Full Levels 1-6 Access</li>
+                            <li class="flex items-center gap-2 font-medium"><i data-lucide="check"
+                                    class="w-4 h-4 text-secondary"></i> Adaptive Learning AI</li>
+                            <li class="flex items-center gap-2 font-medium"><i data-lucide="check"
+                                    class="w-4 h-4 text-secondary"></i> Unlimited Mock Tests</li>
+                        </ul>
+                        <a href="https://unidemyglobal.com/login.php?url=TOPIK"
+                            class="w-full text-center bg-white text-primary py-3 rounded-xl font-bold hover:bg-gray-100 transition-all">Enroll
+                            Complete</a>
+                    </div>
+                </div>
+            </div>
+
+<?php include '../components/footer.php'; ?>

@@ -12,7 +12,7 @@
                 <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 bg-secondary/10 rounded-full blur-3xl"></div>
                 
                 <div class="relative z-10">
-                    <img src="assets/images/Logo (2).png" alt="Logo" class="h-8 w-auto mb-8">
+                    <img src="<?php echo isset($base_url) ? $base_url : './'; ?>assets/images/Logo (2).png" alt="Logo" class="h-8 w-auto mb-8">
                     <h2 class="text-2xl font-bold leading-tight text-primary">Start Your Journey Today</h2>
                     <p class="text-slate-600 text-sm mt-4">Join thousands of students who are achieving their academic goals with Unidemy.</p>
                 </div>

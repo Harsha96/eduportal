@@ -1,6 +1,7 @@
 <?php
 $pageTitle = 'Unidemy Global | Empowering Ambition Worldwide';
 $pageDescription = 'Your premier destination for world-class test preparation, career counseling, and global university admissions.';
+$base_url = './';
 include 'components/header.php';
 ?>
 
@@ -50,7 +51,7 @@ include 'components/header.php';
                             CLASS 11TH | CLASS 12TH | DROPPER</p>
 
                         <div class="flex flex-col sm:flex-row items-center gap-4">
-                            <a href="neet.php"
+                            <a href="pages/neet.php"
                                 class="w-full sm:w-max block text-center bg-secondary hover:bg-orange-600 text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-full uppercase tracking-wide transition-all shadow-lg active:scale-95">Explore
                                 Now</a>
                             <div class="hidden sm:block">
@@ -95,7 +96,7 @@ include 'components/header.php';
                         <p
                             class="text-xs sm:text-sm md:text-base font-semibold text-white drop-shadow tracking-wider mb-8 uppercase">
                             EXTENSIVE MOCK TESTS & MENTORSHIP</p>
-                        <a href="iit-jee.php"
+                        <a href="pages/iit-jee.php"
                             class="w-full sm:w-max block text-center bg-secondary hover:bg-orange-600 text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-full uppercase tracking-wide transition-all shadow-lg active:scale-95">Join
                             Batches</a>
                     </div>
@@ -229,7 +230,7 @@ include 'components/header.php';
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-3 scrollbar-hide -mx-1 px-1">
                     <!-- Kindergarten -->
                     <div class="group relative rounded-2xl p-5 shadow-sm border border-amber-100 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_c1.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_c1.png'); background-size: cover; background-position: center;">
                         <!-- Gradient overlay -->
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-black/10 rounded-2xl">
@@ -248,7 +249,7 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span onclick="window.location.href='kindergarten.php'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-amber-400 transition-colors">Foundation</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-amber-400 transition-colors">Foundation</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
                                 Details
@@ -258,7 +259,7 @@ include 'components/header.php';
                     </div>
                     <!-- Explorers -->
                     <div
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_1-5.png'); background-size: cover; background-position: center;">
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_1-5.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -273,11 +274,11 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span onclick="window.location.href='cbse.php?tab=class-1-5'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
                                 <span onclick="window.location.href='icse.php?tab=class-1-5'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
                                 <span onclick="window.location.href='karnataka-board.php?tab=class-1-5'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
                                     Board</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
@@ -287,7 +288,7 @@ include 'components/header.php';
                     </div>
                     <!-- Skill Builders -->
                     <div
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_6-8.png'); background-size: cover; background-position: center;">
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_6-8.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -303,14 +304,14 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span onclick="window.location.href='cbse.php?tab=class-6-8'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
                                 <span onclick="window.location.href='icse.php?tab=class-6-8'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
                                 <span onclick="window.location.href='karnataka-board.php?tab=class-6-8'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
                                     Board</span>
                                 <span onclick="window.location.href='foundation1.php'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Foundation
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Foundation
                                     1</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
@@ -320,7 +321,7 @@ include 'components/header.php';
                     </div>
                     <!-- Exam Warriors -->
                     <div
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_9-10.png'); background-size: cover; background-position: center;">
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_9-10.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -336,14 +337,14 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span onclick="window.location.href='cbse.php?tab=class-9-10'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
                                 <span onclick="window.location.href='icse.php?tab=class-9-10'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
                                 <span onclick="window.location.href='karnataka-board.php?tab=class-9-10'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
                                     Board</span>
                                 <span onclick="window.location.href='foundation2.php'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Foundation
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Foundation
                                     2</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
@@ -366,8 +367,8 @@ include 'components/header.php';
                 </div>
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-3 scrollbar-hide -mx-1 px-1">
                     <!-- Career Achievers -->
-                    <a href="career-achievers.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_career_achivers.png'); background-size: cover; background-position: center;">
+                    <a href="pages/career-achievers.php"
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_career_achivers.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -384,15 +385,15 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Class
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Class
                                     11</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Class
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Class
                                     12</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Science</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Science</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Commerce</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Commerce</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
@@ -400,8 +401,8 @@ include 'components/header.php';
                         </div>
                     </a>
                     <!-- NEET -->
-                    <a href="neet.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_neet.png'); background-size: cover; background-position: center;">
+                    <a href="pages/neet.php"
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_neet.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -416,13 +417,13 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Class
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Class
                                     11</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Class
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Class
                                     12</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Repeater</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Repeater</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
@@ -430,8 +431,8 @@ include 'components/header.php';
                         </div>
                     </a>
                     <!-- IIT-JEE -->
-                    <a href="iit-jee.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_jee.png'); background-size: cover; background-position: center;">
+                    <a href="pages/iit-jee.php"
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_jee.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -447,13 +448,13 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Class
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Class
                                     11</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Class
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Class
                                     12</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Repeater</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Repeater</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
@@ -461,8 +462,8 @@ include 'components/header.php';
                         </div>
                     </a>
                     <!-- KCET -->
-                    <a href="kcet.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_kcet.png'); background-size: cover; background-position: center;">
+                    <a href="pages/kcet.php"
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_kcet.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -478,13 +479,13 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Class
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Class
                                     11</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Class
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Class
                                     12</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Repeater</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Repeater</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
@@ -507,8 +508,8 @@ include 'components/header.php';
                 </div>
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-3 scrollbar-hide -mx-1 px-1">
                     <!-- Global Launchpad -->
-                    <a href="global-launchpad.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_GBL.png'); background-size: cover; background-position: center;">
+                    <a href="pages/global-launchpad.php"
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_GBL.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -524,15 +525,15 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">SAT</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">SAT</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">IELTS</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">IELTS</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">TOEFL</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">TOEFL</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">GRE</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">GRE</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">TOPIK</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">TOPIK</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
@@ -540,8 +541,8 @@ include 'components/header.php';
                         </div>
                     </a>
                     <!-- Study Abroad -->
-                    <a href="study-abroad.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_study-abroad.png'); background-size: cover; background-position: center;">
+                    <a href="pages/study-abroad.php"
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_study-abroad.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -557,12 +558,12 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Medical
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Medical
                                     Abroad</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Bachelors/Masters</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Bachelors/Masters</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Researchers</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Researchers</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
@@ -570,8 +571,8 @@ include 'components/header.php';
                         </div>
                     </a>
                     <!-- Internships -->
-                    <a href="internships.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_internships.png'); background-size: cover; background-position: center;">
+                    <a href="pages/internships.php"
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/HM_internships.png'); background-size: cover; background-position: center;">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
                         
                         <div class="relative z-10 flex flex-col h-full">
@@ -585,11 +586,11 @@ include 'components/header.php';
                                 </div>
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
-                                <span class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">AI
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">AI
                                     / ML</span>
                                 <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Embedded</span>
-                                <span class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Web
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Embedded</span>
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">Web
                                     &amp; Cloud</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
@@ -605,7 +606,7 @@ include 'components/header.php';
         <div id="programs-grid" class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Kindergarten -->
             <div class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-amber-100 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_c1.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_c1.png'); background-size: cover; background-position: center;">
                 <!-- Dark gradient overlay for readability -->
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10 rounded-3xl"></div>
                 <!-- Hover shimmer overlay -->
@@ -623,7 +624,7 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span onclick="event.preventDefault(); window.location.href='kindergarten.php'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-amber-400 hover:border-amber-400 cursor-pointer relative z-20 transition-all shadow-sm">Foundation</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-amber-400 hover:border-amber-400 cursor-pointer relative z-20 transition-all shadow-sm">Foundation</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -634,7 +635,7 @@ include 'components/header.php';
 
             <!-- Discoverers -->
             <div
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_1-5.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_1-5.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -649,11 +650,11 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span onclick="event.preventDefault(); window.location.href='cbse.php?tab=class-1-5'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
                         <span onclick="event.preventDefault(); window.location.href='icse.php?tab=class-1-5'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
                         <span onclick="event.preventDefault(); window.location.href='karnataka-board.php?tab=class-1-5'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
@@ -665,7 +666,7 @@ include 'components/header.php';
 
             <!-- Skill Builders -->
             <div
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_6-8.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_6-8.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -680,14 +681,14 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span onclick="event.preventDefault(); window.location.href='cbse.php?tab=class-6-8'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
                         <span onclick="event.preventDefault(); window.location.href='icse.php?tab=class-6-8'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
                         <span onclick="event.preventDefault(); window.location.href='karnataka-board.php?tab=class-6-8'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
                         <span onclick="event.preventDefault(); window.location.href='foundation1.php'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Foundation
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Foundation
                             1</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
@@ -699,7 +700,7 @@ include 'components/header.php';
 
             <!-- Exam Warriors -->
             <div
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_9-10.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_9-10.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -714,15 +715,15 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span onclick="event.preventDefault(); window.location.href='cbse.php?tab=class-9-10'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
                         <span onclick="event.preventDefault(); window.location.href='icse.php?tab=class-9-10'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
                         <span
                             onclick="event.preventDefault(); window.location.href='karnataka-board.php?tab=class-9-10'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
                         <span onclick="event.preventDefault(); window.location.href='foundation2.php'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Foundation
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Foundation
                             2</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
@@ -733,8 +734,8 @@ include 'components/header.php';
             </div>
 
             <!-- Career Achievers -->
-            <a href="career-achievers.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_career_achivers.png'); background-size: cover; background-position: center;">
+            <a href="pages/career-achievers.php"
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_career_achivers.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -749,20 +750,20 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
                             11</span>
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
                             12</span>
                         <span
                             onclick="event.preventDefault(); window.location.href='career-achievers.php?tab=science#streams'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Science</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Science</span>
                         <span
                             onclick="event.preventDefault(); window.location.href='career-achievers.php?tab=economics#streams'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Economics</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Economics</span>
                         <span
                             onclick="event.preventDefault(); window.location.href='career-achievers.php?tab=commerce#streams'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Commerce</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Commerce</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -772,8 +773,8 @@ include 'components/header.php';
             </a>
 
             <!-- NEET -->
-            <a href="neet.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_neet.png'); background-size: cover; background-position: center;">
+            <a href="pages/neet.php"
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_neet.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -788,13 +789,13 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
                             11</span>
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
                             12</span>
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -804,8 +805,8 @@ include 'components/header.php';
             </a>
 
             <!-- IIT-JEE -->
-            <a href="iit-jee.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_jee.png'); background-size: cover; background-position: center;">
+            <a href="pages/iit-jee.php"
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_jee.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -820,13 +821,13 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
                             11</span>
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
                             12</span>
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -836,8 +837,8 @@ include 'components/header.php';
             </a>
 
             <!-- KCET -->
-            <a href="kcet.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_kcet.png'); background-size: cover; background-position: center;">
+            <a href="pages/kcet.php"
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_kcet.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -852,13 +853,13 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
                             11</span>
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
                             12</span>
                         <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -868,8 +869,8 @@ include 'components/header.php';
             </a>
 
             <!-- Global Launchpad -->
-            <a href="global-launchpad.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_GBL.png'); background-size: cover; background-position: center;">
+            <a href="pages/global-launchpad.php"
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_GBL.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -885,21 +886,21 @@ include 'components/header.php';
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span
                             onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=undergraduate'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">SAT</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">SAT</span>
                         <span
                             onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=undergraduate'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ACT</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ACT</span>
                         <span onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=english'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">IELTS</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">IELTS</span>
                         <span onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=english'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">TOEFL</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">TOEFL</span>
                         <span onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=english'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Duolingo</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Duolingo</span>
                         <span
                             onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=postgraduate'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">GRE</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">GRE</span>
                         <span onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=language'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">TOPIK</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">TOPIK</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -909,8 +910,8 @@ include 'components/header.php';
             </a>
 
             <!-- Study Abroad -->
-            <a href="study-abroad.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_study-abroad.png'); background-size: cover; background-position: center;">
+            <a href="pages/study-abroad.php"
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_study-abroad.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -925,13 +926,13 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span onclick="event.preventDefault(); window.location.href='study-abroad.php?tab=medical'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Medical
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Medical
                             abroad</span>
                         <span onclick="event.preventDefault(); window.location.href='study-abroad.php?tab=higher-ed'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Bachelors,
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Bachelors,
                             Masters abroad</span>
                         <span onclick="event.preventDefault(); window.location.href='study-abroad.php?tab=research'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Researchers</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Researchers</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -941,8 +942,8 @@ include 'components/header.php';
             </a>
 
             <!-- Internships -->
-            <a href="internships.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_internships.png'); background-size: cover; background-position: center;">
+            <a href="pages/internships.php"
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/HM_internships.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
                 
@@ -957,12 +958,12 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span onclick="event.preventDefault(); window.location.href='internships.php?tab=aiml'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Artificial
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Artificial
                             Intelligence</span>
                         <span onclick="event.preventDefault(); window.location.href='internships.php?tab=embedded'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Embedded</span>
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Embedded</span>
                         <span onclick="event.preventDefault(); window.location.href='internships.php?tab=webcloud'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Web
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Web
                             and Cloud applications</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
@@ -1070,7 +1071,7 @@ include 'components/header.php';
             <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Are you a school or institution?</h3>
             <p class="text-white drop-shadow font-medium text-lg">Partner with Unidemy Global and bring world-class
                 educational prep to your students.</p>
-            <a href="partner.php"
+            <a href="pages/partner.php"
                 class="mt-4 bg-secondary hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-full transition-all shadow-lg active:scale-95 text-lg">
                 Become a Partner
             </a>
@@ -1437,7 +1438,7 @@ include 'components/header.php';
         <div class="flex flex-wrap justify-center gap-6 md:gap-8">
             <!-- Resource 1 -->
             <?php if (ENABLE_REFERENCE_BOOKS): ?>
-                <a href="reference-books.php"
+                <a href="pages/reference-books.php"
                     class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
                     <div
                         class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -1481,7 +1482,7 @@ include 'components/header.php';
             <?php endif; ?>
             <!-- Resource 2 -->
             <?php if (ENABLE_NCERT_SOLUTIONS): ?>
-                <a href="ncert-solutions.php"
+                <a href="pages/ncert-solutions.php"
                     class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
                     <div
                         class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -1525,7 +1526,7 @@ include 'components/header.php';
             <?php endif; ?>
             <!-- Resource 3 -->
             <?php if (ENABLE_DETAILED_NOTES): ?>
-                <a href="detailed-notes.php"
+                <a href="pages/detailed-notes.php"
                     class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
                     <div
                         class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-400 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -1569,7 +1570,7 @@ include 'components/header.php';
             <?php endif; ?>
             <!-- Resource 4 -->
             <?php if (ENABLE_FREE_RESOURCES): ?>
-                <a href="free-resources.php"
+                <a href="pages/free-resources.php"
                     class="block w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] max-w-[320px] relative group bg-white rounded-2xl p-5 md:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
                     <div
                         class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

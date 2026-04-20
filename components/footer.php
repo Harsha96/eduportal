@@ -6,8 +6,8 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
             <div class="lg:col-span-4">
-                <a href="index.php" class="flex items-center gap-2 mb-6 group">
-                    <img src="assets/images/Logo (2).png" alt="Unidemy Global"
+                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>index.php" class="flex items-center gap-2 mb-6 group">
+                    <img src="<?php echo isset($base_url) ? $base_url : './'; ?>assets/images/Logo (2).png" alt="Unidemy Global"
                         class="h-[40px] w-auto transition-transform hover:scale-105">
                 </a>
                 <p class="text-slate-400 text-sm mb-8 leading-relaxed max-w-sm">Empowering ambition worldwide. Your
@@ -37,20 +37,20 @@
                     <i data-lucide="book-open" class="w-4 h-4 text-primary"></i> Programs
                 </h4>
                 <ul class="space-y-3">
-                    <li><a href="packages.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/packages.php"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">Packages</a></li>
-                    <li><a href="cbse.php?tab=all"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>cbse.php?tab=all"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">School Boards</a>
                     </li>
-                    <li><a href="global-launchpad.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/global-launchpad.php"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">Global Launchpad</a>
                     </li>
-                    <li><a href="iit-jee.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/iit-jee.php"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">Competitive
                             Exams</a></li>
-                    <li><a href="internships.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/internships.php"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">Internships</a></li>
-                    <li><a href="technology-services.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/technology-services.php"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">Technology
                             Services</a></li>
                 </ul>
@@ -61,18 +61,18 @@
                     <i data-lucide="link" class="w-4 h-4 text-secondary"></i> Quick Links
                 </h4>
                 <ul class="space-y-3">
-                    <li><a href="about.php" class="text-slate-400 text-sm hover:text-secondary transition-colors">About
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/about.php" class="text-slate-400 text-sm hover:text-secondary transition-colors">About
                             Us</a></li>
-                    <li><a href="study-abroad.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/study-abroad.php"
                             class="text-slate-400 text-sm hover:text-secondary transition-colors">Study Abroad</a>
                     </li>
-                    <li><a href="higher-education.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/higher-education.php"
                             class="text-slate-400 text-sm hover:text-secondary transition-colors">Higher
                             Education</a></li>
-                    <li><a href="medical-abroad.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/medical-abroad.php"
                             class="text-slate-400 text-sm hover:text-secondary transition-colors">Medical Abroad</a>
                     </li>
-                    <li><a href="free-resources.php"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/free-resources.php"
                             class="text-slate-400 text-sm hover:text-secondary transition-colors">Free Resources</a>
                     </li>
                 </ul>
@@ -83,12 +83,12 @@
                     <i data-lucide="info" class="w-4 h-4 text-gray-400"></i> Corporate
                 </h4>
                 <ul class="space-y-3">
-                    <li><a href="blog.php" class="text-slate-400 text-sm hover:text-white transition-colors">Blog</a>
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>blog/blog.php" class="text-slate-400 text-sm hover:text-white transition-colors">Blog</a>
                     </li>
-                    <li><a href="privacy.php" class="text-slate-400 text-sm hover:text-white transition-colors">Privacy
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>legal/privacy.php" class="text-slate-400 text-sm hover:text-white transition-colors">Privacy
                             Policy</a>
                     </li>
-                    <li><a href="terms.php" class="text-slate-400 text-sm hover:text-white transition-colors">Terms
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>legal/terms.php" class="text-slate-400 text-sm hover:text-white transition-colors">Terms
                             of Service</a></li>
                 </ul>
             </div>
@@ -119,8 +119,8 @@
                 © 2026 Unidemy Global. All rights reserved.
             </div>
             <div class="flex items-center gap-6">
-                <a href="privacy.php" class="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="terms.php" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>legal/privacy.php" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>legal/terms.php" class="hover:text-white transition-colors">Terms of Service</a>
             </div>
         </div>
     </div>
@@ -130,7 +130,7 @@
 <?php include __DIR__ . '/live-chat.php'; ?>
 
 <!-- Custom Script -->
-<script src="script.js"></script>
+<script src="<?php echo isset($base_url) ? $base_url : './'; ?>script.js"></script>
 <script>
     lucide.createIcons();
 </script>
