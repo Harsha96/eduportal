@@ -37,7 +37,7 @@
     <!-- Lucide Icons -->
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.min.js"></script>
     <?php if (isset($additionalHead))
-    echo $additionalHead; ?>
+        echo $additionalHead; ?>
 </head>
 
 <body class="bg-background font-sans text-gray-900 scroll-smooth">
@@ -52,7 +52,7 @@
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
                 <div class="relative group">
                     <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
-                        Our Programs
+                        School Boards
                         <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <div
@@ -157,4 +157,4 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav>

@@ -22,7 +22,7 @@ include 'components/header.php';
                         <div class="absolute inset-0 z-20"
                             style="background: linear-gradient(to right, #F8FBFF 0%, #F8FBFFCC 20%, transparent 45%);">
                         </div>
-                        <img src="assets/images/doctor.png" alt="Crack NEET"
+                        <img src="assets/images/global_medical_career.png" alt="Global Medical Career"
                             class="w-full h-full object-cover object-center lg:object-right opacity-95">
                     </div>
                     <div
@@ -39,24 +39,23 @@ include 'components/header.php';
                         </div>
                         <h1
                             class="text-lg sm:text-2xl md:text-3xl font-extrabold uppercase text-primary leading-snug mb-1">
-                            CRACK NEET 2024</h1>
+                            Turn Your NEET Dream into</h1>
                         <h2
-                            class="text-2xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-black uppercase leading-none tracking-tighter mb-4 text-slate-900 drop-shadow-sm">
-                            GET UPTO 40% OFF</h2>
+                            class="text-2xl sm:text-4xl md:text-5xl lg:text-[4rem] font-black uppercase leading-none tracking-tighter mb-4 text-slate-900 drop-shadow-sm">
+                            A Global Medical Career</h2>
                         <p class="text-base md:text-2xl font-bold text-gray-800 tracking-wide mb-1 uppercase">On All
                             NEET Batches</p>
-                        <p
-                            class="text-xs sm:text-sm md:text-base font-semibold text-white drop-shadow tracking-wider mb-8 md:max-w-xl uppercase">
-                            CLASS 11TH | CLASS 12TH | DROPPER</p>
+                        <div class="flex flex-wrap items-center gap-2 mb-8 animate-fade-in delay-200">
+                            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md shadow-sm">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-primary"></i>
+                                <span class="text-xs sm:text-sm md:text-base font-bold text-primary tracking-wide uppercase">CLASS 11TH | CLASS 12TH | REPEATER</span>
+                            </span>
+                        </div>
 
                         <div class="flex flex-col sm:flex-row items-center gap-4">
                             <a href="neet.php"
                                 class="w-full sm:w-max block text-center bg-secondary hover:bg-orange-600 text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-full uppercase tracking-wide transition-all shadow-lg active:scale-95">Explore
                                 Now</a>
-                            <div class="hidden sm:block">
-                                <p class="text-secondary font-bold text-sm leading-tight">Unidemy Global Offer</p>
-                                <p class="text-primary font-semibold text-xs text-opacity-80">Are Live Now!</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,9 +91,12 @@ include 'components/header.php';
                         <p class="text-base md:text-2xl font-bold text-gray-800 tracking-wide mb-1 uppercase">
                             Complete
                             Study Material</p>
-                        <p
-                            class="text-xs sm:text-sm md:text-base font-semibold text-white drop-shadow tracking-wider mb-8 uppercase">
-                            EXTENSIVE MOCK TESTS & MENTORSHIP</p>
+                        <div class="flex flex-wrap items-center gap-2 mb-8">
+                            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 backdrop-blur-md shadow-sm">
+                                <i data-lucide="award" class="w-4 h-4 text-secondary"></i>
+                                <span class="text-xs sm:text-sm md:text-base font-bold text-secondary tracking-wide uppercase">EXTENSIVE MOCK TESTS & MENTORSHIP</span>
+                            </span>
+                        </div>
                         <a href="iit-jee.php"
                             class="w-full sm:w-max block text-center bg-secondary hover:bg-orange-600 text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-full uppercase tracking-wide transition-all shadow-lg active:scale-95">Join
                             Batches</a>
@@ -132,9 +134,12 @@ include 'components/header.php';
                             BUILD YOUR FUTURE</h2>
                         <p class="text-base md:text-2xl font-bold text-gray-800 tracking-wide mb-1 uppercase">CBSE |
                             ICSE | STATE BOARD</p>
-                        <p
-                            class="text-xs sm:text-sm md:text-base font-semibold text-white drop-shadow tracking-wider mb-8 uppercase">
-                            CONCEPTUAL CLARITY & SCHOOL SUPPORT</p>
+                        <div class="flex flex-wrap items-center gap-2 mb-8">
+                            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md shadow-sm">
+                                <i data-lucide="book-open" class="w-4 h-4 text-primary"></i>
+                                <span class="text-xs sm:text-sm md:text-base font-bold text-primary tracking-wide uppercase">CONCEPTUAL CLARITY & SCHOOL SUPPORT</span>
+                            </span>
+                        </div>
                         <a href="https://unidemyglobal.com/foundation/?level=Foundation%20Level%201" target="_blank"
                             class="w-full sm:w-max block text-center bg-secondary hover:bg-orange-600 text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-full uppercase tracking-wide transition-all shadow-lg active:scale-95">Enroll
                             Now</a>
@@ -173,9 +178,12 @@ include 'components/header.php';
                         <p class="text-base md:text-2xl font-bold text-gray-800 tracking-wide mb-1 uppercase">IELTS
                             |
                             TOEFL | SAT / GRE</p>
-                        <p
-                            class="text-xs sm:text-sm md:text-base font-semibold text-white drop-shadow tracking-wider mb-8 uppercase">
-                            GUARANTEED ADMISSIONS & SCHOLARSHIPS</p>
+                        <div class="flex flex-wrap items-center gap-2 mb-8">
+                            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 backdrop-blur-md shadow-sm">
+                                <i data-lucide="globe" class="w-4 h-4 text-secondary"></i>
+                                <span class="text-xs sm:text-sm md:text-base font-bold text-secondary tracking-wide uppercase">GUARANTEED ADMISSIONS & SCHOLARSHIPS</span>
+                            </span>
+                        </div>
                         <a href="https://toefl.unidemyglobal.com/" target="_blank"
                             class="w-full sm:w-max block text-center bg-secondary hover:bg-orange-600 text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-full uppercase tracking-wide transition-all shadow-lg active:scale-95">Start
                             Journey</a>
@@ -210,7 +218,8 @@ include 'components/header.php';
         <div class="text-center max-w-3xl mx-auto mb-16 px-4">
             <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Explore Our <span class="text-primary">Premium
                     Programs</span></h2>
-            <p class="text-lg text-white drop-shadow">From primary education to global university placements, discover the
+            <p class="text-lg text-slate-600">From primary education to global university placements, discover
+                the
                 perfect pathway for your academic and career goals.</p>
         </div>
 
@@ -257,13 +266,16 @@ include 'components/header.php';
                         </div>
                     </div>
                     <!-- Explorers -->
-                    <div
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_1-5.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                    <div class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_1-5.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                                     <i data-lucide="compass" class="w-5 h-5 text-blue-300"></i>
                                 </div>
                                 <div>
@@ -280,16 +292,19 @@ include 'components/header.php';
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
                                     Board</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
                     </div>
                     <!-- Skill Builders -->
-                    <div
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_6-8.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                    <div class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_6-8.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
                                 <div
@@ -297,7 +312,8 @@ include 'components/header.php';
                                     <i data-lucide="layout-template" class="w-5 h-5 text-indigo-300"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Skill Builders</h3>
+                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Skill Builders
+                                    </h3>
                                     <p class="text-xs text-gray-200 drop-shadow">Class 6–8</p>
                                 </div>
                             </div>
@@ -313,16 +329,19 @@ include 'components/header.php';
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Foundation
                                     1</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
                     </div>
                     <!-- Exam Warriors -->
-                    <div
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_9-10.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                    <div class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_9-10.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
                                 <div
@@ -330,7 +349,8 @@ include 'components/header.php';
                                     <i data-lucide="sword" class="w-5 h-5 text-violet-300"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Exam Warriors</h3>
+                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Exam Warriors
+                                    </h3>
                                     <p class="text-xs text-gray-200 drop-shadow">Class 9–10</p>
                                 </div>
                             </div>
@@ -346,7 +366,8 @@ include 'components/header.php';
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Foundation
                                     2</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
@@ -367,9 +388,12 @@ include 'components/header.php';
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-3 scrollbar-hide -mx-1 px-1">
                     <!-- Career Achievers -->
                     <a href="career-achievers.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_career_achivers.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_career_achivers.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
                                 <div
@@ -377,7 +401,8 @@ include 'components/header.php';
                                     <i data-lucide="briefcase" class="w-5 h-5 text-fuchsia-300"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Career Achievers
+                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Career
+                                        Achievers
                                     </h3>
                                     <p class="text-xs text-gray-200 drop-shadow">Class 11–12</p>
                                 </div>
@@ -394,19 +419,24 @@ include 'components/header.php';
                                 <span
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Commerce</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
                     </a>
                     <!-- NEET -->
                     <a href="neet.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_neet.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_neet.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                                     <i data-lucide="stethoscope" class="w-5 h-5 text-rose-300"></i>
                                 </div>
                                 <div>
@@ -424,16 +454,20 @@ include 'components/header.php';
                                 <span
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Repeater</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
                     </a>
                     <!-- IIT-JEE -->
                     <a href="iit-jee.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_jee.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_jee.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
                                 <div
@@ -455,16 +489,20 @@ include 'components/header.php';
                                 <span
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Repeater</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
                     </a>
                     <!-- KCET -->
                     <a href="kcet.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_kcet.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_kcet.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
                                 <div
@@ -486,7 +524,8 @@ include 'components/header.php';
                                 <span
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Repeater</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
@@ -508,16 +547,21 @@ include 'components/header.php';
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-3 scrollbar-hide -mx-1 px-1">
                     <!-- Global Launchpad -->
                     <a href="global-launchpad.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_GBL.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_GBL.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                                     <i data-lucide="rocket" class="w-5 h-5 text-amber-300"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Global Launchpad
+                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Global
+                                        Launchpad
                                     </h3>
                                     <p class="text-xs text-gray-200 drop-shadow">SAT · IELTS · GRE · TOPIK</p>
                                 </div>
@@ -534,16 +578,20 @@ include 'components/header.php';
                                 <span
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">TOPIK</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
                     </a>
                     <!-- Study Abroad -->
                     <a href="study-abroad.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_study-abroad.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_study-abroad.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
                                 <div
@@ -551,7 +599,8 @@ include 'components/header.php';
                                     <i data-lucide="globe" class="w-5 h-5 text-emerald-300"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Study Abroad</h3>
+                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Study Abroad
+                                    </h3>
                                     <p class="text-xs text-gray-200 drop-shadow">International Admissions</p>
                                 </div>
                             </div>
@@ -564,35 +613,44 @@ include 'components/header.php';
                                 <span
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Researchers</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
                     </a>
                     <!-- Internships -->
                     <a href="internships.php"
-                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden" style="background-image: url('assets/images/services/HM_internships.png'); background-size: cover; background-position: center;">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl"></div>
-                        
+                        class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
+                        style="background-image: url('assets/images/services/HM_internships.png'); background-size: cover; background-position: center;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
+                        </div>
+
                         <div class="relative z-10 flex flex-col h-full">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                                     <i data-lucide="code-2" class="w-5 h-5 text-cyan-300"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Internships</h3>
+                                    <h3 class="font-bold text-white drop-shadow text-base leading-tight">Internships
+                                    </h3>
                                     <p class="text-xs text-gray-200 drop-shadow">Tech & Industry</p>
                                 </div>
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
-                                <span class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">AI
+                                <span
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">AI
                                     / ML</span>
                                 <span
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Embedded</span>
-                                <span class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Web
+                                <span
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Web
                                     &amp; Cloud</span>
                             </div>
-                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View Details
+                            <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
+                                Details
                                 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                             </div>
                         </div>
@@ -633,18 +691,20 @@ include 'components/header.php';
             </div>
 
             <!-- Discoverers -->
-            <div
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_1-5.png'); background-size: cover; background-position: center;">
+            <div class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_1-5.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="compass" class="w-6 h-6 text-blue-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             Explorers (1-5)</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -664,18 +724,20 @@ include 'components/header.php';
             </div>
 
             <!-- Skill Builders -->
-            <div
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_6-8.png'); background-size: cover; background-position: center;">
+            <div class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_6-8.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="layout-template" class="w-6 h-6 text-indigo-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             Skill builders (6-8)</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -698,18 +760,20 @@ include 'components/header.php';
             </div>
 
             <!-- Exam Warriors -->
-            <div
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_9-10.png'); background-size: cover; background-position: center;">
+            <div class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_9-10.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="sword" class="w-6 h-6 text-violet-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             Exam Warriors (9-10)</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -734,17 +798,20 @@ include 'components/header.php';
 
             <!-- Career Achievers -->
             <a href="career-achievers.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_career_achivers.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_career_achivers.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="briefcase" class="w-6 h-6 text-fuchsia-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             Career Achievers</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -773,17 +840,20 @@ include 'components/header.php';
 
             <!-- NEET -->
             <a href="neet.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_neet.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_neet.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="stethoscope" class="w-6 h-6 text-rose-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             NEET</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -805,17 +875,20 @@ include 'components/header.php';
 
             <!-- IIT-JEE -->
             <a href="iit-jee.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_jee.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_jee.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="calculator" class="w-6 h-6 text-orange-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             IIT-JEE</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -837,17 +910,20 @@ include 'components/header.php';
 
             <!-- KCET -->
             <a href="kcet.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_kcet.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_kcet.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="graduation-cap" class="w-6 h-6 text-indigo-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             KCET</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -869,17 +945,20 @@ include 'components/header.php';
 
             <!-- Global Launchpad -->
             <a href="global-launchpad.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_GBL.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_GBL.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="rocket" class="w-6 h-6 text-amber-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             Global Launchpad</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -910,17 +989,20 @@ include 'components/header.php';
 
             <!-- Study Abroad -->
             <a href="study-abroad.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_study-abroad.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_study-abroad.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="globe" class="w-6 h-6 text-emerald-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             Study Abroad</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -942,17 +1024,20 @@ include 'components/header.php';
 
             <!-- Internships -->
             <a href="internships.php"
-                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden" style="background-image: url('assets/images/services/HM_internships.png'); background-size: cover; background-position: center;">
+                class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
+                style="background-image: url('assets/images/services/HM_internships.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
-                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-                
+                <div
+                    class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
+                </div>
+
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
-                        <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
                             <i data-lucide="code-2" class="w-6 h-6 text-cyan-300"></i>
                         </div>
-                        <h3
-                            class="text-xl md:text-2xl font-bold text-white drop-shadow">
+                        <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow">
                             Internships</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
@@ -1068,7 +1153,7 @@ include 'components/header.php';
             class="bg-white/20 backdrop-blur-sm border border-gray-100 rounded-3xl p-8 md:p-10 flex flex-col items-center justify-center space-y-6 shadow-sm">
             <i data-lucide="handshake" class="w-12 h-12 text-secondary"></i>
             <h3 class="text-2xl md:text-3xl font-bold text-gray-900">Are you a school or institution?</h3>
-            <p class="text-white drop-shadow font-medium text-lg">Partner with Unidemy Global and bring world-class
+            <p class="text-slate-600 font-medium text-lg">Partner with Unidemy Global and bring world-class
                 educational prep to your students.</p>
             <a href="partner.php"
                 class="mt-4 bg-secondary hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-full transition-all shadow-lg active:scale-95 text-lg">
@@ -1084,7 +1169,7 @@ include 'components/header.php';
             <div class="max-w-2xl">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Study in Top <span
                         class="text-secondary">Global Destinations</span></h2>
-                <p class="text-lg text-white drop-shadow">Unlock international career opportunities with guaranteed
+                <p class="text-lg text-slate-600">Unlock international career opportunities with guaranteed
                     admissions to world-renowned universities.</p>
             </div>
             <!-- <button
@@ -1226,7 +1311,8 @@ include 'components/header.php';
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Student <span class="text-secondary">Success
                     Stories</span></h2>
-            <p class="text-lg text-white drop-shadow">Don't just take our word for it. Hear what our successful students and
+            <p class="text-lg text-slate-600">Don't just take our word for it. Hear what our successful students
+                and
                 alumni have to say about their journey.</p>
         </div>
 
@@ -1430,7 +1516,8 @@ include 'components/header.php';
             <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Premium <span
                     class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Study
                     Resources</span></h2>
-            <p class="text-lg text-white drop-shadow">Access top-tier study materials curated by leading educators to help
+            <p class="text-lg text-slate-600">Access top-tier study materials curated by leading educators to
+                help
                 you ace your exams.</p>
         </div>
 
@@ -1628,7 +1715,8 @@ include 'components/header.php';
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-4xl md:text-5xl font-extrabold text-[#1E4F9C] mb-6">Join Our <span
                     class="text-[#F97316]">Social Community</span></h2>
-            <p class="text-lg text-white drop-shadow font-medium">Connect with millions of learners, get daily educational
+            <p class="text-lg text-slate-600 font-medium">Connect with millions of learners, get daily
+                educational
                 content, and never miss an important update from Unidemy Global.</p>
         </div>
 
@@ -1742,7 +1830,7 @@ include 'components/header.php';
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our <span class="text-primary">Global
                     Presence</span></h2>
-            <p class="text-lg text-white drop-shadow">Visit our state-of-the-art learning centers and counseling hubs
+            <p class="text-lg text-slate-600">Visit our state-of-the-art learning centers and counseling hubs
                 designed for the ultimate educational experience.</p>
         </div>
 
@@ -1762,17 +1850,19 @@ include 'components/header.php';
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <p class="text-white drop-shadow mb-6 flex-grow">State-of-the-art learning facility at HSR Layout for
+                    <p class="text-slate-600 mb-6 flex-grow">State-of-the-art learning facility at HSR Layout
+                        for
                         offline tech and medical coaching programs.</p>
                     <div class="space-y-4 pt-6 border-t border-gray-100">
                         <div class="flex items-start gap-3"><i data-lucide="map-pin"
                                 class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
-                            <p class="text-sm text-white drop-shadow">123, 17th Cross, HSR Layout, Sector 4, Bangalore 560102
+                            <p class="text-sm text-slate-600">123, 17th Cross, HSR Layout, Sector 4, Bangalore
+                                560102
                             </p>
                         </div>
                         <div class="flex items-center gap-3"><i data-lucide="phone"
                                 class="w-5 h-5 text-primary shrink-0"></i>
-                            <p class="text-sm text-white drop-shadow">+91 98765 43210</p>
+                            <p class="text-sm text-slate-600">+91 98765 43210</p>
                         </div>
                     </div>
                     <!-- <button
@@ -1794,16 +1884,17 @@ include 'components/header.php';
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <p class="text-white drop-shadow mb-6 flex-grow">Our central counseling and student support hub
+                    <p class="text-slate-600 mb-6 flex-grow">Our central counseling and student support hub
                         facilitating regional admissions.</p>
                     <div class="space-y-4 pt-6 border-t border-gray-100">
                         <div class="flex items-start gap-3"><i data-lucide="map-pin"
                                 class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
-                            <p class="text-sm text-white drop-shadow">Fort Road, Opposite City Park, Chitradurga 577501</p>
+                            <p class="text-sm text-slate-600">Fort Road, Opposite City Park, Chitradurga 577501
+                            </p>
                         </div>
                         <div class="flex items-center gap-3"><i data-lucide="phone"
                                 class="w-5 h-5 text-primary shrink-0"></i>
-                            <p class="text-sm text-white drop-shadow">+91 91234 56789</p>
+                            <p class="text-sm text-slate-600">+91 91234 56789</p>
                         </div>
                     </div>
                     <!-- <button
@@ -1825,16 +1916,17 @@ include 'components/header.php';
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <p class="text-white drop-shadow mb-6 flex-grow">Global admissions office handling international student
+                    <p class="text-slate-600 mb-6 flex-grow">Global admissions office handling international
+                        student
                         placements and scholarships.</p>
                     <div class="space-y-4 pt-6 border-t border-gray-100">
                         <div class="flex items-start gap-3"><i data-lucide="map-pin"
                                 class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
-                            <p class="text-sm text-white drop-shadow">Business Bay, Tower B, Office 402, Dubai, UAE</p>
+                            <p class="text-sm text-slate-600">Business Bay, Tower B, Office 402, Dubai, UAE</p>
                         </div>
                         <div class="flex items-center gap-3"><i data-lucide="phone"
                                 class="w-5 h-5 text-primary shrink-0"></i>
-                            <p class="text-sm text-white drop-shadow">+971 4 123 4567</p>
+                            <p class="text-sm text-slate-600">+971 4 123 4567</p>
                         </div>
                     </div>
                     <!-- <button
