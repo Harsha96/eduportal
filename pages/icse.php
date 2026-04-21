@@ -102,7 +102,8 @@ include '../components/header.php';
                 <div class="p-6 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-3">
                         <span
-                            class="text-blue-600 font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full">ICSE
+                            onclick="window.location.href='icse.php'"
+                            class="text-blue-600 font-bold text-sm tracking-wide bg-blue-50 px-3 py-1 rounded-full cursor-pointer hover:bg-blue-100 transition-colors">ICSE
                             Board</span>
                     </div>
                     <h3
@@ -616,7 +617,8 @@ include '../components/header.php';
                 <div class="p-6 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-3">
                         <span
-                            class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full">Foundation
+                            onclick="window.location.href='foundation1.php'"
+                            class="text-rose-600 font-bold text-sm tracking-wide bg-rose-50 px-3 py-1 rounded-full cursor-pointer hover:bg-rose-100 transition-colors">Foundation
                             1</span>
                     </div>
                     <h3
@@ -772,7 +774,8 @@ include '../components/header.php';
                 <div class="p-6 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-3">
                         <span
-                            class="text-teal-600 font-bold text-sm tracking-wide bg-teal-50 px-3 py-1 rounded-full">Foundation
+                            onclick="window.location.href='foundation2.php'"
+                            class="text-teal-600 font-bold text-sm tracking-wide bg-teal-50 px-3 py-1 rounded-full cursor-pointer hover:bg-teal-100 transition-colors">Foundation
                             2</span>
                     </div>
                     <h3

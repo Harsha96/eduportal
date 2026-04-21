@@ -44,8 +44,7 @@ include 'components/header.php';
                         <h2
                             class="text-2xl sm:text-4xl md:text-5xl lg:text-[4rem] font-black uppercase leading-none tracking-tighter mb-4 text-slate-900 drop-shadow-sm">
                             A Global Medical Career</h2>
-                        <p class="text-base md:text-2xl font-bold text-gray-800 tracking-wide mb-1 uppercase">On All
-                            NEET Batches</p>
+                        <p class="text-base md:text-2xl font-bold text-gray-800 tracking-wide mb-1 uppercase"></p>
                         <div class="flex flex-wrap items-center gap-2 mb-8 animate-fade-in delay-200">
                             <span
                                 class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-md shadow-sm">
@@ -719,7 +718,8 @@ include 'components/header.php';
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
                         <span onclick="event.preventDefault(); window.location.href='pages/icse.php?tab=class-1-5'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-1-5'"
+                        <span
+                            onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-1-5'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
                     </div>
@@ -752,7 +752,8 @@ include 'components/header.php';
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
                         <span onclick="event.preventDefault(); window.location.href='pages/icse.php?tab=class-6-8'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-6-8'"
+                        <span
+                            onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-6-8'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
                         <span onclick="event.preventDefault(); window.location.href='pages/foundation1.php'"
@@ -822,11 +823,11 @@ include 'components/header.php';
                             Career Achievers</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                        <span onclick="event.preventDefault(); window.location.href='pages/career-achievers.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             11</span>
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                        <span onclick="event.preventDefault(); window.location.href='pages/career-achievers.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             12</span>
                         <span
                             onclick="event.preventDefault(); window.location.href='career-achievers.php?tab=science#streams'"
@@ -864,14 +865,14 @@ include 'components/header.php';
                             NEET</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                        <span onclick="event.preventDefault(); window.location.href='pages/neet.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             11</span>
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                        <span onclick="event.preventDefault(); window.location.href='pages/neet.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             12</span>
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
+                        <span onclick="event.preventDefault(); window.location.href='pages/neet.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Repeater</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -899,14 +900,14 @@ include 'components/header.php';
                             IIT-JEE</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                        <span onclick="event.preventDefault(); window.location.href='pages/iit-jee.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             11</span>
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                        <span onclick="event.preventDefault(); window.location.href='pages/iit-jee.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             12</span>
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
+                        <span onclick="event.preventDefault(); window.location.href='pages/iit-jee.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Repeater</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"
@@ -934,14 +935,14 @@ include 'components/header.php';
                             KCET</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                        <span onclick="event.preventDefault(); window.location.href='pages/kcet.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             11</span>
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Class
+                        <span onclick="event.preventDefault(); window.location.href='pages/kcet.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Class
                             12</span>
-                        <span
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 relative z-20 transition-all shadow-sm">Repeater</span>
+                        <span onclick="event.preventDefault(); window.location.href='pages/kcet.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Repeater</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
                         View Details <i data-lucide="chevron-right"

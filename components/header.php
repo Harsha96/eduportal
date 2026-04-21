@@ -45,14 +45,14 @@
     <!-- Navbar -->
     <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-5 px-6 lg:px-8" id="main-nav">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="<?php echo isset($base_url) ? $base_url : './'; ?>index.php" class="flex-shrink-0">
+            <a href="<?php echo isset($base_url) ? $base_url : './'; ?>index.php" class="flex-shrink-0 flex items-center">
                 <img src="<?php echo isset($base_url) ? $base_url : './'; ?>assets/images/Logo (2).png"
                     alt="Unidemy Global"
-                    class="h-8 md:h-10 w-auto mix-blend-multiply transition-transform hover:scale-105">
+                    class="h-9 md:h-11 w-auto mix-blend-multiply transition-transform hover:scale-105">
             </a>
             <div class="hidden lg:flex gap-8 items-center font-medium text-gray-700">
                 <div class="relative group">
-                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                    <button class="flex items-center gap-1 hover:text-primary transition-colors py-2 h-10">
                         School Boards
                         <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
                     </button>
@@ -73,27 +73,41 @@
                     </div>
                 </div>
                 <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/competitive-exams.php"
-                    class="hover:text-primary transition-colors py-2">Competitive exams</a>
+                    class="flex items-center hover:text-primary transition-colors py-2 h-10">Competitive Exams</a>
                 <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/test-prep.php"
-                    class="hover:text-primary transition-colors py-2">Test Prep</a>
+                    class="flex items-center hover:text-primary transition-colors py-2 h-10">Test Prep</a>
                 <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/study-abroad.php"
-                    class="hover:text-primary transition-colors">Study Abroad</a>
+                    class="flex items-center hover:text-primary transition-colors py-2 h-10">Study Abroad</a>
                 <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/internships.php"
-                    class="hover:text-primary transition-colors">Internships</a>
+                    class="flex items-center hover:text-primary transition-colors py-2 h-10">Internships</a>
                 <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/technology-services.php"
-                    class="hover:text-primary transition-colors py-2">Technology
+                    class="flex items-center hover:text-primary transition-colors py-2 h-10 leading-tight">Technology
                     Services</a>
             </div>
-            <div class="hidden lg:flex items-center gap-4">
-                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>auth/login.php"
-                    class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-2 rounded-full font-bold transition-all active:scale-95">Log
-                    In</a>
-                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>auth/signup.php"
-                    class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 active:scale-95">Sign
-                    Up</a>
+            <div class="hidden lg:flex items-center gap-6">
+                <!-- Cart Icon -->
+                <button onclick="cart.open()" class="relative p-2 text-gray-700 hover:text-primary transition-all active:scale-90 flex items-center justify-center">
+                    <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                    <span id="cart-nav-badge" class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold min-w-[18px] h-[18px] flex items-center justify-center rounded-full hidden shadow-sm border border-white">0</span>
+                </button>
+
+                <div class="flex items-center gap-3 ml-2">
+                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>auth/login.php"
+                        class="text-gray-700 hover:text-primary px-4 py-2 rounded-full font-bold transition-all text-sm active:scale-95">Log
+                        In</a>
+                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>auth/signup.php"
+                        class="bg-secondary hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-secondary/30 text-sm active:scale-95">Sign
+                        Up</a>
+                </div>
             </div>
-            <button id="mobile-menu-btn" class="lg:hidden text-gray-700 p-2"><i data-lucide="menu"
-                    class="w-6 h-6"></i></button>
+            <div class="flex lg:hidden items-center gap-2">
+                <button onclick="cart.open()" class="relative p-2 text-gray-700 hover:text-primary transition-all active:scale-90">
+                    <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                    <span id="cart-nav-badge-mobile" class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold min-w-[18px] h-[18px] flex items-center justify-center rounded-full hidden shadow-sm border border-white">0</span>
+                </button>
+                <button id="mobile-menu-btn" class="text-gray-700 p-2 ml-1"><i data-lucide="menu"
+                        class="w-6 h-6"></i></button>
+            </div>
         </div>
         <!-- Mobile Overlay -->
         <div id="mobile-overlay" class="fixed inset-0 bg-slate-900/50 z-[45] hidden"></div>
@@ -108,18 +122,18 @@
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Kindergarten
                         Program</a>
                     <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/cbse.php?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE Programs</a>
                     <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/icse.php?tab=all"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
                     <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/karnataka-board.php?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
+                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Karnataka Board</a>
 
 
 
                 </div>
                 <div class="h-px w-full bg-gray-100 my-2"></div>
                 <div class="flex flex-col gap-2">
-                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">Competitive exams</div>
+                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">Competitive Exams</div>
                     <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/competitive-exams.php"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">All Competitive
                         Exams</a>
@@ -150,3 +164,4 @@
             </div>
         </div>
     </nav>
+    <?php include_once 'cart-drawer.php'; ?>

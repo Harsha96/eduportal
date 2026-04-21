@@ -88,9 +88,10 @@ include '../components/header.php';
                 <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1"
                     data-category="medical">
                     <div
-                        class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
-                        <i data-lucide="stethoscope"
-                            class="w-16 h-16 text-rose-500 group-hover:scale-110 transition-transform duration-500"></i>
+                        class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                        <img src="../assets/images/mbbs_abroad_card.png" alt="MBBS Abroad"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold mb-3 text-gray-900">MBBS Abroad</h3>
@@ -107,9 +108,10 @@ include '../components/header.php';
                 <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1"
                     data-category="higher-ed">
                     <div
-                        class="relative h-[200px] w-full overflow-hidden bg-blue-50/50 flex items-center justify-center border-b border-gray-100">
-                        <i data-lucide="graduation-cap"
-                            class="w-16 h-16 text-blue-500 group-hover:scale-110 transition-transform duration-500"></i>
+                        class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                        <img src="../assets/images/postgraduate_programs_card.png" alt="Postgraduate Programs"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold mb-3 text-gray-900">Postgraduate Programs</h3>
@@ -126,9 +128,10 @@ include '../components/header.php';
                 <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1"
                     data-category="research">
                     <div
-                        class="relative h-[200px] w-full overflow-hidden bg-purple-50/50 flex items-center justify-center border-b border-gray-100">
-                        <i data-lucide="microscope"
-                            class="w-16 h-16 text-purple-500 group-hover:scale-110 transition-transform duration-500"></i>
+                        class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                        <img src="../assets/images/international_research_card.png" alt="International Research"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold mb-3 text-gray-900">International Research</h3>

@@ -64,8 +64,7 @@ include '../components/header.php';
                 data-category="class-11">
                 <!-- Image Container -->
                 <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
-                    <img src="../assets/images/cmp_jee.png"
-                        alt="JEE Mains" class="w-full h-full object-cover">
+                    <img src="../assets/images/cmp_jee.png" alt="JEE Mains" class="w-full h-full object-cover">
                     <!-- Badge -->
                     <div
                         class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-gray-900 text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-gray-200/50">
@@ -78,41 +77,49 @@ include '../components/header.php';
                         <span class="text-[#6366F1] font-semibold text-sm">Class 11 JEE</span>
                     </div>
                     <h3 class="text-[22px] font-bold mb-5 text-gray-900">JEE Mains</h3>
-                    <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                    <div
+                        class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Offline Classes
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Printed Study Material
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Unidemy Portal Access.
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Weekly Tests + Mentorship
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Career & Counseling Support
                             </li>
                         </ul>
                     </div>
-                    
-                    <button onclick="toggleContent(this)" class="flex items-center gap-2 text-[#6366F1] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+
+                    <button onclick="toggleContent(this)"
+                        class="flex items-center gap-2 text-[#6366F1] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
                         <span>Read More</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
                     </button>
                     <div class="mt-auto flex items-end justify-end pt-5 border-t border-gray-200">
-                        
+
                         <div class="flex items-center gap-2">
-                            <button
-                                onclick="openEnrollmentModal('IIT-JEE - JEE Mains (Class 11)')"
-                                class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
+                            <button onclick="openEnrollmentModal('IIT-JEE - JEE Mains (Class 11)')"
+                                class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll
+                                Request</button>
                             <button
                                 class="border border-gray-600 bg-transparent text-gray-900 w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
                                 <i data-lucide="chevron-right" class="w-5 h-5"></i>
@@ -127,8 +134,7 @@ include '../components/header.php';
                 data-category="class-12">
                 <!-- Image Container -->
                 <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
-                    <img src="../assets/images/cmp_jee2.png"
-                        alt="JEE Advance" class="w-full h-full object-cover">
+                    <img src="../assets/images/cmp_jee2.png" alt="JEE Advance" class="w-full h-full object-cover">
                     <!-- Badge -->
                     <div
                         class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-gray-900 text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-gray-200/50">
@@ -140,42 +146,50 @@ include '../components/header.php';
                     <div class="flex items-center justify-between mb-3">
                         <span class="text-[#6366F1] font-semibold text-sm">Class 12 JEE</span>
                     </div>
-                    <h3 class="text-[22px] font-bold mb-5 text-gray-900">JEE Advance</h3>
-                    <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                    <h3 class="text-[22px] font-bold mb-5 text-gray-900">JEE Mains</h3>
+                    <div
+                        class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Offline Classes
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Printed Study Material
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Unidemy Portal Access.
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Weekly Tests + Mentorship
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Career & Counseling Support
                             </li>
                         </ul>
                     </div>
-                    
-                    <button onclick="toggleContent(this)" class="flex items-center gap-2 text-[#6366F1] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+
+                    <button onclick="toggleContent(this)"
+                        class="flex items-center gap-2 text-[#6366F1] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
                         <span>Read More</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
                     </button>
                     <div class="mt-auto flex items-end justify-end pt-5 border-t border-gray-200">
-                        
+
                         <div class="flex items-center gap-2">
-                            <button
-                                onclick="openEnrollmentModal('IIT-JEE - JEE Advance (Class 12)')"
-                                class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
+                            <button onclick="openEnrollmentModal('IIT-JEE - JEE Advance (Class 12)')"
+                                class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll
+                                Request</button>
                             <button
                                 class="border border-gray-600 bg-transparent text-gray-900 w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
                                 <i data-lucide="chevron-right" class="w-5 h-5"></i>
@@ -189,8 +203,7 @@ include '../components/header.php';
             <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block"
                 data-category="repeater">
                 <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
-                    <img src="../assets/images/cmp_jee3.png"
-                        alt="JEE Repeaters"
+                    <img src="../assets/images/cmp_jee3.png" alt="JEE Repeaters"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div
                         class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-gray-900 text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-gray-200/50">
@@ -202,41 +215,49 @@ include '../components/header.php';
                         <span class="text-[#6366F1] font-semibold text-sm">Repeater JEE</span>
                     </div>
                     <h3 class="text-[22px] font-bold mb-5 text-gray-900">JEE Repeaters</h3>
-                    <div class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                    <div
+                        class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Offline Classes
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Printed Study Material
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Unidemy Portal Access.
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Weekly Tests + Mentorship
                             </li>
                             <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
+                                <i data-lucide="check-circle-2"
+                                    class="w-4 h-4 mr-2.5 text-[#6366F1] shrink-0 mt-0.5"></i>
                                 Career & Counseling Support
                             </li>
                         </ul>
                     </div>
-                    
-                    <button onclick="toggleContent(this)" class="flex items-center gap-2 text-[#6366F1] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+
+                    <button onclick="toggleContent(this)"
+                        class="flex items-center gap-2 text-[#6366F1] font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
                         <span>Read More</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
                     </button>
                     <div class="mt-auto flex items-end justify-end pt-5 border-t border-gray-200">
-                        
+
                         <div class="flex items-center gap-2">
-                            <button
-                                onclick="openEnrollmentModal('IIT-JEE - JEE Repeaters (Repeater)')"
-                                class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll Request</button>
+                            <button onclick="openEnrollmentModal('IIT-JEE - JEE Repeaters (Repeater)')"
+                                class="bg-white text-gray-900 font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors">Enroll
+                                Request</button>
                             <button
                                 class="border border-gray-600 bg-transparent text-gray-900 w-[42px] h-[42px] rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors">
                                 <i data-lucide="chevron-right" class="w-5 h-5"></i>
