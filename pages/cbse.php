@@ -183,7 +183,7 @@ include '../components/header.php';
                 data-category="class-1-5" data-type="packages">
                 <div
                     class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
-                    style="background-image: url('assets/images/background/young exploreres.png'); background-size: cover; background-position: center;">
+                    style="background-image: url('../assets/images/background/young exploreres.png'); background-size: cover; background-position: center;">
                     <!-- Gradient overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-blue-900/60 transition-all duration-500"></div>
                     <!-- Blue shimmer on hover -->

@@ -69,7 +69,7 @@ include '../components/header.php';
                 class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block">
                 <div
                     class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
-                    style="background-image: url('assets/images/background/smartreaders.png'); background-size: cover; background-position: center;">
+                    style="background-image: url('../assets/images/background/smartreaders.png'); background-size: cover; background-position: center;">
                     <!-- Gradient overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-amber-900/60 transition-all duration-500"></div>
                     <!-- Amber shimmer on hover -->
@@ -146,7 +146,7 @@ include '../components/header.php';
                 class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block">
                 <div
                     class="relative h-[200px] w-full overflow-hidden border-b border-gray-100"
-                    style="background-image: url('assets/images/background/phonics.png'); background-size: cover; background-position: center;">
+                    style="background-image: url('../assets/images/background/phonics.png'); background-size: cover; background-position: center;">
                     <!-- Gradient overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-pink-900/60 transition-all duration-500"></div>
                     <!-- Pink shimmer on hover -->

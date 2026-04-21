@@ -61,13 +61,13 @@
                         <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/kindergarten.php"
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Kindergarten
                         </a>
-                        <a href="<?php echo isset($base_url) ? $base_url : './'; ?>cbse.php?tab=all"
+                        <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/cbse.php?tab=all"
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">CBSE
                             Board</a>
-                        <a href="<?php echo isset($base_url) ? $base_url : './'; ?>icse.php?tab=all"
+                        <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/icse.php?tab=all"
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">ICSE
                             Board</a>
-                        <a href="<?php echo isset($base_url) ? $base_url : './'; ?>karnataka-board.php?tab=all"
+                        <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/karnataka-board.php?tab=all"
                             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">Karnataka
                             Board</a>
                     </div>
@@ -107,11 +107,11 @@
                     <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/kindergarten.php"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Kindergarten
                         Program</a>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>cbse.php?tab=all"
+                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/cbse.php?tab=all"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE programs</a>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>icse.php?tab=all"
+                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/icse.php?tab=all"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>karnataka-board.php?tab=all"
+                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/karnataka-board.php?tab=all"
                         class="text-gray-700 font-medium hover:text-primary transition-colors px-2">karnataka board</a>
 
 
