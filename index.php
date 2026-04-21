@@ -291,11 +291,11 @@ include 'components/header.php';
                                 </div>
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
-                                <span onclick="window.location.href='cbse.php?tab=class-1-5'"
+                                <span onclick="window.location.href='pages/cbse.php?tab=class-1-5'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
-                                <span onclick="window.location.href='icse.php?tab=class-1-5'"
+                                <span onclick="window.location.href='pages/icse.php?tab=class-1-5'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
-                                <span onclick="window.location.href='karnataka-board.php?tab=class-1-5'"
+                                <span onclick="window.location.href='pages/karnataka-board.php?tab=class-1-5'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
                                     Board</span>
                             </div>
@@ -325,14 +325,14 @@ include 'components/header.php';
                                 </div>
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
-                                <span onclick="window.location.href='cbse.php?tab=class-6-8'"
+                                <span onclick="window.location.href='pages/cbse.php?tab=class-6-8'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
-                                <span onclick="window.location.href='icse.php?tab=class-6-8'"
+                                <span onclick="window.location.href='pages/icse.php?tab=class-6-8'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
-                                <span onclick="window.location.href='karnataka-board.php?tab=class-6-8'"
+                                <span onclick="window.location.href='pages/karnataka-board.php?tab=class-6-8'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
                                     Board</span>
-                                <span onclick="window.location.href='foundation1.php'"
+                                <span onclick="window.location.href='pages/foundation1.php'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Foundation
                                     1</span>
                             </div>
@@ -362,14 +362,14 @@ include 'components/header.php';
                                 </div>
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
-                                <span onclick="window.location.href='cbse.php?tab=class-9-10'"
+                                <span onclick="window.location.href='pages/cbse.php?tab=class-9-10'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">CBSE</span>
-                                <span onclick="window.location.href='icse.php?tab=class-9-10'"
+                                <span onclick="window.location.href='pages/icse.php?tab=class-9-10'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">ICSE</span>
-                                <span onclick="window.location.href='karnataka-board.php?tab=class-9-10'"
+                                <span onclick="window.location.href='pages/karnataka-board.php?tab=class-9-10'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Karnataka
                                     Board</span>
-                                <span onclick="window.location.href='foundation2.php'"
+                                <span onclick="window.location.href='pages/foundation2.php'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer hover:bg-white/30 transition-colors">Foundation
                                     2</span>
                             </div>
@@ -715,11 +715,11 @@ include 'components/header.php';
                             Explorers (1-5)</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span onclick="event.preventDefault(); window.location.href='cbse.php?tab=class-1-5'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/cbse.php?tab=class-1-5'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='icse.php?tab=class-1-5'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/icse.php?tab=class-1-5'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='karnataka-board.php?tab=class-1-5'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-1-5'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
                     </div>
@@ -748,14 +748,14 @@ include 'components/header.php';
                             Skill builders (6-8)</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span onclick="event.preventDefault(); window.location.href='cbse.php?tab=class-6-8'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/cbse.php?tab=class-6-8'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='icse.php?tab=class-6-8'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/icse.php?tab=class-6-8'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='karnataka-board.php?tab=class-6-8'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-6-8'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
-                        <span onclick="event.preventDefault(); window.location.href='foundation1.php'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/foundation1.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Foundation
                             1</span>
                     </div>
@@ -784,15 +784,15 @@ include 'components/header.php';
                             Exam Warriors (9-10)</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span onclick="event.preventDefault(); window.location.href='cbse.php?tab=class-9-10'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/cbse.php?tab=class-9-10'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='icse.php?tab=class-9-10'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/icse.php?tab=class-9-10'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
                         <span
-                            onclick="event.preventDefault(); window.location.href='karnataka-board.php?tab=class-9-10'"
+                            onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-9-10'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
-                        <span onclick="event.preventDefault(); window.location.href='foundation2.php'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/foundation2.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Foundation
                             2</span>
                     </div>
