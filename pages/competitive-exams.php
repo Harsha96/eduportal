@@ -52,7 +52,7 @@ include '../components/header.php';
         <div class="exam-section" data-section="neet">
             <!-- NEET Banner Section -->
             <div class="relative w-full h-[250px] md:h-[350px] rounded-[2rem] overflow-hidden mb-12 shadow-2xl group">
-                <img src="../assets/images/neet_professional_banner.png" alt="NEET Programmes Banner"
+                <img src="../assets/images/neet_v2.png" alt="NEET Programmes Banner"
                     class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
                 <div
                     class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex flex-col justify-center px-8 md:px-16">
@@ -318,7 +318,7 @@ include '../components/header.php';
         <div class="exam-section" data-section="jee">
             <!-- IIT-JEE Banner Section -->
             <div class="relative w-full h-[250px] md:h-[350px] rounded-[2rem] overflow-hidden mb-12 shadow-2xl group">
-                <img src="../assets/images/jee_professional_banner.png" alt="IIT-JEE Programmes Banner"
+                <img src="../assets/images/jee_v2.png" alt="IIT-JEE Programmes Banner"
                     class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
                 <div
                     class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex flex-col justify-center px-8 md:px-16">
@@ -574,7 +574,7 @@ include '../components/header.php';
         <div class="exam-section" data-section="kcet">
             <!-- KCET Banner Section -->
             <div class="relative w-full h-[250px] md:h-[350px] rounded-[2rem] overflow-hidden mb-12 shadow-2xl group">
-                <img src="../assets/images/kcet_professional_banner.png" alt="KCET Programmes Banner"
+                <img src="../assets/images/kcet_v2.png" alt="KCET Programmes Banner"
                     class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
                 <div
                     class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex flex-col justify-center px-8 md:px-16">
