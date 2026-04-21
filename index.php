@@ -274,7 +274,7 @@ include 'components/header.php';
                     </div>
                     <!-- Explorers -->
                     <div class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_1-5.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_1-5.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -307,7 +307,7 @@ include 'components/header.php';
                     </div>
                     <!-- Skill Builders -->
                     <div class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_6-8.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_6-8.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -344,7 +344,7 @@ include 'components/header.php';
                     </div>
                     <!-- Exam Warriors -->
                     <div class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_9-10.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_9-10.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -396,7 +396,7 @@ include 'components/header.php';
                     <!-- Career Achievers -->
                     <a href="career-achievers.php"
                         class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_career_achivers.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_career_achivers.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -435,7 +435,7 @@ include 'components/header.php';
                     <!-- NEET -->
                     <a href="neet.php"
                         class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_neet.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_neet.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -470,7 +470,7 @@ include 'components/header.php';
                     <!-- IIT-JEE -->
                     <a href="iit-jee.php"
                         class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_jee.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_jee.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -505,7 +505,7 @@ include 'components/header.php';
                     <!-- KCET -->
                     <a href="kcet.php"
                         class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_kcet.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_kcet.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -555,7 +555,7 @@ include 'components/header.php';
                     <!-- Global Launchpad -->
                     <a href="global-launchpad.php"
                         class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_GBL.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_GBL.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -594,7 +594,7 @@ include 'components/header.php';
                     <!-- Study Abroad -->
                     <a href="study-abroad.php"
                         class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_study-abroad.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_study-abroad.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -629,7 +629,7 @@ include 'components/header.php';
                     <!-- Internships -->
                     <a href="internships.php"
                         class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
-                        style="background-image: url('assets/images/services/HM_internships.png'); background-size: cover; background-position: center;">
+                        style="background-image: url('assets/images/HM_internships.png'); background-size: cover; background-position: center;">
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-2xl">
                         </div>
@@ -699,7 +699,7 @@ include 'components/header.php';
 
             <!-- Discoverers -->
             <div class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_1-5.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_1-5.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -732,7 +732,7 @@ include 'components/header.php';
 
             <!-- Skill Builders -->
             <div class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_6-8.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_6-8.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -768,7 +768,7 @@ include 'components/header.php';
 
             <!-- Exam Warriors -->
             <div class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_9-10.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_9-10.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -806,7 +806,7 @@ include 'components/header.php';
             <!-- Career Achievers -->
             <a href="career-achievers.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_career_achivers.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_career_achivers.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -848,7 +848,7 @@ include 'components/header.php';
             <!-- NEET -->
             <a href="neet.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_neet.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_neet.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -883,7 +883,7 @@ include 'components/header.php';
             <!-- IIT-JEE -->
             <a href="iit-jee.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_jee.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_jee.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -918,7 +918,7 @@ include 'components/header.php';
             <!-- KCET -->
             <a href="kcet.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_kcet.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_kcet.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -953,7 +953,7 @@ include 'components/header.php';
             <!-- Global Launchpad -->
             <a href="global-launchpad.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_GBL.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_GBL.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -997,7 +997,7 @@ include 'components/header.php';
             <!-- Study Abroad -->
             <a href="study-abroad.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_study-abroad.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_study-abroad.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
@@ -1032,7 +1032,7 @@ include 'components/header.php';
             <!-- Internships -->
             <a href="internships.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
-                style="background-image: url('assets/images/services/HM_internships.png'); background-size: cover; background-position: center;">
+                style="background-image: url('assets/images/HM_internships.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
                 <div
                     class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl">
