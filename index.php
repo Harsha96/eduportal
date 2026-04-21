@@ -23,7 +23,7 @@ include 'components/header.php';
                         <div class="absolute inset-0 z-20"
                             style="background: linear-gradient(to right, #F8FBFF 0%, #F8FBFFCC 20%, transparent 45%);">
                         </div>
-                        <img src="assets/images/global_medical_career.png" alt="Global Medical Career"
+                        <img src="assets/images/dr.png" alt="Global Medical Career"
                             class="w-full h-full object-cover object-center lg:object-right opacity-95">
                     </div>
                     <div

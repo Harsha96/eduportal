@@ -67,6 +67,7 @@ include '../components/header.php';
                 <!-- Image Container -->
                 <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
                     <img src="../assets/images/Kcet_c1.jpg" alt="KCET" class="w-full h-full object-cover">
+                    <img src="../assets/images/Kcet_c1.jpg" alt="KCET" class="w-full h-full object-cover">
                     <!-- Badge -->
                     <div
                         class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
@@ -82,37 +83,51 @@ include '../components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Offline Classes
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Printed Study Material
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Unidemy Portal Access
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Weekly Tests + Mentorship
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Career & Counseling Support
-                            </li>
-                        </ul>
-                    </div>
+                        <div
+                            class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Offline Classes
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Printed Study Material
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Unidemy Portal Access
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Weekly Tests + Mentorship
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Career & Counseling Support
+                                </li>
+                            </ul>
+                        </div>
 
-                    <button onclick="toggleContent(this)"
-                        class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
-                        <span>Read More</span>
-                        <i data-lucide="arrow-right"
-                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
-                    </button>
-                    <div class="mt-auto pt-4 border-t border-gray-100 flex justify-center">
+                        <button onclick="toggleContent(this)"
+                            class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right"
+                                class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+                        <div class="mt-auto pt-4 border-t border-gray-100 flex justify-center">
+                            <button onclick="openEnrollmentModal('KCET - KCET (Class 11)"
+                                class="w-full max-w-[200px] border border-gray-200 bg-white text-gray-700 font-bold px-6 py-3 rounded-xl text-sm flex items-center justify-between hover:bg-gray-50 hover:border-gray-300 transition-all group shadow-sm">
+                                <span class="mx-auto">Enroll Request</span>
+                                <i data-lucide="chevron-right"
+                                    class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors"></i>
+                            </button>
+                        </div>
                         <button onclick="openEnrollmentModal('KCET - KCET (Class 11)"
                             class="w-full max-w-[200px] border border-gray-200 bg-white text-gray-700 font-bold px-6 py-3 rounded-xl text-sm flex items-center justify-between hover:bg-gray-50 hover:border-gray-300 transition-all group shadow-sm">
                             <span class="mx-auto">Enroll Request</span>
@@ -129,6 +144,7 @@ include '../components/header.php';
                 <!-- Image Container -->
                 <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
                     <img src="../assets/images/Kcet_c2.jpg" alt="KCET" class="w-full h-full object-cover">
+                    <img src="../assets/images/Kcet_c2.jpg" alt="KCET" class="w-full h-full object-cover">
                     <!-- Badge -->
                     <div
                         class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
@@ -144,37 +160,51 @@ include '../components/header.php';
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Offline Classes
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Printed Study Material
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Unidemy Portal Access
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Weekly Tests + Mentorship
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Career & Counseling Support
-                            </li>
-                        </ul>
-                    </div>
+                        <div
+                            class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Offline Classes
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Printed Study Material
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Unidemy Portal Access
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Weekly Tests + Mentorship
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Career & Counseling Support
+                                </li>
+                            </ul>
+                        </div>
 
-                    <button onclick="toggleContent(this)"
-                        class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
-                        <span>Read More</span>
-                        <i data-lucide="arrow-right"
-                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
-                    </button>
-                    <div class="mt-auto pt-4 border-t border-gray-100 flex justify-center">
+                        <button onclick="toggleContent(this)"
+                            class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right"
+                                class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+                        <div class="mt-auto pt-4 border-t border-gray-100 flex justify-center">
+                            <button onclick="openEnrollmentModal('KCET - KCET (Class 12)"
+                                class="w-full max-w-[200px] border border-gray-200 bg-white text-gray-700 font-bold px-6 py-3 rounded-xl text-sm flex items-center justify-between hover:bg-gray-50 hover:border-gray-300 transition-all group shadow-sm">
+                                <span class="mx-auto">Enroll Request</span>
+                                <i data-lucide="chevron-right"
+                                    class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors"></i>
+                            </button>
+                        </div>
                         <button onclick="openEnrollmentModal('KCET - KCET (Class 12)"
                             class="w-full max-w-[200px] border border-gray-200 bg-white text-gray-700 font-bold px-6 py-3 rounded-xl text-sm flex items-center justify-between hover:bg-gray-50 hover:border-gray-300 transition-all group shadow-sm">
                             <span class="mx-auto">Enroll Request</span>
@@ -191,6 +221,7 @@ include '../components/header.php';
                 <!-- Image Container -->
                 <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
                     <img src="../assets/images/Kcet_c3.png" alt="KCET Repeaters" class="w-full h-full object-cover">
+                    <img src="../assets/images/Kcet_c3.png" alt="KCET Repeaters" class="w-full h-full object-cover">
                     <!-- Badge -->
                     <div
                         class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
@@ -203,40 +234,55 @@ include '../components/header.php';
                         <span class="text-primary font-semibold text-sm">KCET Crash Course</span>
                     </div>
                     <h3 class="text-[22px] font-bold mb-5 text-gray-900">KCET Crash Course</h3>
+                    <h3 class="text-[22px] font-bold mb-5 text-gray-900">KCET Crash Course</h3>
 
                     <div
                         class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Offline Classes
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Printed Study Material
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Unidemy Portal Access
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Weekly Tests + Mentorship
-                            </li>
-                            <li class="flex items-start text-[14px] text-gray-600">
-                                <i data-lucide="check-circle-2" class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
-                                Career & Counseling Support
-                            </li>
-                        </ul>
-                    </div>
+                        <div
+                            class="collapsible-wrapper collapsed relative overflow-hidden transition-all duration-500 ease-in-out">
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Offline Classes
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Printed Study Material
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Unidemy Portal Access
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Weekly Tests + Mentorship
+                                </li>
+                                <li class="flex items-start text-[14px] text-gray-600">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-4 h-4 mr-2.5 text-primary shrink-0 mt-0"></i>
+                                    Career & Counseling Support
+                                </li>
+                            </ul>
+                        </div>
 
-                    <button onclick="toggleContent(this)"
-                        class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
-                        <span>Read More</span>
-                        <i data-lucide="arrow-right"
-                            class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
-                    </button>
-                    <div class="mt-auto pt-4 border-t border-gray-100 flex justify-center">
+                        <button onclick="toggleContent(this)"
+                            class="flex items-center gap-2 text-primary font-bold text-sm mb-6 hover:gap-3 transition-all group/btn">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right"
+                                class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                        </button>
+                        <div class="mt-auto pt-4 border-t border-gray-100 flex justify-center">
+                            <button onclick="openEnrollmentModal('KCET - KCET Repeaters (Repeater)"
+                                class="w-full max-w-[200px] border border-gray-200 bg-white text-gray-700 font-bold px-6 py-3 rounded-xl text-sm flex items-center justify-between hover:bg-gray-50 hover:border-gray-300 transition-all group shadow-sm">
+                                <span class="mx-auto">Enroll Request</span>
+                                <i data-lucide="chevron-right"
+                                    class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors"></i>
+                            </button>
+                        </div>
                         <button onclick="openEnrollmentModal('KCET - KCET Repeaters (Repeater)"
                             class="w-full max-w-[200px] border border-gray-200 bg-white text-gray-700 font-bold px-6 py-3 rounded-xl text-sm flex items-center justify-between hover:bg-gray-50 hover:border-gray-300 transition-all group shadow-sm">
                             <span class="mx-auto">Enroll Request</span>
