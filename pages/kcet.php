@@ -67,6 +67,7 @@ include '../components/header.php';
                 <!-- Image Container -->
                 <div class="relative h-[200px] w-full overflow-hidden bg-gray-200">
                     <img src="../assets/images/Kcet_c1.jpg" alt="KCET" class="w-full h-full object-cover">
+                    <img src="../assets/images/Kcet_c1.jpg" alt="KCET" class="w-full h-full object-cover">
                     <!-- Badge -->
                     <div
                         class="absolute top-4 left-4 bg-black/80 backdrop-blur-sm text-[#FBBF24] text-[10px] font-bold px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider border border-[#FBBF24]/30">
@@ -200,7 +201,7 @@ include '../components/header.php';
                 <!-- Content Container -->
                 <div class="p-6 flex flex-col flex-grow">
                     <div class="flex items-center justify-between mb-3">
-                        <span class="text-primary font-semibold text-sm">KCET Crash Course</span>
+                        <span class="text-primary font-semibold text-sm">Repeater KCET</span>
                     </div>
                     <h3 class="text-[22px] font-bold mb-5 text-gray-900">KCET Crash Course</h3>
 
