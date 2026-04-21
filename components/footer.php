@@ -39,7 +39,7 @@
                 <ul class="space-y-3">
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/packages.php"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">Packages</a></li>
-                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>cbse.php?tab=all"
+                    <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/cbse.php?tab=all"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">School Boards</a>
                     </li>
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/global-launchpad.php"
