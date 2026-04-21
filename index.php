@@ -23,7 +23,7 @@ include 'components/header.php';
                         <div class="absolute inset-0 z-20"
                             style="background: linear-gradient(to right, #F8FBFF 0%, #F8FBFFCC 20%, transparent 45%);">
                         </div>
-                        <img src="assets/images/global_medical_career.png" alt="Global Medical Career"
+                        <img src="assets/images/dr.png" alt="Global Medical Career"
                             class="w-full h-full object-cover object-center lg:object-right opacity-95">
                     </div>
                     <div
@@ -719,7 +719,8 @@ include 'components/header.php';
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
                         <span onclick="event.preventDefault(); window.location.href='pages/icse.php?tab=class-1-5'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-1-5'"
+                        <span
+                            onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-1-5'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
                     </div>
@@ -752,7 +753,8 @@ include 'components/header.php';
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
                         <span onclick="event.preventDefault(); window.location.href='pages/icse.php?tab=class-6-8'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ICSE</span>
-                        <span onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-6-8'"
+                        <span
+                            onclick="event.preventDefault(); window.location.href='pages/karnataka-board.php?tab=class-6-8'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Karnataka
                             board</span>
                         <span onclick="event.preventDefault(); window.location.href='pages/foundation1.php'"
