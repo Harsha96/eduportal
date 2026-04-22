@@ -1024,7 +1024,7 @@ include 'components/header.php';
             </a>
 
             <!-- Internships -->
-            <a href="internships.php"
+            <a href="pages/internships.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
                 style="background-image: url('assets/images/HM_internships.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
@@ -1042,12 +1042,12 @@ include 'components/header.php';
                             Internships</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span onclick="event.preventDefault(); window.location.href='internships.php?tab=aiml'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=aiml'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Artificial
                             Intelligence</span>
-                        <span onclick="event.preventDefault(); window.location.href='internships.php?tab=embedded'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=embedded'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Embedded</span>
-                        <span onclick="event.preventDefault(); window.location.href='internships.php?tab=webcloud'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=webcloud'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Web
                             and Cloud applications</span>
                     </div>
