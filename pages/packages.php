@@ -318,8 +318,6 @@ include '../components/header.php';
                         `).join('')}
                     </div>
 
-                    <div class="w-full h-px bg-slate-100 mb-6"></div>
-
                     <!-- Features List -->
                     <div class="flex-grow w-full text-left mb-8">
                         <ul class="space-y-3" id="features-list-${idx}">

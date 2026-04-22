@@ -70,9 +70,13 @@ include '../components/header.php';
                         class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
                         Medical Abroad
                     </button>
-                    <button data-target="higher-ed"
+                    <button data-target="bachelors"
                         class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
-                        Bachelors & Masters
+                        Bachelors
+                    </button>
+                    <button data-target="masters"
+                        class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
+                        Masters
                     </button>
                     <button data-target="research"
                         class="tab-btn border-b-[3px] border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-1 text-[15px] font-medium whitespace-nowrap transition-colors">
@@ -104,9 +108,28 @@ include '../components/header.php';
                     </div>
                 </div>
 
+                <!-- Bachelors Programs -->
+                <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1"
+                    data-category="bachelors">
+                    <div
+                        class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                        <img src="../assets/images/undergraduate_programs_card.png" alt="Undergraduate Programs"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Undergraduate Programs</h3>
+                        <p class="text-sm text-gray-600 mb-6 flex-grow">Start your global journey with prestigious Bachelors degrees in USA, UK, Canada, and beyond.</p>
+                        <a href="../pages/higher-education.php"
+                            class="text-emerald-600 font-bold text-sm flex items-center hover:translate-x-1 transition-transform">
+                            View Details <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Masters in UK -->
                 <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1"
-                    data-category="higher-ed">
+                    data-category="masters">
                     <div
                         class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
                         <img src="../assets/images/postgraduate_programs_card.png" alt="Postgraduate Programs"
@@ -184,8 +207,21 @@ include '../components/header.php';
                                 <input type="email" placeholder="Email Address"
                                     class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors">
                             </div>
-                            <input type="tel" placeholder="Phone Number"
-                                class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors">
+                            <div class="flex gap-2">
+                                <div class="relative" id="country-picker">
+                                    <button type="button" id="country-btn"
+                                        class="flex items-center gap-2 px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl text-sm font-bold text-gray-700 hover:bg-gray-100 focus:bg-white focus:border-primary outline-none transition-all whitespace-nowrap min-w-[90px]">
+                                        <img id="flag-img" src="https://flagcdn.com/w20/in.png" width="20" class="rounded-sm" alt="IN">
+                                        <span id="dial-code">+91</span>
+                                    </button>
+                                    <div id="country-dropdown" class="hidden absolute left-0 top-full mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-50 p-2">
+                                        <input type="text" id="country-search" placeholder="Search..." class="w-full px-3 py-2 text-sm bg-gray-50 border border-transparent rounded-xl outline-none focus:border-primary mb-2">
+                                        <ul id="country-list" class="max-h-60 overflow-y-auto space-y-1"></ul>
+                                    </div>
+                                </div>
+                                <input type="tel" placeholder="Phone Number"
+                                    class="flex-1 bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors">
+                            </div>
                             <select
                                 class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm text-gray-500 focus:outline-none focus:border-primary transition-colors">
                                 <option value="">Preferred Destination</option>

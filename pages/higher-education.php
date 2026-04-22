@@ -131,8 +131,21 @@ include '../components/header.php';
                                 <input type="email" placeholder="Email Address"
                                     class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary">
                             </div>
-                            <input type="tel" placeholder="Phone Number"
-                                class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary">
+                            <div class="flex gap-2">
+                                <div class="relative" id="country-picker">
+                                    <button type="button" id="country-btn"
+                                        class="flex items-center gap-2 px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl text-sm font-bold text-gray-700 hover:bg-gray-100 focus:bg-white focus:border-primary outline-none transition-all whitespace-nowrap min-w-[90px]">
+                                        <img id="flag-img" src="https://flagcdn.com/w20/in.png" width="20" class="rounded-sm" alt="IN">
+                                        <span id="dial-code">+91</span>
+                                    </button>
+                                    <div id="country-dropdown" class="hidden absolute left-0 top-full mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-50 p-2">
+                                        <input type="text" id="country-search" placeholder="Search..." class="w-full px-3 py-2 text-sm bg-gray-50 border border-transparent rounded-xl outline-none focus:border-primary mb-2">
+                                        <ul id="country-list" class="max-h-60 overflow-y-auto space-y-1"></ul>
+                                    </div>
+                                </div>
+                                <input type="tel" placeholder="Phone Number"
+                                    class="flex-1 bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary">
+                            </div>
                             <select
                                 class="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm text-gray-500 focus:outline-none focus:border-primary">
                                 <option value="">Preferred Destination</option>
@@ -173,5 +186,103 @@ include '../components/header.php';
                 menu.classList.add('hidden');
             }
         });
+
+        // Country Picker Logic
+        const COUNTRIES = [
+            {name:"India",dial:"+91",code:"IN"},
+            {name:"United States",dial:"+1",code:"US"},
+            {name:"United Kingdom",dial:"+44",code:"GB"},
+            {name:"Australia",dial:"+61",code:"AU"},
+            {name:"Canada",dial:"+1",code:"CA"},
+            {name:"Germany",dial:"+49",code:"DE"},
+            {name:"France",dial:"+33",code:"FR"},
+            {name:"UAE",dial:"+971",code:"AE"},
+            {name:"Saudi Arabia",dial:"+966",code:"SA"},
+            {name:"Singapore",dial:"+65",code:"SG"},
+            {name:"Japan",dial:"+81",code:"JP"},
+            {name:"China",dial:"+86",code:"CN"},
+            {name:"South Korea",dial:"+82",code:"KR"},
+            {name:"Brazil",dial:"+55",code:"BR"},
+            {name:"Mexico",dial:"+52",code:"MX"},
+            {name:"South Africa",dial:"+27",code:"ZA"},
+            {name:"New Zealand",dial:"+64",code:"NZ"},
+            {name:"Italy",dial:"+39",code:"IT"},
+            {name:"Spain",dial:"+34",code:"ES"},
+            {name:"Netherlands",dial:"+31",code:"NL"},
+            {name:"Russia",dial:"+7",code:"RU"},
+            {name:"Turkey",dial:"+90",code:"TR"},
+            {name:"Pakistan",dial:"+92",code:"PK"},
+            {name:"Bangladesh",dial:"+880",code:"BD"},
+            {name:"Sri Lanka",dial:"+94",code:"LK"},
+            {name:"Nepal",dial:"+977",code:"NP"},
+            {name:"Malaysia",dial:"+60",code:"MY"},
+            {name:"Indonesia",dial:"+62",code:"ID"},
+            {name:"Philippines",dial:"+63",code:"PH"},
+            {name:"Thailand",dial:"+66",code:"TH"},
+            {name:"Nigeria",dial:"+234",code:"NG"},
+            {name:"Kenya",dial:"+254",code:"KE"},
+            {name:"Egypt",dial:"+20",code:"EG"},
+            {name:"Israel",dial:"+972",code:"IL"},
+            {name:"Sweden",dial:"+46",code:"SE"},
+            {name:"Norway",dial:"+47",code:"NO"},
+            {name:"Denmark",dial:"+45",code:"DK"},
+            {name:"Finland",dial:"+358",code:"FI"},
+            {name:"Switzerland",dial:"+41",code:"CH"},
+            {name:"Poland",dial:"+48",code:"PL"},
+            {name:"Portugal",dial:"+351",code:"PT"},
+            {name:"Argentina",dial:"+54",code:"AR"},
+            {name:"Chile",dial:"+56",code:"CL"}
+        ];
+
+        const countryBtn = document.getElementById('country-btn');
+        const countryDropdown = document.getElementById('country-dropdown');
+        const countrySearch = document.getElementById('country-search');
+        const countryList = document.getElementById('country-list');
+        const flagImg = document.getElementById('flag-img');
+        const dialCode = document.getElementById('dial-code');
+
+        function renderCountries(filter = '') {
+            countryList.innerHTML = '';
+            const filtered = COUNTRIES.filter(c => 
+                c.name.toLowerCase().includes(filter.toLowerCase()) || 
+                c.dial.includes(filter)
+            );
+
+            filtered.forEach(c => {
+                const li = document.createElement('li');
+                li.className = 'flex items-center gap-3 px-3 py-2 rounded-xl cursor-pointer hover:bg-gray-50 text-sm transition-colors';
+                li.innerHTML = `
+                    <img src="https://flagcdn.com/w20/${c.code.toLowerCase()}.png" width="20" class="rounded-sm" alt="${c.code}">
+                    <span class="flex-1 font-medium text-gray-700">${c.name}</span>
+                    <span class="text-gray-400 font-bold">${c.dial}</span>
+                `;
+                li.addEventListener('click', () => {
+                    flagImg.src = `https://flagcdn.com/w20/${c.code.toLowerCase()}.png`;
+                    dialCode.textContent = c.dial;
+                    countryDropdown.classList.add('hidden');
+                });
+                countryList.appendChild(li);
+            });
+        }
+
+        countryBtn?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            countryDropdown.classList.toggle('hidden');
+            if (!countryDropdown.classList.contains('hidden')) {
+                countrySearch.focus();
+            }
+        });
+
+        countrySearch?.addEventListener('input', (e) => {
+            renderCountries(e.target.value);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!document.getElementById('country-picker')?.contains(e.target)) {
+                countryDropdown?.classList.add('hidden');
+            }
+        });
+
+        renderCountries();
     </script>
 <?php include '../components/footer.php'; ?>

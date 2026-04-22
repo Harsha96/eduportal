@@ -40,7 +40,7 @@ include '../components/header.php';
                     <p class="text-lg text-gray-600 mb-8 leading-relaxed">Achieve a 100+ TOEFL iBT score with our
                         PowerScore package. Expert training for Reading, Listening, Speaking, and Writing sections.</p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="https://unidemyglobal.com/login.php?url=TOEFL"
+                        <a href="../auth/signup.php"
                             class="bg-violet-600 text-white px-8 py-3 rounded-full font-bold hover:bg-violet-700 transition-all shadow-lg shadow-violet-200">Get
                             Started</a>
                         <a href="https://wa.me/916360456026"
@@ -183,7 +183,7 @@ include '../components/header.php';
                         <div class="text-center">
                             <h4 class="text-2xl font-bold text-gray-900 mb-2">Ready to Excel?</h4>
                             <p class="text-gray-500 mb-8 text-sm">Join the next cohort of high achievers.</p>
-                            <a href="https://unidemyglobal.com/login.php?url=TOEFL"
+                            <a href="../auth/signup.php"
                                 class="inline-block w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-blue-800 transition-all shadow-lg shadow-primary/30 mb-4">
                                 ENROLL IN POWERSCORE
                             </a>

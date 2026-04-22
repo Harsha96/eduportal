@@ -57,63 +57,75 @@ include '../components/header.php';
 
             <!-- Tab Content: Who We Are -->
             <div id="content-who" class="about-content transition-all duration-500">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-                    <div class="order-2 lg:order-1">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-6 leading-tight">Why Should You Make Us Your
-                            <span class="text-primary">First Choice?</span>
-                        </h2>
-                        <p class="text-gray-600 mb-8 leading-relaxed text-lg">For more than just learning, Unidemy is a
-                            place where your dreams can come true. Here are a few reasons why we can assist you in
-                            pursuing your academic goals while also preparing you for life in another country.</p>
+                <div class="mb-16">
+                    <div class="inline-flex px-4 py-2 bg-primary/5 text-primary rounded-full text-xs font-bold uppercase tracking-widest mb-6">Expert Advantage</div>
+                    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight leading-[1.1]">
+                        Why Should You Make Us Your <br>
+                        <span class="text-primary relative inline-block">
+                            First Choice?
+                            <div class="absolute -bottom-2 left-0 w-full h-2 bg-primary/10 -rotate-1 rounded-full"></div>
+                        </span>
+                    </h2>
+                    <p class="text-slate-500 text-lg max-w-3xl leading-relaxed">For more than just learning, Unidemy Global is a gateway to international success. We provide the mentorship, resources, and institutional partnerships needed to bridge the gap between ambition and reality.</p>
+                </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div
-                                class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                                <div
-                                    class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-4 text-primary">
-                                    <i data-lucide="graduation-cap" class="w-6 h-6"></i>
-                                </div>
-                                <h3 class="font-bold text-gray-900 mb-2">Superior Academic Training</h3>
-                                <p class="text-sm text-gray-500 italic leading-relaxed">Individual attention and
-                                    innovative study models for TOEFL, PTE, GMAT, GRE, SAT, and ACT.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    <!-- Feature Cards Left -->
+                    <div class="lg:col-span-4 space-y-6">
+                        <!-- Superior Academic Training -->
+                        <div class="group bg-white p-8 rounded-[40px] shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-50 hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2">
+                            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform duration-500">
+                                <i data-lucide="graduation-cap" class="w-7 h-7"></i>
                             </div>
-                            <div
-                                class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                                <div
-                                    class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-4 text-secondary">
-                                    <i data-lucide="compass" class="w-6 h-6"></i>
-                                </div>
-                                <h3 class="font-bold text-gray-900 mb-2">Comprehensive Guidance</h3>
-                                <p class="text-sm text-gray-500 italic leading-relaxed">Support with financial aid,
-                                    educational loans, and scholarship applications throughout your career.</p>
+                            <h3 class="text-xl font-black text-slate-900 mb-3 tracking-tight">Superior Academic Training</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed font-medium">Focused attention and innovative study models for TOEFL, PTE, GMAT, GRE, SAT, and ACT.</p>
+                        </div>
+
+                        <!-- Top Institutions -->
+                        <div class="group bg-white p-8 rounded-[40px] shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-50 hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2">
+                            <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 text-green-600 group-hover:scale-110 transition-transform duration-500">
+                                <i data-lucide="landmark" class="w-7 h-7"></i>
                             </div>
-                            <div
-                                class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                                <div
-                                    class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-4 text-green-600">
-                                    <i data-lucide="landmark" class="w-6 h-6"></i>
+                            <h3 class="text-xl font-black text-slate-900 mb-3 tracking-tight">Top Institutions</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed font-medium">Direct pathways to QS Top 100 universities and specialized institutional research.</p>
+                        </div>
+                    </div>
+
+                    <!-- Center Image -->
+                    <div class="lg:col-span-4 relative group">
+                        <div class="absolute -inset-4 bg-primary/5 rounded-[50px] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div class="relative z-10 p-3 bg-white rounded-[50px] shadow-[0_20px_60px_rgba(0,0,0,0.1)] border border-slate-100 overflow-hidden">
+                            <div class="relative aspect-[4/5] overflow-hidden rounded-[40px]">
+                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000"
+                                    alt="Students Learning" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                                <div class="absolute bottom-8 left-8 right-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
+                                    <p class="text-white font-black text-lg">World-Class Education</p>
+                                    <p class="text-slate-200 text-sm">Join our global community</p>
                                 </div>
-                                <h3 class="font-bold text-gray-900 mb-2">Top Institutions</h3>
-                                <p class="text-sm text-gray-500 italic leading-relaxed">In-depth research on popular
-                                    courses and up-to-date materials from the world's best institutions.</p>
-                            </div>
-                            <div
-                                class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
-                                <div
-                                    class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-4 text-purple-600">
-                                    <i data-lucide="shield-check" class="w-6 h-6"></i>
-                                </div>
-                                <h3 class="font-bold text-gray-900 mb-2">Worry-free Life</h3>
-                                <p class="text-sm text-gray-500 italic leading-relaxed">Complete visa documentation and
-                                    compliance assistance provided free of charge to all students.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="order-1 lg:order-2 relative">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000"
-                            alt="Students Learning" class="w-full h-auto rounded-3xl shadow-2xl relative z-10">
-                        <div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary/10 rounded-full blur-2xl z-0"></div>
-                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl z-0"></div>
+
+                    <!-- Feature Cards Right -->
+                    <div class="lg:col-span-4 space-y-6">
+                        <!-- Comprehensive Guidance -->
+                        <div class="group bg-white p-8 rounded-[40px] shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-50 hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2">
+                            <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform duration-500">
+                                <i data-lucide="compass" class="w-7 h-7"></i>
+                            </div>
+                            <h3 class="text-xl font-black text-slate-900 mb-3 tracking-tight">Comprehensive Guidance</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed font-medium">End-to-end support with financial aid, educational loans, and scholarship applications.</p>
+                        </div>
+
+                        <!-- Worry-free Life -->
+                        <div class="group bg-white p-8 rounded-[40px] shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-slate-50 hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2">
+                            <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center mb-6 text-purple-600 group-hover:scale-110 transition-transform duration-500">
+                                <i data-lucide="shield-check" class="w-7 h-7"></i>
+                            </div>
+                            <h3 class="text-xl font-black text-slate-900 mb-3 tracking-tight">Worry-free Life</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed font-medium">Free visa documentation and compliance assistance for all enrolled students.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -329,36 +341,45 @@ include '../components/header.php';
                         </h3>
 
                         <form id="consultationForm" class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="space-y-2">
-                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Full Name</label>
-                                    <input type="text" placeholder="John Doe" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
-                                </div>
-                                <div class="space-y-2">
-                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Email Address</label>
-                                    <input type="email" placeholder="john@example.com" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
-                                </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Full Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
                             </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="space-y-2">
-                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Phone Number</label>
-                                    <input type="tel" placeholder="+1 (555) 000-0000" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
-                                </div>
-                                <div class="space-y-2">
-                                    <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Service Interest</label>
-                                    <div class="relative">
-                                        <select class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all text-gray-600 cursor-pointer appearance-none">
-                                            <option value="">Select a service</option>
-                                            <option value="web">Web Applications</option>
-                                            <option value="cloud">Cloud Solutions</option>
-                                            <option value="ai">AI Development</option>
-                                            <option value="security">Security Solutions</option>
-                                            <option value="education">International Education</option>
-                                        </select>
-                                        <div class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
-                                            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Phone Number</label>
+                                <div class="flex gap-2">
+                                    <div class="relative" id="country-picker">
+                                        <button type="button" id="country-btn"
+                                            class="flex items-center gap-2 px-4 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-xs font-bold text-gray-600 hover:bg-gray-100 focus:bg-white focus:border-primary outline-none transition-all whitespace-nowrap min-w-[100px]">
+                                            <img id="flag-img" src="https://flagcdn.com/w20/in.png" width="20" class="rounded-sm" alt="IN">
+                                            <span id="dial-code">+91</span>
+                                        </button>
+                                        <div id="country-dropdown" class="hidden absolute left-0 top-full mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 z-50 p-2">
+                                            <input type="text" id="country-search" placeholder="Search..." class="w-full px-3 py-2 text-sm bg-gray-50 border border-transparent rounded-xl outline-none focus:border-primary mb-2">
+                                            <ul id="country-list" class="max-h-60 overflow-y-auto space-y-1"></ul>
                                         </div>
+                                    </div>
+                                    <input type="tel" placeholder="Phone Number" class="flex-1 px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all placeholder:text-gray-400">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold text-gray-500 uppercase tracking-wider ml-1">Service Interest</label>
+                                <div class="relative">
+                                    <select class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 outline-none transition-all text-gray-600 cursor-pointer appearance-none">
+                                        <option value="">Select a service</option>
+                                        <option value="web">Web Applications</option>
+                                        <option value="cloud">Cloud Solutions</option>
+                                        <option value="ai">AI Development</option>
+                                        <option value="security">Security Solutions</option>
+                                        <option value="education">International Education</option>
+                                    </select>
+                                    <div class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
                                     </div>
                                 </div>
                             </div>
@@ -410,5 +431,103 @@ include '../components/header.php';
                 selectedBtn.classList.remove('text-gray-500');
             }
         }
+
+        // Country Picker Logic
+        const COUNTRIES = [
+            {name:"India",dial:"+91",code:"IN"},
+            {name:"United States",dial:"+1",code:"US"},
+            {name:"United Kingdom",dial:"+44",code:"GB"},
+            {name:"Australia",dial:"+61",code:"AU"},
+            {name:"Canada",dial:"+1",code:"CA"},
+            {name:"Germany",dial:"+49",code:"DE"},
+            {name:"France",dial:"+33",code:"FR"},
+            {name:"UAE",dial:"+971",code:"AE"},
+            {name:"Saudi Arabia",dial:"+966",code:"SA"},
+            {name:"Singapore",dial:"+65",code:"SG"},
+            {name:"Japan",dial:"+81",code:"JP"},
+            {name:"China",dial:"+86",code:"CN"},
+            {name:"South Korea",dial:"+82",code:"KR"},
+            {name:"Brazil",dial:"+55",code:"BR"},
+            {name:"Mexico",dial:"+52",code:"MX"},
+            {name:"South Africa",dial:"+27",code:"ZA"},
+            {name:"New Zealand",dial:"+64",code:"NZ"},
+            {name:"Italy",dial:"+39",code:"IT"},
+            {name:"Spain",dial:"+34",code:"ES"},
+            {name:"Netherlands",dial:"+31",code:"NL"},
+            {name:"Russia",dial:"+7",code:"RU"},
+            {name:"Turkey",dial:"+90",code:"TR"},
+            {name:"Pakistan",dial:"+92",code:"PK"},
+            {name:"Bangladesh",dial:"+880",code:"BD"},
+            {name:"Sri Lanka",dial:"+94",code:"LK"},
+            {name:"Nepal",dial:"+977",code:"NP"},
+            {name:"Malaysia",dial:"+60",code:"MY"},
+            {name:"Indonesia",dial:"+62",code:"ID"},
+            {name:"Philippines",dial:"+63",code:"PH"},
+            {name:"Thailand",dial:"+66",code:"TH"},
+            {name:"Nigeria",dial:"+234",code:"NG"},
+            {name:"Kenya",dial:"+254",code:"KE"},
+            {name:"Egypt",dial:"+20",code:"EG"},
+            {name:"Israel",dial:"+972",code:"IL"},
+            {name:"Sweden",dial:"+46",code:"SE"},
+            {name:"Norway",dial:"+47",code:"NO"},
+            {name:"Denmark",dial:"+45",code:"DK"},
+            {name:"Finland",dial:"+358",code:"FI"},
+            {name:"Switzerland",dial:"+41",code:"CH"},
+            {name:"Poland",dial:"+48",code:"PL"},
+            {name:"Portugal",dial:"+351",code:"PT"},
+            {name:"Argentina",dial:"+54",code:"AR"},
+            {name:"Chile",dial:"+56",code:"CL"}
+        ];
+
+        const countryBtn = document.getElementById('country-btn');
+        const countryDropdown = document.getElementById('country-dropdown');
+        const countrySearch = document.getElementById('country-search');
+        const countryList = document.getElementById('country-list');
+        const flagImg = document.getElementById('flag-img');
+        const dialCode = document.getElementById('dial-code');
+
+        function renderCountries(filter = '') {
+            countryList.innerHTML = '';
+            const filtered = COUNTRIES.filter(c => 
+                c.name.toLowerCase().includes(filter.toLowerCase()) || 
+                c.dial.includes(filter)
+            );
+
+            filtered.forEach(c => {
+                const li = document.createElement('li');
+                li.className = 'flex items-center gap-3 px-3 py-2 rounded-xl cursor-pointer hover:bg-gray-50 text-sm transition-colors';
+                li.innerHTML = `
+                    <img src="https://flagcdn.com/w20/${c.code.toLowerCase()}.png" width="20" class="rounded-sm" alt="${c.code}">
+                    <span class="flex-1 font-medium text-gray-700">${c.name}</span>
+                    <span class="text-gray-400 font-bold">${c.dial}</span>
+                `;
+                li.addEventListener('click', () => {
+                    flagImg.src = `https://flagcdn.com/w20/${c.code.toLowerCase()}.png`;
+                    dialCode.textContent = c.dial;
+                    countryDropdown.classList.add('hidden');
+                });
+                countryList.appendChild(li);
+            });
+        }
+
+        countryBtn?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            countryDropdown.classList.toggle('hidden');
+            if (!countryDropdown.classList.contains('hidden')) {
+                countrySearch.focus();
+            }
+        });
+
+        countrySearch?.addEventListener('input', (e) => {
+            renderCountries(e.target.value);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!document.getElementById('country-picker')?.contains(e.target)) {
+                countryDropdown?.classList.add('hidden');
+            }
+        });
+
+        renderCountries();
     </script>
 <?php include '../components/footer.php'; ?>
