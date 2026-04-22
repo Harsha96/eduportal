@@ -134,10 +134,10 @@ include '../components/header.php';
 
                 <!-- Olympiad Card -->
                 <div class="course-card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col group shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 block" data-category="class-6 class-7 class-8">
-                    <div class="relative h-[200px] w-full overflow-hidden bg-rose-50/50 flex items-center justify-center border-b border-gray-100">
-                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#f43f5e 1px, transparent 1px); background-size: 20px 20px;"></div>
-                        <i data-lucide="microscope" class="w-20 h-20 text-rose-500 relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
-                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100">
+                    <div class="relative h-[200px] w-full overflow-hidden border-b border-gray-100">
+                        <img src="../assets/images/olympiad_excellence.png" alt="Olympiad Excellence Program" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent mix-blend-multiply pointer-events-none z-10"></div>
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-rose-600 text-[11px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 uppercase tracking-wider shadow-sm border border-rose-100 z-20">
                             SPECIALIZED
                         </div>
                     </div>

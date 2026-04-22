@@ -87,11 +87,11 @@ include '../components/header.php';
                 data-category="aiml">
                 <!-- Image Container -->
                 <div class="relative h-[220px] w-full overflow-hidden bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800"
+                    <img src="../assets/images/internship_ai_ml.png"
                         alt="AI Pipeline"
-                        class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <!-- Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#111827]/90 via-[#111827]/20 to-transparent">
                     </div>
                     <!-- Badge -->
                     <div
@@ -140,11 +140,11 @@ include '../components/header.php';
                 data-category="embedded">
                 <!-- Image Container -->
                 <div class="relative h-[220px] w-full overflow-hidden bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
+                    <img src="../assets/images/internship_embedded.png"
                         alt="Microcontroller"
-                        class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <!-- Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#111827]/90 via-[#111827]/20 to-transparent">
                     </div>
                     <!-- Badge -->
                     <div
@@ -191,11 +191,11 @@ include '../components/header.php';
                 data-category="webcloud">
                 <!-- Image Container -->
                 <div class="relative h-[220px] w-full overflow-hidden bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                    <img src="../assets/images/internship_web_cloud.png"
                         alt="Code"
-                        class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <!-- Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#111827]/90 via-[#111827]/20 to-transparent">
                     </div>
                     <!-- Badge -->
                     <div
@@ -243,11 +243,11 @@ include '../components/header.php';
                 data-category="webcloud">
                 <!-- Image Container -->
                 <div class="relative h-[220px] w-full overflow-hidden bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                    <img src="../assets/images/internship_devops.png"
                         alt="Cloud Architecture"
-                        class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <!-- Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#111827] via-transparent to-transparent">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#111827]/90 via-[#111827]/20 to-transparent">
                     </div>
                     <!-- Badge -->
                     <div
