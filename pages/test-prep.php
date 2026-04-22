@@ -20,6 +20,7 @@ $additionalHead = <<<'HEADCONTENT'
 
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
+            border-radius: 4px;
         }
 
         .search-container { position: relative; max-width: 600px; margin: 0 auto 40px auto; }
@@ -165,6 +166,24 @@ include '../components/header.php';
                         
                         <div class="mt-auto pt-5 border-t border-gray-100">
                             <a href="../pages/act.php" class="inline-flex items-center gap-2 text-primary font-bold text-[15px] hover:gap-3 transition-all group/btn">
+                                <span>Learn More</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duolingo Card -->
+                <div class="course-card bg-white border border-gray-100 rounded-2xl overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 block">
+                    <div class="relative h-[220px] w-full overflow-hidden bg-gray-200">
+                        <img src="../assets/images/test_prep_duolingo.png" alt="Duolingo Preparation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow text-gray-900">
+                        <h3 class="text-[24px] font-bold mb-3 text-gray-900">Duolingo</h3>
+                        <p class="text-gray-600 text-[15px] mb-6">Fast-track your university admissions with the Duolingo English Test. Our program focuses on AI-adaptive question types and scoring algorithms.</p>
+                        
+                        <div class="mt-auto pt-5 border-t border-gray-100">
+                            <a href="../pages/duolingo.php" class="inline-flex items-center gap-2 text-primary font-bold text-[15px] hover:gap-3 transition-all group/btn">
                                 <span>Learn More</span>
                                 <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
                             </a>

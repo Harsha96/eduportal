@@ -170,7 +170,7 @@ include '../components/header.php';
                                 Grammar & vocabulary workshops
                             </li>
                         </ul>
-                        <a href="https://unidemyglobal.com/login.php?url=IELTS"
+                        <a href="../auth/signup.php"
                             class="w-full text-center bg-primary text-white py-4 rounded-2xl font-bold hover:bg-blue-800 transition-all">Enroll
                             Now</a>
                     </div>
@@ -206,7 +206,7 @@ include '../components/header.php';
                                 One-on-one mentoring and customized plan
                             </li>
                         </ul>
-                        <a href="https://unidemyglobal.com/login.php?url=IELTS"
+                        <a href="../auth/signup.php"
                             class="w-full text-center bg-white text-primary py-4 rounded-2xl font-bold hover:bg-gray-100 transition-all relative z-10">Join
                             Pro</a>
                     </div>
@@ -238,7 +238,7 @@ include '../components/header.php';
                                 24x7 chat/email doubt resolution
                             </li>
                         </ul>
-                        <a href="https://unidemyglobal.com/login.php?url=IELTS"
+                        <a href="../auth/signup.php"
                             class="w-full text-center bg-gray-900 text-white py-4 rounded-2xl font-bold hover:bg-black transition-all">Enroll
                             Now</a>
                     </div>

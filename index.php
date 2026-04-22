@@ -566,12 +566,12 @@ include 'components/header.php';
                                 </div>
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
-                                <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">SAT</span>
-                                <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">IELTS</span>
-                                <span
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">TOEFL</span>
+                                <span onclick="event.preventDefault(); window.location.href='pages/sat.php'"
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer relative z-20">SAT</span>
+                                <span onclick="event.preventDefault(); window.location.href='pages/ielts.php'"
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer relative z-20">IELTS</span>
+                                <span onclick="event.preventDefault(); window.location.href='pages/toefl.php'"
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 cursor-pointer relative z-20">TOEFL</span>
                                 <span
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30">GRE</span>
                                 <span
@@ -679,7 +679,7 @@ include 'components/header.php';
                             Kindergarten</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span onclick="event.preventDefault(); window.location.href='kindergarten.php'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/kindergarten.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-amber-400 hover:border-amber-400 cursor-pointer relative z-20 transition-all shadow-sm">Foundation</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
@@ -964,21 +964,21 @@ include 'components/header.php';
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
                         <span
-                            onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=undergraduate'"
+                            onclick="event.preventDefault(); window.location.href='pages/sat.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">SAT</span>
                         <span
-                            onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=undergraduate'"
+                            onclick="event.preventDefault(); window.location.href='pages/act.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">ACT</span>
-                        <span onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=english'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/ielts.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">IELTS</span>
-                        <span onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=english'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/toefl.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">TOEFL</span>
-                        <span onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=english'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/duolingo.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Duolingo</span>
                         <span
-                            onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=postgraduate'"
+                            onclick="event.preventDefault(); window.location.href='pages/gre.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">GRE</span>
-                        <span onclick="event.preventDefault(); window.location.href='global-launchpad.php?tab=language'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/topik.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">TOPIK</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">
@@ -1007,13 +1007,16 @@ include 'components/header.php';
                             Study Abroad</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span onclick="event.preventDefault(); window.location.href='study-abroad.php?tab=medical'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/medical-abroad.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Medical
                             abroad</span>
-                        <span onclick="event.preventDefault(); window.location.href='study-abroad.php?tab=higher-ed'"
-                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Bachelors,
-                            Masters abroad</span>
-                        <span onclick="event.preventDefault(); window.location.href='study-abroad.php?tab=research'"
+                        <span onclick="event.preventDefault(); window.location.href='pages/higher-education.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Bachelors
+                            </span>
+                            <span onclick="event.preventDefault(); window.location.href='pages/higher-education.php'"
+                            class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">
+                            Masters</span>
+                        <span onclick="event.preventDefault(); window.location.href='pages/researchers.php'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Researchers</span>
                     </div>
                     <div class="mt-auto flex items-center text-white drop-shadow font-semibold">

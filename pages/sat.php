@@ -40,7 +40,7 @@ include '../components/header.php';
                         60-hour training program. Designed for the latest digital format with evidence-based strategies.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="https://unidemyglobal.com/login.php?url=SAT"
+                        <a href="../auth/signup.php"
                             class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition-all">Enroll
                             Today</a>
                     </div>
