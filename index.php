@@ -21,8 +21,7 @@ include 'components/header.php';
                         class="absolute inset-0 w-full h-full object-cover object-center">
                     <!-- Left gradient so text is readable -->
                     <div class="absolute inset-0 z-10"
-                        style="background: linear-gradient(to right, rgba(6,13,40,0.82) 0%, rgba(6,13,40,0.55) 38%, transparent 65%);">
-                    </div>
+                        style="background: linear-gradient(to right, rgba(6,13,40,0.82) 0%, rgba(6,13,40,0.55) 38%, transparent 65%);"></div>
                     <div
                         class="relative z-20 h-full w-full lg:w-[58%] px-6 sm:px-10 py-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-left">
                         <div class="flex items-center gap-2 mb-4 animate-fade-in-left">
@@ -66,8 +65,7 @@ include 'components/header.php';
                         class="absolute inset-0 w-full h-full object-cover object-center">
                     <!-- Left gradient so text is readable -->
                     <div class="absolute inset-0 z-10"
-                        style="background: linear-gradient(to right, rgba(8,12,40,0.82) 0%, rgba(8,12,40,0.55) 38%, transparent 65%);">
-                    </div>
+                        style="background: linear-gradient(to right, rgba(8,12,40,0.82) 0%, rgba(8,12,40,0.55) 38%, transparent 65%);"></div>
                     <div
                         class="relative z-20 h-full w-full lg:w-[58%] px-6 sm:px-10 py-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-left">
                         <div class="flex items-center gap-2 mb-4">
@@ -111,8 +109,7 @@ include 'components/header.php';
                         class="absolute inset-0 w-full h-full object-cover object-center">
                     <!-- Left gradient so text is readable -->
                     <div class="absolute inset-0 z-10"
-                        style="background: linear-gradient(to right, rgba(10,30,8,0.82) 0%, rgba(10,30,8,0.55) 38%, transparent 65%);">
-                    </div>
+                        style="background: linear-gradient(to right, rgba(10,30,8,0.82) 0%, rgba(10,30,8,0.55) 38%, transparent 65%);"></div>
                     <div
                         class="relative z-20 h-full w-full lg:w-[58%] px-6 sm:px-10 py-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-left">
                         <div class="flex items-center gap-2 mb-4">
@@ -156,8 +153,7 @@ include 'components/header.php';
                         class="absolute inset-0 w-full h-full object-cover object-center">
                     <!-- Left gradient so text is readable -->
                     <div class="absolute inset-0 z-10"
-                        style="background: linear-gradient(to right, rgba(8,20,60,0.82) 0%, rgba(8,20,60,0.55) 38%, transparent 65%);">
-                    </div>
+                        style="background: linear-gradient(to right, rgba(8,20,60,0.82) 0%, rgba(8,20,60,0.55) 38%, transparent 65%);"></div>
                     <div
                         class="relative z-20 h-full w-full lg:w-[58%] px-6 sm:px-10 py-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-left">
                         <div class="flex items-center gap-2 mb-4">
@@ -184,8 +180,7 @@ include 'components/header.php';
                                 class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-400/20 border border-orange-300/30 backdrop-blur-md shadow-sm">
                                 <i data-lucide="globe" class="w-4 h-4 text-orange-300"></i>
                                 <span
-                                    class="text-xs sm:text-sm md:text-base font-bold text-orange-200 tracking-wide uppercase">EXPERT
-                                    GUIDANCE &amp; SCHOLARSHIP SUPPORT</span>
+                                    class="text-xs sm:text-sm md:text-base font-bold text-orange-200 tracking-wide uppercase">EXPERT GUIDANCE &amp; SCHOLARSHIP SUPPORT</span>
                             </span>
                         </div>
                         <a href="https://toefl.unidemyglobal.com/" target="_blank"
@@ -624,7 +619,7 @@ include 'components/header.php';
                         </div>
                     </a>
                     <!-- Internships -->
-                    <a href="pages/internships.php"
+                    <a href="internships.php"
                         class="group relative rounded-2xl p-5 shadow-sm border border-white/10 flex flex-col min-w-[80vw] snap-start flex-shrink-0 overflow-hidden"
                         style="background-image: url('assets/images/HM_internships.png'); background-size: cover; background-position: center;">
                         <div
@@ -645,16 +640,13 @@ include 'components/header.php';
                             </div>
                             <div class="flex flex-wrap gap-1.5 mb-4">
                                 <span
-                                    onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=aiml'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-2 py-1 rounded-lg border border-white/30 hover:bg-white/30 cursor-pointer relative z-20">AI
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">AI
                                     / ML</span>
                                 <span
-                                    onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=embedded'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-2 py-1 rounded-lg border border-white/30 hover:bg-white/30 cursor-pointer relative z-20">Embedded</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Embedded</span>
                                 <span
-                                    onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=webcloud'"
-                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-2 py-1 rounded-lg border border-white/30 hover:bg-white/30 cursor-pointer relative z-20">Web
-                                    & Cloud</span>
+                                    class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white rounded-lg border border-white/30">Web
+                                    &amp; Cloud</span>
                             </div>
                             <div class="mt-auto flex items-center text-white drop-shadow text-sm font-semibold">View
                                 Details
@@ -1035,7 +1027,7 @@ include 'components/header.php';
             </a>
 
             <!-- Internships -->
-            <a href="pages/internships.php"
+            <a href="internships.php"
                 class="group relative rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-full overflow-hidden"
                 style="background-image: url('assets/images/HM_internships.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 rounded-3xl"></div>
@@ -1053,14 +1045,12 @@ include 'components/header.php';
                             Internships</h3>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-8 items-start content-start">
-                        <span onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=aiml'"
+                        <span onclick="event.preventDefault(); window.location.href='internships.php?tab=aiml'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Artificial
                             Intelligence</span>
-                        <span
-                            onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=embedded'"
+                        <span onclick="event.preventDefault(); window.location.href='internships.php?tab=embedded'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Embedded</span>
-                        <span
-                            onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=webcloud'"
+                        <span onclick="event.preventDefault(); window.location.href='internships.php?tab=webcloud'"
                             class="bg-white/20 backdrop-blur-sm text-sm font-semibold text-white px-3 py-1.5 rounded-lg border border-white/30 hover:bg-white/30 hover:text-white cursor-pointer relative z-20 transition-all shadow-sm">Web
                             and Cloud applications</span>
                     </div>
@@ -1306,8 +1296,7 @@ include 'components/header.php';
                 <!-- South Korea -->
                 <div
                     class="group relative h-[320px] md:h-[400px] rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 min-w-[80vw] md:min-w-0 snap-start flex-shrink-0">
-                    <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?q=80&w=2070"
-                        alt="South Korea"
+                    <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?q=80&w=2070" alt="South Korea"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/40 to-transparent">
                     </div>
@@ -2091,19 +2080,16 @@ include 'components/header.php';
                                     <div class="relative" id="country-picker">
                                         <button type="button" id="country-btn"
                                             class="h-full flex items-center gap-2 px-4 bg-slate-50 border border-slate-100 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100 focus:bg-white focus:border-primary outline-none transition-all whitespace-nowrap min-w-[110px]">
-                                            <img id="flag-img" src="https://flagcdn.com/w20/in.png" width="20"
-                                                class="rounded-sm" alt="IN">
+                                            <img id="flag-img" src="https://flagcdn.com/w20/in.png" width="20" class="rounded-sm" alt="IN">
                                             <span id="dial-code" class="text-slate-600 font-bold">+91</span>
                                             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400"></i>
                                         </button>
-                                        <div id="country-dropdown"
-                                            class="hidden absolute left-0 top-full mt-2 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 z-50 p-2 overflow-hidden">
+                                        <div id="country-dropdown" class="hidden absolute left-0 top-full mt-2 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 z-50 p-2 overflow-hidden">
                                             <div class="p-2 border-b border-gray-50 mb-1">
-                                                <input type="text" id="country-search" placeholder="Search country..."
+                                                <input type="text" id="country-search" placeholder="Search country..." 
                                                     class="w-full px-3 py-2 text-sm bg-gray-50 border border-transparent rounded-xl outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 placeholder:text-gray-400">
                                             </div>
-                                            <ul id="country-list"
-                                                class="max-h-64 overflow-y-auto space-y-0.5 custom-scrollbar p-1"></ul>
+                                            <ul id="country-list" class="max-h-64 overflow-y-auto space-y-0.5 custom-scrollbar p-1"></ul>
                                         </div>
                                     </div>
                                     <div class="relative flex-1">
@@ -2163,7 +2149,7 @@ include 'components/header.php';
 </section>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         // Double check if country list is empty and try to re-initialize
         const list = document.getElementById('country-list');
         if (list && list.children.length === 0) {
