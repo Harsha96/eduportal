@@ -1,6 +1,6 @@
 <!-- Premium Go to Top Widget -->
 <div id="scrollToTopContainer"
-    class="fixed bottom-20 right-6 md:right-8 z-[100] transition-all duration-500 opacity-0 invisible translate-y-8 cursor-pointer group">
+    class="fixed bottom-20 right-6 md:right-8 z-[90] transition-all duration-500 opacity-0 invisible translate-y-8 cursor-pointer group">
     <div class="relative w-14 h-14 flex items-center justify-center">
         <!-- Progress Ring Background -->
         <svg class="absolute inset-0 w-full h-full -rotate-90">

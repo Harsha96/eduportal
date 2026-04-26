@@ -43,7 +43,7 @@
 <body class="bg-background font-sans text-gray-900 scroll-smooth">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-5 px-6 lg:px-8" id="main-nav">
+    <nav class="fixed top-0 w-full z-[100] transition-all duration-300 bg-transparent py-5 px-6 lg:px-8" id="main-nav">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <a href="<?php echo isset($base_url) ? $base_url : './'; ?>index.php" class="flex-shrink-0 flex items-center">
                 <img src="<?php echo isset($base_url) ? $base_url : './'; ?>assets/images/Logo (2).png"
@@ -101,67 +101,31 @@
                 </div>
             </div>
             <div class="flex lg:hidden items-center gap-2">
-                <button onclick="cart.open()" class="relative p-2 text-gray-700 hover:text-primary transition-all active:scale-90">
-                    <i data-lucide="shopping-cart" class="w-6 h-6"></i>
-                    <span id="cart-nav-badge-mobile" class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold min-w-[18px] h-[18px] flex items-center justify-center rounded-full hidden shadow-sm border border-white">0</span>
+                <!-- User icon -->
+                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>auth/login.php"
+                   class="w-9 h-9 rounded-full bg-white/80 backdrop-blur border border-slate-100 shadow-sm flex items-center justify-center text-slate-600 hover:text-primary active:scale-90 transition-all">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                </a>
+                <!-- Cart icon -->
+                <button onclick="cart.open()"
+                        class="relative w-9 h-9 rounded-full bg-white/80 backdrop-blur border border-slate-100 shadow-sm flex items-center justify-center text-slate-600 hover:text-primary active:scale-90 transition-all">
+                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                    <span id="cart-nav-badge-mobile"
+                          class="absolute -top-1 -right-1 bg-secondary text-white text-[9px] font-black min-w-[16px] h-[16px] flex items-center justify-center rounded-full hidden border border-white shadow-sm">0</span>
                 </button>
-                <button id="mobile-menu-btn" class="text-gray-700 p-2 ml-1"><i data-lucide="menu"
-                        class="w-6 h-6"></i></button>
-            </div>
-        </div>
-        <!-- Mobile Overlay -->
-        <div id="mobile-overlay" class="fixed inset-0 bg-slate-900/50 z-[45] hidden"></div>
-
-        <!-- Mobile Menu Slider -->
-        <div id="mobile-menu"
-            class="hidden lg:hidden bg-white border-t border-gray-100 overflow-hidden shadow-xl mt-4 rounded-2xl relative z-50">
-            <div class="p-6 flex flex-col gap-4">
-                <div class="flex flex-col gap-2">
-                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">School Boards</div>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/kindergarten.php"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Kindergarten
-                        Program</a>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/cbse.php?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">CBSE Programs</a>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/icse.php?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">ICSE Programmes</a>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/karnataka-board.php?tab=all"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Karnataka Board</a>
-
-
-
-                </div>
-                <div class="h-px w-full bg-gray-100 my-2"></div>
-                <div class="flex flex-col gap-2">
-                    <div class="text-xs font-bold text-gray-400 uppercase tracking-wider px-2">Competitive Exams</div>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/competitive-exams.php"
-                        class="text-gray-700 font-medium hover:text-primary transition-colors px-2">All Competitive
-                        Exams</a>
-                </div>
-                <div class="h-px w-full bg-gray-100 my-2"></div>
-                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/test-prep.php"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Test Prep</a>
-                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/global-launchpad.php"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Study Abroad</a>
-                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/internships.php"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Internships</a>
-                <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/technology-services.php"
-                    class="text-gray-700 font-medium hover:text-primary transition-colors px-2">Technology
-                    Services</a>
-
-
-
-                <div class="flex flex-col gap-2 mt-4">
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>auth/login.php"
-                        class="border-2 border-secondary text-secondary text-center py-3 rounded-full font-bold transition-colors">
-                        Log In
-                    </a>
-                    <a href="<?php echo isset($base_url) ? $base_url : './'; ?>auth/signup.php"
-                        class="bg-secondary text-white text-center py-3 rounded-full font-bold shadow-lg shadow-secondary/30">
-                        Sign Up
-                    </a>
-                </div>
+                <!-- Hamburger menu button -->
+                <button onclick="toggleCategoryHub(true)"
+                        class="flex items-center gap-2 pl-3 pr-4 h-9 rounded-full bg-gradient-to-r from-primary to-blue-500 shadow-lg shadow-primary/30 text-white active:scale-95 transition-all ml-1">
+                    <span class="flex flex-col gap-[4px] items-center justify-center w-4">
+                        <span class="block w-4 h-[2px] bg-white rounded-full"></span>
+                        <span class="block w-3 h-[2px] bg-white/70 rounded-full self-start"></span>
+                        <span class="block w-4 h-[2px] bg-white rounded-full"></span>
+                    </span>
+                    <span class="text-[11px] font-black uppercase tracking-widest">Menu</span>
+                </button>
             </div>
         </div>
     </nav>
+    
+    <?php include __DIR__ . '/mobile-menu.php'; ?>
     <?php include_once 'cart-drawer.php'; ?>

@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="bg-[#0B1121] pt-16 pb-8 border-t border-white/5 relative overflow-hidden">
+<footer class="bg-[#0B1121] pt-12 md:pt-16 pb-6 md:pb-8 border-t border-white/5 relative overflow-hidden">
     <div
         class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-20">
     </div>
@@ -33,10 +33,14 @@
             </div>
 
             <div class="lg:col-span-2">
-                <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                    <i data-lucide="book-open" class="w-4 h-4 text-primary"></i> Programs
+                <h4 onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron-icon').classList.toggle('rotate-180')" 
+                    class="text-white font-bold mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-4 h-4 text-primary"></i> Programs
+                    </div>
+                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform lg:hidden chevron-icon"></i>
                 </h4>
-                <ul class="space-y-3">
+                <ul class="space-y-3 hidden lg:block animate-fade-in">
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/packages.php"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">Packages</a></li>
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/cbse.php?tab=all"
@@ -57,10 +61,14 @@
             </div>
 
             <div class="lg:col-span-2">
-                <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                    <i data-lucide="link" class="w-4 h-4 text-secondary"></i> Quick Links
+                <h4 onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron-icon').classList.toggle('rotate-180')" 
+                    class="text-white font-bold mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="link" class="w-4 h-4 text-secondary"></i> Quick Links
+                    </div>
+                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform lg:hidden chevron-icon"></i>
                 </h4>
-                <ul class="space-y-3">
+                <ul class="space-y-3 hidden lg:block animate-fade-in">
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/about.php" class="text-slate-400 text-sm hover:text-secondary transition-colors">About
                             Us</a></li>
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/study-abroad.php"
@@ -79,10 +87,14 @@
             </div>
 
             <div class="lg:col-span-2">
-                <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                    <i data-lucide="info" class="w-4 h-4 text-gray-400"></i> Corporate
+                <h4 onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron-icon').classList.toggle('rotate-180')" 
+                    class="text-white font-bold mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="info" class="w-4 h-4 text-gray-400"></i> Corporate
+                    </div>
+                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform lg:hidden chevron-icon"></i>
                 </h4>
-                <ul class="space-y-3">
+                <ul class="space-y-3 hidden lg:block animate-fade-in">
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>blog/blog.php" class="text-slate-400 text-sm hover:text-white transition-colors">Blog</a>
                     </li>
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>legal/privacy.php" class="text-slate-400 text-sm hover:text-white transition-colors">Privacy
@@ -135,6 +147,7 @@
     lucide.createIcons();
 </script>
 
+<?php include __DIR__ . '/bottom-nav.php'; ?>
 <?php include 'scroll-to-top.php'; ?>
 
 </body>
