@@ -631,18 +631,18 @@ p {
     .testimonial-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .breadcrumb-wrap {
         flex-wrap: wrap !important;
     }
-    
+
     .mobile-scroll-x {
         overflow-x: auto !important;
         white-space: nowrap !important;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 5px;
     }
-    
+
     .mobile-scroll-x::-webkit-scrollbar {
         display: none;
     }
@@ -670,12 +670,12 @@ p {
 
 .logo-slider::before {
     left: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
 }
 
 .logo-slider::after {
     right: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
 }
 
 .logo-track {
@@ -765,12 +765,12 @@ p {
 
 .logo-slider::before {
     left: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
 }
 
 .logo-slider::after {
     right: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
 }
 
 .logo-track {
