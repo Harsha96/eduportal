@@ -15,7 +15,8 @@ include 'components/header.php';
             <!-- Slides Container -->
             <div id="carousel-slides" class="absolute inset-0 w-full h-full">
                 <!-- Slide 1 (Active) -->
-                <div class="slide absolute inset-0 w-full h-full opacity-100 transition-opacity duration-1000 z-10"
+                <div class="slide absolute inset-0 w-full h-full opacity-100 transition-opacity duration-1000 z-10 cursor-pointer"
+                    onclick="window.location.href='pages/neet.php'"
                     data-index="0" style="background-color:#060d1c;">
                     <!-- Full-bleed banner image -->
                     <img src="assets/images/banner dr.png" alt="Global Medical Career"
@@ -59,7 +60,8 @@ include 'components/header.php';
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0"
+                <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0 cursor-pointer"
+                    onclick="window.location.href='pages/iit-jee.php'"
                     data-index="1" style="background-color:#080c1a;">
                     <!-- Full-bleed banner image -->
                     <img src="assets/images/banner jee.png" alt="IIT-JEE"
@@ -103,11 +105,13 @@ include 'components/header.php';
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0"
-                    data-index="2" style="background-color:#0d1f0a;">
+                <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0 cursor-pointer"
+                    onclick="window.location.href='pages/foundation1.php'"
+
+                    data-index="2" style="background-color:transparent;">
                     <!-- Full-bleed banner image -->
-                    <img src="assets/images/banner found.png" alt="Foundation Programs"
-                        class="absolute inset-0 w-full h-full object-cover object-center md:object-[80%]">
+                    <img src="assets/images/ban foundation3.png" alt="Foundation Programs"
+                        class="absolute inset-0 w-full h-full object-cover object-center md:object-[100%]">
                     <!-- Mobile-optimized gradient -->
                     <div class="absolute inset-0 z-10 bg-gradient-to-t from-[#0a1e08]/95 via-[#0a1e08]/50 to-transparent lg:bg-gradient-to-r lg:from-[#0a1e08]/82 lg:via-[#0a1e08]/55 lg:to-transparent"></div>
                     <div
@@ -147,7 +151,8 @@ include 'components/header.php';
                 </div>
 
                 <!-- Slide 4 -->
-                <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0"
+                <div class="slide absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 z-0 cursor-pointer"
+                    onclick="window.location.href='pages/study-abroad.php'"
                     data-index="3" style="background-color:#0a1628;">
                     <!-- Full-bleed banner image -->
                     <img src="assets/images/banner abroad.png" alt="Study Abroad"
@@ -243,7 +248,7 @@ include 'components/header.php';
                             <h3 class="text-2xl font-bold text-white drop-shadow-md">Kindergarten</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/kindergarten.php'"
-                                    class="bg-amber-400/20 backdrop-blur-sm text-[10px] md:text-xs font-semibold text-amber-50 px-2 py-1 md:px-3 md:py-1.5 rounded-full border border-amber-200/30 hover:bg-amber-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Foundation</span>
+                                    class="bg-amber-400/20 backdrop-blur-sm text-[10px] md:text-xs font-semibold text-amber-50 px-2 py-1 md:px-3 md:py-1.5 rounded-full border border-amber-200/30 hover:bg-amber-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Panda Kids</span>
                             </div>
                         </div>
                         <!-- DEVELOPER NOTE: Arrow button hidden by request -->
