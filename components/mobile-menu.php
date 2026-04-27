@@ -48,7 +48,7 @@
             <!-- 3. Test Prep -->
             <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/test-prep.php" class="flex items-center gap-3 group py-3 rounded-2xl active:bg-slate-50 transition-all px-2 -mx-2">
                 <div class="w-8 h-8 rounded-lg bg-rose-50 flex items-center justify-center">
-                    <i data-lucide="pencil-ruler" class="w-4 h-4 text-rose-600"></i>
+                    <i data-lucide="target" class="w-4 h-4 text-rose-600"></i>
                 </div>
                 <span class="font-bold text-slate-700 text-sm flex-1">3. Test Prep</span>
                 <i data-lucide="chevron-right" class="w-4 h-4 text-slate-200"></i>
@@ -57,7 +57,7 @@
             <!-- 4. Study Abroad -->
             <a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/study-abroad.php" class="flex items-center gap-3 group py-3 rounded-2xl active:bg-slate-50 transition-all px-2 -mx-2">
                 <div class="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center">
-                    <i data-lucide="plane" class="w-4 h-4 text-indigo-600"></i>
+                    <i data-lucide="graduation-cap" class="w-4 h-4 text-indigo-600"></i>
                 </div>
                 <span class="font-bold text-slate-700 text-sm flex-1">4. Study Abroad</span>
                 <i data-lucide="chevron-right" class="w-4 h-4 text-slate-200"></i>

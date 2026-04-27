@@ -268,7 +268,6 @@ include 'components/header.php';
     <div class="px-6">
         <div class="flex items-center justify-between mb-6">
             <h3 class="text-xl font-bold text-slate-900">Explore Categories</h3>
-            <a href="pages/packages.php" class="text-primary text-sm font-bold">View All</a>
         </div>
         <div class="grid grid-cols-3 gap-4">
             <!-- NEET -->
@@ -288,21 +287,21 @@ include 'components/header.php';
             <!-- School -->
             <button onclick="toggleBoardSheet(true)" class="flex flex-col items-center gap-3 p-4 rounded-3xl bg-emerald-50/50 border border-emerald-100/50 active:scale-95 transition-all">
                 <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center">
-                    <i data-lucide="book" class="w-6 h-6 text-emerald-600"></i>
+                    <i data-lucide="school" class="w-6 h-6 text-emerald-600"></i>
                 </div>
                 <span class="text-[11px] font-bold text-slate-700">School</span>
             </button>
             <!-- Abroad -->
             <a href="pages/study-abroad.php" class="flex flex-col items-center gap-3 p-4 rounded-3xl bg-indigo-50/50 border border-indigo-100/50 active:scale-95 transition-all">
                 <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center">
-                    <i data-lucide="plane" class="w-6 h-6 text-indigo-600"></i>
+                    <i data-lucide="graduation-cap" class="w-6 h-6 text-indigo-600"></i>
                 </div>
                 <span class="text-[11px] font-bold text-slate-700">Abroad</span>
             </a>
             <!-- KCET -->
             <a href="pages/kcet.php" class="flex flex-col items-center gap-3 p-4 rounded-3xl bg-amber-50/50 border border-amber-100/50 active:scale-95 transition-all">
                 <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center">
-                    <i data-lucide="graduation-cap" class="w-6 h-6 text-amber-600"></i>
+                    <i data-lucide="building" class="w-6 h-6 text-amber-600"></i>
                 </div>
                 <span class="text-[11px] font-bold text-slate-700">KCET</span>
             </a>
