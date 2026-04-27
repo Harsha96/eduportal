@@ -248,7 +248,7 @@ include 'components/header.php';
                             <h3 class="text-2xl font-bold text-white drop-shadow-md">Kindergarten</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/kindergarten.php'"
-                                    class="bg-amber-400/20 backdrop-blur-sm text-[10px] md:text-xs font-semibold text-amber-50 px-2 py-1 md:px-3 md:py-1.5 rounded-full border border-amber-200/30 hover:bg-amber-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Panda Kids</span>
+                                    class="bg-amber-400/20 backdrop-blur-sm text-[10px] md:text-xs font-semibold text-amber-50 px-2 py-1 md:px-3 md:py-1.5 rounded-full border border-amber-200/30 hover:bg-amber-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Varun</span>
                             </div>
                         </div>
                         <!-- DEVELOPER NOTE: Arrow button hidden by request -->
