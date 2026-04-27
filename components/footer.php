@@ -34,13 +34,13 @@
 
             <div class="lg:col-span-2">
                 <h4 onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron-icon').classList.toggle('rotate-180')" 
-                    class="text-white font-bold mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default">
+                    class="text-white font-bold mb-4 lg:mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default py-2 lg:py-0 border-b border-white/5 lg:border-none">
                     <div class="flex items-center gap-2">
                         <i data-lucide="book-open" class="w-4 h-4 text-primary"></i> Programs
                     </div>
                     <i data-lucide="chevron-down" class="w-4 h-4 transition-transform lg:hidden chevron-icon"></i>
                 </h4>
-                <ul class="space-y-3 hidden lg:block animate-fade-in">
+                <ul class="space-y-3 hidden lg:block animate-fade-in pb-4 lg:pb-0">
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/packages.php"
                             class="text-slate-400 text-sm hover:text-primary transition-colors">Packages</a></li>
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/cbse.php?tab=all"
@@ -62,13 +62,13 @@
 
             <div class="lg:col-span-2">
                 <h4 onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron-icon').classList.toggle('rotate-180')" 
-                    class="text-white font-bold mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default">
+                    class="text-white font-bold mb-4 lg:mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default py-2 lg:py-0 border-b border-white/5 lg:border-none">
                     <div class="flex items-center gap-2">
                         <i data-lucide="link" class="w-4 h-4 text-secondary"></i> Quick Links
                     </div>
                     <i data-lucide="chevron-down" class="w-4 h-4 transition-transform lg:hidden chevron-icon"></i>
                 </h4>
-                <ul class="space-y-3 hidden lg:block animate-fade-in">
+                <ul class="space-y-3 hidden lg:block animate-fade-in pb-4 lg:pb-0">
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/about.php" class="text-slate-400 text-sm hover:text-secondary transition-colors">About
                             Us</a></li>
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>pages/study-abroad.php"
@@ -88,13 +88,13 @@
 
             <div class="lg:col-span-2">
                 <h4 onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron-icon').classList.toggle('rotate-180')" 
-                    class="text-white font-bold mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default">
+                    class="text-white font-bold mb-4 lg:mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default py-2 lg:py-0 border-b border-white/5 lg:border-none">
                     <div class="flex items-center gap-2">
                         <i data-lucide="info" class="w-4 h-4 text-gray-400"></i> Corporate
                     </div>
                     <i data-lucide="chevron-down" class="w-4 h-4 transition-transform lg:hidden chevron-icon"></i>
                 </h4>
-                <ul class="space-y-3 hidden lg:block animate-fade-in">
+                <ul class="space-y-3 hidden lg:block animate-fade-in pb-4 lg:pb-0">
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>blog/blog.php" class="text-slate-400 text-sm hover:text-white transition-colors">Blog</a>
                     </li>
                     <li><a href="<?php echo isset($base_url) ? $base_url : './'; ?>legal/privacy.php" class="text-slate-400 text-sm hover:text-white transition-colors">Privacy
@@ -106,10 +106,14 @@
             </div>
 
             <div class="lg:col-span-2">
-                <h4 class="text-white font-bold mb-6 flex items-center gap-2">
-                    <i data-lucide="phone-call" class="w-4 h-4 text-success"></i> Contact Us
+                <h4 onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron-icon').classList.toggle('rotate-180')" 
+                    class="text-white font-bold mb-4 lg:mb-6 flex items-center justify-between group cursor-pointer lg:cursor-default py-2 lg:py-0 border-b border-white/5 lg:border-none">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="phone-call" class="w-4 h-4 text-success"></i> Contact Us
+                    </div>
+                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform lg:hidden chevron-icon"></i>
                 </h4>
-                <ul class="space-y-4 text-slate-400">
+                <ul class="space-y-4 text-slate-400 hidden lg:block animate-fade-in pb-4 lg:pb-0">
                     <li class="flex gap-3 items-start"><i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i>
                         <span class="text-sm"> info@unidemyglobal.com</span>
                     </li>
@@ -147,7 +151,7 @@
     lucide.createIcons();
 </script>
 
-<?php include __DIR__ . '/bottom-nav.php'; ?>
+
 <?php include 'scroll-to-top.php'; ?>
 
 </body>

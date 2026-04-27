@@ -109,7 +109,7 @@
                 <!-- Cart icon -->
                 <button onclick="cart.open()"
                         class="relative w-9 h-9 rounded-full bg-white/80 backdrop-blur border border-slate-100 shadow-sm flex items-center justify-center text-slate-600 hover:text-primary active:scale-90 transition-all">
-                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                    <i data-lucide="shopping-cart" class="w-4 h-4"></i>
                     <span id="cart-nav-badge-mobile"
                           class="absolute -top-1 -right-1 bg-secondary text-white text-[9px] font-black min-w-[16px] h-[16px] flex items-center justify-center rounded-full hidden border border-white shadow-sm">0</span>
                 </button>
