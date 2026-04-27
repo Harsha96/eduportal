@@ -41,7 +41,7 @@ include '../components/header.php';
 
 </style>
 
-<main class="game-container min-h-screen pt-28 pb-12 text-slate-800 overflow-hidden">
+<main class="game-container min-h-screen pt-24 md:pt-28 pb-12 text-slate-800 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 h-full flex flex-col lg:flex-row gap-8">
         
         <!-- Left Sidebar: Controls -->

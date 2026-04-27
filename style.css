@@ -23,6 +23,12 @@
     --padding-section: 60px 0;
 }
 
+@media (max-width: 768px) {
+    :root {
+        --padding-section: 40px 0;
+    }
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-dark);
@@ -625,6 +631,116 @@ p {
     .testimonial-grid {
         grid-template-columns: 1fr;
     }
+    
+    .breadcrumb-wrap {
+        flex-wrap: wrap !important;
+    }
+    
+    .mobile-scroll-x {
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5px;
+    }
+    
+    .mobile-scroll-x::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Logo Slider Animation */
+.logo-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    white-space: nowrap;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logo-slider::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.logo-slider::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.logo-track {
+    display: inline-block;
+    animation: scroll-logos 25s linear infinite;
+}
+
+/* Pause on hover */
+.logo-slider:hover .logo-track {
+    animation-play-state: paused;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 200px;
+        margin: 0 20px;
+    }
+}
+
+.logo svg {
+    max-height: 50px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+.logo:hover svg {
+    transform: scale(1.05);
+}
+
+@keyframes scroll-logos {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
 }
 
 /* Logo Slider Animation */

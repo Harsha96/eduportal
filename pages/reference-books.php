@@ -11,13 +11,13 @@ $pageDescription = 'Browse and download reference books for various disciplines 
 $base_url = '../';
 include '../components/header.php';
 ?>
-    <section class="relative pt-32 pb-16 bg-[#0B1121] overflow-hidden">
+    <section class="relative pt-24 md:pt-32 pb-16 bg-[#0B1121] overflow-hidden">
         <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10 text-center">
             <span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-blue-300 text-sm font-bold mb-4 border border-primary/30">
                 Digital Library
             </span>
-            <h1 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
                 Reference Books Store
             </h1>
             <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
@@ -45,12 +45,12 @@ include '../components/header.php';
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             
             <!-- Categories / Filters -->
-            <div class="flex flex-wrap items-center justify-center gap-2 mb-12" id="category-tabs">
-                <button class="px-6 py-2.5 rounded-full text-sm font-medium transition-all tab-active" data-cat="all">All Books</button>
-                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all" data-cat="science">Science</button>
-                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all" data-cat="math">Mathematics</button>
-                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all" data-cat="humanities">Humanities</button>
-                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all" data-cat="commerce">Commerce</button>
+            <div class="flex overflow-x-auto md:flex-wrap items-center md:justify-center gap-2 mb-12 pb-2 scrollbar-hide mobile-scroll-x" id="category-tabs">
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium transition-all tab-active whitespace-nowrap" data-cat="all">All Books</button>
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all whitespace-nowrap" data-cat="science">Science</button>
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all whitespace-nowrap" data-cat="math">Mathematics</button>
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all whitespace-nowrap" data-cat="humanities">Humanities</button>
+                <button class="px-6 py-2.5 rounded-full text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 border border-slate-200 transition-all whitespace-nowrap" data-cat="commerce">Commerce</button>
             </div>
 
             <!-- Books Grid -->

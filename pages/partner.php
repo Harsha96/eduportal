@@ -22,7 +22,7 @@ HEADCONTENT;
 $base_url = '../';
 include '../components/header.php';
 ?>
-    <main class="w-full pt-32 lg:pt-40 pb-20 bg-white flex-grow">
+    <main class="w-full pt-24 md:pt-32 lg:pt-40 pb-20 bg-white flex-grow">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-start">
                 <!-- Left Content -->
@@ -30,7 +30,7 @@ include '../components/header.php';
                     <div class="absolute -top-20 -left-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
                     <div class="absolute top-40 -right-20 w-80 h-80 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
                     
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-[1.1] tracking-tight">
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-[1.1] tracking-tight">
                         Empower Your <span class="text-primary">Institution</span> with Unidemy Global
                     </h1>
                     <p class="text-gray-600 text-lg mb-10 leading-relaxed">

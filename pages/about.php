@@ -5,11 +5,11 @@ $base_url = '../';
 include '../components/header.php';
 ?>
     <!-- Main Content -->
-    <main class="w-full pt-28 lg:pt-36 pb-20 flex-grow">
+    <main class="w-full pt-24 md:pt-28 lg:pt-36 pb-20 flex-grow">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <!-- Breadcrumbs -->
-            <nav class="flex text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
-                <ol class="inline-flex items-center gap-2">
+            <nav class="flex text-sm text-gray-500 mb-8 overflow-hidden" aria-label="Breadcrumb">
+                <ol class="inline-flex flex-wrap items-center gap-2 breadcrumb-wrap">
                     <li class="inline-flex items-center group">
                         <a href="../index.php" class="inline-flex items-center hover:text-primary transition-colors">
                             <i data-lucide="home" class="w-4 h-4 mr-2"></i>
@@ -27,15 +27,15 @@ include '../components/header.php';
 
             <!-- Page Header -->
             <div class="mb-12 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Empowering <span
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Empowering <span
                         class="text-primary">Global Ambitions</span></h1>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">Discover how Unidemy Global is
                     revolutionizing test preparation and university admissions for students worldwide.</p>
             </div>
 
             <!-- Tab Navigation -->
-            <div class="flex justify-center mb-12">
-                <div class="inline-flex p-1.5 bg-gray-100 rounded-2xl shadow-inner border border-gray-200">
+            <div class="flex justify-center mb-12 w-full">
+                <div class="inline-flex p-1.5 bg-gray-100 rounded-2xl shadow-inner border border-gray-200 max-w-full overflow-x-auto mobile-scroll-x">
                     <button id="tab-who"
                         class="about-tab px-8 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 bg-white text-primary shadow-sm"
                         onclick="switchTab('who')">
@@ -59,7 +59,7 @@ include '../components/header.php';
             <div id="content-who" class="about-content transition-all duration-500">
                 <div class="mb-16">
                     <div class="inline-flex px-4 py-2 bg-primary/5 text-primary rounded-full text-xs font-bold uppercase tracking-widest mb-6">Expert Advantage</div>
-                    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight leading-[1.1]">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight leading-[1.1]">
                         Why Should You Make Us Your <br>
                         <span class="text-primary relative inline-block">
                             First Choice?
@@ -131,7 +131,7 @@ include '../components/header.php';
 
                 <!-- Why Trust Us Section -->
                 <div
-                    class="bg-slate-900 rounded-[3rem] p-12 lg:p-16 text-white relative overflow-hidden mb-20 shadow-2xl shadow-slate-900/50">
+                    class="bg-slate-900 rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 lg:p-16 text-white relative overflow-hidden mb-20 shadow-2xl shadow-slate-900/50">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[80px]"></div>
                     <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-[80px]"></div>
 

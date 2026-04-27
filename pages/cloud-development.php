@@ -100,7 +100,13 @@ $additionalHead = <<<'HEADCONTENT'
         }
 
         .section {
-            padding: 80px 0;
+            padding: 40px 0;
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                padding: 80px 0;
+            }
         }
 
         .section-title {
@@ -109,9 +115,15 @@ $additionalHead = <<<'HEADCONTENT'
         }
 
         .section-title h2 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             margin-bottom: 16px;
             color: var(--secondary);
+        }
+
+        @media (min-width: 768px) {
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
         }
 
         .section-title p {
@@ -219,6 +231,13 @@ $additionalHead = <<<'HEADCONTENT'
             padding: 12px 0;
             font-size: 0.9rem;
             color: var(--gray);
+            overflow: hidden;
+        }
+
+        .breadcrumb .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
         }
 
         .breadcrumb a {
@@ -233,12 +252,12 @@ $additionalHead = <<<'HEADCONTENT'
         .hero {
             background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
             color: white;
-            padding: 100px 0;
+            padding: 120px 0 60px;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.2rem;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -690,10 +709,16 @@ $additionalHead = <<<'HEADCONTENT'
         }
 
         /* ===== RESPONSIVE ===== */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.5rem;
+        @media (min-width: 768px) {
+            .hero {
+                padding: 160px 0 100px;
             }
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
 
             .nav-links {
                 position: fixed;

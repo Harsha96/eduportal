@@ -38,11 +38,11 @@ $base_url = '../';
 include '../components/header.php';
 ?>
     <!-- Main Content -->
-    <main class="pt-32 pb-24 min-h-screen">
+    <main class="pt-24 md:pt-32 pb-24 min-h-screen">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
             <!-- Breadcrumb -->
-            <div class="flex items-center gap-2 text-sm text-gray-500 mb-8 font-medium">
+            <div class="flex flex-wrap items-center gap-2 text-sm text-gray-500 mb-8 font-medium breadcrumb-wrap">
                 <a href="../index.php" class="hover:text-primary flex items-center gap-1">
                     <i data-lucide="home" class="w-4 h-4"></i>
                 </a>
@@ -54,7 +54,7 @@ include '../components/header.php';
 
             <!-- Header Section -->
             <div class="mb-12 relative z-10">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 tracking-tight uppercase">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 tracking-tight uppercase">
                     EXPLORERS <span class="text-primary">Programmes</span>
                 </h1>
                 <p class="text-lg text-gray-600 max-w-2xl">

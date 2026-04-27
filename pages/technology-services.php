@@ -133,7 +133,7 @@ $testimonials = [
                     <span class="text-xs font-bold text-[#1E4F9C] tracking-widest uppercase">Premium Enterprise IT Partner</span>
                 </div>
                 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0B1121] leading-[1.15] mb-6 tracking-tight">
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#0B1121] leading-[1.15] mb-6 tracking-tight">
                     Transforming Businesses with <br class="hidden lg:block" /><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#1E4F9C] to-[#F97316]">Next-Gen</span> Technology Solutions
                 </h1>
                 
@@ -324,7 +324,7 @@ $testimonials = [
 .ps-text {
     flex: 1;
     position: relative;
-    padding: 80px;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -483,7 +483,7 @@ $testimonials = [
 @media (max-width: 768px) {
     .ps-row { flex-direction: column !important; min-height: auto; margin-bottom: 40px; }
     .ps-image-container { height: 280px; flex: none; order: -1; }
-    .ps-text { padding: 40px 24px; flex: none; }
+    .ps-text { padding: 40px 20px; flex: none; }
     .ps-number, .ps-watermark { display: none; }
     .ps-image-container { transform: translateY(0); opacity: 1; transition: none; }
     .ps-row { opacity: 1; transform: translateY(0); transition: none; }

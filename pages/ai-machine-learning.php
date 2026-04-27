@@ -10,9 +10,9 @@ HEADCONTENT;
 $base_url = '../';
 include '../components/header.php';
 ?>
-    <section class="pt-40 pb-20 bg-white">
+    <section class="pt-24 md:pt-32 lg:pt-40 pb-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <nav class="flex mb-8 text-sm font-medium text-gray-400">
+            <nav class="flex flex-wrap items-center mb-8 text-sm font-medium text-gray-400 breadcrumb-wrap">
                 <a href="../index.php" class="hover:text-primary">Home</a>
                 <span class="mx-2">/</span>
                 <a href="../pages/technology-services.php" class="hover:text-primary">Technology Services</a>
@@ -21,7 +21,7 @@ include '../components/header.php';
             </nav>
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h1 class="sora text-4xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">Intelligence That
+                    <h1 class="sora text-2xl sm:text-4xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">Intelligence That
                         <span class="text-primary">Evolves</span></h1>
                     <p class="text-xl text-gray-600 leading-relaxed mb-8">Harnessing the power of advanced algorithms
                         and deep learning to automate complex processes and drive data-driven decision making.</p>

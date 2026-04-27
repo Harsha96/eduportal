@@ -15,7 +15,7 @@ include '../components/header.php';
                 class="inline-block py-1 px-3 rounded-full bg-orange-100 text-orange-600 border border-orange-200 text-sm font-bold mb-6">
                 <i data-lucide="zap" class="w-4 h-4 inline-block mr-1"></i> Quick Revision
             </span>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 mb-6 leading-tight">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 mb-6 leading-tight">
                 Top-Tier <span
                     class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">Revision
                     Notes</span>
@@ -49,18 +49,18 @@ include '../components/header.php';
                 <h2 class="text-3xl font-black text-gray-900">Recent Uploads</h2>
 
                 <!-- Filters -->
-                <div class="flex flex-wrap items-center gap-2 bg-white p-1.5 rounded-full border border-gray-200 shadow-sm"
+                <div class="flex overflow-x-auto md:flex-wrap items-center gap-2 bg-white p-1.5 rounded-full border border-gray-200 shadow-sm pb-1.5 md:pb-1.5 scrollbar-hide mobile-scroll-x"
                     id="category-tabs">
-                    <button class="px-5 py-2 rounded-full text-sm font-bold transition-all filter-tab-active"
+                    <button class="px-5 py-2 rounded-full text-sm font-bold transition-all filter-tab-active whitespace-nowrap"
                         data-cat="all">All</button>
                     <button
-                        class="px-5 py-2 rounded-full text-sm font-bold text-gray-600 hover:text-orange-600 hover:bg-orange-50 transition-all"
+                        class="px-5 py-2 rounded-full text-sm font-bold text-gray-600 hover:text-orange-600 hover:bg-orange-50 transition-all whitespace-nowrap"
                         data-cat="science">Science</button>
                     <button
-                        class="px-5 py-2 rounded-full text-sm font-bold text-gray-600 hover:text-orange-600 hover:bg-orange-50 transition-all"
+                        class="px-5 py-2 rounded-full text-sm font-bold text-gray-600 hover:text-orange-600 hover:bg-orange-50 transition-all whitespace-nowrap"
                         data-cat="math">Maths</button>
                     <button
-                        class="px-5 py-2 rounded-full text-sm font-bold text-gray-600 hover:text-orange-600 hover:bg-orange-50 transition-all"
+                        class="px-5 py-2 rounded-full text-sm font-bold text-gray-600 hover:text-orange-600 hover:bg-orange-50 transition-all whitespace-nowrap"
                         data-cat="english">English</button>
                 </div>
             </div>

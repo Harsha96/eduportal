@@ -48,7 +48,7 @@ include '../components/header.php';
                             class="bg-white/10 border border-white/20 px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase text-orange-300">Economics</span>
                     </div>
                     <h1
-                        class="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-purple-200">
+                        class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-purple-200">
                         Shape Your <br>Career Path.
                     </h1>
                     <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-xl">
@@ -135,15 +135,15 @@ include '../components/header.php';
                 </div>
 
                 <!-- Tabs Navigation -->
-                <div class="flex flex-wrap justify-center gap-4 border-b border-gray-200 pb-2 mb-8">
+                <div class="flex overflow-x-auto lg:flex-wrap lg:justify-center gap-4 border-b border-gray-200 pb-2 mb-8 scrollbar-hide mobile-scroll-x">
                     <button
-                        class="stream-tab active px-6 py-3 font-bold text-lg border-b-2 border-blue-600 text-blue-600 transition-colors"
+                        class="stream-tab active px-6 py-3 font-bold text-lg border-b-2 border-blue-600 text-blue-600 transition-colors whitespace-nowrap"
                         data-target="science">Science</button>
                     <button
-                        class="stream-tab px-6 py-3 font-bold text-lg border-b-2 border-transparent text-gray-500 hover:text-gray-900 transition-colors"
+                        class="stream-tab px-6 py-3 font-bold text-lg border-b-2 border-transparent text-gray-500 hover:text-gray-900 transition-colors whitespace-nowrap"
                         data-target="commerce">Commerce</button>
                     <button
-                        class="stream-tab px-6 py-3 font-bold text-lg border-b-2 border-transparent text-gray-500 hover:text-gray-900 transition-colors"
+                        class="stream-tab px-6 py-3 font-bold text-lg border-b-2 border-transparent text-gray-500 hover:text-gray-900 transition-colors whitespace-nowrap"
                         data-target="economics">Economics (Arts)</button>
                 </div>
 

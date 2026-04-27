@@ -4,11 +4,11 @@ $pageDescription = 'Explore all our standardized test preparation packages for S
 $base_url = '../';
 include '../components/header.php';
 ?>
-    <main class="w-full pt-32 lg:pt-40 pb-20 bg-white flex-grow">
+    <main class="w-full pt-24 md:pt-32 lg:pt-40 pb-20 bg-white flex-grow">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <!-- Header Section -->
             <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Our Prep Packages</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Our Prep Packages</h1>
                 <p class="text-gray-500 text-lg max-w-2xl mx-auto mb-10">Find the perfect training program to achieve
                     your target scores and unlock global opportunities.</p>
 
@@ -24,19 +24,19 @@ include '../components/header.php';
             </div>
 
             <!-- Tabbed Panel -->
-            <div class="flex flex-wrap justify-center gap-2 mb-12" id="category-tabs">
+            <div class="flex overflow-x-auto md:flex-wrap justify-center gap-2 mb-12 pb-2 scrollbar-hide mobile-scroll-x" id="category-tabs">
                 <button data-category="all"
-                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-primary text-white shadow-lg shadow-primary/20 transition-all">All
+                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-primary text-white shadow-lg shadow-primary/20 transition-all whitespace-nowrap">All
                     Programs</button>
                 <button data-category="english"
-                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all">English
+                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all whitespace-nowrap">English
                     Proficiency</button>
                 <button data-category="undergraduate"
-                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all">Undergraduate</button>
+                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all whitespace-nowrap">Undergraduate</button>
                 <button data-category="postgraduate"
-                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all">Postgraduate</button>
+                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all whitespace-nowrap">Postgraduate</button>
                 <button data-category="language"
-                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all">Language
+                    class="category-tab px-8 py-3 rounded-full text-sm font-bold bg-gray-50 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-all whitespace-nowrap">Language
                     & Others</button>
             </div>
 

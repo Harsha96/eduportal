@@ -18,7 +18,7 @@ include '../components/header.php';
                         <i data-lucide="shield-check" class="w-4 h-4"></i>
                         100% Accurate & Verified
                     </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
                         NCERT Solutions <br class="hidden md:block" />
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Made
                             Simple.</span>
@@ -100,18 +100,18 @@ include '../components/header.php';
             </div>
 
             <!-- Class Selection Pills -->
-            <div class="flex flex-wrap items-center justify-center gap-4 mb-20" id="class-tabs">
+            <div class="flex overflow-x-auto md:flex-wrap items-center md:justify-center gap-4 mb-20 pb-2 scrollbar-hide mobile-scroll-x" id="class-tabs">
                 <button
-                    class="px-8 py-4 rounded-2xl text-lg font-bold transition-all class-tab-active bg-white border border-gray-200 text-gray-400 hover:border-emerald-300"
+                    class="px-8 py-4 rounded-2xl text-lg font-bold transition-all class-tab-active bg-white border border-gray-200 text-gray-400 hover:border-emerald-300 whitespace-nowrap"
                     data-class="12">Class 12</button>
                 <button
-                    class="px-8 py-4 rounded-2xl text-lg font-bold transition-all bg-white border border-gray-200 text-gray-600 hover:border-emerald-300 hover:text-emerald-600 shadow-sm"
+                    class="px-8 py-4 rounded-2xl text-lg font-bold transition-all bg-white border border-gray-200 text-gray-600 hover:border-emerald-300 hover:text-emerald-600 shadow-sm whitespace-nowrap"
                     data-class="11">Class 11</button>
                 <button
-                    class="px-8 py-4 rounded-2xl text-lg font-bold transition-all bg-white border border-gray-200 text-gray-600 hover:border-emerald-300 hover:text-emerald-600 shadow-sm"
+                    class="px-8 py-4 rounded-2xl text-lg font-bold transition-all bg-white border border-gray-200 text-gray-600 hover:border-emerald-300 hover:text-emerald-600 shadow-sm whitespace-nowrap"
                     data-class="10">Class 10</button>
                 <button
-                    class="px-8 py-4 rounded-2xl text-lg font-bold transition-all bg-white border border-gray-200 text-gray-600 hover:border-emerald-300 hover:text-emerald-600 shadow-sm"
+                    class="px-8 py-4 rounded-2xl text-lg font-bold transition-all bg-white border border-gray-200 text-gray-600 hover:border-emerald-300 hover:text-emerald-600 shadow-sm whitespace-nowrap"
                     data-class="9">Class 9</button>
             </div>
 

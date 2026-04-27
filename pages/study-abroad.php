@@ -27,11 +27,11 @@ $base_url = '../';
 include '../components/header.php';
 ?>
     <!-- Main Content -->
-    <main class="w-full pt-28 lg:pt-36 pb-20 bg-white flex-grow">
+    <main class="w-full pt-24 md:pt-28 lg:pt-36 pb-20 bg-white flex-grow">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <!-- Breadcrumbs -->
-            <nav class="flex text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
-                <ol class="inline-flex items-center gap-2">
+            <nav class="flex text-sm text-gray-500 mb-6 overflow-hidden" aria-label="Breadcrumb">
+                <ol class="inline-flex flex-wrap items-center gap-2 breadcrumb-wrap">
                     <li class="inline-flex items-center group">
                         <a href="../index.php" class="inline-flex items-center hover:text-primary transition-colors">
                             <i data-lucide="home" class="w-4 h-4 mr-2"></i>
@@ -53,7 +53,7 @@ include '../components/header.php';
                     <i data-lucide="globe" class="w-8 h-8 text-emerald-600"></i>
                 </div>
                 <div>
-                    <h1 class="text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-900 font-sans tracking-tight">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-900 font-sans tracking-tight">
                         Study Abroad</h1>
                     <p class="text-gray-500 mt-1">Your gateway to world-class education and global careers.</p>
                 </div>

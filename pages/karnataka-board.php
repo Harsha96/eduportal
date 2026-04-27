@@ -27,11 +27,11 @@ $base_url = '../';
 include '../components/header.php';
 ?>
 <!-- Main Content -->
-<main class="w-full pt-28 lg:pt-36 pb-20 bg-white flex-grow">
+<main class="w-full pt-24 md:pt-28 lg:pt-36 pb-20 bg-white flex-grow">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <!-- Breadcrumbs -->
-        <nav class="flex text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center gap-2">
+        <nav class="flex text-sm text-gray-500 mb-6 overflow-hidden" aria-label="Breadcrumb">
+            <ol class="inline-flex flex-wrap items-center gap-2 breadcrumb-wrap">
                 <li class="inline-flex items-center group">
                     <a href="../index.php" class="inline-flex items-center hover:text-primary transition-colors">
                         <i data-lucide="home" class="w-4 h-4 mr-2"></i>

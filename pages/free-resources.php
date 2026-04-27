@@ -59,7 +59,7 @@ include '../components/header.php';
                         </span>
                         New Study Materials 2026 Updated
                     </div>
-                    <h1 class="text-4xl md:text-7xl font-black text-white mb-6 leading-tight">
+                    <h1 class="text-3xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
                         Unlock Your <span
                             class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Potential</span>
                         with Free Resources
@@ -148,18 +148,18 @@ include '../components/header.php';
             </div>
 
             <!-- Subject Tabs -->
-            <div class="flex flex-wrap gap-3 mb-12">
+            <div class="flex overflow-x-auto lg:flex-wrap gap-3 mb-12 pb-2 scrollbar-hide mobile-scroll-x">
                 <button onclick="switchSubject('science')"
-                    class="subject-tab tab-active px-8 py-3 rounded-2xl border-2 font-bold transition-all"
+                    class="subject-tab tab-active px-8 py-3 rounded-2xl border-2 font-bold transition-all whitespace-nowrap"
                     id="tab-science">Science</button>
                 <button onclick="switchSubject('maths')"
-                    class="subject-tab px-8 py-3 rounded-2xl border-2 border-slate-100 text-gray-500 font-bold hover:bg-slate-50 transition-all"
+                    class="subject-tab px-8 py-3 rounded-2xl border-2 border-slate-100 text-gray-500 font-bold hover:bg-slate-50 transition-all whitespace-nowrap"
                     id="tab-maths">Mathematics</button>
                 <button onclick="switchSubject('english')"
-                    class="subject-tab px-8 py-3 rounded-2xl border-2 border-slate-100 text-gray-500 font-bold hover:bg-slate-50 transition-all"
+                    class="subject-tab px-8 py-3 rounded-2xl border-2 border-slate-100 text-gray-500 font-bold hover:bg-slate-50 transition-all whitespace-nowrap"
                     id="tab-english">English</button>
                 <button onclick="switchSubject('social')"
-                    class="subject-tab px-8 py-3 rounded-2xl border-2 border-slate-100 text-gray-500 font-bold hover:bg-slate-50 transition-all"
+                    class="subject-tab px-8 py-3 rounded-2xl border-2 border-slate-100 text-gray-500 font-bold hover:bg-slate-50 transition-all whitespace-nowrap"
                     id="tab-social">Social Studies</button>
             </div>
 

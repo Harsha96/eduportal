@@ -216,7 +216,7 @@ include 'components/header.php';
     </div>
 
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 px-4">
+        <div class="text-center max-w-3xl mx-auto mt-16 md:mt-20 mb-12 md:mb-16 px-4">
             <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-6 md:mb-8 tracking-tight">
                 Explore Our <span class="text-primary">Premium Programs</span>
             </h2>
@@ -230,20 +230,17 @@ include 'components/header.php';
         <!-- Unified Programs Grid (Shows same on all devices) -->
         <div id="programs-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <!-- Kindergarten -->
-            <div class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-amber-100 flex flex-col h-[180px] md:h-[380px] overflow-hidden cursor-pointer"
+            <div class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-amber-100 flex flex-col h-[240px] md:h-[380px] overflow-hidden cursor-pointer"
                 style="background-image: url('assets/images/HM_c1.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-8 h-8 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-amber-500/20 backdrop-blur-sm border border-amber-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="baby" class="w-4 h-4 md:w-6 md:h-6 text-amber-400"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">Kindergarten</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">Kindergarten</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/kindergarten.php'"
                                     class="bg-amber-400/20 backdrop-blur-sm text-[10px] md:text-xs font-semibold text-amber-50 px-2 py-1 md:px-3 md:py-1.5 rounded-full border border-amber-200/30 hover:bg-amber-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Foundation</span>
@@ -258,20 +255,17 @@ include 'components/header.php';
             </div>
 
             <!-- Explorers (1-5) -->
-            <div class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden cursor-pointer"
+            <div class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden cursor-pointer"
                 style="background-image: url('assets/images/HM_1-5.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-rose-500/20 backdrop-blur-sm border border-rose-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="compass" class="w-6 h-6 text-rose-400"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">Explorers (1-5)</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">Explorers (1-5)</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/cbse.php?tab=class-1-5'"
                                     class="bg-rose-400/20 backdrop-blur-sm text-xs font-semibold text-rose-50 px-3 py-1.5 rounded-full border border-rose-200/30 hover:bg-rose-500/40 cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
@@ -290,20 +284,17 @@ include 'components/header.php';
             </div>
 
             <!-- Skill builders (6-8) -->
-            <div class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden cursor-pointer"
+            <div class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden cursor-pointer"
                 style="background-image: url('assets/images/HM_6-8.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-orange-500/20 backdrop-blur-sm border border-orange-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="layout-template" class="w-6 h-6 text-orange-400"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">Skill builders (6-8)</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">Skill builders (6-8)</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/cbse.php?tab=class-6-8'"
                                     class="bg-orange-400/20 backdrop-blur-sm text-xs font-semibold text-orange-50 px-3 py-1.5 rounded-full border border-orange-200/30 hover:bg-orange-500/40 cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
@@ -324,20 +315,17 @@ include 'components/header.php';
             </div>
 
             <!-- Exam Warriors (9-10) -->
-            <div class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden cursor-pointer"
+            <div class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden cursor-pointer"
                 style="background-image: url('assets/images/HM_9-10.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-green-500/20 backdrop-blur-sm border border-green-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="sword" class="w-6 h-6 text-green-400"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">Exam Warriors</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">Exam Warriors</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/cbse.php?tab=class-9-10'"
                                     class="bg-green-400/20 backdrop-blur-sm text-xs font-semibold text-green-50 px-3 py-1.5 rounded-full border border-green-200/30 hover:bg-green-500/40 cursor-pointer relative z-20 transition-all shadow-sm">CBSE</span>
@@ -359,20 +347,17 @@ include 'components/header.php';
 
             <!-- Career Achievers -->
             <a href="pages/career-achievers.php"
-                class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden"
+                class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden"
                 style="background-image: url('assets/images/HM_career_achivers.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-rose-500/20 backdrop-blur-sm border border-rose-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="briefcase" class="w-6 h-6 text-rose-400"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">Career Achievers</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">Career Achievers</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/career-achievers.php'"
                                     class="bg-rose-400/20 backdrop-blur-sm text-xs font-semibold text-rose-50 px-3 py-1.5 rounded-full border border-rose-200/30 hover:bg-rose-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Class 11</span>
@@ -396,21 +381,17 @@ include 'components/header.php';
 
             <!-- NEET -->
             <a href="pages/neet.php"
-                class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden"
+                class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden"
                 style="background-image: url('assets/images/HM_neet.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-blue-500/20 backdrop-blur-sm border border-blue-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="stethoscope" class="w-6 h-6 text-blue-400"></i>
-                        </div>
-                        <span class="bg-white text-orange-600 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm self-start">Popular</span>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">NEET</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">NEET</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/neet.php'"
                                     class="bg-blue-400/20 backdrop-blur-sm text-xs font-semibold text-blue-50 px-3 py-1.5 rounded-full border border-blue-200/30 hover:bg-blue-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Class 11</span>
@@ -430,21 +411,17 @@ include 'components/header.php';
 
             <!-- IIT-JEE -->
             <a href="pages/iit-jee.php"
-                class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden"
+                class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden"
                 style="background-image: url('assets/images/HM_jee.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-orange-500/20 backdrop-blur-sm border border-orange-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="calculator" class="w-6 h-6 text-orange-400"></i>
-                        </div>
-                        <span class="bg-white text-orange-600 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm self-start">Popular</span>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">IIT-JEE</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">IIT-JEE</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/iit-jee.php'"
                                     class="bg-orange-400/20 backdrop-blur-sm text-xs font-semibold text-orange-50 px-3 py-1.5 rounded-full border border-orange-200/30 hover:bg-orange-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Class 11</span>
@@ -464,20 +441,17 @@ include 'components/header.php';
 
             <!-- KCET -->
             <a href="pages/kcet.php"
-                class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden"
+                class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden"
                 style="background-image: url('assets/images/HM_kcet.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-8 h-8 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-amber-500/20 backdrop-blur-sm border border-amber-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="graduation-cap" class="w-6 h-6 text-amber-400"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">KCET</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">KCET</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/kcet.php'"
                                     class="bg-amber-400/20 backdrop-blur-sm text-[10px] md:text-xs font-semibold text-amber-50 px-2 py-1 md:px-3 md:py-1.5 rounded-full border border-amber-200/30 hover:bg-amber-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Class 11</span>
@@ -497,20 +471,17 @@ include 'components/header.php';
 
             <!-- Global Launchpad -->
             <a href="pages/global-launchpad.php"
-                class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden"
+                class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden"
                 style="background-image: url('assets/images/HM_GBL.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 backdrop-blur-sm border border-emerald-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="rocket" class="w-6 h-6 text-emerald-400"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">Global Launchpad</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">Global Launchpad</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/sat.php'"
                                     class="bg-emerald-400/20 backdrop-blur-sm text-xs font-semibold text-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200/30 hover:bg-emerald-500/40 cursor-pointer relative z-20 transition-all shadow-sm">SAT</span>
@@ -538,20 +509,17 @@ include 'components/header.php';
 
             <!-- Study Abroad -->
             <a href="pages/study-abroad.php"
-                class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden"
+                class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden"
                 style="background-image: url('assets/images/HM_study-abroad.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 backdrop-blur-sm border border-indigo-200/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="globe" class="w-6 h-6 text-indigo-400"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">Study Abroad</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">Study Abroad</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/medical-abroad.php'"
                                     class="bg-indigo-400/20 backdrop-blur-sm text-xs font-semibold text-indigo-50 px-3 py-1.5 rounded-full border border-indigo-200/30 hover:bg-indigo-500/40 cursor-pointer relative z-20 transition-all shadow-sm">Medical abroad</span>
@@ -573,20 +541,17 @@ include 'components/header.php';
 
             <!-- Internships -->
             <a href="pages/internships.php"
-                class="group relative rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[180px] md:h-[380px] overflow-hidden"
+                class="group relative rounded-2xl pt-10 pb-2 px-6 md:p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-white/10 flex flex-col h-[240px] md:h-[380px] overflow-hidden"
                 style="background-image: url('assets/images/HM_internships.png'); background-size: cover; background-position: center;">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-3xl"></div>
                 <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
 
                 <div class="relative z-10 flex flex-col h-full justify-between">
                     <div class="flex justify-between items-start w-full">
-                        <div class="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center shrink-0">
-                            <i data-lucide="code-2" class="w-6 h-6 text-white"></i>
-                        </div>
                     </div>
                     <div class="flex justify-between items-end mt-auto gap-4">
                         <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-md">Internships</h3>
+                            <h3 class="text-2xl font-bold text-white drop-shadow-md">Internships</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span onclick="event.preventDefault(); window.location.href='pages/internships.php?tab=aiml'"
                                     class="bg-white/20 backdrop-blur-sm text-xs font-semibold text-white px-3 py-1.5 rounded-full border border-white/30 hover:bg-white/30 cursor-pointer relative z-20 transition-all shadow-sm">Artificial Intelligence</span>
